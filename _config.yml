@@ -1,0 +1,18 @@
+theme: jekyll-theme-minimal
+
+title: Documentation
+description: Open-source documentation for users of Advantech's WebAccess/DMP software
+logo: "/images/logo.png"
+
+navbar-links:
+  Public Cloud Deployment:
+    - UI: "https://wadmp.com"
+    - API: "https://api.wadmp.com"
+  Staging Deployment:
+    - UI: "https://staging.wadmp.com"
+    - API: "https://api.staging.wadmp.com"
+  Resources:
+    - Source Repository: "https://github.com/bb-smartworx/bb-smartworx.github.io"
+    - GitHub Desktop: "https://desktop.github.com/"
+    - Learn Markdown: "https://www.markdowntutorial.com/"
+    - Project Jupyter: "https://jupyter.org/index.html"
