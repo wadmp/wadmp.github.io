@@ -1,6 +1,6 @@
 ## Welcome to the WebAccess/DMP Documentation Site
 
-This site is automatically built from our [public repository](https://github.com/bb-smartworx/bb-smartworx.github.io).
+This site is automatically built from our [public repository](https://github.com/wadmp/wadmp.github.io).
 
 All users of WebAccess/DMP are encouraged to contribute to the open-source documentation.
 
