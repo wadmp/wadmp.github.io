@@ -1,16 +1,22 @@
 # Key topics
 
+This section explains main concepts of WebAccess DMP. It is dedicated to describe how things work.
+
 ## System overview
-- What is WA DMP
-- Routers Overview
-- Router configuration
-- Router SNMP
-- Understanding OAuth
+- What is WebAccess DMP
 - Understanding Desired/Reported states
+- Routers Overview
+- Router configuration and SNMP reporting
+- Understanding OAuth
+- Understanding Async API
 - Cellular data usage
 - Security Whitepaper
-- Understanding Async API
 
 ## Application concepts
-- Login to the API
-- Description of the Dynamic documentation
+- Companies and Users
+- Grouping and Tagging
+- Firmware and User Modules versions
+- Monitoring a device
+- Monitoring aggregated data
+- Applying configuration with SyncEngine
+- Secure Device Bootstrap

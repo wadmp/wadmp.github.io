@@ -1,32 +1,33 @@
 # Tutorials
 
-The pages in this section were designed to introduce WebAccess DMP basics.
+The pages in this section were designed to introduce WebAccess DMP basics, to get you started by using the plattform. All tutorials are complete step-by-step guides. By doing them you will get a taste for what DMP is capable of and what is its place in managing your assets remotely.
+
+The [How-to section](/index.md#available-documentation) is the next step for you to continue your learning. There you will find more in depth explanations like using the API to automate custom tasks, or use the asynchronous interface to get notifications of changes.
+
+If you want an in depth explanation of topics, please refer to the [Key topics](/key-topics/key-topics.md) section.
 
 ## UI Getting Started Guide
-- Sign Up and create company
+- Sign Up and create your company
 - Create a new company
-- Create other user
+- Create more users
 - Claim my device
-- Re-claim to a different company
+- Re-claim my device to a different company
 - Searching, filtering and sorting devices
 - Grouping and tagging devices
-- Upgrading firmware in bulk
 - Installing/Upgrading User Modules
-- Pinning versions
-- Configuring an online device
-- Configuring an offline device
-- Upgrading all my devices to the latest firmware
+- Pinning versions of User Modules and Firmware
+- Configuring online and offline devices
+- Upgrading all my devices to the latest Firmware
 
 ## API Getting Started Guide
 - Login to the API
-- Description of the Dynamic documentation
+- How the Dynamic documentation works
 
 ## Using Python to Consume the REST API
-- Upgrading all my devices to the latest fw
+- Upgrading all my devices to the latest Firmware
 - Claim all my devices to my company
 - Re-claim devices to a different company
-- Configuring an online device
-- Configuring an offline device (Connect after)
+- Configuring online  and offline devices
 - Getting audit logs
 
 ## Using Python to Explore Monitoring Data
