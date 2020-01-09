@@ -8,24 +8,20 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 
 Document titles with no hyperlink have yet to be written. What are you waiting for? :)
 
-| Tutorials                               |   | How-To Guides                                                |
+| Tutorials                               |   | How-to Guides                                                |
 |:---------------------------------------:|---|:------------------------------------------------------------:|
-| [WA/DMP UI Getting Started Guide](/tutorials/ui_getting_started.md){:target="_blank"} |   | How to Upgrade All My Routers to the Latest Firmware Version |
-| WA/DMP API Getting Started Guide        |   | How to use WA/DMP for Pre-Configuration / Mass Roll-Out      |
-| Using Python to Consume the REST API    |   | How to Add a Custom User Module to WA/DMP                    |
-| [Using Python to Explore Monitoring Data](https://colab.research.google.com/github/bb-smartworx/bb-smartworx.github.io/blob/master/jupyter_notebooks/login.ipynb){:target="_blank"} |   | How to Create a Custom Grafana Dashboard                     |
-| Using Python to Consume the Asynchronous API |   |                                                              |
+| [UI Getting Started Guide](/tutorials/tutorials.md#ui-getting-started-guide) |   | [How to migrate all my devices from DMP Hub](/how-tos/migrate-from-hub.md) |
+| [API Getting Started Guide](/tutorials/tutorials.md#api-getting-started-guide)        |   | [How to login with my own scripts](/how-tos/api-login-scripts.md) |
+| [Using Python to Consume the REST API](/tutorials/tutorials.md#using-python-to-consume-the-rest-api)    |   | [How to pre-configure all my devices](/how-tos/preconfigure-devices.md) |
+| [Using Python to Explore Monitoring Data](/tutorials/tutorials.md#using-python-to-explore-monitoring-data) |   | [How to add a custom User Module](/how-tos/add-custom-user-module.md) |
+| [Using Python to Consume the Asynchronous API](/tutorials/tutorials.md#using-python-to-consume-the-asynchronous-api) |   | [How to move to another Management server](/how-tos/move-to-management-server.md) |
 
-| Explanations / Discussions           |   | References       |
+| Key topics                           |   | References       |
 |:------------------------------------:|---|:----------------:|
-| What is WebAccess/DMP?               |   | Glossary         |
-| Understanding OAuth                  |   | OpenAPI spec     |
-| Router Families, Types, and Firmware |   | AsyncAPI spec    |
-| Understanding Router Configuration   |   | InfluxDB schema  |
-| Understanding Router SNMP            |   |                  |
-| Understanding Digital Twins          |   |                  |
-| Cellular Data Usage                  |   |                  |
-| WA/DMP Security Whitepaper           |   |                  |
+| [System overview](/key-topics/key-topics.md#system-overview) |   | [Glossary](/references/glossary.md) |
+| [Application concepts](/key-topics/key-topics.md#application-concepts) |   | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |
+| |   | [AsyncAPI spec](/references/async-api-spec.md)    |
+| |   | [InfluxDB schema](/references/influxdb-schema.md)  |
 
 [Why is our documentation structured like this?](https://www.divio.com/blog/documentation/)
   
