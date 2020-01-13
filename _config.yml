@@ -12,7 +12,7 @@ navbar-links:
     - UI: "https://staging.wadmp.com"
     - API: "https://api.staging.wadmp.com"
   Resources:
-    - Source Repository: "https://github.com/bb-smartworx/bb-smartworx.github.io"
+    - Source Repository: "https://github.com/wadmp/wadmp.github.io"
     - GitHub Desktop: "https://desktop.github.com/"
     - Learn Markdown: "https://www.markdowntutorial.com/"
     - Project Jupyter: "https://jupyter.org/index.html"
