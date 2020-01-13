@@ -15,13 +15,14 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Using Python to Consume the REST API](/tutorials/tutorials.md#using-python-to-consume-the-rest-api)    |   | [How to pre-configure all my devices](/how-tos/preconfigure-devices.md) |
 | [Using Python to Explore Monitoring Data](/tutorials/tutorials.md#using-python-to-explore-monitoring-data) |   | [How to add a custom User Module](/how-tos/add-custom-user-module.md) |
 | [Using Python to Consume the Asynchronous API](/tutorials/tutorials.md#using-python-to-consume-the-asynchronous-api) |   | [How to move to another Management server](/how-tos/move-to-management-server.md) |
+|   |   | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |
 
 | Key topics                           |   | References       |
 |:------------------------------------:|---|:----------------:|
 | [System overview](/key-topics/key-topics.md#system-overview) |   | [Glossary](/references/glossary.md) |
 | [Application concepts](/key-topics/key-topics.md#application-concepts) |   | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |
-| |   | [AsyncAPI spec](/references/async-api-spec.md)    |
-| |   | [InfluxDB schema](/references/influxdb-schema.md)  |
+|   |   | [AsyncAPI spec](/references/async-api-spec.md)    |
+|   |   | [InfluxDB schema](/references/influxdb-schema.md)  |
 
 [Why is our documentation structured like this?](https://www.divio.com/blog/documentation/)
   

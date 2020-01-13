@@ -8,6 +8,7 @@ If you want an in depth explanation of topics, please refer to the [Key topics](
 
 ## UI Getting Started Guide
 - Sign Up and create your company
+- [General structure of the UI](/tutorials/ui-general-structure.md)
 - Create a new company
 - Create more users
 - Claim my device
@@ -21,7 +22,7 @@ If you want an in depth explanation of topics, please refer to the [Key topics](
 
 ## API Getting Started Guide
 - Login to the API
-- How the Dynamic documentation works
+- [How the Dynamic documentation works](/tutorials/dynamic-documentation.md)
 
 ## Using Python to Consume the REST API
 - Upgrading all my devices to the latest Firmware
