@@ -36,21 +36,21 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 
 | Explanations / Discussions           |   | References       |
 |:------------------------------------:|---|:----------------:|
-| [What is WebAccess DMP](/key-topics/what-is-webaccess-dmp.md) |   | [Glossary](/references/glossary.md) |
-| [Understanding Desired and Reported states](/key-topics/desired-reported-states.md) |   | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |
+| [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md) |   | [Glossary](/references/glossary.md) |
+| [Understanding Desired and Reported states](/explanations-discussions/desired-reported-states.md) |   | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |
 | Routers overview |   | [AsyncAPI spec](/references/async-api-spec.md)    |
 | Router configuration and SNMP reporting |   | [InfluxDB schema](/references/influxdb-schema.md) |
 | Understanding OAuth |   |   |
 | Understanding Async API |   |   |
 | Cellular data usage |   |   |
-| [Security Whitepaper](/key-topics/security-whitepaper.md) |   |   |
-| [Companies and Users](/key-topics/companies-and-users.md) |   |   |
+| [Security Whitepaper](/explanations-discussions/security-whitepaper.md) |   |   |
+| [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
 | Grouping and Tagging |   |   |
 | Firmware and User Modules versions |   |   |
 | Monitoring a device |   |   |
 | Monitoring aggregated data |   |   |
-| Applying configuration with SyncEngine |   |   |
-| [Secure Device Bootstrap](/key-topics/device-bootstrap.md) |   |   |
+| [Applying configuration with SyncEngine](/explanations-discussions/sync-engine.md) |   |   |
+| [Secure Device Bootstrap](/explanations-discussions/device-bootstrap.md) |   |   |
 
 [Why is our documentation structured like this?](https://www.divio.com/blog/documentation/)
   
