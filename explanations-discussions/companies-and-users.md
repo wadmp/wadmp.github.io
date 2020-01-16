@@ -9,7 +9,7 @@ This article explains the concepts of company and user on the WebAccess/DMP (WAD
 There are 2 ways to become a user on WADMP:
 
 1. Signup at [WADMP](https://staging.wadmp.com/) by creating an account.
-2. Company administrator creates an account for you..
+2. Company administrator creates an account for you.
 
 In both cases the user will receive an email from the platform to confirm their email address. Using the 1st option, the user is the administrator for their company with the following permissions.
 
@@ -51,6 +51,14 @@ A parent company is a root level company. You can create as many parent companie
 
 
 
+Having created your companies, you can now begin to manage and monitor devices. To manage a device you must first claim it to your company. See [Claim my device](https://docs.wadmp.com/tutorials/ui-claim-my-device.html)
+
+Having claimed your device, you will now be able to configure and monitor it.
+
+
+
 ## System Administrator
 
-The System Administrator is the administrator for the platform. In addition to the normal permissions, the Sysadmin can also Register and Delete devices.  Contact your Sysadmin if you have any issues that cannot be resolved by your company administrator.
+The System Administrator is the administrator for the platform. In addition to the normal permissions, the Sysadmin can also Register and Delete devices and also claim device to any company.
+
+Contact your Sysadmin if you have any issues that cannot be resolved by your company administrator.
