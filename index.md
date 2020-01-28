@@ -10,19 +10,18 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 
 | Tutorials                               |   | How-to Guides                                                |
 |:---------------------------------------:|---|:------------------------------------------------------------:|
-| Sign Up and create your company |   | How to migrate all my devices from DMP v1 |
+| [Sign Up and create your company](/tutorials/sign-up.md) |   | How to migrate all my devices from DMP v1 |
 | [General structure of the UI](/tutorials/ui-general-structure.md) |   | How to login with my own scripts |
-| Create a new company |   | How to pre-configure all my devices |
-| Create more users |   | [How to add a custom User Module](/how-tos/add-custom-user-module.md) |
-| Claim my device |   | How to move to another Management Server |
-| Re-claim my device to a different company |   | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |
-| Searching, filtering and sorting devices |   |   |
-| Grouping and tagging devices |   |   |
-| Installing/Upgrading User Modules |   |   |
-| Pinning versions of User Modules and Firmware |   |   |
-| Configuring online and offline devices |   |   |
-| Upgrading all my devices to the latest Firmware |   |   |
-| Login to the API |   |   |
+| [Create a new company](/tutorials/create-company.md) |   | How to pre-configure all my devices |
+| [Create more users](/tutorials/create-users.md) |   | [How to add a custom User Module](/how-tos/add-custom-user-module.md) |
+| [Claim my device](/tutorials/claim-device.md) |   | How to move to another Management Server |
+| [Re-claim my device to a different company](/tutorials/re-claim-device.md) |   | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |
+| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md) |   |   |
+| [Grouping and tagging devices](/tutorials/group-tag-devices.md) |   |   |
+| [Installing/Upgrading User Modules](/tutorials/installing-user-modules.md) |   |   |
+| [Pinning versions of User Modules and Firmware](/tutorials/pinning-versions.md) |   |   |
+| [Configuring online and offline devices](/tutorials/configuring-devices.md) |   |   |
+| [Upgrading all my devices to the latest Firmware](/tutorials/upgrading-device-firmware.md) |   |   |
 | [How the Dynamic Documentation works](/tutorials/dynamic-documentation.md) |   |   |
 | Upgrading all my devices to the latest Firmware using the API |   |   |
 | Claim all my devices to my company using the API |   |   |
