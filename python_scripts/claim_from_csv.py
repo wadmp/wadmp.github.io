@@ -233,6 +233,30 @@ def form_MAC_address(serial_number):
     return mac
 
 
+def get_companies(session, auth_token, base_url, base_path, name=None):
+    """Retrieves the list of companies in the system
+    """
+    url = f"{base_url}/{base_path}/companies"
+    header = {'Authorization': f'Bearer {auth_token}'}
+    logging.debug(f"\nSending GET request to {url} with:\n"
+        f"    header={header}\n"
+        f"    name={name}\n")
+    query = {'name': name}
+    response = session.get(url, params=query, headers=header)
+
+    logging.info(response.status_code)
+    try:
+        logging.debug(json.dumps(response.json(), indent=4, sort_keys=True))
+    except ValueError:
+        logging.debug(response.text)
+
+    if response.status_code == requests.codes['ok']:
+        return response.json()['data']
+    else:
+        logging.error("Failed to retrieve the list of Companies!")
+        return None
+
+
 if __name__ == "__main__":
     args = parse_args()
     main(args)
