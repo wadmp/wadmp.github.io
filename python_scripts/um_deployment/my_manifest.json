@@ -1,0 +1,31 @@
+{
+  "MyUserModule": {
+    "model": {
+      "name": "myUserModule",
+      "display_name": "My User Module",
+      "description": "This is an example of how to deploy a custom User Module using WebAccess/DMP.",
+      "is_global": true,
+      "is_firmware": false,
+      "companies": []
+    },
+    "versions": {
+      "1.0.0": {
+        "model_location": "./my-user-module/models/1.0.0/",
+        "binaries": [
+          {
+            "binary_location": "./my-user-module/binaries/1.0.0/myusermodule.v2.tgz",
+            "device_families": [
+              "Router_v2_*"
+            ]
+          },
+          {
+            "binary_location": "./my-user-module/binaries/1.0.0/myusermodule.v3.tgz",
+            "device_families": [
+              "Router_v3_*"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
