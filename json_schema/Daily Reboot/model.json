@@ -1,0 +1,25 @@
+{
+    "title": "Daily Reboot",
+    "type": "object",
+    "required": [],
+    "properties": {
+      "MOD_DAILYREBOOT_ENABLED": {
+        "default": false,
+        "type": "boolean",
+        "title": "Enable Daily Reboot"
+      },
+      "MOD_DAILYREBOOT_HOUR": {
+        "minimum": 0,
+        "maximum": 23,
+        "type": "integer",
+        "title": "Hour"
+      },
+      "MOD_DAILYREBOOT_MINUTE": {
+        "minimum": 0,
+        "maximum": 59,
+        "type": "integer",
+        "title": "Minute"
+      }
+    },
+    "dependencies": {}
+  }
