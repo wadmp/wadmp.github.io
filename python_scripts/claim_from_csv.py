@@ -39,7 +39,7 @@ def parse_args():
                         help="URL of the WADMP server's API gateway. \
                                 Check the code for the default!",
                         type=str,
-                        default='https://gateway.dev.wadmp.com')
+                        default='https://gateway.staging.wadmp.com')
 
     parser.add_argument("-username",
                         help="Username. \
