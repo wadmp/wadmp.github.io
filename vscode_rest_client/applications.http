@@ -1,0 +1,58 @@
+# @name login
+POST {{BASE_URL}}/public/auth/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+username={{USERNAME}}
+&password={{PASSWORD}}
+&client_id=python
+&grant_type=password
+
+@token = {{login.response.body.access_token}}
+
+# Variables
+@app_name = ICR-323x
+@id = 9
+@versionId = 1005
+@sectionId = 9541
+@device_type_id = 5
+
+###
+
+# @name get_apps
+GET {{BASE_URL}}/{{BASE_PATH}}/applications HTTP/1.1
+Authorization: Bearer {{token}}
+
+###
+
+# Change this "app_name" string to match any app name
+
+# @name get_apps_with_name_filter
+GET {{BASE_URL}}/{{BASE_PATH}}/applications
+    ?name={{app_name}}
+Authorization: Bearer {{token}}
+
+###
+
+# Change the "device_type_id" variable above to match any deviceTypeId
+
+# @name get_apps_with_device_type_id_filter
+GET {{BASE_URL}}/{{BASE_PATH}}/applications
+    ?deviceTypeIds={{device_type_id}}
+Authorization: Bearer {{token}}
+
+###
+
+# Change the "id" and "versionId" variables above
+
+# @name get_version
+GET {{BASE_URL}}/{{BASE_PATH}}/applications/{{id}}/versions/{{versionId}}
+Authorization: Bearer {{token}}
+
+###
+
+# Change the "id", "versionId", and "sectionID" variables above
+
+# @name get_section
+GET {{BASE_URL}}/{{BASE_PATH}}/applications/{{id}}/versions/{{versionId}}/sections/{{sectionId}}
+Authorization: Bearer {{token}}
+

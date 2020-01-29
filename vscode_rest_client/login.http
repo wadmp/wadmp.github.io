@@ -1,0 +1,10 @@
+# @name login
+POST {{BASE_URL}}/public/auth/connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+username={{USERNAME}}
+&password={{PASSWORD}}
+&client_id=python
+&grant_type=password
+
+@token = {{login.response.body.access_token}}
