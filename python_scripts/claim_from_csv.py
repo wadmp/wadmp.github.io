@@ -257,6 +257,29 @@ def get_companies(session, auth_token, base_url, base_path, name=None):
         return None
 
 
+def claim_device(session, auth_token, base_url, base_path, model=None):
+    """Claim a device to a company.
+    """
+    url = f"{base_url}/{base_path}/identity/devices/claim"
+    header = {'Authorization': f'Bearer {auth_token}'}
+    logging.debug(f"\nSending POST request to {url} with:\n"
+        f"    header={header}\n"
+        f"    model={model}\n")
+    response = session.post(url, headers=header, json=model)
+
+    logging.debug(response.status_code)
+    try:
+        logging.debug(json.dumps(response.json(), indent=4, sort_keys=True))
+    except ValueError:
+        logging.debug(response.text)
+
+    if response.status_code == requests.codes['ok']:
+        return response.json()['data']['id']
+    else:
+        logging.error("Failed to claim device!")
+        return None
+
+
 if __name__ == "__main__":
     args = parse_args()
     main(args)
