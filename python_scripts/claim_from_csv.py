@@ -122,6 +122,7 @@ def main(args):
             device = {
                 "serial_number": serial_number,
                 "mac_address": mac,
+                "imei": imei,
                 "company_id": company_id
             }
             claim_device(session, auth_token, args.host, base_path, device)
