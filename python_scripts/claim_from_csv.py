@@ -93,6 +93,7 @@ def main(args):
     auth_token = login(session, args.host, args.username, args.password)
 
     # Get the company ID
+    company_id = None
     companies = get_companies(session, auth_token, args.host, base_path)
     for company in companies:
         if company['name'] == args.Company:
