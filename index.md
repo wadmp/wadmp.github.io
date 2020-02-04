@@ -15,8 +15,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Create a new company](/tutorials/create-company.md) |   | How to pre-configure all my devices |
 | [Create more users](/tutorials/create-users.md) |   | [How to add a custom User Module](/how-tos/add-custom-user-module.md) |
 | [Claim my device](/tutorials/claim-device.md) |   | How to move to another Management Server |
-| [Re-claim my device to a different company](/tutorials/re-claim-device.md) |   | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |
-| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md) |   |   |
+| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md) |   | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |
 | [Grouping and tagging devices](/tutorials/group-tag-devices.md) |   |   |
 | [Installing/Upgrading User Modules](/tutorials/installing-user-modules.md) |   |   |
 | [Pinning versions of User Modules and Firmware](/tutorials/pinning-versions.md) |   |   |
