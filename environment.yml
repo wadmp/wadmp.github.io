@@ -1,0 +1,16 @@
+name: ipyleaflet
+channels:
+  - conda-forge
+dependencies:
+  - ipyleaflet=0.12.2
+  - scipy
+  - bqplot
+  - rasterio
+  - tqdm
+  - requests
+  - pillow
+  - matplotlib
+  - flask
+  - branca
+  - geopandas
+  - netcdf4
