@@ -17,7 +17,6 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Claim my device](/tutorials/claim-device.md) |   | How to move to another Management Server |
 | [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md) |   | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |
 | [Installing/Upgrading User Modules](/tutorials/installing-user-modules.md) |   |   |
-| [Pinning versions of User Modules and Firmware](/tutorials/pinning-versions.md) |   |   |
 | [Configuring online and offline devices](/tutorials/configuring-devices.md) |   |   |
 | [How the Dynamic Documentation works](/tutorials/dynamic-documentation.md) |   |   |
 | Upgrading all my devices to the latest Firmware using the API |   |   |
