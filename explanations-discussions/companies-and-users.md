@@ -8,7 +8,7 @@ This article explains the concepts of company and user on the WebAccess/DMP (WAD
 
 There are 2 ways to become a user on WADMP:
 
-1. Signup at [WADMP](https://staging.wadmp.com/) by creating an account.
+1. Signup at [WADMP](https://wadmp.com/) by creating an account.
 2. Company administrator creates an account for you.
 
 In both cases the user will receive an email from the platform to confirm their email address. Using the 1st option, the user is the administrator for their company with the following permissions.
