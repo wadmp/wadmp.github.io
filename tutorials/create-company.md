@@ -21,7 +21,7 @@ Assuming you have the required permissions, you may create a new Company by foll
 
 ![create](/images/tutorials/new_company/02_createCompany.png)
 
-3. On the prompt that follows, enter the following criteria: 
+3. On the prompt that follows, enter the following information: 
 
    1. Name of the Company that you are creating. 
 
