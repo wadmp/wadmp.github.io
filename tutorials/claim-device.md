@@ -12,4 +12,5 @@ Your assigned permissions are shown as green dots.
 
 e.g. 
 
-![](/Users/paulconway1/Documents/GitHub/wadmp.github.io/images/tutorials/device/01_permissions.png)
+![](/images/tutorials/device/01_permissions.png)
+

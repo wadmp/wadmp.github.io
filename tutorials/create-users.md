@@ -12,14 +12,14 @@ Your assigned permissions are shown as green dots.
 
 e.g. 
 
-![permissions](/Users/paulconway1/Documents/GitHub/wadmp.github.io/images/tutorials/new_users/01_permissions.png)
+![permissions](/images/tutorials/new_users/01_permissions.png)
 
 Assuming you have the required permissions, you may create a new User by following these steps: 
 
 1. Select "Users" from the Context menu. 
 2. On the Actions bar, click on the "Create User" action button.
 
-![create](/Users/paulconway1/Documents/GitHub/wadmp.github.io/images/tutorials/new_users/02_createUser.png)
+![create](/images/tutorials/new_users/02_createUser.png)
 
 3. On the prompt that follows, enter the following criteria: 
 
@@ -43,8 +43,8 @@ Assuming you have the required permissions, you may create a new User by followi
    
    5. Save.
 
-![createUser1](/Users/paulconway1/Documents/GitHub/wadmp.github.io/images/tutorials/new_users/03_createUserForm.png)
+![createUser1](/images/tutorials/new_users/03_createUserForm.png)
 
 
 
-![createUser2](/Users/paulconway1/Documents/GitHub/wadmp.github.io/images/tutorials/new_users/04_createUserForm2.png)
+![createUser2](/images/tutorials/new_users/04_createUserForm2.png)
