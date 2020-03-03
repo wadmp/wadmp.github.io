@@ -88,7 +88,7 @@ Here's an example of a printed Device label:
 
 
 
-For this Device, the Claim Device form would look something like this:
+giFor this Device, the Claim Device form would look something like this:
 
 ![filledForm](/images/tutorials/device/05_claimDeviceForm2_filled.png) 
 
