@@ -9,4 +9,4 @@ These are the steps if you prefer instructions instead of a video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U-ygZt2cTcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<p dir='rtl' align='right'> [Next: General structure of the UI](/tutorials/sign-up.md) </p>
+<p align='right'>[Next: General structure of the UI](/tutorials/ui-general-structure.md)</p>
