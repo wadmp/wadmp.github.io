@@ -16,7 +16,7 @@ WebAccess/DMP Generation 2 has been built for scale and performance.  The backen
 
 The platform has been designed for extensibility. Using leading-edge micro-services enabled architectural best practices, together with leading-edge elastic scale technologies, load balancing and brokerage services, the platform will scale-out as necessary.  The user-interface is built on our publicly available API, via our publicly available API Gateway, which enables real-time extensibility to available functionality, and the ability to integrate functionality with your existing services and infrastructure seamlessly: plug in, build-out.   
 
-
+![](/images/explanations-discussions/01_whatis_backendservices.png)
 
 ## AssureAuth™ PKI
 
