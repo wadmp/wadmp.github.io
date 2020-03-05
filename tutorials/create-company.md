@@ -9,7 +9,7 @@ Go to Companies on the left menu and click on the icon for a new company, on the
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oHyHGEjnUY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-<p align='right'><a href="/tutorials/create-users.html">Next: > Creating moreusers</a></p>
+<p align='right'><a href="/tutorials/create-users.html">Next: > Creating more users</a></p>
 
 
 
