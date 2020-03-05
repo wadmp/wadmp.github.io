@@ -8,6 +8,6 @@ These are the steps if you prefer instructions instead of a video:
 - After clicking on the Sign Up button go to your email inbox and confirm your new user.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDfFuPSz90w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</br>
-</br>
+
+
 <p align='right'><a href="/tutorials/ui-general-structure.html">Next: > General structure of the UI</a></p>

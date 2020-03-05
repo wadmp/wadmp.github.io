@@ -7,11 +7,12 @@ It makes sense for the structure to resemble the hierarchy of your organization.
 Go to Companies on the left menu and click on the icon for a new company, on the left of the page menu. Select a parent company to represent the hierarchy between them.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oHyHGEjnUY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</br>
-</br>
+
+
 <p align='right'><a href="/tutorials/create-users.html">Next: > Creating moreusers</a></p>
-</br>
-</br>
+
+
+
 Remember the creation of a company depends on two conditions:
 - That you can login to the platform and
 - That you have permissions to create companies
