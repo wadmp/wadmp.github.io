@@ -13,9 +13,9 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Sign Up and Create your company](/tutorials/sign-up.md)      |      |           How to migrate my devices from DMP Gen1            |
 | [General structure of the UI](/tutorials/ui-general-structure.md) |      |               How to login with my own scripts           |
 | [Create new Companies](/tutorials/create-company.md)          |      |             How to pre-configure all my devices              |
-| [Create more Users](/tutorials/create-users.md)               |      | [How to add a custom User Module](/how-tos/add-custom-user-module.md) |
+| [Create more Users](/tutorials/create-users.md)               |      | How to add a custom User Module                              |
 | [Claim a Device to your Company](/tutorials/claim-device.md)  |      |           How to move to another Management Server           |
-| Searching, filtering and sorting devices                      |      | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |
+| Searching, filtering and sorting devices                      |      | How to create devices from a list and claim them             |
 | Installing/Upgrading User Modules                             |      |                                                              |
 | Configuring online and offline devices                        |      |                                                              |
 | How the Dynamic Documentation works                           |      |                                                              |
@@ -31,21 +31,21 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 
 | Explanations / Discussions           |   | References       |
 |:------------------------------------:|---|:----------------:|
-| [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md) |   | [Glossary](/references/glossary.md) |
+| [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md) |   | Glossary |
 | [Understanding Desired and Reported states](/explanations-discussions/desired-reported-states.md) |   | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |
-| Routers Overview                     |   | [AsyncAPI spec](/references/async-api-spec.md)    |
-| Router configuration and Health reporting |   | [InfluxDB schema](/references/influxdb-schema.md) |
+| Routers Overview                     |   | AsyncAPI spec |
+| Router configuration and Health reporting |   | InfluxDB schema |
 | Understanding OAuth |   |   |
 | Understanding Async API |   |   |
 | Cellular Data Usage |   |   |
-| [AssureAuth™ Security Whitepaper](/explanations-discussions/security-whitepaper.md) |   |   |
-| [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
+| AssureAuth™ Security Whitepaper |   |   |
+| Companies and Users |   |   |
 | Grouping and Tagging |   |   |
 | Firmware and User Module versions |   |   |
 | Monitoring a Device |   |   |
 | Monitoring Aggregated Company Data |   |   |
-| [Applying Configuration with AssureSync™](/explanations-discussions/sync-engine.md) |   |   |
-| [Secure Device Bootstrap](/explanations-discussions/device-bootstrap.md) |   |   |
+| Applying Configuration with AssureSync™ |   |   |
+| Secure Device Bootstrap |   |   |
 
 [Why is our documentation structured like this?](https://www.divio.com/blog/documentation/)
 
