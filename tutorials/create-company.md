@@ -1,41 +1,39 @@
-# Create a new Company
+# Create new companies
+You can create more companies to represent a logical subdivision made for practical purposes. You may want to create a new company under your organization with different devices because:
 
-In order to Create a new Company, you must have the authority to Create a Company. 
+You want your devices to be managed by different users
+You want one aggregated dashboard per device group
+It makes sense for the structure to resemble the hierarchy of your organization. e.g. Buildings or Areas where devices are installed
+Go to Companies on the left menu and click on the icon for a new company, on the left of the page menu. Select a parent company to represent the hierarchy between them.
 
-Company creation depends on 2 User criterion: 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oHyHGEjnUY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</br>
+</br>
+<p align='right'><a href="/tutorials/create-users.html">Next: > Creating moreusers</a></p>
+</br>
+</br>
+Remember the creation of a company depends on two conditions:
+- That you can login to the platform and
+- That you have permissions to create companies
 
-User Authentication (successful login) is the first: User Authorisation (permissions) is the second. 
-
-To check the user-permissions that you have, you may select your username from the Users list.
-
-Your assigned permissions are shown as green dots.
-
-e.g. 
+If you can't see the new company icon, contact the admin of your company to get the appropiate permissions.
+You can check your permissions if you edit your user. Your assigned permissions are shown as green dots.
 
 ![permissions](/images/tutorials/new_company/01_newCompanyPermissions.png)
 
-Assuming you have the required permissions, you may create a new Company by following these steps: 
+As a summary, these are the fields you have to fill when creating a new company: 
 
-1. Select "Companies" from the Context menu. 
-2. On the Actions bar, click on the "create company" action button.
+1. Name of the Company that you are creating. 
 
-![create](/images/tutorials/new_company/02_createCompany.png)
+2. Parent Company for this Company (this is required)
 
-3. On the prompt that follows, enter the following information: 
+   Note: if you are an authorised user in more than one Company, you can select which of those Companies should be the Parent for this new Company.
 
-   1. Name of the Company that you are creating. 
+3. Business address for this new Company.
 
-   2. Select the Parent Company for this Company (this is required)
+4. Name, phone number and email address for the person who will be the Primary Contact person in this new Company. 
 
-      Note: if you are an authorised user in more than one Company, you can select which of those Companies should be the Parent for this new Company.
-
-   3. Enter the business address for this new Company.
-
-   4. Enter the name, phone number and email address for the person who will be the Primary Contact person in this new Company. 
-
-      Note: this information is "meta data": this step does _not_ create a User in the system, nor does it assign a User any permissions for this new Company. 
-
-   5. Save.
+   Note: this information is "metadata": this step does _not_ create a User in the system, nor does it assign a User any permissions for this new Company. 
 
 ![createCompanyForm](/images/tutorials/new_company/03_createForm.png)
 
