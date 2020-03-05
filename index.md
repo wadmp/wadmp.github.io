@@ -12,7 +12,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | :----------------------------------------------------------: | ---- | :----------------------------------------------------------: |
 |   [Sign Up and Create your company](/tutorials/sign-up.md)   |      |           How to migrate my devices from DMP Gen1            |
 | [General structure of the UI](/tutorials/ui-general-structure.md) |      |               How to login with my own scripts               |
-|     [Create a New Company](/tutorials/create-company.md)     |      |             How to pre-configure all my devices              |
+|     [Create new Companies](/tutorials/create-company.md)     |      |             How to pre-configure all my devices              |
 |       [Create more Users](/tutorials/create-users.md)        |      | [How to add a custom User Module](/how-tos/add-custom-user-module.md) |
 | [Claim a Device to your Company](/tutorials/claim-device.md) |      |           How to move to another Management Server           |
 | [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md) |      | [How to create devices from a list and claim them](/how-tos/create-and-claim-devices.md) |

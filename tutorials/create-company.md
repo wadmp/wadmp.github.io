@@ -6,10 +6,10 @@ You want one aggregated dashboard per device group
 It makes sense for the structure to resemble the hierarchy of your organization. e.g. Buildings or Areas where devices are installed
 Go to Companies on the left menu and click on the icon for a new company, on the left of the page menu. Select a parent company to represent the hierarchy between them.
 
+
+<div style='text-align:left;'><a href="/tutorials/ui-general-structure.html">< Prev: UI Structure</a></div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oHyHGEjnUY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<p align='right'><a href="/tutorials/create-users.html">Next: > Creating more users</a></p>
+<div style='text-align:right;'><a href="/tutorials/create-users.html">Next: > Creating more users</a></div>
 
 
 
@@ -34,7 +34,7 @@ As a summary, these are the fields you have to fill when creating a new company:
 
 4. Name, phone number and email address for the person who will be the Primary Contact person in this new Company. 
 
-   Note: this information is "metadata": this step does _not_ create a User in the system, nor does it assign a User any permissions for this new Company. 
+   **Note**: this information is "metadata": this step does _not_ create a User in the system, nor does it assign a User any permissions for this new Company. 
 
 ![createCompanyForm](/images/tutorials/new_company/03_createForm.png)
 

@@ -1,20 +1,23 @@
 # Create more Users
+The only way to add users to your companies is by creating them yourself. When a user signs up he will also create a company, one with no relation with yours.
 
-In order to Create a new User, you must have the authority to Create a User. 
+<div style='text-align:left;'><a href="/tutorials/create-company.html">< Prev: Create new companies</a></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hl3ElX1BUvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style='text-align:right;'><a href="/tutorials/claim-device.html">Next: > Claiming devices</a></div>
 
-User creation depends on 2 User criterion: 
 
-User Authentication (successful login) is the first: User Authorisation (permissions) is the second. 
+As with companies, remember that the creation of a user depends on two conditions:
+- That you can login to the platform and
+- That you have permissions to create companies
 
-To check the user-permissions that you have, you may select your username from the Users list.
-
-Your assigned permissions are shown as green dots.
-
-e.g. 
+If you can't see the new company icon, contact the admin of your company to get the appropiate permissions.
+You can check your permissions if you edit your user. Your assigned permissions are shown as green dots.
 
 ![permissions](/images/tutorials/new_users/01_permissions.png)
 
-Assuming you have the required permissions, you may create a new User by following these steps: 
+
+
+To create a user:
 
 1. Select "Users" from the Context menu. 
 2. On the Actions bar, click on the "Create User" action button.
