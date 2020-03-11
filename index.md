@@ -15,9 +15,9 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Create new Companies](/tutorials/create-company.md)          |      |             How to pre-configure all my devices              |
 | [Create more Users](/tutorials/create-users.md)               |      | How to add a custom User Module                              |
 | [Claim a Device to your Company](/tutorials/claim-device.md)  |      |           How to move to another Management Server           |
-| Searching, filtering and sorting devices                      |      | How to create devices from a list and claim them             |
-| Installing/Upgrading User Modules                             |      |                                                              |
-| Configuring online and offline devices                        |      |                                                              |
+| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md) |      | How to create devices from a list and claim them |
+| [Configuring User Modules](/tutorials/configuring-user-modules.md) |      |                                                         |
+| [Configuring online and offline devices](/tutorials/configuring-devices.md) |      |                                                |
 | How the Dynamic Documentation works                           |      |                                                              |
 | Upgrading all my devices to the latest Firmware using the API |      |                                                              |
 | Claim all my devices to my company using the API              |      |                                                              |
