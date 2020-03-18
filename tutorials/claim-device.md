@@ -1,5 +1,9 @@
 # Claim a Device to your Company
 
+<div style='text-align:left;'><a href="/tutorials/create-users.html">< Prev: Creating users</a></div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cS1EdMOR430" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style='text-align:right;'><a href="/tutorials/search-filter-sort-devices.html">Next: > Searching, filtering and sorting devices</a></div>
+
 In order to Claim a Device to one of your Companies, you must have the authority to Claim a Device. 
 
 Claiming a Device depends on 2 User criterion: 
