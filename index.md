@@ -49,6 +49,12 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 
 [Why is our documentation structured like this?](https://www.divio.com/blog/documentation/)
 
+### Release Notes
+
+|                    Version                   |        Date       |
+| :------------------------------------------: | :---------------: |
+| [Version 2.1.0](/release_notes/2.1.0.md)     | 9th April 2020    |
+
 ### Support or Contact
 
 Please [email support](mailto:webaccessdmp@advantech.com) and we'll do our best to respond quickly.
