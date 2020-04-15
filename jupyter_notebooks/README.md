@@ -18,7 +18,30 @@ GitHub renders Jupyter Notebooks (.ipynb files) automatically.
 You can also view notebooks in [nbviewer](https://nbviewer.jupyter.org/)
 
 ## Running Locally
+You need to have Python 3 installed.
+
+If you are using a recent build of Windows 10, this is as straightforward as typing `python` on the command line.
+Python 3 will be automatically installed from the official Microsoft Store.
+
+If you are using a different Operating System, consult https://www.python.org/
+
+Clone the GitHub repository to your local machine. (If you are using Windows or macOS, we recommend [the official GitHub Desktop app](https://desktop.github.com/))
+
+Change directory to the `wadmp.github.io\jupyter_notebooks` directory.
+
+As per normal Python best practice, create a virtual environment.
+(When you start Jupyter Notebook or Jupyter Lab while in an active virtual environment, Jupyter will automatically use the Python kernel from the virtual environment. All `pip install` commands used in the notebooks will only install packages inside the virtual environment.)
+
 Install Jupyter Notebook and/or JupyterLab following the instructions [here](https://jupyter.org/install.html).
+
+| Summary for Jupyter Notebook: | Summary for Jupyter Lab: |
+| ----------------------------- | ------------------------ |
+| `virtualenv notebook_env3.7` | `virtualenv lab_env3.7` |
+| `.\notebook_env3.7\Scripts\activate` (Windows)<br>`.\notebook_env3.7\bin\activate` (Linux or macOS) | `.\lab_env3.7\Scripts\activate` (Windows)<br>`.\lab_env3.7\bin\activate` (Linux or macOS) |
+| `pip install notebook` | `pip install jupyterlab` |
+| `jupyter notebook` | `jupyter lab` |
+
+Jupyter Notebook or Jupyter Lab will automatically open in your browser.
 
 ### Interactive widgets
 Some notebooks use interactive [widgets](https://jupyter.org/widgets) for more powerful data visualisation.
@@ -27,6 +50,8 @@ If you are running in Jupyter Notebook (>= version 5.3) you don't need to change
 
 If you are running in Jupyter Lab, you will also need to install the JupyterLab *extensions* which are required by the notebook.
 
+> Note that in order to use JupyterLab extensions, you need to have Node.js and npm installed.
+
 For example, the [geolocate](https://github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/geolocate.ipynb) notebook uses [ipyleaflet](https://ipyleaflet.readthedocs.io/en/latest/index.html), which requires 2 extensions:
 * @jupyter-widgets/jupyterlab-manager
 * jupyter-leaflet
@@ -34,9 +59,9 @@ For example, the [geolocate](https://github.com/wadmp/wadmp.github.io/blob/maste
 You can do this in several ways:
 1. Using the "Extension Manager" feature in the Jupyter Lab user interface;
 2. In a terminal, run `jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-leaflet`;
-3. Run the shell command in the Notebook itself, using the `!` syntax: `!jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-leaflet`.
+3. Run the shell command from the Notebook itself, using the `!` syntax: `!jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-leaflet`.
 
-> Note that in order to use JupyterLab extensions, you need to have Node.js and npm installed.
+Note that we typically DO NOT include the `!jupyter labextension install ...` commands in the notebooks we provide. This is because these commands *only* work in a Jupyter Lab environment. In a Jupyter Notebook environment, they cause an unhandled exception.
 
 ## Running on Binder
 You can run all of these notebooks on [Binder](https://mybinder.org/):
