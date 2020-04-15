@@ -44,7 +44,11 @@ Install Jupyter Notebook and/or JupyterLab following the instructions [here](htt
 Jupyter Notebook or Jupyter Lab will automatically open in your browser.
 
 ### Interactive widgets
-Some notebooks use interactive [widgets](https://jupyter.org/widgets) for more powerful data visualisation.
+Some notebooks use interactive JavaScript [widgets](https://jupyter.org/widgets) for more powerful data visualisation.
+
+Our strategy when writing notebooks is to include any package installation commands (`pip` for Python and `npm` for JavaScript) at the top of the notebook,
+in a cell named "Setup".
+This means that if you are running a notebook (in either Jupyter Notebook or Jupyter Lab) in a *new* virtualenv, you may need to **reload the page in the browser** after you execute the "Setup" cell for the first time.
 
 If you are running in Jupyter Notebook (>= version 5.3) you don't need to change any code.
 
