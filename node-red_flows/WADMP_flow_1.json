@@ -1,0 +1,352 @@
+[
+    {
+        "id": "a9b4bc92.01f84",
+        "type": "tab",
+        "label": "WADMP_flow_1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cca4c3ed.c1b5d",
+        "type": "http request",
+        "z": "a9b4bc92.01f84",
+        "name": "login",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://gateway.wadmp.com/public/auth/connect/token",
+        "tls": "7b6de7e8.edb9d8",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "aec93b5d.3a7b98"
+            ]
+        ],
+        "info": "POST request which should return a JSON Web Token"
+    },
+    {
+        "id": "bc347fa.49abc8",
+        "type": "change",
+        "z": "a9b4bc92.01f84",
+        "name": "headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "{\"Content-Type\":\"application/x-www-form-urlencoded\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "cca4c3ed.c1b5d"
+            ]
+        ]
+    },
+    {
+        "id": "3ec37d32.bbafb2",
+        "type": "inject",
+        "z": "a9b4bc92.01f84",
+        "name": "START",
+        "topic": "",
+        "payload": "{\"username\":\"USERNAME\",\"password\":\"PASSWORD\",\"client_id\":\"python\",\"grant_type\":\"password\"}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "bc347fa.49abc8"
+            ]
+        ]
+    },
+    {
+        "id": "6e4923fa.dbf98c",
+        "type": "debug",
+        "z": "a9b4bc92.01f84",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 850,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b521ac8.d0bea5",
+        "type": "http request",
+        "z": "a9b4bc92.01f84",
+        "name": "GET companies",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://gateway.wadmp.com/api/companies",
+        "tls": "7b6de7e8.edb9d8",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "6e4923fa.dbf98c"
+            ]
+        ]
+    },
+    {
+        "id": "32d11132.186d6e",
+        "type": "change",
+        "z": "a9b4bc92.01f84",
+        "name": "query",
+        "rules": [
+            {
+                "t": "set",
+                "p": "query",
+                "pt": "msg",
+                "to": "{\"name\":null}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "b521ac8.d0bea5"
+            ]
+        ]
+    },
+    {
+        "id": "f35d1b09.30acd8",
+        "type": "template",
+        "z": "a9b4bc92.01f84",
+        "name": "headers",
+        "field": "headers",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"Authorization\": \"Bearer {{{payload.access_token}}}\"\n}",
+        "output": "json",
+        "x": 280,
+        "y": 200,
+        "wires": [
+            [
+                "32d11132.186d6e"
+            ]
+        ]
+    },
+    {
+        "id": "ceb11b2f.76db58",
+        "type": "comment",
+        "z": "a9b4bc92.01f84",
+        "name": "README",
+        "info": "# Introduction\nThis flow is intended to show you how to use Node-RED to consume the public HTTP (or \"REST\") API that is served by WebAccess/DMP.\n\n# Requirements\nIn order to use this flow, you must have an existing account on https://wadmp.com.\n\n# Usage\n - Edit the JSON payload in the \"START\" node to include your Username (which is an email address) and Password;\n - Click \"Deploy\" in the Node-RED UI;\n - Click the input button on the \"START\" node.\n - Look at the Debug window in the Node-RED UI to see the returned objects.\n\n# Explanation\nThe WebAccess/DMP HTTP API has various endpoints. They are all listed here: https://api.wadmp.com/\n\nNode-RED provides a `http request` node in the default palette. You can use this to send a request to any endpoint and receive the response from the server.\n\nIn order to use any endpoint, you must be authenticated. The WA/DMP server uses \"Bearer\" auth, which means that you need to include a login token in the \"Authorization\" header that accompanies every request.\n\nYou obtain this token (which is actually a JSON Web Token, or JWT) using the `login` node.\n\nIn the payload to the `login` node you will notice that we are using an OAuth clinet called \"python\". This is a standard OAuth client on all WA/DMP server, because most of our example code is written in Python.\nBut you could of course create a new OAuth client for your own use: using the `POST /api-clients`endpoint.\n\nThe other details of the flow are really more about the idiosyncrasies of Node-RED than WebAccess/DMP.\nRemember that Node-RED is just a tool based on JavaScript. You can use ANY language and any tool to consume the WebAccess/DMP API, because it is standard HTTP/REST.\n\n# More information\nAll WebAccess/DMP documentation is available here: https://docs.wadmp.com/",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "2da1ba66.f4d876",
+        "type": "http request",
+        "z": "a9b4bc92.01f84",
+        "name": "GET users",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://gateway.wadmp.com/api/users",
+        "tls": "7b6de7e8.edb9d8",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "6e4923fa.dbf98c"
+            ]
+        ]
+    },
+    {
+        "id": "8e5943ba.deee",
+        "type": "template",
+        "z": "a9b4bc92.01f84",
+        "name": "headers",
+        "field": "headers",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"Authorization\": \"Bearer {{{payload.access_token}}}\"\n}",
+        "output": "json",
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "2da1ba66.f4d876"
+            ]
+        ]
+    },
+    {
+        "id": "aec93b5d.3a7b98",
+        "type": "link out",
+        "z": "a9b4bc92.01f84",
+        "name": "token",
+        "links": [
+            "cba10aef.1f7558",
+            "9a0b19e6.bb7658",
+            "beac7d28.21b4f"
+        ],
+        "x": 775,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cba10aef.1f7558",
+        "type": "link in",
+        "z": "a9b4bc92.01f84",
+        "name": "",
+        "links": [
+            "aec93b5d.3a7b98"
+        ],
+        "x": 155,
+        "y": 200,
+        "wires": [
+            [
+                "f35d1b09.30acd8"
+            ]
+        ]
+    },
+    {
+        "id": "9a0b19e6.bb7658",
+        "type": "link in",
+        "z": "a9b4bc92.01f84",
+        "name": "",
+        "links": [
+            "aec93b5d.3a7b98"
+        ],
+        "x": 155,
+        "y": 300,
+        "wires": [
+            [
+                "8e5943ba.deee"
+            ]
+        ]
+    },
+    {
+        "id": "7b22cb9a.8a1a44",
+        "type": "http request",
+        "z": "a9b4bc92.01f84",
+        "name": "GET devices",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://gateway.wadmp.com/api/management/devices",
+        "tls": "7b6de7e8.edb9d8",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "x": 630,
+        "y": 400,
+        "wires": [
+            [
+                "6e4923fa.dbf98c"
+            ]
+        ]
+    },
+    {
+        "id": "beac7d28.21b4f",
+        "type": "link in",
+        "z": "a9b4bc92.01f84",
+        "name": "",
+        "links": [
+            "aec93b5d.3a7b98"
+        ],
+        "x": 155,
+        "y": 400,
+        "wires": [
+            [
+                "c8d2682e.af9ce8"
+            ]
+        ]
+    },
+    {
+        "id": "c8d2682e.af9ce8",
+        "type": "template",
+        "z": "a9b4bc92.01f84",
+        "name": "headers",
+        "field": "headers",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"Authorization\": \"Bearer {{{payload.access_token}}}\"\n}",
+        "output": "json",
+        "x": 280,
+        "y": 400,
+        "wires": [
+            [
+                "3c4da01.626f76"
+            ]
+        ]
+    },
+    {
+        "id": "3c4da01.626f76",
+        "type": "change",
+        "z": "a9b4bc92.01f84",
+        "name": "query",
+        "rules": [
+            {
+                "t": "set",
+                "p": "query",
+                "pt": "msg",
+                "to": "{\"page\":1,\"pageSize\":100}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "7b22cb9a.8a1a44"
+            ]
+        ]
+    },
+    {
+        "id": "7b6de7e8.edb9d8",
+        "type": "tls-config",
+        "z": "",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    }
+]
