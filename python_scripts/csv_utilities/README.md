@@ -3,7 +3,7 @@
 This directory contains a set of Python scripts that are designed to read a CSV file.
 
 * create_from_csv.py
-* claim_fram_csv.py
+* claim_from_csv.py
 * delete_from_csv.py
 
 ## Creating a virtual environment
@@ -12,11 +12,11 @@ We recommend that you create a new virtual environment for these scripts.
 
 Example using virtualenv:
 
-| Linux                              | Windows                             |
-| ---------------------------------- |-------------------------------------|
-| $ virtualenv --python=python3 env3 | PS virtualenv --python=python3 env3 |
-| $ source env3/bin/activate         | PS .\env3\Scripts\activate          |
-| $ pip install -r requirements3.txt | PS pip install -r requirements3.txt |
+| Linux                                | Windows                               |
+| ------------------------------------ | ------------------------------------- |
+| `$ virtualenv --python=python3 env3` | `PS virtualenv --python=python3 env3` |
+| `$ source env3/bin/activate`         | `PS .\env3\Scripts\activate`          |
+| `$ pip install -r requirements3.txt` | `PS pip install -r requirements3.txt` |
 
 
 ## Usage
