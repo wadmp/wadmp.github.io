@@ -35,6 +35,6 @@ You can change the default command-line arguments in the Python files, or specif
 
 ```.\claim_from_csv.py .\example.csv COMPANY -host https://gateway.wadmp.com -username USERNAME -password PASSWORD -loglevel debug```
 
-```.\claim_from_csv.py .\example.csv -host https://gateway.wadmp.com -username USERNAME -password PASSWORD -loglevel debug```
+```.\delete_from_csv.py .\example.csv -host https://gateway.wadmp.com -username USERNAME -password PASSWORD -loglevel debug```
 
 (These examples show backslashes because they were run on Windows)
