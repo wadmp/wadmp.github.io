@@ -54,6 +54,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 |                    Version                   |        Date       |
 | :------------------------------------------: | :---------------: |
 | [Version 2.1.0](/release_notes/2.1.0.md)     | 9th April 2020    |
+| [Version 2.1.1](/release_notes/2.1.1.md)     | 24th April 2020   |
 
 ### Support or Contact
 
