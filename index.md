@@ -39,7 +39,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | Understanding Async API |   |   |
 | Cellular Data Usage |   |   |
 | AssureAuth™ Security Whitepaper |   |   |
-| Companies and Users |   |   |
+| [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
 | Grouping and Tagging |   |   |
 | Firmware and User Module versions |   |   |
 | Monitoring a Device |   |   |
