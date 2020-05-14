@@ -13,14 +13,14 @@ There are several advantages:
 
 WebAccess/DMP uses the same concept.
 
-> Remember that the User Interface or web app that you see at https://wadmp.com is only one example
+> Remember that the User Interface or web app that you see at [wadmp.com]([https://wadmp.com) is only one example
 > of a client application that consumes the WebAccess/DMP API.
 
-WebAccess/DMP (the platform) acts as the "identity provider" for users. *Any* client application that consumes the WebAccess/DMP API should redirect to our built-in Sign-In page. You can see this when you connect to https://wadmp.com for the first time (or try it in an Incognito window). The browser is redirected to https://gateway.wadmp.com/public/auth/public/auth/login:
+WebAccess/DMP (the platform) acts as the "identity provider" for users. *Any* client application that consumes the WebAccess/DMP API should redirect to our built-in Sign-In page. You can see this when you connect to [wadmp.com]([https://wadmp.com) for the first time (or try it in an Incognito window). The browser is redirected to [gateway.wadmp.com/public/auth/public/auth/login](https://gateway.wadmp.com/public/auth/public/auth/login):
 
 ![alt text](../images/explanations-discussions/wadmp_sign-in.png "WA/DMP sign-in page")
 
-Another good example is Grafana. Our main UI utilises Grafana to display dashboards for device monitoring data. These dashboards are embedded in the https://wadmp.com web pages, but you can also access Grafana directly, at https://grafana.wadmp.com.
+Another good example is Grafana. Our main UI utilises Grafana to display dashboards for device monitoring data. These dashboards are embedded in the [wadmp.com](https://wadmp.com) web pages, but you can also access Grafana directly, at [grafana.wadmp.com](https://grafana.wadmp.com).
 Note that *you do not have to create an account* with Grafana: just click "Sign in with OAuth":
 
 ![alt text](../images/explanations-discussions/grafana_sign-in.png "Grafana sign-in page")
@@ -34,10 +34,10 @@ The public REST API provides the following endpoints which allow you to manage y
 ![alt text](../images/explanations-discussions/APIClients_endpoints.png "APIClients endpoints")
 
 Some OAuth clients are provided by default in every WebAccess/DMP instance:
-* "SWHWebApp" is the client used by our built-in User Interface, https://wadmp.com;
-* "grafana" is the client used by Grafana, https://grafana.wadmp.com;
-* "swagger_ui" is the client used by the "Try it out" feature on https://api.wadmp.com;
-* "python" is the client used by the example Python scripts provided as part of the documentation in https://docs.wadmp.com.
+* "SWHWebApp" is the client used by our built-in User Interface, [wadmp.com](https://wadmp.com);
+* "grafana" is the client used by Grafana, [grafana.wadmp.com](https://grafana.wadmp.com);
+* "swagger_ui" is the client used by the "Try it out" feature on [api.wadmp.com](https://api.wadmp.com);
+* "python" is the client used by the example Python scripts provided as part of the documentation in [docs.wadmp.com](https://docs.wadmp.com).
 
 ## More details
 
@@ -89,6 +89,6 @@ The model for the payload for the `POST /api-clients` endpoint looks like this:
 ![alt text](../images/explanations-discussions/grant_type_model.png "Model for POST endpoint")
 
 `grant_type` is usually one of the following:
-* "Implicit". See https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#implicit For example, this is the type used by the SWHWebApp and swagger_ui clients.
-* "Code". See https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#authorization-code For example, this is the type used by the grafana client.
-* "ResourceOwnerPassword". See https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#resource-owner-password For example, this is the type used by the python client.
+* `Implicit`. See the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) and [IdentityServer4](https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#implicit) documentation. For example, this is the type used by the SWHWebApp and swagger_ui clients.
+* `Code`. Called "Authorisation Code" in [OAuth 2.0](https://tools.ietf.org/html/rfc6749) and [IdentityServer4](https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#authorization-code). For example, this is the type used by the grafana client.
+* `ResourceOwnerPassword`. See the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) and [IdentityServer4](https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#resource-owner-password) documentation. For example, this is the type used by the python client.
