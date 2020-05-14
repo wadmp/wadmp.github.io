@@ -35,7 +35,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Understanding Desired and Reported states](/explanations-discussions/desired-reported-states.md) |   | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |
 | Routers Overview                     |   | AsyncAPI spec |
 | Router configuration and Health reporting |   | InfluxDB schema |
-| Understanding OAuth |   |   |
+| [Understanding OAuth](/explanations-discussions/understanding-oauth.md) |   |   |
 | Understanding Async API |   |   |
 | Cellular Data Usage |   |   |
 | AssureAuth™ Security Whitepaper |   |   |
