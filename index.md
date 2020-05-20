@@ -62,4 +62,6 @@ Please [email support](mailto:webaccessdmp@advantech.com) and we'll do our best 
 
 If you have a commercial arrangement with an Advantech channel partner, you can also escalate any issues through them. 
 
+[Privacy Policy](/privacy-policy.md)
+
 ![Powered by logo](/images/pow.png "Tooltip")
