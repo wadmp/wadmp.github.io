@@ -4,16 +4,25 @@
 This script uses the public API to read the latest settings (both Reported and Desired) for one section,
 for all devices.
 
+Ben Kinsella, January 2020
+Copyright Advantech B+B SmartWorx, 2020
+
+Version 0.2
+
 Last tested on Ubuntu 18.04 with Python 3.6, and on Windows 10 with Python 3.7
 """
 
+# Standard library
 import argparse
-import requests
+import os.path
 import json
 import sys
 import logging
 import logging.config
 import time
+
+# pip
+import requests
 
 
 BASE_PATH = "api"
@@ -34,14 +43,26 @@ def parse_args():
     parser.add_argument(
         "-host",
         help="URL of the API gateway. \
-                                Default = 'https://gateway.wadmp.com'",
+                Default = 'https://gateway.wadmp.com'",
         type=str,
-        default="https://gateway.wadmp.com"
+        default="https://gateway.wadmp.com",
     )
 
-    parser.add_argument("-username", help="Username", type=str, default="email address")
+    parser.add_argument(
+        "-username",
+        help="Username. \
+                Check the code for the default!",
+        type=str,
+        default="email address",
+    )
 
-    parser.add_argument("-password", help="Password", type=str, default="password")
+    parser.add_argument(
+        "-password",
+        help="Password. \
+                Check the code for the default!",
+        type=str,
+        default="password",
+    )
 
     parser.add_argument(
         "-console_loglevel",
@@ -49,16 +70,16 @@ def parse_args():
                              Default = info",
         type=str,
         choices=["debug", "info", "warning", "error", "critical"],
-        default="info"
+        default="info",
     )
 
     parser.add_argument(
         "-file_loglevel",
         help="Log verbosity level. The higher the level, the fewer messages that will be logged. \
-                             Default = warning",
+                             Default = info",
         type=str,
         choices=["debug", "info", "warning", "error", "critical"],
-        default="info"
+        default="info",
     )
 
     args = parser.parse_args()
@@ -81,10 +102,12 @@ def main(args):
 
     console_loglevel = LOG_LEVELS[args.console_loglevel]
     file_loglevel = LOG_LEVELS[args.file_loglevel]
-    configure_logging(console_loglevel, file_loglevel)
+
+    script_name = os.path.splitext(os.path.basename(__file__))[0]
+    configure_logging(script_name, console_loglevel, file_loglevel)
 
     global logger
-    logger = logging.getLogger("script")
+    logger = logging.getLogger(script_name)
 
     global BASE_URL
     BASE_URL = args.host
@@ -268,7 +291,9 @@ def get_applications_in_device(mac):
             logger.error(f"Didn't find what we expected in the JSON response!\n{err}")
             return None
     else:
-        logger.error(f"Failed to retrieve the list of Applications! {response.status_code}")
+        logger.error(
+            f"Failed to retrieve the list of Applications! {response.status_code}"
+        )
         return None
 
 
@@ -305,7 +330,7 @@ def find_fw_ids(mac):
     """
     fw_app_id = None
     fw_app_version_id = None
-    
+
     apps = get_applications_in_device(mac)
     if apps:
         for app in apps:
@@ -366,14 +391,14 @@ class UTCFormatter(logging.Formatter):
     converter = time.gmtime
 
 
-def configure_logging(console_loglevel, file_loglevel):
+def configure_logging(name, console_loglevel, file_loglevel):
     """We use a dictionary to configure the Python logging module.
     """
 
     LOG_CONFIG = {
         "version": 1,
         "disable_existing_loggers": False,
-        "loggers": {"script": {"level": "DEBUG", "handlers": ["console", "file"]}},
+        "loggers": {name: {"level": "DEBUG", "handlers": ["console", "file"]}},
         "handlers": {
             "console": {
                 "level": console_loglevel,
@@ -384,7 +409,7 @@ def configure_logging(console_loglevel, file_loglevel):
                 "level": file_loglevel,
                 "class": "logging.handlers.RotatingFileHandler",
                 "formatter": "file_format",
-                "filename": "get_settings.log",
+                "filename": f"{name}.log",
                 "mode": "w",
             },
         },

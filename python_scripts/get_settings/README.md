@@ -13,19 +13,47 @@ Example using virtualenv:
 
 | Linux                                | Windows                               |
 | ------------------------------------ | ------------------------------------- |
-| `$ virtualenv --python=python3 env3` | `PS virtualenv --python=python3 env3` |
-| `$ source env3/bin/activate`         | `PS .\env3\Scripts\activate`          |
-| `$ pip install -r requirements3.txt` | `PS pip install -r requirements3.txt` |
+| `$ virtualenv --python=python3 env3` | `> virtualenv --python=python3 env3`  |
+| `$ source env3/bin/activate`         | `> .\env3\Scripts\activate`           |
+| `$ pip install -r requirements3.txt` | `> pip install -r requirements3.txt`  |
 
 ## Usage
 
 Make sure you *activate* the virtualenv before every script execution.
 
-You can change the default command-line arguments in the Python files, or specify new values on the command-line:
+For detailed usage information, run the script with `-h` as an argument:
+```
+> .\get_settings.py -h
+usage: get_settings.py [-h] [-host HOST] [-username USERNAME]
+                       [-password PASSWORD]
+                       [-console_loglevel {debug,info,warning,error,critical}]
+                       [-file_loglevel {debug,info,warning,error,critical}]
+                       section
 
-```.\get_settings.py snmp -host https://gateway.wadmp.com -username USERNAME -password PASSWORD```
+Read settings for one section from all devices
 
-(This example shows backslashes because it was run on Windows)
+positional arguments:
+  section               Section name
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -host HOST            URL of the API gateway. Default =
+                        'https://gateway.wadmp.com'
+  -username USERNAME    Username. Check the code for the default!
+  -password PASSWORD    Password. Check the code for the default!
+  -console_loglevel {debug,info,warning,error,critical}
+                        Log verbosity level. The higher the level, the fewer
+                        messages that will be logged. Default = info
+  -file_loglevel {debug,info,warning,error,critical}
+                        Log verbosity level. The higher the level, the fewer
+                        messages that will be logged. Default = info
+```
+
+You can change the default command-line arguments in the Python file, or specify new values on the command-line:
+
+```.\get_settings.py snmp -username USERNAME -password PASSWORD```
+
+(This example shows a backslash because it was run on Windows)
 
 ### section
 
@@ -46,7 +74,7 @@ The following example shows that the "Automatic Update" section is called "autou
 
 There are 2 different `loglevel` arguments:
 - `console_loglevel` determines what messages are printed to the console;
-- `file_loglevel` determines what messages are printed to a file called `get_settings.log`.
+- `file_loglevel` determines what messages are printed to a file named `get_settings.log`.
 
 Python's logging module has a set of default loglevels. The higher the level, the fewer messages that will be logged:
 ```
@@ -63,7 +91,7 @@ Both loglevel arguments default to `info`. If you want more detail, you may chan
 
 ## Output
 
-The script prints to the console, *and* to a file called `get_settings.log`.
+The script prints to the console, *and* to a file named `get_settings.log`.
 
 Assuming you have set the loglevel to "debug" or "info", the configuration settings of the requested section will be shown for every device.
 

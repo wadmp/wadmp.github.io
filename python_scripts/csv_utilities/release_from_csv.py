@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Python script which uses the WADMP public API to delete a number of devices.
+Python script which uses the WADMP public API to release a number of devices from a company.
 
 Ben Kinsella, January 2020
 Copyright Advantech B+B SmartWorx, 2020
@@ -30,7 +30,7 @@ BASE_PATH = "api"
 def parse_args():
     """Parse command-line arguments
     """
-    parser = argparse.ArgumentParser(description="Delete devices from WA/DMP")
+    parser = argparse.ArgumentParser(description="Release devices from a company on WA/DMP")
 
     # Positional arguments:
 
@@ -40,8 +40,8 @@ def parse_args():
 
     parser.add_argument(
         "-host",
-        help="URL of the WADMP server's API gateway. \
-                                Check the code for the default!",
+        help="URL of the API gateway. \
+                Default = 'https://gateway.wadmp.com'",
         type=str,
         default="https://gateway.wadmp.com",
     )
@@ -49,7 +49,7 @@ def parse_args():
     parser.add_argument(
         "-username",
         help="Username. \
-                                Check the code for the default!",
+                Check the code for the default!",
         type=str,
         default="email",
     )
@@ -57,7 +57,7 @@ def parse_args():
     parser.add_argument(
         "-password",
         help="Password. \
-                                Check the code for the default!",
+                Check the code for the default!",
         type=str,
         default="password",
     )
@@ -121,10 +121,25 @@ def main(args):
         for row in csvreader:
             logger.info(row)
 
+            serial_number = row[0]
+            logger.info(f"Serial Number {serial_number}")
+
+            order_code = row[1]
+            logger.info(f"Order Code {order_code}")
+
             mac = row[2]
             logger.info(f"MAC {mac}")
 
-            delete_device(mac)
+            imei = row[3]
+            logger.info(f"IMEI {imei}")
+
+            device = {
+                "serial_number": serial_number,
+                "order_code": order_code,
+                "mac_address": mac,
+                "imei": imei,
+            }
+            release_device(device)
 
 
 def login(username, password):
@@ -138,7 +153,7 @@ def login(username, password):
         "grant_type": "password",
     }
     logger.debug(
-        f"\nSending POST request to {url} with:\n" f"    credentials={credentials}"
+        f"Sending POST request to {url} with:\n" f"    credentials={credentials}"
     )
     response = SESSION.post(url, data=credentials)
 
@@ -149,25 +164,23 @@ def login(username, password):
         logger.debug(response.text)
 
     if response.status_code == requests.codes["ok"]:
-        try:
-            return response.json()["access_token"]
-        except json.decoder.JSONDecodeError as err:
-            logger.error(f"Problem decoding JSON!\n{err}")
-            return None
-        except KeyError as err:
-            logger.error(f"Didn't find what we expected in the JSON response!\n{err}")
-            return None
+        return response.json()["access_token"]
     else:
         logger.error(f"Failed to login! {response.status_code}")
         sys.exit(1)
 
 
-def delete_device(mac_address):
-    """Delete a device.
+def release_device(model=None):
+    """Release a device from a company.
+
+    This allows to to claim it to a different company, or to delete it.
     """
-    url = f"{BASE_URL}/{BASE_PATH}/identity/devices/{mac_address}"
-    logger.debug(f"\nSending DELETE request to {url}\n")
-    response = SESSION.delete(url)
+    url = f"{BASE_URL}/{BASE_PATH}/identity/devices/release"
+    logger.debug(
+        f"\nSending POST request to {url} with:\n"
+        f"    model={model}\n"
+    )
+    response = SESSION.post(url, json=model)
 
     logger.debug(response.status_code)
     try:
@@ -177,7 +190,7 @@ def delete_device(mac_address):
 
     if response.status_code == requests.codes["ok"]:
         try:
-            return response.json()["success"]
+            return response.json()["data"]["id"]
         except json.decoder.JSONDecodeError as err:
             logger.error(f"Problem decoding JSON!\n{err}")
             return None
@@ -185,7 +198,7 @@ def delete_device(mac_address):
             logger.error(f"Didn't find what we expected in the JSON response!\n{err}")
             return None
     else:
-        logger.error(f"Failed to delete device! {response.status_code}")
+        logger.error(f"Failed to release device! {response.status_code}")
         return None
 
 
