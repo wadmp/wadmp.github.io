@@ -84,7 +84,7 @@ script - INFO - root:{
 Note that the JSON object contains both the "desired" and the "reported" configuration.
 One or both of these may be null.
 
-For example, in the following screenshot taken in the UI, only those configuration item that are "toggled" will be oart of the "desired" configuration:
+For example, in the following screenshot taken in the UI, only those configuration item that are "toggled" will be part of the "desired" configuration:
 
 ![Desired configuration in UI](./images/desired_configuration.png)
 
