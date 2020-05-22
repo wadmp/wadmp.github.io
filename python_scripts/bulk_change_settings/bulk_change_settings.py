@@ -1,13 +1,13 @@
 #! /usr/bin/env python
 
 """
-This script uses the public API to read the latest settings (both Reported and Desired) for one section,
+This script uses the public API to change the Desired settings for one section of the firmware,
 for all devices.
 
 Ben Kinsella, January 2020
 Copyright Advantech B+B SmartWorx, 2020
 
-Version 0.3
+Version 0.2
 
 Last tested on Ubuntu 18.04 with Python 3.6, and on Windows 10 with Python 3.7
 """
@@ -32,11 +32,16 @@ def parse_args():
     """Parse command-line arguments
     """
     parser = argparse.ArgumentParser(
-        description="Read settings for one section from all devices"
+        description="Change settings for one section for all devices"
     )
 
     # Positional arguments:
+
     parser.add_argument("section", help="Section name", type=str, default="snmp")
+
+    parser.add_argument(
+        "INIfile", help="Path to INI file", type=str, default="snmp.ini"
+    )
 
     # Optional arguments:
 
@@ -119,15 +124,16 @@ def main(args):
 
     SESSION.headers.update({"Authorization": f"Bearer {user_token}"})
 
+    desired_settings = open(args.INIfile, "r").read()
+    logger.info(f"Desired State:\n{desired_settings}")
+    logger.info(f"i.e. {len(desired_settings.splitlines())} individual parameters.\n")
+
     logger.info(f"Getting a list of your devices ...")
     my_devices = get_devices(10)
     logger.info(f"You have {len(my_devices)} devices in total.\n")
 
     device_count = 0
     device_with_specified_section_count = 0
-    in_sync_count = 0
-    desired_count = 0
-    reported_count = 0
 
     for device in my_devices:
         device_count += 1
@@ -141,26 +147,18 @@ def main(args):
             )
 
             section_id = find_section_id(fw_app_id, fw_app_version_id, args.section)
-            logger.info(f"Application section ID {section_id}")
+            logger.info(f"Application section ID {section_id}\n")
 
             if section_id:
                 device_with_specified_section_count += 1
-                settings = get_section_settings(
-                    device["mac_address"], fw_app_version_id, section_id
+                model = {"section_id": section_id, "set_config": desired_settings}
+                put_section_settings(
+                    device["mac_address"], fw_app_version_id, section_id, model
                 )
-                logger.info(json.dumps(settings, indent=4, sort_keys=True) + "\n")
-
-                if settings:
-                    if settings["in_sync"]:
-                        in_sync_count += 1
-                    if settings["desired_configuration"]:
-                        desired_count += 1
-                    if settings["reported_configuration"]:
-                        reported_count += 1
 
             else:
                 logger.info("No {args.section} section found\n")
-
+                
         else:
             logger.info("No firmware application found\n")
 
@@ -168,10 +166,7 @@ def main(args):
         f"{device_count} devices in total, of which {device_with_specified_section_count} have the {args.section} section"
     )
     logger.info(
-        f"Of those {device_with_specified_section_count}:\n"
-        f"    {reported_count} have a reported state,\n"
-        f"    {desired_count} have a desired state,\n"
-        f"    {in_sync_count} are in sync.\n"
+        f"We changed the Desired State of these {device_with_specified_section_count} devices."
     )
 
 
@@ -355,12 +350,14 @@ def find_section_id(app_id, version_id, section_name):
     return None
 
 
-def get_section_settings(mac, version_id, section_id):
-    """Gets the desired and reported settings of a specific section of an app in a device.
+def put_section_settings(mac, version_id, section_id, model):
+    """Sends settings to one section of an app in a device.
     """
     url = f"{BASE_URL}/{BASE_PATH}/management/devices/{mac}/apps/{version_id}/settings/{section_id}"
-    logger.debug(f"Sending GET request to {url}")
-    response = SESSION.get(url)
+    logger.debug(
+        f"Sending PUT request to {url} with:\n" f"    body={json.dumps(model)}"
+    )
+    response = SESSION.put(url, json=model)
 
     logger.debug(response.status_code)
     try:
@@ -378,7 +375,7 @@ def get_section_settings(mac, version_id, section_id):
             logger.error(f"Didn't find what we expected in the JSON response!\n{err}")
             return None
     else:
-        logger.error(f"Failed to get the section settings! {response.status_code}")
+        logger.error(f"Failed to put the section settings! {response.status_code}")
         return None
 
 

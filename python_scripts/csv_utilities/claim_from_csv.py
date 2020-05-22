@@ -193,36 +193,6 @@ def login(username, password):
         sys.exit(1)
 
 
-def create_device(model=None):
-    """Create a device in the system.
-    """
-    url = f"{BASE_URL}/{BASE_PATH}/identity/devices"
-    logger.debug(
-        f"Sending POST request to {url} with:\n"
-        f"    model={model}\n"
-    )
-    response = SESSION.post(url, json=model)
-
-    logger.debug(response.status_code)
-    try:
-        logger.debug(json.dumps(response.json(), indent=4, sort_keys=True))
-    except ValueError:
-        logger.debug(response.text)
-
-    if response.status_code == requests.codes["ok"]:
-        try:
-            return response.json()["data"]["id"]
-        except json.decoder.JSONDecodeError as err:
-            logger.error(f"Problem decoding JSON!\n{err}")
-            return None
-        except KeyError as err:
-            logger.error(f"Didn't find what we expected in the JSON response!\n{err}")
-            return None
-    else:
-        logger.error(f"Failed to create device! {response.status_code}")
-        return None
-
-
 def get_companies(name=None):
     """Retrieves the list of companies in the system
     """

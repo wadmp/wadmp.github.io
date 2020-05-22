@@ -1,4 +1,4 @@
-## Get Settings
+## Bulk Get Settings
 
 This directory contains a Python script that allows you to read the latest settings (both Reported and Desired)
 for one section of the firmware configuration, for all devices.
