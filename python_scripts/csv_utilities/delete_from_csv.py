@@ -2,11 +2,17 @@
 
 """
 Python script which uses the WADMP public API to delete a number of devices.
+Note that you can only delete a device if:
+* The device is not claimed by a company.
+  Use the "release_from_csv.py" script.
+* The device has never connected to (aka "registered" with) the Management Server.
+  A delete request will be rejected with the message "You cannot delete a device that has registered to a server."
+  The only option in this case is to ask a System Adinistrator to delete the device manually in the database.
 
 Ben Kinsella, January 2020
 Copyright Advantech B+B SmartWorx, 2020
 
-Version 0.2
+Version 0.4
 Last tested on Ubuntu 18.04 with Python 3.6, and on Windows 10 with Python 3.7
 """
 
@@ -115,14 +121,19 @@ def main(args):
 
     SESSION.headers.update({"Authorization": f"Bearer {user_token}"})
 
-    with open(args.CSVfile, newline="") as csvfile:
+    with open(args.CSVfile, encoding="UTF-8", newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)  # Skip the first row
         for row in csvreader:
-            logger.info(row)
+            logger.debug(row)
 
-            mac = row[2]
+            alias, serial_number, order_code, mac, imei, requested_type = row
+            logger.info(f"Alias {alias}")
+            logger.info(f"Serial Number {serial_number}")
+            logger.info(f"Order Code {order_code}")
             logger.info(f"MAC {mac}")
+            logger.info(f"IMEI {imei}")
+            logger.info(f"Type {requested_type}\n")
 
             delete_device(mac)
 

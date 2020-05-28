@@ -6,7 +6,7 @@ Python script which uses the WADMP public API to create a number of devices.
 Ben Kinsella, January 2020
 Copyright Advantech B+B SmartWorx, 2020
 
-Version 0.2
+Version 0.4
 Last tested on Ubuntu 18.04 with Python 3.6, and on Windows 10 with Python 3.7
 """
 
@@ -123,26 +123,19 @@ def main(args):
         types = get_device_types(family_id)
         all_types.extend(types)
 
-    with open(args.CSVfile, newline="") as csvfile:
+    with open(args.CSVfile, encoding="UTF-8", newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)  # Skip the first row
         for row in csvreader:
-            logger.info(row)
+            logger.debug(row)
 
-            serial_number = row[0]
+            alias, serial_number, order_code, mac, imei, requested_type = row
+            logger.info(f"Alias {alias}")
             logger.info(f"Serial Number {serial_number}")
-
-            order_code = row[1]
             logger.info(f"Order Code {order_code}")
-
-            mac = row[2]
             logger.info(f"MAC {mac}")
-
-            imei = row[3]
             logger.info(f"IMEI {imei}")
-
-            requested_type = row[4]
-            logger.info(f"Type {requested_type}")
+            logger.info(f"Type {requested_type}\n")
 
             type_id = None
             for existing_type in all_types:
@@ -157,6 +150,7 @@ def main(args):
                 continue
 
             device = {
+                "alias": alias,
                 "serial_number": serial_number,
                 "order_code": order_code,
                 "mac_address": mac,
@@ -209,7 +203,7 @@ def get_device_families(name=None):
     query = {"name": name}
     response = SESSION.get(url, params=query)
 
-    logger.info(response.status_code)
+    logger.debug(response.status_code)
     try:
         logger.debug(json.dumps(response.json(), indent=4, sort_keys=True))
     except ValueError:

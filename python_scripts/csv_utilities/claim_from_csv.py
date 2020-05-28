@@ -6,7 +6,7 @@ Python script which uses the WADMP public API to claim a number of devices to a 
 Ben Kinsella, January 2020
 Copyright Advantech B+B SmartWorx, 2020
 
-Version 0.2
+Version 0.4
 Last tested on Ubuntu 18.04 with Python 3.6, and on Windows 10 with Python 3.7
 """
 
@@ -137,27 +137,23 @@ def main(args):
         logger.error(f"Company {args.Company} not found!")
         sys.exit()
 
-    with open(args.CSVfile, newline="") as csvfile:
+    with open(args.CSVfile, encoding="UTF-8", newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)  # Skip the first row
         for row in csvreader:
-            logger.info(row)
+            logger.debug(row)
 
-            serial_number = row[0]
+            alias, serial_number, order_code, mac, imei, requested_type = row
+            logger.info(f"Alias {alias}")
             logger.info(f"Serial Number {serial_number}")
-
-            order_code = row[1]
             logger.info(f"Order Code {order_code}")
-
-            mac = row[2]
             logger.info(f"MAC {mac}")
-
-            imei = row[3]
             logger.info(f"IMEI {imei}")
+            logger.info(f"Type {requested_type}\n")
 
             device = {
+                "alias": alias,
                 "serial_number": serial_number,
-                "order_code": order_code,
                 "mac_address": mac,
                 "imei": imei,
                 "company_id": company_id,
@@ -197,14 +193,11 @@ def get_companies(name=None):
     """Retrieves the list of companies in the system
     """
     url = f"{BASE_URL}/{BASE_PATH}/companies"
-    logger.debug(
-        f"Sending GET request to {url} with:\n"
-        f"    name={name}\n"
-    )
+    logger.debug(f"Sending GET request to {url} with:\n" f"    name={name}\n")
     query = {"name": name}
     response = SESSION.get(url, params=query)
 
-    logger.info(response.status_code)
+    logger.debug(response.status_code)
     try:
         logger.debug(json.dumps(response.json(), indent=4, sort_keys=True))
     except ValueError:
@@ -220,7 +213,9 @@ def get_companies(name=None):
             logger.error(f"Didn't find what we expected in the JSON response!\n{err}")
             return None
     else:
-        logger.error(f"Failed to retrieve the list of Companies! {response.status_code}")
+        logger.error(
+            f"Failed to retrieve the list of Companies! {response.status_code}"
+        )
         return None
 
 
@@ -228,10 +223,7 @@ def claim_device(model=None):
     """Claim a device to a company.
     """
     url = f"{BASE_URL}/{BASE_PATH}/identity/devices/claim"
-    logger.debug(
-        f"\nSending POST request to {url} with:\n"
-        f"    model={model}\n"
-    )
+    logger.debug(f"\nSending POST request to {url} with:\n" f"    model={model}\n")
     response = SESSION.post(url, json=model)
 
     logger.debug(response.status_code)

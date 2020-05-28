@@ -6,7 +6,7 @@ Python script which uses the WADMP public API to release a number of devices fro
 Ben Kinsella, January 2020
 Copyright Advantech B+B SmartWorx, 2020
 
-Version 0.2
+Version 0.4
 Last tested on Ubuntu 18.04 with Python 3.6, and on Windows 10 with Python 3.7
 """
 
@@ -30,7 +30,9 @@ BASE_PATH = "api"
 def parse_args():
     """Parse command-line arguments
     """
-    parser = argparse.ArgumentParser(description="Release devices from a company on WA/DMP")
+    parser = argparse.ArgumentParser(
+        description="Release devices from a company on WA/DMP"
+    )
 
     # Positional arguments:
 
@@ -115,27 +117,22 @@ def main(args):
 
     SESSION.headers.update({"Authorization": f"Bearer {user_token}"})
 
-    with open(args.CSVfile, newline="") as csvfile:
+    with open(args.CSVfile, encoding="UTF-8", newline="") as csvfile:
         csvreader = csv.reader(csvfile, delimiter=",")
         next(csvreader)  # Skip the first row
         for row in csvreader:
-            logger.info(row)
+            logger.debug(row)
 
-            serial_number = row[0]
+            alias, serial_number, order_code, mac, imei, requested_type = row
+            logger.info(f"Alias {alias}")
             logger.info(f"Serial Number {serial_number}")
-
-            order_code = row[1]
             logger.info(f"Order Code {order_code}")
-
-            mac = row[2]
             logger.info(f"MAC {mac}")
-
-            imei = row[3]
             logger.info(f"IMEI {imei}")
+            logger.info(f"Type {requested_type}\n")
 
             device = {
                 "serial_number": serial_number,
-                "order_code": order_code,
                 "mac_address": mac,
                 "imei": imei,
             }
@@ -176,10 +173,7 @@ def release_device(model=None):
     This allows to to claim it to a different company, or to delete it.
     """
     url = f"{BASE_URL}/{BASE_PATH}/identity/devices/release"
-    logger.debug(
-        f"\nSending POST request to {url} with:\n"
-        f"    model={model}\n"
-    )
+    logger.debug(f"\nSending POST request to {url} with:\n" f"    model={model}\n")
     response = SESSION.post(url, json=model)
 
     logger.debug(response.status_code)
