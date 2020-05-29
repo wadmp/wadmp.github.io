@@ -62,7 +62,7 @@ The rest of this article will explain the procedure for this approach (Option 2)
 
 > Note:
   This procedure has been automated in a Jupyter Notebook that is available in our public GitHub repo:
-  https://github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb
+  [github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb](https://github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb)
 
 ## General case
 
@@ -82,10 +82,10 @@ Usually, Server 0 *is* Server 1. So in order to avoid over-complicating things, 
 
 All of the following steps can be performed using the public REST API of both servers.
 
-You can follow along manually by using the "OpenAPI" (Swagger) documentation page, for example https://api.wadmp.com.
+You can follow along manually by using the "OpenAPI" (Swagger) documentation page, for example [api.wadmp.com](https://api.wadmp.com).
 You should have an equivalent page for the second server instance.
 
-Alternatively, the whole procedure has been automated in a Jupyter Notebook that is available in our public GitHub repo: https://github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb
+Alternatively, the whole procedure has been automated in a Jupyter Notebook that is available in our public GitHub repo: [github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb](https://github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb)
 
 ### Step 1: Tell the Bootstrap Server to which Management Server the device should be directed
 
@@ -136,15 +136,15 @@ In the Bootstrap section, use the "GET /certs" endpoint to check what certificat
 
 ![GET /certs endpoint](../images/how-to-guides/move-a-device/GET_certs.png)
 
-| Permissions |
-| ----------- |
-| In order to use the "GET /certs" endpoint, you must have the "Device Management Server" permission on Server 1. |
-|                                                                                                                 |
-| In the WebAccess/DMP UI, you can view and modify the permissions of any user (on a per-company basis):          |
-|                                                                                                                 |
-| ![The permissions screen in the UI](../images/how-to-guides/move-a-device/permission.png)                       |
-|                                                                                                                 |
-| Alternatively, using the Public API you can view permissions using the "GET /users/{id}" endpoint and modify them using the "PUT /users/{id}/companies" endpoint. |
+> **Permissions**
+> 
+> In order to use the "GET /certs" endpoint, you must have the "Device Management Server" permission on Server 1.
+> 
+> In the WebAccess/DMP UI, you can view and modify the permissions of any user (on a per-company basis):
+> 
+> ![The permissions screen in the UI](../images/how-to-guides/move-a-device/permission.png)
+> 
+> Alternatively, using the Public API you can view permissions using the "GET /users/{id}" endpoint and modify them using the "PUT /users/{id}/companies" endpoint.
 
 The "GET /certs" request will return a JSON object like this:
 ```
@@ -156,7 +156,7 @@ The "GET /certs" request will return a JSON object like this:
 }
 ```
 
-"certs" is a Base64-encoded string. You can decode it using a web service like https://www.base64decode.org/
+"certs" is a Base64-encoded string. You can decode it using a web service like [www.base64decode.org/](https://www.base64decode.org/)
 
 When decoded, you will see that it is a PEM file containing several X.509 certificates, usually three:
 ```
@@ -183,108 +183,188 @@ z6CnvTPHCAIhAKcu4nnZydZg1PTYwOZjZ54P5t+eIJKr3cL1Ts3J9Shb
 -----END CERTIFICATE-----
 ```
 
-| Optional step |
-| ------------- |
-| If you are interested, you can split the file into individual certs and then use OpenSSL command-line tools to examine them: |
-|                                                                                                                              |
-| `$ openssl x509 -in <cert> -text -noout`                                                                                     |
-|                                                                                                                              |
-| You will see that the certificates are chained, and end in a self-signed root CA cert.                                       |
-| This is the trust anchor for device authentication.                                                                          |
+> **Optional step**
+> 
+> If you are interested, you can split the file into individual certs and then use OpenSSL command-line tools to examine them:
+> 
+> `$ openssl x509 -in <cert> -text -noout`
+> 
+> You will see that the certificates are chained, and end in a self-signed root CA cert.
+> This is the trust anchor for device authentication.
 
 
-| Background info. |
-| ---------------- |
-| If you are *really* interested, you should know that there is another way to check the Management Server's trust store, without using the API. |
-|                                                                                                                              |
-| During the TLS (v1.2) handshake, the server sends a "Certificate Request" message to the client.                             |
-| This message actually includes the list of the client Certificate Authorities that are in the server’s trust store.          |
-|                                                                                                                              |
-| If you use the `openssl s_client` command to connect to the Management Server, the output will include "Acceptable client certificate CA names", already decoded for you: |
-| `$ openssl s_client -connect management.wadmp.com:8883 -CAfile /opt/projects/pki/server/SCA0/certs/ca.cert.pem -tls1_2` |
-| `CONNECTED(00000005)` |
-| `depth=3 C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Root CA (SCA0), emailAddress = bbcmsmanager@advantech.com` |
-| `verify return:1` |
-| `depth=2 C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Intermediate Level-1 CA (SCA1_production), emailAddress = webaccessdmp@advantech.com` |
-| `verify return:1` |
-| `depth=1 C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com` |
-| `verify return:1` |
-| `depth=0 C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = "WADMP Management Server, Production Cloud", emailAddress = webaccessdmp@advantech.com` |
-| `verify return:1` |
-| `140025034838464:error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../ssl/record/rec_layer_s3.c:1528:SSL alert number 40` |
-| `---` |
-| `Certificate chain` |
-| ` 0 s:C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = "WADMP Management Server, Production Cloud", emailAddress = webaccessdmp@advantech.com` |
-| `   i:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com` |
-| ` 1 s:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com` |
-| `   i:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Intermediate Level-1 CA (SCA1_production), emailAddress = webaccessdmp@advantech.com` |
-| ` 2 s:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Intermediate Level-1 CA (SCA1_production), emailAddress = webaccessdmp@advantech.com` |
-| `   i:C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Root CA (SCA0), emailAddress = bbcmsmanager@advantech.com` |
-| `---` |
-| `Server certificate` |
-| `-----BEGIN CERTIFICATE-----` |
-| `MIIDSTCCAvCgAwIBAgICEAEwCgYIKoZIzj0EAwIwgbUxCzAJBgNVBAYTAklFMQ8w` |
-| `DQYDVQQIDAZHYWx3YXkxIDAeBgNVBAoMF0FkdmFudGVjaCBCK0IgU21hcnRXb3J4` |
-| `MQwwCgYDVQQLDANJb1QxOjA4BgNVBAMMMUZhbGNvbiBTZXJ2ZXIgQ0EgZm9yIFBy` |
-| `b2R1Y3Rpb24gKFNDQTJfcHJvZHVjdGlvbikxKTAnBgkqhkiG9w0BCQEWGndlYmFj` |
-| `Y2Vzc2RtcEBhZHZhbnRlY2guY29tMB4XDTE5MTAwMzEzMjc1NloXDTIwMTAwMjEz` |
-| `Mjc1NlowgcAxCzAJBgNVBAYTAklFMQ8wDQYDVQQIDAZHYWx3YXkxETAPBgNVBAcM` |
-| `CE9yYW5tb3JlMSAwHgYDVQQKDBdBZHZhbnRlY2ggQitCIFNtYXJ0V29yeDEMMAoG` |
-| `A1UECwwDSW9UMTIwMAYDVQQDDClXQURNUCBNYW5hZ2VtZW50IFNlcnZlciwgUHJv` |
-| `ZHVjdGlvbiBDbG91ZDEpMCcGCSqGSIb3DQEJARYad2ViYWNjZXNzZG1wQGFkdmFu` |
-| `dGVjaC5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASFexFsIrjfKwEufq1M` |
-| `qgHlosaPLhAerIAtEb4lnwBMr22b+7WhnCIqlDCyTteRuXGZYuftNEaGQL/xQkKr` |
-| `7/tRo4HiMIHfMAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDMGCWCGSAGG` |
-| `+EIBDQQmFiRPcGVuU1NMIEdlbmVyYXRlZCBTZXJ2ZXIgQ2VydGlmaWNhdGUwHQYD` |
-| `VR0OBBYEFGPi8TycsTD6SUrV3BwDkb5/XugjMB8GA1UdIwQYMBaAFCucwq3rviWz` |
-| `QYQ2/+o0S3xrtqRZMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcD` |
-| `ATAlBgNVHREEHjAcghRtYW5hZ2VtZW50LndhZG1wLmNvbYcEDU/2KTAKBggqhkjO` |
-| `PQQDAgNHADBEAiA0M6lBmeiXfW9wmD/UOptPd+jeRAd+H4xutW3ZUBOwjAIgBKeD` |
-| `ZD/bDFx1a1mT3+F977T5LQNWMUxxLLtJsQDtWDo=` |
-| `-----END CERTIFICATE-----` |
-| `subject=C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = "WADMP Management Server, Production Cloud", emailAddress = webaccessdmp@advantech.com` |
-|  |
-| `issuer=C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com` |
-|  |
-| `---` |
-| `Acceptable client certificate CA names` |
-| `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device CA for Production (DCA2_production), emailAddress = webaccessdmp@advantech.com` |
-| `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device Intermediate Level-1 CA (DCA1_production), emailAddress = webaccessdmp@advantech.com` |
-| `C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device Root CA (DCA0), emailAddress = bbcmsmanager@advantech.com` |
-| `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device CA for Development Environment (DCA2_develop), emailAddress = bbcmsmanager@advantech.com` |
-| `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Test Device Intermediate Level-1 CA (DCA1_test), emailAddress = bbcmsmanager@advantech.com` |
-| `C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon User CA (UCA_Advantech1), emailAddress = ben.kinsella@advantech.com` |
-| `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = WADMP Device CA for Staging, emailAddress = webaccessdmp@advantech.com` |
-| `Client Certificate Types: RSA sign, DSA sign, ECDSA sign` |
-| `Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA224:ECDSA+SHA1:RSA+SHA224:RSA+SHA1:DSA+SHA224:DSA+SHA1:DSA+SHA256:DSA+SHA384:DSA+SHA512` |
-| `Shared Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA224:ECDSA+SHA1:RSA+SHA224:RSA+SHA1:DSA+SHA224:DSA+SHA1:DSA+SHA256:DSA+SHA384:DSA+SHA512` |
-| `Peer signing digest: SHA256` |
-| `Peer signature type: ECDSA` |
-| `Server Temp Key: X25519, 253 bits` |
-| `---` |
-| `SSL handshake has read 3867 bytes and written 328 bytes` |
-| `Verification: OK` |
-| `---` |
-| `New, TLSv1.2, Cipher is ECDHE-ECDSA-AES256-GCM-SHA384` |
-| `Server public key is 256 bit` |
-| `Secure Renegotiation IS supported` |
-| `Compression: NONE` |
-| `Expansion: NONE` |
-| `No ALPN negotiated` |
-| `SSL-Session:` |
-| `    Protocol  : TLSv1.2` |
-| `    Cipher    : ECDHE-ECDSA-AES256-GCM-SHA384` |
-| `    Session-ID: ` |
-| `    Session-ID-ctx: ` |
-| `    Master-Key: C92E036601E64921EA5F20D39A0A9FF53A3B6BDB709DD2819A4AF7A968D1E6F0AF7961593E0792139B7B15EEC5340E78` |
-| `    PSK identity: None` |
-| `    PSK identity hint: None` |
-| `    SRP username: None` |
-| `    Start Time: 1590769106` |
-| `    Timeout   : 7200 (sec)` |
-| `    Verify return code: 0 (ok)` |
-| `    Extended master secret: yes` |
-| `---` |
+> Background info.
+> 
+> If you are *really* interested :), you should know that there is another way to check the Management Server's trust store, without using the API.
+> 
+> During the TLS (v1.2) handshake, the server sends a "Certificate Request" message to the client.
+> This message actually includes the list of the client Certificate Authorities that are in the server’s trust store.
+> 
+> If you use the `openssl s_client` command to connect to the Management Server, the output will include "Acceptable client certificate CA names", already decoded for you:
+> 
+> `$ openssl s_client -connect management.wadmp.com:8883 -CAfile /opt/projects/pki/server/SCA0/certs/ca.cert.pem -tls1_2`
+> 
+> `CONNECTED(00000005)`
+> 
+> `depth=3 C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Root CA (SCA0), emailAddress = bbcmsmanager@advantech.com`
+> 
+> `verify return:1`
+> 
+> `depth=2 C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Intermediate Level-1 CA (SCA1_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> `verify return:1`
+> 
+> `depth=1 C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> `verify return:1`
+> 
+> `depth=0 C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = "WADMP Management Server, Production Cloud", emailAddress = webaccessdmp@advantech.com`
+> 
+> `verify return:1`
+> 
+> `140025034838464:error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure:../ssl/record/rec_layer_s3.c:1528:SSL alert number 40`
+> 
+> `---`
+> 
+> `Certificate chain`
+> 
+> ` 0 s:C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = "WADMP Management Server, Production Cloud", emailAddress = webaccessdmp@advantech.com`
+> 
+> `   i:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> ` 1 s:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> `   i:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Intermediate Level-1 CA (SCA1_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> ` 2 s:C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Intermediate Level-1 CA (SCA1_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> `   i:C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server Root CA (SCA0), emailAddress = bbcmsmanager@advantech.com`
+> 
+> `---`
+> 
+> `Server certificate`
+> 
+> `-----BEGIN CERTIFICATE-----`
+> 
+> `MIIDSTCCAvCgAwIBAgICEAEwCgYIKoZIzj0EAwIwgbUxCzAJBgNVBAYTAklFMQ8w`
+> 
+> `DQYDVQQIDAZHYWx3YXkxIDAeBgNVBAoMF0FkdmFudGVjaCBCK0IgU21hcnRXb3J4`
+> 
+> `MQwwCgYDVQQLDANJb1QxOjA4BgNVBAMMMUZhbGNvbiBTZXJ2ZXIgQ0EgZm9yIFBy`
+> 
+> `b2R1Y3Rpb24gKFNDQTJfcHJvZHVjdGlvbikxKTAnBgkqhkiG9w0BCQEWGndlYmFj`
+> 
+> `Y2Vzc2RtcEBhZHZhbnRlY2guY29tMB4XDTE5MTAwMzEzMjc1NloXDTIwMTAwMjEz`
+> 
+> `Mjc1NlowgcAxCzAJBgNVBAYTAklFMQ8wDQYDVQQIDAZHYWx3YXkxETAPBgNVBAcM`
+> 
+> `CE9yYW5tb3JlMSAwHgYDVQQKDBdBZHZhbnRlY2ggQitCIFNtYXJ0V29yeDEMMAoG`
+> 
+> `A1UECwwDSW9UMTIwMAYDVQQDDClXQURNUCBNYW5hZ2VtZW50IFNlcnZlciwgUHJv`
+> 
+> `ZHVjdGlvbiBDbG91ZDEpMCcGCSqGSIb3DQEJARYad2ViYWNjZXNzZG1wQGFkdmFu`
+> 
+> `dGVjaC5jb20wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASFexFsIrjfKwEufq1M`
+> 
+> `qgHlosaPLhAerIAtEb4lnwBMr22b+7WhnCIqlDCyTteRuXGZYuftNEaGQL/xQkKr`
+> 
+> `7/tRo4HiMIHfMAkGA1UdEwQCMAAwEQYJYIZIAYb4QgEBBAQDAgZAMDMGCWCGSAGG`
+> 
+> `+EIBDQQmFiRPcGVuU1NMIEdlbmVyYXRlZCBTZXJ2ZXIgQ2VydGlmaWNhdGUwHQYD`
+> 
+> `VR0OBBYEFGPi8TycsTD6SUrV3BwDkb5/XugjMB8GA1UdIwQYMBaAFCucwq3rviWz`
+> 
+> `QYQ2/+o0S3xrtqRZMA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcD`
+> 
+> `ATAlBgNVHREEHjAcghRtYW5hZ2VtZW50LndhZG1wLmNvbYcEDU/2KTAKBggqhkjO`
+> 
+> `PQQDAgNHADBEAiA0M6lBmeiXfW9wmD/UOptPd+jeRAd+H4xutW3ZUBOwjAIgBKeD`
+> 
+> `ZD/bDFx1a1mT3+F977T5LQNWMUxxLLtJsQDtWDo=`
+> 
+> `-----END CERTIFICATE-----`
+> 
+> `subject=C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = "WADMP Management Server, Production Cloud", emailAddress = webaccessdmp@advantech.com`
+> 
+> `issuer=C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Server CA for Production (SCA2_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> `---`
+> 
+> **`Acceptable client certificate CA names`**
+> 
+> `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device CA for Production (DCA2_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device Intermediate Level-1 CA (DCA1_production), emailAddress = webaccessdmp@advantech.com`
+> 
+> `C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device Root CA (DCA0), emailAddress = bbcmsmanager@advantech.com`
+> 
+> `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Device CA for Development Environment (DCA2_develop), emailAddress = bbcmsmanager@advantech.com`
+> 
+> `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon Test Device Intermediate Level-1 CA (DCA1_test), emailAddress = bbcmsmanager@advantech.com`
+> 
+> `C = IE, ST = Galway, L = Oranmore, O = "Advantech B+B SmartWorx", OU = IoT, CN = Falcon User CA (UCA_Advantech1), emailAddress = ben.kinsella@advantech.com`
+> 
+> `C = IE, ST = Galway, O = "Advantech B+B SmartWorx", OU = IoT, CN = WADMP Device CA for Staging, emailAddress = webaccessdmp@advantech.com`
+> 
+> `Client Certificate Types: RSA sign, DSA sign, ECDSA sign`
+> 
+> `Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA224:ECDSA+SHA1:RSA+SHA224:RSA+SHA1:DSA+SHA224:DSA+SHA1:DSA+SHA256:DSA+SHA384:DSA+SHA512`
+> 
+> `Shared Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA224:ECDSA+SHA1:RSA+SHA224:RSA+SHA1:DSA+SHA224:DSA+SHA1:DSA+SHA256:DSA+SHA384:DSA+SHA512`
+> 
+> `Peer signing digest: SHA256`
+> 
+> `Peer signature type: ECDSA`
+> 
+> `Server Temp Key: X25519, 253 bits`
+> 
+> `---`
+> 
+> `SSL handshake has read 3867 bytes and written 328 bytes`
+> 
+> `Verification: OK`
+> 
+> `---`
+> 
+> `New, TLSv1.2, Cipher is ECDHE-ECDSA-AES256-GCM-SHA384`
+> 
+> `Server public key is 256 bit`
+> 
+> `Secure Renegotiation IS supported`
+> 
+> `Compression: NONE`
+> 
+> `Expansion: NONE`
+> 
+> `No ALPN negotiated`
+> 
+> `SSL-Session:`
+> 
+> `    Protocol  : TLSv1.2`
+> 
+> `    Cipher    : ECDHE-ECDSA-AES256-GCM-SHA384`
+> 
+> `    Session-ID: `
+> 
+> `    Session-ID-ctx: `
+> 
+> `    Master-Key: C92E036601E64921EA5F20D39A0A9FF53A3B6BDB709DD2819A4AF7A968D1E6F0AF7961593E0792139B7B15EEC5340E78`
+> 
+> `    PSK identity: None`
+> 
+> `    PSK identity hint: None`
+> 
+> `    SRP username: None`
+> 
+> `    Start Time: 1590769106`
+> 
+> `    Timeout   : 7200 (sec)`
+> 
+> `    Verify return code: 0 (ok)`
+> 
+> `    Extended master secret: yes`
+> 
+> `---`
 
 
 #### Step 2b
@@ -299,7 +379,7 @@ Decode the "certs" string as before.
 
 Any certificate in Server 1 that is NOT already in Server 2 must be added to Server 2.
 
-Copy and paste the concatenated certificates into a web service like https://www.base64encode.org/. The order of the certificates doesn't matter.
+Copy and paste the concatenated certificates into a web service like [www.base64encode.org/](https://www.base64encode.org/). The order of the certificates doesn't matter.
 
 **_Using the Public API of Server 2 ..._**
 
@@ -314,19 +394,17 @@ i.e. Pass the following JSON object in the body:
 
 ![GET /certs endpoint](../images/how-to-guides/move-a-device/GET_certs.png)
 
-| Permissions |
-| ----------- |
-| In order to use the "PUT /certs" endpoint, you must be a SysAdmin on Server 2.                 |
-|                                                                                                |
-| * If your Server 2 instance is an On-Premises installation of WebAccess/DMP,                   |
-|   then there will be a SysAdmin user within your organisation.                                 |
-| * If your Server 2 instance is the public cloud installation of WebAccess/DMP (www.wadmp.com), |
-|   then only the Advantech SysAdmin has permission to perform this step.                        |
+> Permissions
+> 
+> In order to use the "PUT /certs" endpoint, you must be a SysAdmin on Server 2.
+> 
+> * If your Server 2 instance is an On-Premises installation of WebAccess/DMP, then there will be a SysAdmin user within your organisation.
+> 
+> * If your Server 2 instance is the public cloud installation of WebAccess/DMP (www.wadmp.com), then only the Advantech SysAdmin has permission to perform this step.
 
-| Optional step |
-| ------------- |
-| If you used the `openssl s_client` command earlier, you can run it again now                    |
-| and you should find the new client CA(s) listed under "Acceptable client certificate CA names". |
+> Optional step
+> 
+> If you used the `openssl s_client` command earlier, you can run it again now and you should find the new client CA(s) listed under "Acceptable client certificate CA names".
 
 ### Step 3: Trigger a new Bootstrap procedure
 
