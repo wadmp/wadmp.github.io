@@ -193,7 +193,7 @@ z6CnvTPHCAIhAKcu4nnZydZg1PTYwOZjZ54P5t+eIJKr3cL1Ts3J9Shb
 > This is the trust anchor for device authentication.
 
 
-> Background info.
+> **Background info.**
 > 
 > If you are *really* interested :), you should know that there is another way to check the Management Server's trust store, without using the API.
 > 
@@ -394,7 +394,7 @@ i.e. Pass the following JSON object in the body:
 
 ![GET /certs endpoint](../images/how-to-guides/move-a-device/GET_certs.png)
 
-> Permissions
+> **Permissions**
 > 
 > In order to use the "PUT /certs" endpoint, you must be a SysAdmin on Server 2.
 > 
@@ -402,7 +402,7 @@ i.e. Pass the following JSON object in the body:
 > 
 > * If your Server 2 instance is the public cloud installation of WebAccess/DMP (www.wadmp.com), then only the Advantech SysAdmin has permission to perform this step.
 
-> Optional step
+> **Optional step**
 > 
 > If you used the `openssl s_client` command earlier, you can run it again now and you should find the new client CA(s) listed under "Acceptable client certificate CA names".
 
@@ -421,7 +421,5 @@ It will attempt to connect to Server 2 immediately.
 The connection will be successful if:
 
 1. The X.509 certificates were copied to Server 2 as described in this procedure;
-
-and
 
 2. The device identity exists in Server 2. i.e. Use the "Create Device" screen in the WebAccess/DMP UI, or the "POST /identity/devices" endpoint in the API.
