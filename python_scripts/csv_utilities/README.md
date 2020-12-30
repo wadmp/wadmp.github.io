@@ -153,7 +153,66 @@ The `example.csv` file is provided to illustrate the expected schema.
 - The first row is ignored.
 - Edit the rest of the file with your own device information.
 
-> Note: We **highly** recommend including the IMEI number when creating cellular devices.
+
+#### Alias
+
+Alias is an optional string that will be displayed in the WA/DMP User Interface.
+
+It allows the user to identify a device using a more human-friendly name.
+
+You should only specify an alias when *claiming* a device, not when *creating* it!
+An alias only has meaning within the context of the company that claims it.
+
+#### Serial No.
+
+This is printed on the physical label of the device.
+
+Serial No. is mandatory when creating, claiming, or releasing a device.
+
+#### Order Code
+
+Order Code is an optional string.
+
+#### MAC
+
+This is the MAC address of the *primary ethernet* interface on the device.
+It is also printed on the physical label of the device.
+
+MAC is mandatory when creating, claiming, releasing, or deleting a device.
+
+#### IMEI
+
+IMEI stands for "International Mobile Equipment Identity". It is the unique number of the cellular module in the device, and is available on the physical label of the device.
+
+When creating a device, IMEI is optional. However. we **highly** recommend including the IMEI number when creating cellular devices.
+
+If the IMEI number was included when creating a device, then the IMEI number must be included when claiming or releasing that device later.
+
+#### Type
+
+In order to avoid any ambiguity with various names that are used in sales and marketing (e.g. product type, product name, order code, etc.), the string in the Type column should be the name of the *firmware* used by the device.
+
+(ICR-1601 devices are an exception, as their firmware cannot be changed via WA/DMP)
+
+| Product Platform | Product Family | Product Name | WA/DMP Device Type |
+| ---------------- | -------------- | ------------ | ------------------ |
+| lite             | ICR-1601       | ICR-1601G    | ICR-1601G          |
+|                  |                | ICR-1601W    | ICR-1601W          |
+| v2               | Conel v2       | LR77 v2      | LR77-v2            |
+|                  |                | LR77 v2L     | LR77-v2L           |
+|                  |                | UR5i v2      | UR5i-v2            |
+|                  |                | UR5i v2L     | UR5i-v2L           |
+|                  |                | XR5i v2      | XR5i-v2            |
+|                  |                | XR5i v2E     | XR5i-v2e           |
+| v3               | SmartStart     | SL304, SL305, SL306 | SPECTRE-v3L-LTE |
+|                  |                | SL302        | SPECTRE-v3L-LTE-US |
+|                  | SmartFlex      | SR300        | SPECTRE-v3-ERT     |
+|                  |                | SR303, SR304, SR306, SR307, SR308, SR309 | SPECTRE-v3-LTE |
+|                  |                | SR305        | SPECTRE-v3-LTE-US  |
+|                  | SmartMotion    | ST353, ST355 | SPECTRE-v3T-LTE    |
+|                  | ICR-3200       | ICR-3211     | ICR-321x           |
+|                  |                | ICR-3231, ICR-3232 | ICR-323x     |
+|                  |                | ICR-3241     | ICR-324x           |
 
 ### Company
 
@@ -172,6 +231,7 @@ There are 2 different `loglevel` arguments:
 The logfile name is automatically based on the script name:
 - `create_from_csv.log`
 - `claim_from_csv.log`
+- `release_from_csv.log`
 - `delete_from_csv.log`
 
 Python's logging module has a set of default loglevels. The higher the level, the fewer messages that will be logged:

@@ -37,7 +37,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | Router configuration and Health reporting |   | InfluxDB schema |
 | [Understanding OAuth](/explanations-discussions/understanding-oauth.md) |   |   |
 | Understanding Async API |   |   |
-| Cellular Data Usage |   |   |
+| [Cellular Data Usage](/explanations-discussions/data-usage.md) |   |   |
 | AssureAuth™ Security Whitepaper |   |   |
 | [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
 | Grouping and Tagging |   |   |
@@ -55,6 +55,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | :------------------------------------------: | :---------------: |
 | [Version 2.1.0](/release_notes/2.1.0.md)     | 9th April 2020    |
 | [Version 2.1.1](/release_notes/2.1.1.md)     | 24th April 2020   |
+| [Version 2.2.0](/release_notes/2.2.0.md)     | 8th June 2020     |
 
 ### Support or Contact
 

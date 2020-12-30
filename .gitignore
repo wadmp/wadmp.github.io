@@ -105,6 +105,11 @@ celerybeat.pid
 .env
 .venv
 env/
+env3/
+env3.7/
+notebook_env3.7/
+lab_env3.7/
+temp_env/
 venv/
 ENV/
 env.bak/
@@ -127,3 +132,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Misc
+jupyter_notebooks/.vscode/settings.json
+jupyter_notebooks/output.csv
+python_scripts/csv_utilities/wise_devices.csv
+python_scripts/csv_utilities/wise_devices_2.csv
+python_scripts/csv_utilities/test_rack.csv
+python_scripts/bulk_configure/all_devices.csv
+python_scripts/bulk_configure/get_apps.csv
+python_scripts/bulk_configure/get_devices.csv
+python_scripts/bulk_configure/problem_devices.csv
+python_scripts/bulk_configure/get_settings/

@@ -79,7 +79,11 @@ You can run all of these notebooks on [Binder](https://mybinder.org/):
 ### Interactive widgets
 All scripts should work on Binder.
 
-In the top level GitHub directory, we provide a `postBuild` file and an `environment.yml` file. These are used by Binder to build the environment.
+In the top level GitHub directory, we provide an `environment.yml` file and a `postBuild` file. These are used by Binder to build the environment.
+
+Currently, our files are copied from the [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet) project repo.
+
+For more details, consult [the Binder User Guide](https://mybinder.readthedocs.io/en/latest/config_files.html)
 
 ## Running on Colab
 You can run some of these notebooks on Google [Colab](https://colab.research.google.com/notebooks/intro.ipynb) (aka Colaboratory).
