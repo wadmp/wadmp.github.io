@@ -44,26 +44,33 @@ class CloningTool:
 
     @staticmethod               
     def clone_firmware_settings(api, device1, device2):
-        app_id = device1.firmware['application_version']['id']
+        src_app_id = device1.firmware['application_version']['id']
+        dst_app_id = device2.firmware['application_version']['id']
         app_name = "firmware" # Only relevant for printing errors.
-        CloningTool._clone_app_settings(api, device1.mac, device2.mac, app_id, app_name)
+        CloningTool._clone_app_settings(api, device1.mac, device2.mac, src_app_id, dst_app_id, app_name)
 
     @staticmethod
     def clone_apps_settings(api, device1, device2):
         for app in device1.apps_installed:
-            app_id   = app['application_version']['id']
+            app_version_id   = app['application_version']['id']
             app_name = app['application_version']['application']['name'] # Only relevant for printing errors.
-            CloningTool._clone_app_settings(api, device1.mac, device2.mac, app_id, app_name)
+            CloningTool._clone_app_settings(api, device1.mac, device2.mac, app_version_id, app_version_id, app_name)
 
+    ############################################################
+    # This method can be used for cloning firmware/user module
+    # settings between 2 devices.
+    # The reason for having 'src' and 'dst' version_id here is  
+    # to enable cloning settings between different versions of 
+    # firmware (each version of firmware has its own version_id).
     @staticmethod
-    def _clone_app_settings(api, mac1, mac2, app_version_id, app_name):
-        resp = api.device.get_settings(mac1, app_version_id)
+    def _clone_app_settings(api, mac1, mac2, src_app_version_id, dst_app_version_id, app_name):
+        resp = api.device.get_settings(mac1, src_app_version_id)
         if resp.status_code != requests.codes['ok']:
             raise RuntimeError(f"Getting settings of {app_name} failed [response code: {resp.status_code}]")
         sections = []
         for section in resp.json()['data']:
             sections.append({'section_id': section['section_id'], 'set_config': section['desired_configuration']})
         print(f"Updating settings of {app_name}.")
-        resp = api.device.update_settings(mac2, app_version_id, sections)
+        resp = api.device.update_settings(mac2, dst_app_version_id, sections)
         if resp.status_code != requests.codes['ok']:
-            raise RuntimeError(f"Update of {app_name} settings failed [response code: {resp.status_code}]")
+            raise RuntimeError(f"Update of {app_name} settings failed ({resp.status_code}): {resp.json()}")

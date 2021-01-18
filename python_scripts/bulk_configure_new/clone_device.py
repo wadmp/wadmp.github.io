@@ -1,3 +1,18 @@
+#!/usr/bin/python3
+"""
+This script uses the public API to copy applications, firmware and 
+their settings between devices.
+
+Examples of usage:
+    python3 ./clone_device.py --src-mac 00:AA:AA:AA:AA:AA --dest-mac 00:BB:BB:BB:BB:BB --username test@advantech.com --password 123456
+    python3 ./clone_device.py --src-mac 00:AA:AA:AA:AA:AA --dest-csv ./xxx.csv --username test@advantech.com --password 123456
+
+Example of the .csv file can be found at:
+   ./resources/clone_device_test.csv
+
+Ondrej Fabianek, December 2020
+Version 0.3
+"""
 import requests
 import argparse
 import re

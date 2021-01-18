@@ -121,6 +121,12 @@ class ApiConsumer:
     def login(self, username, password):
         response = self._auth.authorize(username, password)
         if response.status_code != requests.codes['ok']:
-            raise RuntimeError("Authorization Failed (ERR: " + str(response.status_code)+") "+str(response.json()))             
+            if response.status_code == 400: # Invalid username/password
+                raise RuntimeError("Invalid username or password.")
+            elif response.status_code == 405: # 'Not Allowed'
+                # Note: response.json() throws an exception when err code is 405. So we must not use it here.
+                raise RuntimeError(f"Invalid URL '{self._auth.base_url_auth}'.")
+            else:
+                raise RuntimeError(f"Authorization failed: '{str(response.status_code)} -> {str(response.json())}")             
         auth_token = response.json()["access_token"]
         self.device.set_auth_token(auth_token)
