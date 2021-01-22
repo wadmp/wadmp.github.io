@@ -81,9 +81,13 @@ class ApiDevice:
         response = self.session.delete(url, headers=header)
         return response
 
-    def update_settings_section(self, mac, app_version_id, section_id, data):
+    def update_settings_section(self, mac, app_version_id, section_id, set_config):
         url = f"{self.base_url_api}/management/devices/{mac}/apps/{app_version_id}/settings/{section_id}"
         header = {'Authorization': f'Bearer {self.auth_token}'}
+        data = {
+            "section_id" : section_id,
+            "set_config" : set_config
+        }
         response = self.session.put(url, headers=header, json=data)
         return response
 

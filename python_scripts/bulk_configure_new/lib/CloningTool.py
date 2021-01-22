@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 class CloningTool:
 
@@ -72,5 +73,15 @@ class CloningTool:
             sections.append({'section_id': section['section_id'], 'set_config': section['desired_configuration']})
         print(f"Updating settings of {app_name}.")
         resp = api.device.update_settings(mac2, dst_app_version_id, sections)
+
+        # TODO: This is a temporary workaround for GEN2-2177:
+        # Update of configuration often fails with error 500 (internal error), 
+        # when done shortly after updating firmware. So if we receive this error,
+        # we will sleep for a while and then try again. Remove this IF statement
+        #  and its content after the bug is fixed on the server.
+        if resp.status_code == 500: 
+            time.sleep(5)
+            resp = api.device.update_settings(mac2, dst_app_version_id, sections)
+            
         if resp.status_code != requests.codes['ok']:
             raise RuntimeError(f"Update of {app_name} settings failed ({resp.status_code}): {resp.json()}")
