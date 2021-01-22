@@ -6,4 +6,3 @@ class DeviceModel:
         self.firmware       = list(filter(lambda x: x['application_version']['application']['is_firmware'] == True, apps))[0]
         self.apps_installed = list(filter(lambda x: x['application_version']['application']['is_firmware'] == False and \
                                                     x['application_version']['application']['name'] != 'wadmp_client', apps))
-            
