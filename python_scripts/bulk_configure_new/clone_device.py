@@ -10,7 +10,12 @@ Examples of usage:
 Example of the .csv file can be found at:
    ./resources/clone_device_test.csv
 
-Ondrej Fabianek, December 2020
+Format of the CSV file:
+    * It must contain a column called "Mac Address"
+    * Columns for configuring site specific settings should be called: "${ROUTERAPP_NAME|firmware}:SETTING_NAME".
+      Examples of column name: "$firmware:SMTP_USERNAME"
+
+Ondrej Fabianek, January 2021
 Version 0.3
 """
 import requests
@@ -191,7 +196,7 @@ def csv_to_dict(csv_file):
 # the column with mac addresses.
 def extract_site_specific_changes(csv_dict):
     # Item[0] is name of the key and Item[1] would be the value.
-    return dict(filter(lambda item: re.match(r'^\$[0-9]+:[0-9]+:[A-Z_]+$', item[0]) or item[0] == COL_MAC, csv_dict.items()))
+    return dict(filter(lambda item: re.match(r'^\$[a-z]+:[A-Z_]+$', item[0]) or item[0] == COL_MAC, csv_dict.items()))
 
 #########################################################
 # Extract only those values from the sites_specific_dict
@@ -204,20 +209,43 @@ def get_site_specific_by_mac(mac, site_specific_dict):
     return result
 
 #########################################################
+# 
+def get_section_id_by_settingname(api, mac, app_version_id, setting_name):
+    resp = api.device.get_settings(mac, app_version_id)
+    if resp.status_code != requests.codes['ok']:
+        raise RuntimeError(f"Getting settings of device {mac} failed [response code: {resp.status_code}]")
+    for section in resp.json()['data']:
+        if setting_name in section['reported_configuration']:
+            return section['section_id']
+
+#########################################################
+# 
+def get_app_version_id_by_appname(dst_device, app_name):
+    if app_name == 'firmware':
+        return dst_device.firmware['application_version']['id']
+
+    for app in dst_device.apps_installed:
+        if app['application_version']['application']['name'] == app_name:
+            return app['application_version']['id']
+    raise Exception(f'Application "{app_name}" was not found on router.')
+
+#########################################################
 # Updates device configuration (firmware/user modules) by 
 # the contents of the changes_dict.
-def set_site_specific_changes(api, mac, changes_dict):
+def set_site_specific_changes(api, dst_device, changes_dict):
     sections=[]
     print("Applying site specific changes:")
     for key, value in changes_dict.items():
         if not value or key == COL_MAC:
             continue
-        app_version_id, section_id, setting_name = key.split(':')
-        app_version_id = app_version_id[1:] # Remove starting '$' character
+        app_name, setting_name = key.split(':')
+        app_name = app_name[1:] # Remove starting '$' character
         set_config = setting_name+"="+value+"\n"
+        app_version_id = get_app_version_id_by_appname(dst_device, app_name)
+        section_id = get_section_id_by_settingname(api, dst_device.mac, app_version_id, setting_name)
         sections.append({'section_id': section_id, 'set_config': set_config})
         print(set_config[:-1])
-    resp = api.device.update_settings(mac, app_version_id, sections)
+    resp = api.device.update_settings(dst_device.mac, app_version_id, sections)
     if resp.status_code != requests.codes['ok']:
         raise RuntimeError(f"Site specific setting {set_config[:-1]} was not applied ({resp.status_code}) {resp.text}")
     
@@ -271,15 +299,19 @@ if __name__ == "__main__":
 
         if not args.skip_fw_version:
             CloningTool.clone_firmware(api, src_device, dst_device)
-        
+            dst_device = get_device_data(api, dst_device.mac)
+
         if not args.skip_fw_config:
             CloningTool.clone_firmware_settings(api, src_device, dst_device)
-        
+            dst_device = get_device_data(api, dst_device.mac)
+
         if not args.skip_apps:
             CloningTool.clone_apps(api, src_device, dst_device)
+            dst_device = get_device_data(api, dst_device.mac)
             if not args.skip_apps_config:
                 CloningTool.clone_apps_settings(api, src_device, dst_device)
+                dst_device = get_device_data(api, dst_device.mac)
 
         if len(site_specific_dict.keys()) > 1: # If CSV is used, this dict will at minimum contain 'Mac Address' column.
             ss_dict = get_site_specific_by_mac(dst_device.mac, site_specific_dict)
-            set_site_specific_changes(api, dst_device.mac, ss_dict)
+            set_site_specific_changes(api, dst_device, ss_dict)
