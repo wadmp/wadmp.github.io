@@ -13,7 +13,7 @@ Example of the .csv file can be found at:
 Format of the CSV file:
     * It must contain a column called "Mac Address"
     * Columns for configuring site specific settings should be called: "${ROUTERAPP_NAME|firmware}:SETTING_NAME".
-      Examples of column name: "$firmware:SMTP_USERNAME"
+      Example of column name: "$firmware:SMTP_USERNAME"
 
 Ondrej Fabianek, January 2021
 Version 0.3
@@ -215,15 +215,15 @@ def get_section_id_by_settingname(api, mac, app_version_id, setting_name):
     if resp.status_code != requests.codes['ok']:
         raise RuntimeError(f"Getting settings of device {mac} failed [response code: {resp.status_code}]")
     for section in resp.json()['data']:
-        if setting_name in section['reported_configuration']:
+        if setting_name+'=' in section['reported_configuration']:
             return section['section_id']
+    raise Exception(f'Section id not found for {setting_name}.')
 
 #########################################################
 # 
 def get_app_version_id_by_appname(dst_device, app_name):
     if app_name == 'firmware':
         return dst_device.firmware['application_version']['id']
-
     for app in dst_device.apps_installed:
         if app['application_version']['application']['name'] == app_name:
             return app['application_version']['id']
