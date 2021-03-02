@@ -14,8 +14,8 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [General structure of the UI](/tutorials/ui-general-structure.md) |      | How to login with my own scripts           |
 | [Create new Companies](/tutorials/create-company.md)          |      | How to pre-configure all my devices              |
 | [Create more Users](/tutorials/create-users.md)               |      | How to add a custom User Module                              |
-| [Claim a Device to your Company](/tutorials/claim-device.md)  |      | [How to move a device to another Management Server](/how-tos/move-a-device.md) |
-| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md) |      | How to create devices from a list and claim them |
+| [Claim a Device to your Company](/tutorials/claim-device.md)  |       | [How to move a device to another Management Server](/how-tos/move-a-device.md) |
+| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)| | How to create devices from a list and claim them |  
 | [Configuring User Modules](/tutorials/configuring-user-modules.md) |      |                                                         |
 | [Configuring online and offline devices](/tutorials/configuring-devices.md) |      |                                                |
 | How the Dynamic Documentation works                           |      |                                                              |
@@ -40,6 +40,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Cellular Data Usage](/explanations-discussions/data-usage.md) |   |   |
 | AssureAuth™ Security Whitepaper |   |   |
 | [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
+| [Billing Explained](/tutorials/billing.md)    |      |  |
 | Grouping and Tagging |   |   |
 | Firmware and User Module versions |   |   |
 | Monitoring a Device |   |   |
@@ -56,6 +57,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Version 2.1.0](/release_notes/2.1.0.md)     | 9th April 2020    |
 | [Version 2.1.1](/release_notes/2.1.1.md)     | 24th April 2020   |
 | [Version 2.2.0](/release_notes/2.2.0.md)     | 8th June 2020     |
+<!--| [Version 2.3.0](/release_notes/2.3.0.md)     | March 2021     |-->
 
 ### Support or Contact
 
