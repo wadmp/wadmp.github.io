@@ -2,18 +2,17 @@
 
 ## Types of Companies
 
-After new sign up or new company is created, the company type is automatically set to "Free". 
+After a new company is created, the company type is automatically set to "Free". 
 Company type can be:
 
 | Company type |   | Features     |
 |------|----------------------------------------------------------|-------------------------------------------|
 | Free | ![Free company type](/images/tutorials/billing/free.png) | Can claim and manage up to 5 devices.     |
-| Trial | ![Trial company type](/images/tutorials/billing/trial.png) | Can claim and manage an unlimited number of devices and use the API for free during a trial period.     |
 | Premium | ![Premium company type](/images/tutorials/billing/premium.png)        | Can claim and manage an unlimited number of devices and use the API. Billed monthly.    |
 
 
 
-Company type can be changed only for parent company, so the child company type is given by it's parent company type.
+Company type can be changed only for parent company. Child companies inherit the type from their parent.
 
 ![Request upgrade](/images/tutorials/billing/parents.png "Request upgrade")
 
@@ -21,10 +20,11 @@ If you are a member of parent company, you can also see your company type right 
 
 ![Request upgrade](/images/tutorials/billing/user_info.png "User info")
 
+&nbsp;    
+&nbsp; 
+## Request Upgrade to Premium
 
-## Request Upgrade to Trial/Premium
-
-To request the change to Trial/Premium, go to Companies list (in the menu on the left) and click the crown button at company you want to request for. 
+To request the change to Premium, go to Companies list (in the menu on the left) and click the crown button at company you want to request for. 
 
 ![Request upgrade](/images/tutorials/billing/request_upgrade.png "Request upgrade")
 
@@ -32,8 +32,10 @@ Fill in the request form and submit.
 
 ![Request upgrade](/images/tutorials/billing/request.png "Request upgrade")
 
-Now e-mail is sent to the sales manager for your region and also confirmation e-mail is sent to you as requester. Sales manager will contact you and negotiate the details as trial period, ERPID and currency.
+Now e-mail is sent to the sales manager for your region and also confirmation e-mail is sent to you as requester. Sales manager will contact you and negotiate the details.
 
+&nbsp;    
+&nbsp; 
 ## Premium Features
 
 With Premium you are not limited with the number of devices to 5.
@@ -44,8 +46,8 @@ Additionaly you can access these user permissions:
 
 ![Request upgrade](/images/tutorials/billing/permissions.png "Request upgrade")
 
-
-
+&nbsp;    
+&nbsp;    
 ## Invoices (Premium type companies)
 
 If your company type is Premium, you are billed monthly. The invoices are coming automatically on Primary Contact Email at the company.

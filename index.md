@@ -41,12 +41,12 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | AssureAuth™ Security Whitepaper |   |   |
 | [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
 | [Billing Explained](/tutorials/billing.md)    |      |  |
-| Grouping and Tagging |   |   |
-| Firmware and User Module versions |   |   |
-| Monitoring a Device |   |   |
-| Monitoring Aggregated Company Data |   |   |
-| Applying Configuration with AssureSync™ |   |   |
-| Secure Device Bootstrap |   |   |
+[//]: # (Grouping and Tagging)
+[//]: # (Firmware and User Module versions)
+[//]: # (Monitoring a Device)
+[//]: # (Monitoring Aggregated Company Data)
+[//]: # (Applying Configuration with AssureSync™)
+[//]: # (Secure Device Bootstrap)
 
 [Why is our documentation structured like this?](https://www.divio.com/blog/documentation/)
 
@@ -57,7 +57,6 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Version 2.1.0](/release_notes/2.1.0.md)     | 9th April 2020    |
 | [Version 2.1.1](/release_notes/2.1.1.md)     | 24th April 2020   |
 | [Version 2.2.0](/release_notes/2.2.0.md)     | 8th June 2020     |
-<!--| [Version 2.3.0](/release_notes/2.3.0.md)     | March 2021     |-->
 
 ### Support or Contact
 
