@@ -41,12 +41,20 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | AssureAuth™ Security Whitepaper |   |   |
 | [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
 | [Billing Explained](/tutorials/billing.md)    |      |  |
+
 [//]: # (Grouping and Tagging)
+
 [//]: # (Firmware and User Module versions)
+
 [//]: # (Monitoring a Device)
+
 [//]: # (Monitoring Aggregated Company Data)
+
 [//]: # (Applying Configuration with AssureSync™)
+
 [//]: # (Secure Device Bootstrap)
+
+&nbsp;  
 
 [Why is our documentation structured like this?](https://www.divio.com/blog/documentation/)
 
