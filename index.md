@@ -40,7 +40,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Cellular Data Usage](/explanations-discussions/data-usage.md) |   |   |
 | AssureAuth™ Security Whitepaper |   |   |
 | [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
-| [Billing Explained](/tutorials/billing.md)    |      |  |
+| [Billing Explained](/explanations-discussions/billing.md)    |      |  |
 
 [//]: # (Grouping and Tagging)
 
