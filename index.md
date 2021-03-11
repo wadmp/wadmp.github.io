@@ -8,39 +8,31 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 
 Document titles with no hyperlink have yet to be written. What are you waiting for? :)
 
-|                          Tutorials                            |      |                        How-to Guides                         |
+|                          Tutorials                            |      |  Explanations / Discussions                                  |
 | :----------------------------------------------------------:  | ---- | :----------------------------------------------------------: |
-| [Sign Up and Create your company](/tutorials/sign-up.md)      |      | How to migrate my devices from DMP Gen1            |
-| [General structure of the UI](/tutorials/ui-general-structure.md) |      | How to login with my own scripts           |
-| [Create new Companies](/tutorials/create-company.md)          |      | How to pre-configure all my devices              |
-| [Create more Users](/tutorials/create-users.md)               |      | How to add a custom User Module                              |
-| [Claim a Device to your Company](/tutorials/claim-device.md)  |       | [How to move a device to another Management Server](/how-tos/move-a-device.md) |
-| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)| | How to create devices from a list and claim them |  
-| [Configuring User Modules](/tutorials/configuring-user-modules.md) |      |                                                         |
-| [Configuring online and offline devices](/tutorials/configuring-devices.md) |      |                                                |
-| How the Dynamic Documentation works                           |      |                                                              |
-| Upgrading all my devices to the latest Firmware using the API |      |                                                              |
-| Claim all my devices to my company using the API              |      |                                                              |
-| Re-claim devices to a different company using the API         |      |                                                              |
-| Configuring online  and offline devices using the API         |      |                                                              |
-| Getting audit logs using the API                              |      |                                                              |
-| Getting aggregated monitoring for all devices using the API   |      |                                                              |
-| Getting monitoring data for one device using the API          |      |                                                              |
-| Subscribing to one device events using the Async API          |      |                                                              |
-| Subscribing to all possible events using the Async API        |      |                                                              |
+| [Sign Up and Create your company](/tutorials/sign-up.md)      |      | [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md) |
+| [General structure of the UI](/tutorials/ui-general-structure.md) |  | [Understanding Desired and Reported states](/explanations-discussions/desired-reported-states.md) |
+| [Create new Companies](/tutorials/create-company.md)          |      | [Understanding OAuth](/explanations-discussions/understanding-oauth.md) |
+| [Create more Users](/tutorials/create-users.md)               |      | [Cellular Data Usage](/explanations-discussions/data-usage.md) |
+| [Claim a Device to your Company](/tutorials/claim-device.md)  |      | [Companies and Users](/explanations-discussions/companies-and-users.md) |
+| [How to move a device to another Management Server](/how-tos/move-a-device.md) |      | [Billing Explained](/explanations-discussions/billing.md) |
+| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)| |  |  
+| [Configuring User Modules](/tutorials/configuring-user-modules.md) |           | **References** |
+| [Configuring online and offline devices](/tutorials/configuring-devices.md) |  | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |   
 
-| Explanations / Discussions           |   | References       |
-|:------------------------------------:|---|:----------------:|
-| [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md) |   | Glossary |
-| [Understanding Desired and Reported states](/explanations-discussions/desired-reported-states.md) |   | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |
-| Routers Overview                     |   | AsyncAPI spec |
-| Router configuration and Health reporting |   | InfluxDB schema |
-| [Understanding OAuth](/explanations-discussions/understanding-oauth.md) |   |   |
-| Understanding Async API |   |   |
-| [Cellular Data Usage](/explanations-discussions/data-usage.md) |   |   |
-| AssureAuth™ Security Whitepaper |   |   |
-| [Companies and Users](/explanations-discussions/companies-and-users.md) |   |   |
-| [Billing Explained](/explanations-discussions/billing.md)    |      |  |
+
+[//]: # (Comments - unused links:)
+
+
+[//]: # (Explanations / Discussions)
+
+[//]: # (Routers Overview)
+
+[//]: # (Router configuration and Health reporting)
+
+[//]: # (Understanding Async API)
+
+[//]: # (AssureAuth™ Security Whitepaper)
 
 [//]: # (Grouping and Tagging)
 
@@ -53,6 +45,54 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 [//]: # (Applying Configuration with AssureSync™)
 
 [//]: # (Secure Device Bootstrap)
+
+
+[//]: # (References)
+
+
+[//]: # (Glossary)
+
+[//]: # (AsyncAPI spec)
+
+[//]: # (InfluxDB schema)
+
+
+[//]: # (Tutorials)
+
+
+[//]: # (How the Dynamic Documentation works)
+
+[//]: # (Upgrading all my devices to the latest Firmware using the API)
+
+[//]: # (Claim all my devices to my company using the API)
+
+[//]: # (Re-claim devices to a different company using the API)
+
+[//]: # (Configuring online  and offline devices using the API)
+
+[//]: # (Getting audit logs using the API)
+
+[//]: # (Getting aggregated monitoring for all devices using the API)
+
+[//]: # (Getting monitoring data for one device using the API)
+
+[//]: # (Subscribing to one device events using the Async API)
+
+[//]: # (Subscribing to all possible events using the Async API)
+
+
+[//]: # (How-to) 
+
+
+[//]: # (How to migrate my devices from DMP Gen1 )
+
+[//]: # (How to login with my own scripts )
+
+[//]: # (How to pre-configure all my devices) 
+
+[//]: # (How to add a custom User Module     ) 
+
+[//]: # (How to create devices from a list and claim them)
 
 &nbsp;  
 
@@ -74,4 +114,4 @@ If you have a commercial arrangement with an Advantech channel partner, you can 
 
 [Privacy Policy](/privacy-policy.md)
 
-![Powered by logo](/images/pow.png "Tooltip")
+![Advantech logo](/images/advantech.png "Advantech")

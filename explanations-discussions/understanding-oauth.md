@@ -27,17 +27,43 @@ Note that *you do not have to create an account* with Grafana: just click "Sign 
 
 You are automatically redirected to the WebAccess/DMP sign-in page, as above.
 
-## API endpoints
+## API Clients Endpoints
 
 The public REST API provides the following endpoints which allow you to manage your OAuth clients:
 
 ![alt text](../images/explanations-discussions/APIClients_endpoints.png "APIClients endpoints")
 
+The API Client is an abstraction for the type of authentication procedure that will be started after calling authorization endpoint. It governs whether you need to provide username and password directly in the payload, or if you will be redirected to a Log-in screen.
+
 Some OAuth clients are provided by default in every WebAccess/DMP instance:
 * "SWHWebApp" is the client used by our built-in User Interface, [wadmp.com](https://wadmp.com);
 * "grafana" is the client used by Grafana, [grafana.wadmp.com](https://grafana.wadmp.com);
-* "swagger_ui" is the client used by the "Try it out" feature on [api.wadmp.com](https://api.wadmp.com);
-* "python" is the client used by the example Python scripts provided as part of the documentation in [docs.wadmp.com](https://docs.wadmp.com).
+* "swagger_ui" is the client used by the "Try it out" feature on [api.wadmp.com](https://api.wadmp.com) (for browsing API in a web browser);
+* "python" is the client used by the example Python scripts provided as part of the documentation in [docs.wadmp.com](https://docs.wadmp.com). It can be used for calling API endpoints from your application. It is not limited to python.
+
+### Authorization
+
+* When using the Web UI, you do this by clicking on authorize, typing in “swagger_ui”, ticking all scopes and pressing Authorize, followed by entering your DMP user credentials (if not already signed in). We advise to use all four Scopes at all times, since the Scopes feature will soon be replaced with an improved system.
+![alt text](../images/explanations-discussions/swagger_auth.png "APIClients endpoints")
+
+* When using a script or an application, you can do this by using the following endpoint:
+     * URL: https://gateway.wadmp.com/public/auth/connect/authorize (replace wadmp.com with your domain name if not using our public server)
+     * Content type: json
+     * Data:
+     ```
+     {
+     'username': username,
+     'password': password,
+     'client_id': 'python',
+     'grant_type': 'password'
+     }
+     ```
+
+API authorization will only succeed for those users who have the appropriate permission.
+
+
+
+
 
 ## More details
 
@@ -92,3 +118,4 @@ The model for the payload for the `POST /api-clients` endpoint looks like this:
 * `Implicit`. See the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) and [IdentityServer4](https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#implicit) documentation. For example, this is the type used by the SWHWebApp and swagger_ui clients.
 * `Code`. Called "Authorisation Code" in [OAuth 2.0](https://tools.ietf.org/html/rfc6749) and [IdentityServer4](https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#authorization-code). For example, this is the type used by the grafana client.
 * `ResourceOwnerPassword`. See the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) and [IdentityServer4](https://identityserver4.readthedocs.io/en/aspnetcore2/topics/grant_types.html#resource-owner-password) documentation. For example, this is the type used by the python client.
+
