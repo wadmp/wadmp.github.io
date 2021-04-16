@@ -6,8 +6,6 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 
 ### Available Documentation
 
-Document titles with no hyperlink have yet to be written. What are you waiting for? :)
-
 |                          Tutorials                            |      |  Explanations / Discussions                                  |
 | :----------------------------------------------------------:  | ---- | :----------------------------------------------------------: |
 | [Sign Up and Create your company](/tutorials/sign-up.md)      |      | [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md) |
