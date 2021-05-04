@@ -44,7 +44,7 @@ WebAccess/DMP Generation 2 has incorporated industry best-practice Digital Twin 
 
 ## Edge Intelligence App management
 
-Deploy one or many of our pre-prepared Edge Intelligence applications (aka “user modules” or “Apps”) directly from WebAccess/DMP, to one or many of your remote devices. Manage the Apps and versions you deploy: you can “pin” a specific App version, for each of your selected devices, as a Desired State, and you can manage the configuration settings for each App, for each device it’s deployed onto.
+Deploy one or many of our pre-prepared Edge Intelligence applications (aka “Router Apps”) directly from WebAccess/DMP, to one or many of your remote devices. Manage the Apps and versions you deploy: you can “pin” a specific App version, for each of your selected devices, as a Desired State, and you can manage the configuration settings for each App, for each device it’s deployed onto.
 
 Use the device’s SDK to build your own Edge Intelligence Apps, then use the WebAccess/DMP API to publish and deploy your own Apps, at scale: WebAccess/DMP enables you to build your own required platform-side user-interface automatically. 
 

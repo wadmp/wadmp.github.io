@@ -17,7 +17,7 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Claim a Device to your Company](/tutorials/claim-device.md)  |      | [Companies and Users](/explanations-discussions/companies-and-users.md) |
 | [How to move a device to another Management Server](/how-tos/move-a-device.md) |      | [Billing Explained](/explanations-discussions/billing.md) |
 | [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)| |  |  
-| [Configuring User Modules](/tutorials/configuring-user-modules.md) |           | **References** |
+| [Configuring Router Apps](/tutorials/configuring-router-apps.md) |           | **References** |
 | [Configuring online and offline devices](/tutorials/configuring-devices.md) |  | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |   
 
 
