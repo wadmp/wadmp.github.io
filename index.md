@@ -15,7 +15,7 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 | [Claim a Device to your Company](/tutorials/claim-device.md)  |      | [Companies and Users](/explanations-discussions/companies-and-users.md) |
 | [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)| | [Grouping and Tagging](/explanations-discussions/Grouping-and-tagging.md) |  
 | [Upgrade devices to the latest Firmware](/tutorials/upgrade-fw.md) |  | [Billing Explained](/explanations-discussions/billing.md) |   
-| [How to move a device to another Management Server](/how-tos/move-a-device.md) |      |  |
+| [How to move a device to another Management Server](/how-tos/move-a-device.md) | | [Playbooks Explained](/explanations-discussions/playbooks.md) |
 | [Configuring User Modules](/tutorials/configuring-user-modules.md) |           | **References** |
 | [Configuring online and offline devices](/tutorials/configuring-devices.md) |  | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |   
 
