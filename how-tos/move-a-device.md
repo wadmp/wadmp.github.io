@@ -26,7 +26,7 @@ The Management Server may occasionally direct the Client to download a file from
 
 When a client on a device is starting for the first time, the only information it has is the address of a Bootstrap Server.
 
-The following image is a screenshot of the "WebAccess/DMP Client" User Module running on the local webserver of a router:
+The following image is a screenshot of the "WebAccess/DMP Client" Router Apps running on the local webserver of a router:
 
 ![local webserver](../images/how-to-guides/move-a-device/BS_URL.png)
 
@@ -36,7 +36,7 @@ In order to move a device to a new Management Server, you have two choices ...
 
 ### Option 1
 
-Assuming you have access to the local webserver on the device, you can simply change the Bootstrap Server Address in the User Module configuration screen.
+Assuming you have access to the local webserver on the device, you can simply change the Bootstrap Server Address in the Router App configuration screen.
 
 ![option 1](../images/how-to-guides/move-a-device/2_servers_a.png)
 
