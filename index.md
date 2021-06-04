@@ -6,8 +6,6 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 
 ### Available Documentation
 
-Document titles with no hyperlink have yet to be written. What are you waiting for? :)
-
 |                          Tutorials                            |      |  Explanations / Discussions                                  |
 | :----------------------------------------------------------:  | ---- | :----------------------------------------------------------: |
 | [Sign Up and Create your company](/tutorials/sign-up.md)      |      | [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md) |
@@ -15,10 +13,12 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Create new Companies](/tutorials/create-company.md)          |      | [Understanding OAuth](/explanations-discussions/understanding-oauth.md) |
 | [Create more Users](/tutorials/create-users.md)               |      | [Cellular Data Usage](/explanations-discussions/data-usage.md) |
 | [Claim a Device to your Company](/tutorials/claim-device.md)  |      | [Companies and Users](/explanations-discussions/companies-and-users.md) |
-| [How to move a device to another Management Server](/how-tos/move-a-device.md) |      | [Billing Explained](/explanations-discussions/billing.md) |
-| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)| |  |  
+| [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)| | [Grouping and Tagging](/explanations-discussions/Grouping-and-tagging.md) |  
+| [Upgrade devices to the latest Firmware](/tutorials/upgrade-fw.md) |  | [Billing Explained](/explanations-discussions/billing.md) |   
+| [How to move a device to another Management Server](/how-tos/move-a-device.md) | | [Playbooks Explained](/explanations-discussions/playbooks.md) |
 | [Configuring Router Apps](/tutorials/configuring-router-apps.md) |           | **References** |
 | [Configuring online and offline devices](/tutorials/configuring-devices.md) |  | [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail) |   
+
 
 
 [//]: # (Comments - unused links:)
@@ -105,6 +105,8 @@ Document titles with no hyperlink have yet to be written. What are you waiting f
 | [Version 2.1.0](/release_notes/2.1.0.md)     | 9th April 2020    |
 | [Version 2.1.1](/release_notes/2.1.1.md)     | 24th April 2020   |
 | [Version 2.2.0](/release_notes/2.2.0.md)     | 8th June 2020     |
+| [Version 2.3.0](/release_notes/2.3.0.md)     | 9th April 2021     |
+| [Version 2.3.1](/release_notes/2.3.1.md)     | 4th June 2021     |
 
 ### Support or Contact
 
