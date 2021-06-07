@@ -22,7 +22,7 @@ In this model the Desired state can only be modified by the user, while the Repo
 Two things are implied in this explanation. The device needs a process capable of monitoring changes in order to report them and also be able to apply changes received from DMP. DMP also needs to be able to send changes to the device, possibly waiting for the device to connect. If the device doesn't apply the changes DMP should be able to re-apply them.
 
 ### DMP client
-Routers allow extensibility through [User Modules](/references/routers-overview.md). We created the "WebAccess/DMP client" User Module with the purpose of being the service that updates DMP when the router changes and applies all changes sent by DMP, among other tasks. It mantains a connection with DMP using the [MQTT protocol](/explanations-discussions/what-is-webaccess-dmp.md) so changes in both sides can be reported to the other end.
+Routers allow extensibility through [Router Apps](/references/routers-overview.md). We created the "WebAccess/DMP client" Router App with the purpose of being the service that updates DMP when the router changes and applies all changes sent by DMP, among other tasks. It mantains a connection with DMP using the [MQTT protocol](/explanations-discussions/what-is-webaccess-dmp.md) so changes in both sides can be reported to the other end.
 
 Beacuse the router is the source of truth, when this client connects it reports all its configuration. This allows DMP to have a precise report of all the changes done when the device was disconnected.
 
@@ -35,7 +35,7 @@ Everytime the Desired state is changed DMP will determine the difference with th
 This behavior has a downside. For example, if a user wants to apply a set of changes, wait or request a reboot, and then apply some other changes to the same section while the device is offline, all changes will be merged into one request only. In this exeptional scenario, the user should wait for the device to reboot before applying the second set of changes.
 
 ### Everything is an Application
-DMP treats both Firmware and User Modules as applications. An application is a versioned set of properties grouped in sections. It can be replaced by a different version that may have a different set of properties. The Firmware is still a special application because it is related to the device type and cannot be uninstalled.
+DMP treats both Firmware and Router Apps as applications. An application is a versioned set of properties grouped in sections. It can be replaced by a different version that may have a different set of properties. The Firmware is still a special application because it is related to the device type and cannot be uninstalled.
 This simplification allows to use Desired and Reported states in all applications.
 
 ## How to use Desired and Reported states
