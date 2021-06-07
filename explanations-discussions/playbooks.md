@@ -43,10 +43,14 @@ Once run, the playbook can be in one of these states:
 
 * Running
 * Completed
-* Completed with Failure (some actions completed, some failed)
-* Failed
+* Completed with Failure (some actions completed, some were started but failed)
+* Failed (all actions failed)
 * Aborted (aborted when runnig)
-* Incomplete (could not be finished)
+* Incomplete (some actions completed, but some actions could not be started, e.g. one device is offline during all attempts to run a playbook)
+
+By default, the playbook is attempted to run 3 times (see below on how to change this).
+
+When the playbook is run, it tries to do all the actions planned (does not stop after first failure).
 
 You can filter the playbooks by state using this icon:
 
