@@ -52,7 +52,7 @@ See the device actions details by clicking the eye icon on the right.
 
 If the playbook is run on the offline device, the status may be "Incomplete", but it is remembered to run the actions after the device appears online again. When the device is back online, the playbook is finished and reaches the "Completed" status.
 
-When the playbook is run, it tries to do all the actions planned (does not stop after first failure, goes to another device).
+[//]: # (When the playbook is run, it tries to do all the actions planned - does not stop after first failure, goes to another device.) 
 
 The playbook run is affected by sync engine and by default, the actions are attempted to run 3 times (see details on sync configuration below).
 
