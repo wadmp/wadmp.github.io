@@ -1,4 +1,4 @@
-## WebAccess/DMP Client Router App Release Notes/Changelog: 
+## Release Notes/Changelog for WebAccess/DMP Client Router App: 
 
 ### v2.1.2 (2021-08-03):
 * Added trace log level
