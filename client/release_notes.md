@@ -1,5 +1,7 @@
 ## Release Notes/Changelog for WebAccess/DMP Client Router App: 
 
+We recommend always using the most up-to-date version of the client.
+
 ### v2.1.2 (2021-08-03):
 * Added trace log level
 * MQTT keepalive is now configurable
