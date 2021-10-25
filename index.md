@@ -122,4 +122,8 @@ If you have a commercial arrangement with an Advantech channel partner, you can 
 
 [Privacy Policy](/privacy-policy.md)
 
+[WebAccess/DMP EULA](/eula.md)
+
+&nbsp;  
+
 ![Advantech logo](/images/advantech.png "Advantech")
