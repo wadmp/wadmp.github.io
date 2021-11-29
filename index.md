@@ -116,7 +116,7 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 
 ### Support or Contact
 
-Please [email support](mailto:webaccessdmp@advantech.com) and we'll do our best to respond quickly.
+Please [email support](mailto:wadmp@advantech.com) and we'll do our best to respond quickly.
 
 If you have a commercial arrangement with an Advantech channel partner, you can also escalate any issues through them. 
 
