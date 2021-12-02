@@ -32,27 +32,27 @@ When there is not any online device, the dashboard looks like this:
 | Connection Status | is_online |Indicates if the WA/DMP Client User Module in the devices is connected to the WebAccess/DMP server.|
 | Device Type | deviceType | The exact router device type, which also identifies the name of the firmware used.|
 | Cellular Connection Type | mobileTechnology | A string identifying the type of cellular connection used. Supported values:<br>"N/A"<br> "GPRS"<br>"EDGE"<br>"UMTS"<br>"HSDPA"<br>"HSUPA"<br>"HSPA+"<br>"LTE"<br>"CDMA"<br>"EV-DO"<br>"EV-DO Rel. 0"<br>"EV-DO Rev. A"<br>"EV-DO Rev. B"|
-|Cellular Download | ifInOctets | The total number of octets (bytes) received on the first Mobile WAN interface. This is a counter that is reset when the device is rebooted or the network interface is restarted.|
-| Connectivity History | is_online | Shows history of online devices|
+|Cellular Download | ifInOctets | The total number of octets (bytes) received on the first Mobile WAN interface. This is a counter that is reset when the device is rebooted or the network interface is restarted. |
+| Connectivity History | is_online | Shows history of online devices |
 | Devices | firmwareVersion | Firmware ver. - last reported firmware version |
-| ^^ | is_online | Online - shows last status of the device|
-| ^^ | deviceType | Device Type - last reported device type.|
-| ^^ | ifInOctets | Down - The total number of octets (bytes) received on the first Mobile WAN interface. |
-| ^^ | ifOutOctets | Up - The total number of octets (bytes) transmitted on the first Mobile WAN interface. |
-| ^^ | mobileTechnology | Tech - A string identifying the type of cellular connection used. |
-| ^^ | mobilePLMN | PLMN - A numeric identifier for the mobile operator, or "Public Land Mobile Network". Composed of the 3-digit Mobile Country Code (MCC) followed by the 2- or 3-digit Mobile Network Code (MNC). E.g. “27201” is Ireland (272), Vodafone (01). |
-| ^^ | mobileCell | Cell - The cell ID of the cell tower to which the device is connected. The string value is the hexadecimal representation of an integer. |
-| ^^ | mobileSignalStrength | Strength - Received Signal Strength Indication (RSSI) in dBm. Should correlate with mobileCSQ. |
-| ^^ |  mobileSignalQuality | Quality - Varies by cellular module type, but typically represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
-| ^^ | mobileCSQ | CSQ - Signal strength number (0 to 31).<br>0 to 7: Bad<br>8 to 15: Marginal<br>16 to 23: Good<br>24 to 31: Excellent<br>99: No signal! |
-| ^^ | mobileUpTime | UpTime - The time in seconds since a connection was established to the mobile network. |
-| ^^ | mobileConnect | Connect  - Time stamp of latest connection to the cellular network. The device uses “Unix Epoch Time”, which is the number of seconds that have elapsed since the Unix epoch, which is 00:00:00 UTC on 1 January 1970. |
-| ^^ | mobileDisconnect | Disconnect - Time stamp of latest disconnection from the cellular network. 0 (“1970-01-01 00:00:00”) means that the device has not disconnected from the cellular network (since the last reboot or network restart). |
-| ^^ | mobileCard | Card - Which SIM card is in use:<br>0: “1st”<br>1: “2nd”<br>2: “3rd”<br>3: “4th” |
-| ^^ |  mobileReportPeriod | Period - Interval in minutes between MQTT messages or SNMP traps. This is a configuration setting called “Monitoring Interval” or “Trap Period”. |
-| ^^ | mobileTodayCells | CellsToday - Number of changes in mobileCell today. |
-| ^^ | statusTemperature | Temp - Internal temperature within the device, in degrees Celcius. Note that this will always be higher than the external (ambient) temperature, by around 20 degrees. |
-| ^^ | statusVoltage | Voltage - Voltage of the input power supply to the device. |
+|  | is_online | Online - shows last status of the device |
+|  | deviceType | Device Type - last reported device type. |
+|  | ifInOctets | Down - The total number of octets (bytes) received on the first Mobile WAN interface. |
+|  | ifOutOctets | Up - The total number of octets (bytes) transmitted on the first Mobile WAN interface. |
+|  | mobileTechnology | Tech - A string identifying the type of cellular connection used. |
+|  | mobilePLMN | PLMN - A numeric identifier for the mobile operator, or "Public Land Mobile Network". Composed of the 3-digit Mobile Country Code (MCC) followed by the 2- or 3-digit Mobile Network Code (MNC). E.g. “27201” is Ireland (272), Vodafone (01). |
+|  | mobileCell | Cell - The cell ID of the cell tower to which the device is connected. The string value is the hexadecimal representation of an integer. |
+|  | mobileSignalStrength | Strength - Received Signal Strength Indication (RSSI) in dBm. Should correlate with mobileCSQ. |
+|  |  mobileSignalQuality | Quality - Varies by cellular module type, but typically represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
+|  | mobileCSQ | CSQ - Signal strength number (0 to 31).<br>0 to 7: Bad<br>8 to 15: Marginal<br>16 to 23: Good<br>24 to 31: Excellent<br>99: No signal! |
+|  | mobileUpTime | UpTime - The time in seconds since a connection was established to the mobile network. |
+|  | mobileConnect | Connect  - Time stamp of latest connection to the cellular network. The device uses “Unix Epoch Time”, which is the number of seconds that have elapsed since the Unix epoch, which is 00:00:00 UTC on 1 January 1970. |
+|  | mobileDisconnect | Disconnect - Time stamp of latest disconnection from the cellular network. 0 (“1970-01-01 00:00:00”) means that the device has not disconnected from the cellular network (since the last reboot or network restart). |
+|  | mobileCard | Card - Which SIM card is in use:<br>0: “1st”<br>1: “2nd”<br>2: “3rd”<br>3: “4th” |
+|  |  mobileReportPeriod | Period - Interval in minutes between MQTT messages or SNMP traps. This is a configuration setting called “Monitoring Interval” or “Trap Period”. |
+|  | mobileTodayCells | CellsToday - Number of changes in mobileCell today. |
+|  | statusTemperature | Temp - Internal temperature within the device, in degrees Celcius. Note that this will always be higher than the external (ambient) temperature, by around 20 degrees. |
+|  | statusVoltage | Voltage - Voltage of the input power supply to the device. |
 
 &nbsp;    
 &nbsp; 
@@ -105,10 +105,10 @@ When the device has never been online there are no monitoring data to be display
 | ESN | infoESN | Last reported Electronic Serial Number of the cellular module. Applies only to CDMA modules. Currently not supported. |
 | MEID |  | Currently not supported. | 
 | Signal Quality | mobileSignalStrength | Received Signal Strength Indication (RSSI) in dBm. |
-| ^^ | mobileCSQ | Signal strength number (0 to 31). |
-| ^^ | mobileSignalQuality | Represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
+|  | mobileCSQ | Signal strength number (0 to 31). |
+|  | mobileSignalQuality | Represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
 | Internal Conditions | statusTemperature | Internal temperature within the device, in degrees Celcius. Note that this will always be higher than the external (ambient) temperature, by around 20 degrees. |
-| ^^ | statusVoltage | Voltage of the input power supply to the device |
+|  | statusVoltage | Voltage of the input power supply to the device |
 | Today Cells | mobileTodayCells | Mean of number of changes in mobileCell, that represents the cell ID of the cell tower to which the device is connected. |
 | Neighbours Channel (only valid when on GPRS/EDGE) | mobileChannelN1<br>mobileChannelN2 | Cellular channel number for neighboring channel #1 to #5 |
 | Neighbours Signal Strength (only valid when on GPRS/EDGE) | mobileSignalStrengthN1 to mobileSignalStrengthN5 | Signal Strength for neighboring channel #1 to #5. |
