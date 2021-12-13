@@ -108,6 +108,7 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 | [Version 2.2.0](/release_notes/2.2.0.md)     | 8th June 2020     |
 | [Version 2.3.0](/release_notes/2.3.0.md)     | 9th April 2021     |
 | [Version 2.3.1](/release_notes/2.3.1.md)     | 4th June 2021     |
+| [Version 2.4.0](/release_notes/2.4.0.md)     | 13th December 2021     |
 
 ### Router App WebAccess/DMP Client
 
