@@ -103,17 +103,17 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 
 |                    Version                   |        Date       |
 | :------------------------------------------: | :---------------: |
-| [Version 2.1.0](/release_notes/2.1.0.md)     | 9th April 2020    |
-| [Version 2.1.1](/release_notes/2.1.1.md)     | 24th April 2020   |
-| [Version 2.2.0](/release_notes/2.2.0.md)     | 8th June 2020     |
-| [Version 2.3.0](/release_notes/2.3.0.md)     | 9th April 2021     |
-| [Version 2.3.1](/release_notes/2.3.1.md)     | 4th June 2021     |
-| [Version 2.4.0](/release_notes/2.4.0.md)     | 13th December 2021     |
+| [Version 2.1.0](/release_notes/2.1.0.md)     | April 9, 2020    |
+| [Version 2.1.1](/release_notes/2.1.1.md)     | April 24, 2020   |
+| [Version 2.2.0](/release_notes/2.2.0.md)     | June 8, 2020     |
+| [Version 2.3.0](/release_notes/2.3.0.md)     | April 9, 2021     |
+| [Version 2.3.1](/release_notes/2.3.1.md)     | June 4, 2021     |
+| [Version 2.4.0](/release_notes/2.4.0.md)     | December 11, 2021     |
 
 ### Router App WebAccess/DMP Client
 
-* [Release Notes/Changelog for latest client](/client/release_notes.md) - version 2.1.2 (30th August 2021)
-* [Download - latest client and Application Note (Manual)](https://icr.advantech.cz/products/software/user-modules#webaccessdmp-client) - version 2.1.2 (30th August 2021)
+* [Release Notes/Changelog for latest client](/client/release_notes.md) - version 2.1.2 (August 30, 2021)
+* [Download - latest client and Application Note (Manual)](https://icr.advantech.cz/products/software/user-modules#webaccessdmp-client) - version 2.1.2 (August 30, 2021)
 
 
 ### Support or Contact
