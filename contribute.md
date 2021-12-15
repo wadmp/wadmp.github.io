@@ -8,6 +8,7 @@ All users of WebAccess/DMP are encouraged to contribute to the open-source docum
 
 ## Resources
 
+<br>Source Repository: <br><a href="https://github.com/wadmp/wadmp.github.io">github.com/wadmp/wadmp.github.io</a>
 <br>Learn Markdown: <br><a href="https://www.markdowntutorial.com/">markdowntutorial.com</a>
 <br>Project Jupyter: <br><a href="https://jupyter.org/index.html">jupyter.org</a>
 <br>GitHub Desktop: <br><a href="https://desktop.github.com/">desktop.github.com</a>            

@@ -48,7 +48,7 @@
 &nbsp;  
 
 
-## Support or Contact
+## Support & Contact
 
 Please [email support](mailto:wadmp@advantech.com) and we'll do our best to respond quickly.
 

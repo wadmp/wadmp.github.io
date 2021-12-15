@@ -13,12 +13,13 @@
   </head>
   <body>
     <div class="wrapper" style="width: 1260px;">
-      <header style="width: 370px;">
-        {% if site.logo %}
-        <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-          
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+      <header style="width: 370px; height: 100%; overflow-y: scroll; padding-right: 20px;">
+        <a href="{{ "/" | absolute_url }}"></a>
+          {% if site.logo %}
+            <img src="{{site.logo | relative_url}}" alt="Logo" />
+          {% endif %}          
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        </a>
         
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -32,11 +33,37 @@
         </p>
 
         <p class="view"><b>Resources:</b>
-            <br>Source Repository: <br><a href="https://github.com/wadmp/wadmp.github.io">github.com/wadmp/wadmp.github.io</a>
             <br>YouTube Channel: <br><a href="https://www.youtube.com/channel/UCjvN8QMC2pmALE6t3H09fjg">WebAccess DMP</a>
             <br>Help: <br><a href="mailto:wadmp@advantech.com">Contact Us!</a>
         </p>
 
+        <p class="view"><b>Tutorials:</b>
+          <ul>
+            <li><a href="/tutorials/sign-up.html">Sign Up and Create your company</a></li>
+            <li><a href="/tutorials/ui-general-structure.html">General structure of the UI</a></li>
+            <li><a href="/tutorials/create-company.html">Create new Companies</a></li>
+            <li><a href="/tutorials/create-users.html">Create more Users</a></li>
+            <li><a href="/tutorials/claim-device.html">Claim a Device to your Company</a></li>
+            <li><a href="/explanations-discussions/companies-and-users.html">Companies and Users</a></li>
+            <li><a href="/tutorials/search-filter-sort-devices.html">Searching, filtering and sorting devices</a></li>
+            <li><a href="/tutorials/upgrade-fw.html">Upgrade devices to the latest Firmware</a></li>
+            <li><a href="/how-tos/move-a-device.html">How to move a device to another Management Server</a></li>
+            <li><a href="/tutorials/configuring-router-apps.html">Configuring Router Apps</a></li>
+            <li><a href="/tutorials/configuring-devices.html">Configuring online and offline devices</a></li>
+          </ul>
+
+          <p class="view"><b>Explanations:</b>
+            <ul class="downloads">
+              <li><a href="/explanations-discussions/what-is-webaccess-dmp.html">What is WebAccess DMP</a></li>
+              <li><a href="/explanations-discussions/desired-reported-states.html">Understanding Desired and Reported states</a></li>
+              <li><a href="/explanations-discussions/understanding-oauth.html">Understanding OAuth</a></li>
+              <li><a href="/explanations-discussions/data-usage.html">Cellular Data Usage</a></li>
+              <li><a href="/explanations-discussions/Grouping-and-tagging.html">Grouping and Tagging</a></li>
+              <li><a href="/explanations-discussions/billing.html">Billing Explained</a></li>
+              <li><a href="/explanations-discussions/playbooks.html">Playbooks Explained</a></li>
+              <li><a href="/explanations-discussions/grafana.html">Grafana - Company Dashboard, Device Dashboard (Monitoring Data)</a></li>
+              <li><a href="/explanations-discussions/auditing.html">Auditing Explained</a></li>
+            </ul>
 
         {% if site.show_downloads %}
         <ul class="downloads">
@@ -55,7 +82,13 @@
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>
+          <a href="#top">&uarr; Top</a><br>
+          <a href="#top">Home</a>
+          <small>
+            Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+          </small>
+        </p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
