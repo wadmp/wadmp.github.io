@@ -1,9 +1,12 @@
 # Create more Users
-The only way to add users to your companies is by creating them yourself. When a user signs up he will also create a company, one with no relation with yours.
 
 <div style='text-align:left;'><a href="/tutorials/create-company.html">< Prev: Create new companies</a></div>
+
+The only way to add users to your companies is by creating them yourself. When a user signs up he will also create a company, one with no relation with yours.
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hl3ElX1BUvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div style='text-align:right;'><a href="/tutorials/claim-device.html">Next: > Claiming devices</a></div>
+
 
 
 As with companies, remember that the creation of a user depends on two conditions:
@@ -51,3 +54,5 @@ To create a user:
 
 
 ![createUser2](/images/tutorials/new_users/04_createUserForm2.png)
+
+<div style='text-align:right;'><a href="/tutorials/claim-device.html">Next: > Claiming devices</a></div>

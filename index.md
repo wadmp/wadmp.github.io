@@ -6,7 +6,6 @@
 * [Create new Companies](/tutorials/create-company.md)
 * [Create more Users](/tutorials/create-users.md)
 * [Claim a Device to your Company](/tutorials/claim-device.md)
-* [Companies and Users](/explanations-discussions/companies-and-users.md)
 * [Searching, filtering and sorting devices](/tutorials/search-filter-sort-devices.md)
 * [Upgrade devices to the latest Firmware](/tutorials/upgrade-fw.md)
 * [How to move a device to another Management Server](/how-tos/move-a-device.md)
@@ -16,6 +15,7 @@
 ### Explanations
 * [What is WebAccess DMP](/explanations-discussions/what-is-webaccess-dmp.md)
 * [Understanding Desired and Reported states](/explanations-discussions/desired-reported-states.md)
+* [Companies and Users](/explanations-discussions/companies-and-users.md)
 * [Understanding OAuth](/explanations-discussions/understanding-oauth.md)
 * [Cellular Data Usage](/explanations-discussions/data-usage.md)
 * [Grouping and Tagging](/explanations-discussions/Grouping-and-tagging.md)

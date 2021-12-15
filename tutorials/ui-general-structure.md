@@ -1,5 +1,7 @@
 # General Structure of the User Interface
 
+<div style='text-align:left;'><a href="/tutorials/sign-up.html">< Prev: Sign Up and create your company</a></div>
+
 The UI is structured into 4 main areas. 
 
 ![Structure](/images/tutorials/structure_of_ui/01_overview.png)
@@ -23,5 +25,7 @@ This is the main panel of information. The details presented here depend on the 
 ## D: The Title Panel
 
 The Title Panel contains some information about the current running software version, it has links to user documentation, and has logged-in user information.
+
+<div style='text-align:right;'><a href="/tutorials/create-company.html">Next: > Create new companies</a></div>
 
 
