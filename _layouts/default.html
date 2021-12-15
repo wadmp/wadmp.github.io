@@ -14,12 +14,11 @@
   <body>
     <div class="wrapper" style="width: 1260px;">
       <header style="width: 370px; height: 100%; overflow-y: scroll; padding-right: 20px;">
-        <a href="{{ "/" | absolute_url }}"></a>
           {% if site.logo %}
-            <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
           {% endif %}          
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
+          <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        
         
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -53,7 +52,7 @@
           </ul>
 
           <p class="view"><b>Explanations:</b>
-            <ul class="downloads">
+            <ul>
               <li><a href="/explanations-discussions/what-is-webaccess-dmp.html">What is WebAccess DMP</a></li>
               <li><a href="/explanations-discussions/desired-reported-states.html">Understanding Desired and Reported states</a></li>
               <li><a href="/explanations-discussions/understanding-oauth.html">Understanding OAuth</a></li>
@@ -83,8 +82,8 @@
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p>
-          <a href="#top">&uarr; Top</a><br>
-          <a href="#top">Home</a>
+          <a href="#top">&uarr; Top</a>
+          <a href="{{ "/" | absolute_url }}">Home</a><br>
           <small>
             Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
           </small>
