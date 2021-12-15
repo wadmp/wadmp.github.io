@@ -29,6 +29,7 @@
 * [Contribute to this Documentation](/contribute.md)
 
 ## WebAccess/DMP Release Notes
+
 |                    Version                   |        Date       |
 | :------------------------------------------: | :---------------: |
 | [Version 2.1.0](/release_notes/2.1.0.md)     | April 9, 2020    |
