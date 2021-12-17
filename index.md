@@ -22,7 +22,9 @@
 * [Billing Explained](/explanations-discussions/billing.md)
 * [Playbooks Explained](/explanations-discussions/playbooks.md)
 * [Grafana - Company Dashboard, Device Dashboard (Monitoring Data)](/explanations-discussions/grafana.md)
+* [Alerts Explained](/explanations-discussions/alerts.md)
 * [Auditing Explained](/explanations-discussions/auditing.md)
+
 
 ### References
 * [OpenAPI spec](https://api.wadmp.com/#!/apis/cc753663-54c3-447a-b536-6354c3047ae6/detail)
