@@ -27,7 +27,7 @@ Use the plus icon to create a new Alert.
 
 When **Target Type** is set to Company, the rule is automatically applied to all the devices in that company. When choosing the Single Device, only one device can be chosen.
 
-Set up Parameters for the rule. The cooldown period starts always immediately after the Alert is being triggered. After the cooldown period, the check is done immediately and then again according to Period.
+Set up Parameters for the rule. The cooldown period starts always immediately after the Alert is triggered. After the cooldown period, the check is done immediately and then again according to Period.
 
 ![Alerts rule](/images/explanations-discussions/alerts/alerts_rule.png "Alerts rule")
 

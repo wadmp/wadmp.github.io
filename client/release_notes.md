@@ -2,6 +2,10 @@
 
 We recommend always using the most up-to-date version of the client.
 
+### v2.1.3 (2021-12-08)
+* If router does not measure temperature, send value was modified from 0 degrees to -273 degrees
+* Modification of return codes when installation failure occurs.
+
 ### v2.1.2 (2021-08-03):
 * Added trace log level
 * MQTT keepalive is now configurable
