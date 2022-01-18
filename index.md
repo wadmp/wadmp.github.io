@@ -10,6 +10,7 @@
 | [Version 2.3.0](/release_notes/2.3.0.md)     | April 9, 2021     |
 | [Version 2.3.1](/release_notes/2.3.1.md)     | June 4, 2021     |
 | [Version 2.4.0](/release_notes/2.4.0.md)     | December 11, 2021     |
+| [Version 2.4.1](/release_notes/2.4.1.md)     | January 18, 2022     |
 
 ## Router App WebAccess/DMP Client
 
