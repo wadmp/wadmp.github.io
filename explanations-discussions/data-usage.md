@@ -64,6 +64,6 @@ For example:
   * Router App installation or upgrade = anything from 30kB for a small app such as Pinger, to 6MB for a large app such as Python;
   * Re-configuration = varies, depending on the section or sections being re-configured, and the content of the configuration data.
 
-* In this article we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc. The difference to base-2 (aka "binary" or "IEC") is 2.4%. However **on WebAccess/DMP we always use base-2 (1024) counted data units!** It is to maintain unification with our routers, where we use habitual practice of base-2 counts and B, KB, MB, GB units. To sum up: On WebAccess/DMP may occur both types of units B, KB, MB, ... and B, KiB, MiB, ... but they always base-2 (1024) count.
+* In this article we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc. The difference to base-2 (aka "binary" or "IEC") is 2.4%. However **on WebAccess/DMP we always use base-2 (1024) counted data units!** It is to maintain unification with our routers, where we use habitual practice of base-2 counts and B, KB, MB, GB units. To sum up: On WebAccess/DMP may occur both types of units B, KB, MB, ... and B, KiB, MiB, ... but they always use the base-2 (1024) count.
 
 
