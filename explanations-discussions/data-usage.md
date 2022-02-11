@@ -25,16 +25,11 @@ This can be reduced to approximately **240kB** per day if you chose to disable t
 
 ## Monitoring Cellular Data Usage
 
-* If monitoring is enabled in the WebAccess/DMP client on a device, you can observe the *actual* cellular data usage on the Monitoring tab of the WebAccess/DMP UI:
 
-![alt text](../images/explanations-discussions/data-usage/cellular_data_usage.png "Sample device cellular data usage")
-
-The first graph shows you how the device counters for data downloaded and uploaded are incrementing over time.
+* If monitoring is enabled in the WebAccess/DMP client on a device, you can observe the *actual* cellular data usage on the Monitoring tab of the WebAccess/DMP UI: On top of Monitoring tab various statistics for the  device are displayed, including the Download Total and Upload Total. The first graph shows you how the device counters for data downloaded and uploaded are incrementing over time.
 The default time interval in this view is 24 hours.
 
-* Further down the same page, various statistics for the device are displayed, including the Download Total and Upload Total:
-
-![alt text](../images/explanations-discussions/data-usage/device_stats.png "Sample device stats")
+![Device Dashboard](/images/explanations-discussions/grafana/05dev1.png "Device Dashboard")
 
 * In order to disable WebAccess/DMP monitoring on a device, you can re-configure the WebAccess/DMP Router App via the device's local web server, or via WebAccess/DMP itself. From the WebAccess/DMP UI, simply activate the "toggle" beside the "Enable Monitoring" checkbox, then unclick the checkbox, and Submit:
 
@@ -69,6 +64,6 @@ For example:
   * Router App installation or upgrade = anything from 30kB for a small app such as Pinger, to 6MB for a large app such as Python;
   * Re-configuration = varies, depending on the section or sections being re-configured, and the content of the configuration data.
 
-* In this article we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc.
-Other sources may use the alternative base-2 (aka "binary" or "IEC") prefixes. In this alternative notation: 1024B = 1KiB, 1024KiB = 1MiB, etc.
-i.e. The difference is 2.4%.
+* In this article we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc. The difference to base-2 (aka "binary" or "IEC") is 2.4%. However **on WebAccess/DMP we always use base-2 (1024) counted data units!** It is to maintain unification with our routers, where we use habitual practice of base-2 counts and B, KB, MB, GB units. To sum up: On WebAccess/DMP may occur both types of units B, KB, MB, ... and B, KiB, MiB, ... but they always base-2 (1024) count.
+
+
