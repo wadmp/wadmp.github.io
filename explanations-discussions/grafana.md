@@ -27,30 +27,31 @@ When there is not any online device, the dashboard looks like this:
 &nbsp; 
 ### Description of individual graphs
 
-|        Name of graph         |  Trap Attribute  |  Description       |
-| :--------------------------  | :--------------- | :----------------- |
-|Cellular Download | ifInOctets | The total number of octets (bytes) received on the first Mobile WAN interface. This is a counter that is reset when the device is rebooted or the network interface is restarted. Units used are B, KiB, MiB, GiB, ... where 1 KiB means 1024 B. |
-| Connectivity History | is_online | Shows history of online devices |
-| Devices Table (no title)| firmwareVersion | Firmware ver. - last reported firmware version |
-|  | Alias | Internal DMP name of the device |
-|  | Mac Address | Mac Address of the device. Can be used as direct link to device detail page. |
-|  | is_online | Online - shows last status of the device. |
-|  | deviceType | Device Type - last reported device type. |
-|  | ifInOctets | Down - The total number of octets (bytes) received on the first Mobile WAN interface. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
-|  | ifOutOctets | Up - The total number of octets (bytes) transmitted on the first Mobile WAN interface. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
-|  | statusTemperature | Temp - Internal temperature within the device, in degrees Celcius. Note that this will always be higher than the external (ambient) temperature, by around 20 degrees. |
-|  | statusVoltage | Voltage - Voltage of the input power supply to the device. |
-|  | mobilePLMN | PLMN - A numeric identifier for the mobile operator, or "Public Land Mobile Network". Composed of the 3-digit Mobile Country Code (MCC) followed by the 2- or 3-digit Mobile Network Code (MNC). E.g. “27201” is Ireland (272), Vodafone (01). |
-|  | mobileTechnology | Tech - A string identifying the type of cellular connection used. |
-|  | mobileCell | Cell - The cell ID of the cell tower to which the device is connected. The string value is the hexadecimal representation of an integer. |
-|  | mobileSignalStrength | Strength - Received Signal Strength Indication (RSSI) in dBm. Should correlate with mobileCSQ. |
-|  |  mobileSignalQuality | Quality - Varies by cellular module type, but typically represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
-|  | mobileCSQ | CSQ - Signal strength number (0 to 31).<br>0 to 7: Bad<br>8 to 15: Marginal<br>16 to 23: Good<br>24 to 31: Excellent<br>99: No signal! |
-|  | mobileUpTime | UpTime - The time in seconds since a connection was established to the mobile network. |
-|  | mobileConnect | Connect  - Time stamp of latest connection to the cellular network. The device uses “Unix Epoch Time”, which is the number of seconds that have elapsed since the Unix epoch, which is 00:00:00 UTC on 1 January 1970. |
-|  | mobileDisconnect | Disconnect - Time stamp of latest disconnection from the cellular network. 0 (“1970-01-01 00:00:00”) means that the device has not disconnected from the cellular network (since the last reboot or network restart). |
-|  | mobileCard | Card - Which SIM card is in use:<br>0: “1st”<br>1: “2nd”<br>2: “3rd”<br>3: “4th” |
-|  | mobileTodayCells | CellsToday - Number of changes in mobileCell today. |
+|        Name of graph/table         |    Description       |
+| :--------------------------  | :------------------- |
+|Cellular Download | The total number of octets (bytes) received on the first Mobile WAN interface. This is a counter that is reset when the device is rebooted or the network interface is restarted. Units used are B, KiB, MiB, GiB, ... where 1 KiB means 1024 B. |
+| Connectivity History | Shows history of online devices |
+| Devices Table (no title) |   |
+|  | Alias - Internal DMP name of the device |
+|  | Mac Address - physical address of the device. Can be used as direct link to device detail page. |
+|  | Firmware ver. - last reported firmware version. |
+|  | Online - shows last status of the device. |
+|  | Device Type - last reported device type. |
+|  | Down - The total number of octets (bytes) received on the first Mobile WAN interface. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
+|  | Up - The total number of octets (bytes) transmitted on the first Mobile WAN interface. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
+|  | Temp - Internal temperature within the device, in degrees Celcius. Note that this will always be higher than the external (ambient) temperature, by around 20 degrees. |
+|  | Voltage - Voltage of the input power supply to the device. |
+|  | PLMN - A numeric identifier for the mobile operator, or "Public Land Mobile Network". Composed of the 3-digit Mobile Country Code (MCC) followed by the 2- or 3-digit Mobile Network Code (MNC). E.g. “27201” is Ireland (272), Vodafone (01). |
+|  | Tech - A string identifying the type of cellular connection used. |
+|  | Cell - The cell ID of the cell tower to which the device is connected. The string value is the hexadecimal representation of an integer. |
+|  | Strength - Received Signal Strength Indication (RSSI) in dBm. Should correlate with mobileCSQ. |
+|  | Quality - Varies by cellular module type, but typically represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
+|  | CSQ - Signal strength number (0 to 31).<br>0 to 7: Bad<br>8 to 15: Marginal<br>16 to 23: Good<br>24 to 31: Excellent<br>99: No signal! |
+|  | UpTime - The time in seconds since a connection was established to the mobile network. |
+|  | Connect  - Time stamp of latest connection to the cellular network. The device uses “Unix Epoch Time”, which is the number of seconds that have elapsed since the Unix epoch, which is 00:00:00 UTC on 1 January 1970. |
+|  | Disconnect - Time stamp of latest disconnection from the cellular network. 0 (“1970-01-01 00:00:00”) means that the device has not disconnected from the cellular network (since the last reboot or network restart). |
+|  | Card - Which SIM card is in use:<br>0: “1st”<br>1: “2nd”<br>2: “3rd”<br>3: “4th” |
+|  | CellsToday - Number of changes in mobileCell today. |
 
 &nbsp;    
 &nbsp; 
@@ -58,7 +59,7 @@ When there is not any online device, the dashboard looks like this:
 
 To see the device dashboard go to Device → My Devices → And you select a specific device
 
-When the device is online, there should be displayed data like this:
+When the device is online, there should be data displayed similar like in this example:
 
 ![Device Dashboard](/images/explanations-discussions/grafana/05dev1.png "Device Dashboard")
 ![Device Dashboard](/images/explanations-discussions/grafana/05dev2.png "Device Dashboard")
@@ -76,31 +77,31 @@ When the device has never been online there are no monitoring data to be display
 &nbsp; 
 ### Description of individual graphs
 
-|        Name of graph         |  Trap Attribute  |  Description       |
-| :--------------------------  | :--------------- | :----------------- |
-| Time Since Last Reboot | sysUpTimeInstance | Time from the last reboot of the router |
-| Cellular Up-Time | mobileUpTime | The time since a connection was established to the mobile network. |
-| Download Total | ifInOctets | The total number of octets (bytes) received on the first Mobile WAN interface since last interface restart. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
-| Upload Total | ifOutOctets | The total number of octets (bytes) transmitted on the first Mobile WAN interface since last interface restart. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
-| Last Cellular Connect | mobileConnect | Time stamp of latest connection to the cellular network since the last reboot or network restart. The device uses “Unix Epoch Time”, which is the number of seconds that have elapsed since the Unix epoch, which is 00:00:00 UTC on 1 January 1970. E.g. 1576587282 = Tuesday 17 December 2019 12:54:42 UTC. |
-| Last Cellular Disconnect | mobileDisconnect | Time stamp of latest disconnection from the cellular network since the last reboot or network restart in Unix Epoch Time. |
-| Current SIM | mobileCard | Last reported SIM card in use |
-| Current Cell | mobileCell | The cell ID of the cell tower to which the device is connected. The string value is the hexadecimal representation of an integer. |
-| Current Channel | mobileChannel | Cellular channel number |
-| Current Cellular Technology | mobileTechnology | A string identifying the type of cellular connection used. Supported values:<br>"N/A"<br>"GPRS"<br>"EDGE"<br>"UMTS"<br>"HSDPA"<br>"HSUPA"<br>"HSPA+"<br>"LTE"<br>"CDMA"<br>"EV-DO"<br>"EV-DO Rel. 0"<br>"EV-DO Rev. A"<br>"EV-DO Rev. B" |
-| Current Cellular Operator | mobilePLMN | A numeric identifier for the mobile operator, or "Public Land Mobile Network". Composed of the 3-digit Mobile Country Code (MCC) followed by the 2- or 3-digit Mobile Network Code (MNC). E.g. “27201” is Ireland (272), Vodafone (01). |
-| Last SNMP Received | ifInOctets | Age of the last download | 
-| Cellular Data Usage | ifInOctets<br>ifOutOctets | The total number of octets (bytes) received  or sent on the Mobile WAN interface since last interface restart. Units used are B, KiB, MiB, GiB, ... where 1 KiB means 1024 B.|
-| Instantaneous Mobile Speed | ifInOctets<br>ifOutOctets | Speed of the mobile connection computed as:<br>Download: Non negative derivation of  ifInOctets * 8<br>Upload: Non negative derivation of ifOutOctets * 8 |
-| Per Carrier | ifInOctets<br>ifOutOctets | Transferred mobile data computed as:<br>Down: Non negative difference of ifInOctets<br>Up: Non negative difference of ifOutOctets |
-| Signal Quality | mobileSignalStrength | Received Signal Strength Indication (RSSI) in dBm. |
-|  | mobileCSQ | Signal strength number (0 to 31). |
-|  | mobileSignalQuality | Represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
-| Internal Conditions | statusTemperature | Internal temperature within the device, in degrees Celcius. Note that this will always be higher than the external (ambient) temperature, by around 20 degrees. |
-|  | statusVoltage | Voltage of the input power supply to the device |
-| Today Cells | mobileTodayCells | Mean of number of changes in mobileCell, that represents the cell ID of the cell tower to which the device is connected. |
-| Neighbours Channel (only valid when on GPRS/EDGE) | mobileChannelN1<br>mobileChannelN2 | Cellular channel number for neighboring channel #1 to #5 |
-| Neighbours Signal Strength (only valid when on GPRS/EDGE) | mobileSignalStrengthN1 to mobileSignalStrengthN5 | Signal Strength for neighboring channel #1 to #5. |
+|        Name of stat/graph         |  Description       |
+| :--------------------------  | :----------------- |
+| Time Since Last Reboot | Time from the last reboot of the router |
+| Cellular Up-Time | The time since a connection was established to the mobile network. |
+| Download Total | The total number of octets (bytes) received on the first Mobile WAN interface since last interface restart. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
+| Upload Total | The total number of octets (bytes) transmitted on the first Mobile WAN interface since last interface restart. Units used are B, KB, MB, GB, ... where 1 KB means 1024 B. |
+| Last Cellular Connect | Time stamp of latest connection to the cellular network since the last reboot or network restart. The device uses “Unix Epoch Time”, which is the number of seconds that have elapsed since the Unix epoch, which is 00:00:00 UTC on 1 January 1970. E.g. 1576587282 = Tuesday 17 December 2019 12:54:42 UTC. |
+| Last Cellular Disconnect | Time stamp of latest disconnection from the cellular network since the last reboot or network restart in Unix Epoch Time. |
+| Current SIM | Last reported SIM card in use |
+| Current Cell | The cell ID of the cell tower to which the device is connected. The string value is the hexadecimal representation of an integer. |
+| Current Channel | Cellular channel number |
+| Current Cellular Technology | A string identifying the type of cellular connection used. Supported values:<br>"N/A"<br>"GPRS"<br>"EDGE"<br>"UMTS"<br>"HSDPA"<br>"HSUPA"<br>"HSPA+"<br>"LTE"<br>"CDMA"<br>"EV-DO"<br>"EV-DO Rel. 0"<br>"EV-DO Rev. A"<br>"EV-DO Rev. B" |
+| Current Cellular Operator | A numeric identifier for the mobile operator, or "Public Land Mobile Network". Composed of the 3-digit Mobile Country Code (MCC) followed by the 2- or 3-digit Mobile Network Code (MNC). E.g. “27201” is Ireland (272), Vodafone (01). |
+| Last SNMP Received  | Age of the last download | 
+| Cellular Data Usage | The total number of octets (bytes) received  or sent on the Mobile WAN interface since last interface restart. Units used are B, KiB, MiB, GiB, ... where 1 KiB means 1024 B.|
+| Instantaneous Mobile Speed | Speed of the mobile connection computed as:<br>Download: Non negative derivation of  ifInOctets * 8<br>Upload: Non negative derivation of ifOutOctets * 8 |
+| Per Carrier | Transferred mobile data computed as:<br>Down: Non negative difference of ifInOctets<br>Up: Non negative difference of ifOutOctets |
+| Signal Quality | Signal Strength - Received Signal Strength Indication (RSSI) in dBm. |
+| | Mobile CSQ - Signal strength number (0 to 31). |
+| | Signal Quality - Represents the “Energy per chip per power density” value (Ec/Io), in dBm. |
+| Internal Conditions | Temperature - Internal temperature within the device, in degrees Celcius. Note that this will always be higher than the external (ambient) temperature, by around 20 degrees. |
+|  | Voltage - Voltage of the input power supply to the device |
+| Today Cells | Mean of number of changes in mobileCell, that represents the cell ID of the cell tower to which the device is connected. |
+| Neighbours Channel (only valid when on GPRS/EDGE) | Cellular channel number for neighboring channel #1 to #5 |
+| Neighbours Signal Strength (only valid when on GPRS/EDGE) | Signal Strength for neighboring channel #1 to #5. |
 
 &nbsp;    
 &nbsp; 
