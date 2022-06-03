@@ -15,8 +15,8 @@
 
 ## Router App WebAccess/DMP Client
 
-* [Release Notes/Changelog for latest client](/client/release_notes.md) - version 2.1.3 (December 8, 2021)
-* [Download - latest client and Application Note (Manual)](https://icr.advantech.cz/products/software/user-modules#webaccessdmp-client) - version 2.1.3 (December 8, 2021)
+* [Release Notes/Changelog for latest client](/client/release_notes.md) - version 2.1.4 (April 28, 2022)
+* [Download - latest client and Application Note (Manual)](https://icr.advantech.cz/products/software/user-modules#webaccessdmp-client) - version 2.1.4 (April 28, 2022)
 
 ### Tutorials
 * [Sign Up and Create your company](/tutorials/sign-up.md)

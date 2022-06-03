@@ -2,8 +2,12 @@
 
 We recommend always using the most up-to-date version of the client.
 
+### v2.1.4 (2022-04-28)
+* Added idempotency token for handling repeated request, which have already been handled.
+* Added welcome page to the router.
+
 ### v2.1.3 (2021-12-08)
-* If router does not measure temperature, send value was modified from 0 degrees to -273 degrees
+* If router does not measure temperature, send value was modified from 0 degrees to -273 degrees.
 * Modification of return codes when installation failure occurs.
 
 ### v2.1.2 (2021-08-03):
