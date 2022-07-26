@@ -1,0 +1,22 @@
+{
+  "name": "WebAccess/DMP Documentation",
+  "version": "0.0.1",
+  "description": "Open-source documentation for users of Advantech&#39;s WebAccess/DMP software",
+  "main": "index.js",
+  "authors": {
+    "name": "Jan Svoboda",
+    "email": "jan.svoboda@advantech.com"
+  },
+  "repository": "/WebAccess/DMP Documentation",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "docs:build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.7",
+    "@vuepress/plugin-medium-zoom": "^1.9.7",
+    "vuepress": "^1.5.3"
+  }
+}
