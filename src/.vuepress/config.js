@@ -90,6 +90,7 @@ module.exports = {
       ],
       '/release-notes/': [
         '',      /* /README.md/ */
+        '2.4.3/',      /* /README.md/ */
         '2.4.2/',      /* /README.md/ */
         '2.4.1/',  /* /2.4.1.md */
         '2.4.0/',  /* /2.4.0.md */
