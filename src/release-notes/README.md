@@ -1,6 +1,6 @@
 # 2.4.4: July 28, 2022
 
-This release contains billing improvement and appearance change.
+This release contains billing improvements and appearance changes.
 
 ### Improvements:
 
@@ -10,4 +10,3 @@ This release contains billing improvement and appearance change.
 ### Maintenance:
 
 * Changed email notification text and invoice appearance accordingly to billing change.
-![Invoice appearance](./2.4.4/invoice.png "Invoice appearance")
