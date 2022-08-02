@@ -10,7 +10,7 @@
 
 * Added reboot button and upgrade firmware button for a single device (on the right on the device detail page):
 
-![reboot upgrade delete](2.4.0_reboot_upgrade_delete.png "reboot upgrade delete")
+![reboot upgrade delete](./2.4.0_reboot_upgrade_delete.png "reboot upgrade delete")
 
 * As we now support device deletion, the icon to delete is shown at all times at the device (showed previously at unclaimed devices only).
 
