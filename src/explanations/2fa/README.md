@@ -1,4 +1,4 @@
-# 2Fa  
+# Two-Factor authentication
 
 **2Fa** (*Two-Factor authentication*) is an extra layer of security to protect your account.
 
