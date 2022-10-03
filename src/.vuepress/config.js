@@ -82,6 +82,7 @@ module.exports = {
         'playbooks/',  /* /README.md */
         'grafana/',  /* /README.md */
         'alerts/',  /* /README.md */
+        '2fa/',  /* /README.md */
         'auditing-options/',  /* /README.md */
         // 'gen1-to-gen2-migration/',  /* /README.md */
         'cant-connect-my-device/',  /* /README.md */
