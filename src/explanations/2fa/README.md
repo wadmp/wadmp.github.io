@@ -1,12 +1,11 @@
 # Two-Factor authentication
 
-**2Fa** (*Two-Factor authentication*) is an extra layer of security to protect your account.
+**2FA** (*Two-Factor authentication*) provides an additional level of security to protect your account.
 
-If its enabled and already setup after a successful login you will be asked for one time password to enter from your Auth App (Microsoft Authenticator, Google Authenticator, Authy, etc. …) 
+If it is enabled and already setup after a successful login you will be asked for one time password to enter from your Auth App (Microsoft Authenticator, Google Authenticator, Authy, etc.…)
 
-## Auth apps
-To setup 2Fa first you need to download the authenticator app to your phone.
-We do support a wide range of auth applications.
+## Authenticator apps
+To configure 2FA, you should first download the Authenticator app to your phone. We support a wide array of Auth apps.
 
 - [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US)
 
@@ -16,30 +15,29 @@ We do support a wide range of auth applications.
 
 - [Microsoft Authenticator (IOS)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
 
-## Enable 2Fa
+## Enable 2FA
 
-You can enable 2Fa in the **Company edit form**.
+You are able to activate 2FA in the **Company edit form**.
 
-![2Fa](./fa1.png "2fa")
+![2FA](./fa1.png "2fA")
 
-After its enabled you can setup a 2Fa using your auth app.
+After it is turned on, you can configure a 2Fa using your Auth application.
 
-**Important Notice:** Enabling 2Fa will add an extra option “Service Account” so company admins are able to enable this feature for users in a company have 2Fa enabled (this will allow users to use the scripts even they have 2Fa enabled otherwise they will not be able to do.)
+**Important Notice:** Enabling 2FA will add an extra option “Service Account” so company admins are able to enable/disable this feature for users in a company having 2FA enabled (this will allow users to use the scripts even they have 2FA enabled otherwise they will not be able to).
 
-![Enable 2Fa](./fa2.png "Enable 2fa")
+![Enable 2FA](./fa2.png "Enable 2fA")
 
-When you enable 2Fa for a company all user will be forced to setup the 2Fa after they login, they will not be able to use the system until they will do the setup . 
+When you enable 2FA for a company all users will be forced to setup the 2FA after they login, they will not be able to use the system until they complete the 2FA setup.
 
-## 2Fa login
+## 2FA login
 
-After downloading the application, you should scan the QR code or enter the given code manually.
+Once you have downloaded the application, you need to scan the QR code or enter the given code manually.
 
-![2Fa app](./fa3.png "2fa app")
+![2FA app](./fa3.png "2fA app")
 
+Type in the unique password you see in your Auth app to sign in.
 
-Enter the one-time password you see in your auth app to login 
+![2FA app password](./fa4.png "2fA app password")
 
-![2Fa app password](./fa4.png "2fa app password")
-
-**Important Notice:** Disabling 2Fa for company will disable it for all users in that company.
+**Important Notice:** Turning 2FA off for the company will turn it off for all users in that company.
 
