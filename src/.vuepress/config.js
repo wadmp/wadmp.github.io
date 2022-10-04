@@ -75,6 +75,7 @@ module.exports = {
       '/explanations/': [
         '',      /* /README.md/ */
         'companies-and-users/',  /* /README.md */
+        'permissions/', /* /README.md */
         'understanding-oauth/',  /* /README.md */
         'cellular-data-usage/',  /* /README.md */
         'grouping-and-tagging/',  /* /README.md */
@@ -91,6 +92,7 @@ module.exports = {
       ],
       '/release-notes/': [
         '',      /* /README.md/ */
+        '2.4.4/',      /* /README.md/ */
         '2.4.3/',      /* /README.md/ */
         '2.4.2/',      /* /README.md/ */
         '2.4.1/',  /* /2.4.1.md */
