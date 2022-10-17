@@ -76,7 +76,6 @@ module.exports = {
         '',      /* /README.md/ */
         'companies-and-users/',  /* /README.md */
         'permissions/', /* /README.md */
-        'understanding-oauth/',  /* /README.md */
         'cellular-data-usage/',  /* /README.md */
         'grouping-and-tagging/',  /* /README.md */
         'billing/',  /* /README.md */

@@ -1,13 +1,12 @@
-# 2.5.0: October 6, 2022
+# 2.5.0: October 17, 2022
 
 This release contains a bunch of new features, bug fixes, and game-changing improvements to the core architecture.
 
 
-### New Features
+### New Features:
 
 * Added an option to set a **2-Factor Authentication** (2FA) for a company. Once enabled any user of the company is required to use Apps like Google Authenticator or Microsoft Authentification to be able to log in to the WADMP account. In case of need, a *Service Account* can be set up, so API scripts can bypass the 2FA. More information on 2FA can be found [here](https://docs.wadmp.com/explanations/2fa/).
 ![2FA](./2.5.0/2fa.png "2FA")
-
 * Added support for storing and displaying a SIM ID (IMSI) if reported by the device (requires 2.2.0 or newer WebAccess/DMP Client). The SIM ID is displayed on the device detail page.
 ![2FA](./2.5.0/sim-id.png "SIM ID")
 
@@ -22,7 +21,7 @@ This release contains a bunch of new features, bug fixes, and game-changing impr
 * Added support of automatic update of WebAccess/DMP clients (requires 2.2.0 and higher client version). As soon as the client detects its current version is no longer supported, it will perform an automatic update to the newest supported version.
 
 
-### Improvements
+### Improvements:
 
 * Changed the overall backend architecture, which significantly improved the performance of the system and opens a path to new delivery options in the later releases. 
 
@@ -37,7 +36,7 @@ This release contains a bunch of new features, bug fixes, and game-changing impr
 * Updated billing email text so it highlights the billing overview and invoices are sent in separate emails.
 
 
-### Bug Fixes 
+### Bug Fixes: 
 
 * Fixed edits of Alerts sometimes cause the Alert to repeatedly trigger when it should not.
 
@@ -56,9 +55,6 @@ This release contains a bunch of new features, bug fixes, and game-changing impr
 * Made *Page* and *PageSize* parameters optional for all API endpoints.
 
 * Removed *ignore_devices_with_different_vesions* parameter from POST */management/settings-groups* API endpoint.
-
-
-???? *  The permissions follow the rules mentioned in this [Permissions Explanation](https://docs.wadmp.com/explanations/permissions/).
 
 
 
