@@ -2,9 +2,9 @@
 
 ## Latest version:
 
-### v2.1.4 (2022-04-28)
-* Added idempotency token for handling repeated request, which have already been handled.
-* Added welcome page to the router.
+### v2.2.0 (2022-10-17)
+* Added client automatic update that installs the newest supported client version if unsupported one is detected
+
 
 ## Download:
 
@@ -16,6 +16,10 @@ The client router app can also be upgraded via WebAccess/DMP.
 
 
 ## Previous versions:
+
+### v2.1.4 (2022-04-28)
+* Added idempotency token for handling repeated request, which have already been handled.
+* Added welcome page to the router.
 
 ### v2.1.3 (2021-12-08)
 * If the router does not measure temperature, send value was modified from 0 degrees to -273 degrees
