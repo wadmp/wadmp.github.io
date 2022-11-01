@@ -2,8 +2,8 @@
 
 ## Latest version:
 
-### v2.2.0 (2022-10-17)
-* Added client automatic update that installs the newest supported client version if unsupported one is detected
+### v2.2.1 (2022-11-01)
+* Bugfix: "ppp" service now restarts when sms settings change
 
 
 ## Download:
@@ -16,6 +16,9 @@ The client router app can also be upgraded via WebAccess/DMP.
 
 
 ## Previous versions:
+
+### v2.2.0 (2022-10-17)
+* Added client automatic update that installs the newest supported client version if unsupported one is detected
 
 ### v2.1.4 (2022-04-28)
 * Added idempotency token for handling repeated request, which have already been handled.
