@@ -1,4 +1,4 @@
-# 2.5.1: November 14, 2022
+# 2.5.1: November 15, 2022
 
 This release contains improvements and bug fixes.
 
