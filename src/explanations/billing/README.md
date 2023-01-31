@@ -36,6 +36,13 @@ Email is sent to the sales manager for your region, and a confirmation email is 
 
 &nbsp;    
 &nbsp; 
+
+## Request Downgrade from Premium
+
+To downgrade a Premium account to Free, you need to release all devices which exceed a total amount of 5 and send a request for downgrading to [wadmp@advantech.com](mailto:wadmp@advantech.com).
+
+&nbsp;    
+&nbsp; 
 ## Premium Features
 
 With Premium, you are not limited with the number of devices to 5.

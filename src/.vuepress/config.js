@@ -86,7 +86,9 @@ module.exports = {
         'auditing-options/',  /* /README.md */
         // 'gen1-to-gen2-migration/',  /* /README.md */
         'cant-connect-my-device/',  /* /README.md */
-        'adding-or-claiming-devices-in-bulk/'  /* /README.md */
+        'adding-or-claiming-devices-in-bulk/',  /* /README.md */
+        'bunch-claiming-devices/',  /* /README.md */
+        'wadmp-ports/'  /* /README.md */
 
       ],
       '/release-notes/': [
