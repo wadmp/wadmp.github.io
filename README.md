@@ -6,7 +6,11 @@ Source code of docs.wadmp.com. Written in Markdown, using vuepress static site g
 
 ### Prerequisities:
 
-* Install Node.js LTS version (currently 16) from https://nodejs.org/en/
+* Install Node.js LTS version (currently 18) from https://nodejs.org/en/
+* Note: when running into problems with openssl error (Error: error:0308010C:digital envelope routines::unsupported), on windows run this in cmd: 
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+```
 
 ### Install and run:
 
@@ -23,11 +27,13 @@ npm run dev
 
 > Note: Already added content (files, pages) reactively change in the browser, but the web is overall statically generated (front page, menus, sidebars), so when adding new content you need to re-run the generation of static content by stopping the dev server (ctrl + C) and run "npm run dev" again.
 
-* To build your changes before pushing your branch:
+To contribute, update only markdown files in src folder! Then push to separate branch (for permission contact admin) and create a pull request. It will be reviewed, merged and built and published.
+
+* To build (publish) your changes, run build before pushing your branch:
 ```
 npm run build
 ```
-> This creates production build files in the docs folder. Always commit both your changes in source files (src) and built content (docs)
+> This creates production build files in the docs folder. Always commit both your changes in source files (src) and built content (docs). Note that by commiting the docs folder, the github action will fire and publish new version of production files in the docs folder!
 
 ## To contribute:
 
