@@ -1,21 +1,28 @@
-# 2.5.1: November 15, 2022
+# 2.5.2: March 30, 2023
 
 This release contains improvements and bug fixes.
 
 ### Improvements:
 
-* Stopped storing the temperature when the value is absolute zero (-273 Celsius degrees). This value is used by the device to report that no temperature could be measured. Now, this value is not stored and nothing is showing in temperature graphs correctly.
+* Added an option to pay the WADMP service through the Advantech WISE Marketplace.
 
 ### Bug Fixes: 
 
-* Fixed Playbooks failing to complete in a specific situation when there was a pending or failed update/downgrade of the application that the playbook was targeting.
+* Fixed Playbooks getting stuck in Running state when some of the actions failed .
 
-* Fixed "Uptime" on the "My Devices" page now being calculated from the time of connection being established rather than the last registration message.
+* Fixed Playbooks getting stuck in Running state when multiple playbooks targetting the same device were started simultaneously.
 
-* Fixed the API Alert endpoints missed the check of name, recipient, and company id.
+* Fixed Playbook date and time showing “0” instead of the proper value for Start and Completion time.
 
-* Fixed supported characters in the Mobile WAN APN Username of the device configuration. The character "-" is now accepted.
+* Fixed user permissions not being automaticly ticked when repeatedly ticking a Company Admin flag.
+
+* Fixed GET /companies/\<id\> endpoint returning Internal Error when targeting a nonexisting company.
+
+* Fixed User Signed In and User Signed Out audit logs showing a wrong IP address. Due to the service being behind NAT, they will no longer show IP addresses.
 
 ### Content
 
-* Added support for IPsec and OpenVPN Up/Down scripts (firmware versions 6.3.7 and higher).
+* Fixed WIFI AP DHCP Pool settings not being applied to router.
+
+* Added support for ICR-324x-1n device types.
+  
