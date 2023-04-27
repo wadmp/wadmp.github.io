@@ -2,10 +2,8 @@
 
 ## Latest version:
 
-### v2.2.2 (2023-03-31)
-* bugfix: Firmware update on v2 routers fails to reboot the router and leaves it in invalid state.
-* bugfix: Receiving the same installation request from server repeatedly leads to failure. 
-
+### v2.2.3 (2023-04-25)
+* Bugfix: Fixed installation of user modules (router apps) that do not contain install script.
 
 ## Download:
 
@@ -17,6 +15,10 @@ The client router app can also be upgraded via WebAccess/DMP.
 
 
 ## Previous versions:
+
+### v2.2.2 (2023-03-31)
+* Bugfix: Firmware update on v2 routers fails to reboot the router and leaves it in invalid state.
+* Bugfix: Receiving the same installation request from server repeatedly leads to failure. 
 
 ### v2.2.1 (2022-11-01)
 * Bugfix: "ppp" service now restarts when sms settings change
