@@ -1,28 +1,13 @@
-# 2.5.2: March 30, 2023
+# 2.5.3: May 3, 2023
 
-This release contains improvements and bug fixes.
+This release contains improvements.
 
 ### Improvements:
 
-* Added an option to pay the WADMP service through the Advantech WISE Marketplace.
+* Improved monitoring database performace by setting up sharding, so the database load is spread accross multiple databases and much better handled.
+ 
+* Added alert in UI: If the latest version of WebAccess/DMP Client is not installed on the device, the user is noticed on a Device detail page, Router Apps, where installations are managed.
 
-### Bug Fixes: 
+![2FA](./2.5.3/client-alert.png "Client alert")
 
-* Fixed Playbooks getting stuck in Running state when some of the actions failed .
-
-* Fixed Playbooks getting stuck in Running state when multiple playbooks targetting the same device were started simultaneously.
-
-* Fixed Playbook date and time showing “0” instead of the proper value for Start and Completion time.
-
-* Fixed user permissions not being automaticly ticked when repeatedly ticking a Company Admin flag.
-
-* Fixed GET /companies/\<id\> endpoint returning Internal Error when targeting a nonexisting company.
-
-* Fixed User Signed In and User Signed Out audit logs showing a wrong IP address. Due to the service being behind NAT, they will no longer show IP addresses.
-
-### Content
-
-* Fixed WIFI AP DHCP Pool settings not being applied to router.
-
-* Added support for ICR-324x-1n device types.
-  
+* Updated wording in billing PDF automatically sent. Changed "Invoice Number" to "Order Number" and added notice that this is not an invoice.
