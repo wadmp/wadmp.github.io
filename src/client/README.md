@@ -2,8 +2,9 @@
 
 ## Latest version:
 
-### v2.2.3 (2023-04-25)
-* Bugfix: Fixed installation of user modules (router apps) that do not contain install script.
+### v2.2.4 (2023-06-30)
+* Added checks of available space before application download and installation.
+* Added reporting mobile operator and ICCID
 
 ## Download:
 
@@ -15,6 +16,9 @@ The client router app can also be upgraded via WebAccess/DMP.
 
 
 ## Previous versions:
+
+### v2.2.3 (2023-04-25)
+* Bugfix: Fixed installation of user modules (router apps) that do not contain install script.
 
 ### v2.2.2 (2023-03-31)
 * Bugfix: Firmware update on v2 routers fails to reboot the router and leaves it in invalid state.
