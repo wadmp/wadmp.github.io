@@ -2,18 +2,18 @@
 home: true
 tagline: Open-source documentation for users of Advantech WebAccess/DMP software
 actionText: Tutorials →
-actionLink: /gen3/tutorials/
+actionLink: /gen2/tutorials/
 features:
 
 ---
 
 **Documentation:**
-  * [Tutorials](/gen3/tutorials/) - get started with practical steps
-  * [Explanations](/gen3/explanations/) - understand important topics
+  * [Tutorials](/gen2/tutorials/) - get started with practical steps
+  * [Explanations](/gen2/explanations/) - understand important topics
   
 **Release Notes:**
-  * [Latest Release Notes of Public Cloud Instance](/gen3/release-notes/)
-  * [Latest Release Notes of the device Client](/gen3/client/)
+  * [Latest Release Notes of Public Cloud Instance](/gen2/release-notes/)
+  * [Latest Release Notes of the device Client](/gen2/client/)
 
 **Useful links:**
 * [Wadmp.com](https://wadmp.com) - UI of Public Cloud Instance

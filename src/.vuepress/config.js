@@ -40,27 +40,52 @@ module.exports = {
     nav: [
       {
         text: 'Tutorials',
-        link: '/tutorials/',
+        ariaLabel: 'Tutorials',
+        items: [
+          { text: 'Version 3.x.x', link: '/gen3/tutorials/' },
+          { text: 'Version 2.x.x', link: '/gen2/tutorials/' }
+        ]
       },
       {
         text: 'Explanations',
-        link: '/explanations/'
+        ariaLabel: 'Explanations',
+        items: [
+          { text: 'Version 3.x.x', link: '/gen3/explanations/' },
+          { text: 'Version 2.x.x', link: '/gen2/explanations/' }
+        ]
       },
       {
         text: 'Release Notes',
-        link: '/release-notes/'
+        ariaLabel: 'Release Notes',
+        items: [
+          { text: 'Version 3.x.x', link: '/gen3/release-notes/' },
+          { text: 'Version 2.x.x', link: '/gen2/release-notes/' }
+        ]
       },
       {
         text: 'Client Release Notes',
-        link: '/client/'
-      },      
+        ariaLabel: 'Client Release Notes',
+        items: [
+          { text: 'Version 3.x.x', link: '/gen3/client/' },
+          { text: 'Version 2.x.x', link: '/gen2/client/' }
+        ]
+      },
       {
         text: 'Support & Contact',
         link: '/contact/'
       }
     ],
     sidebar: {
-      '/tutorials/': [
+      '/gen3/tutorials/': [
+            '',     /* /README.md/ */
+            'ui-general-structure/',   /* README.md */
+            'create-company/',   /* README.md */
+            'create-users/',   /* README.md */
+            'device/',   /* README.md */
+            'search-filter-devices/',   /* README.md */
+            'configuring-router-apps/'   /* README.md */
+      ],
+      '/gen2/tutorials/': [
         '',     /* /README.md/ */
         'ui-general-structure/',   /* README.md */
         'create-company/',   /* README.md */
@@ -71,8 +96,22 @@ module.exports = {
         'configuring-on_off-devices/',   /* README.md */
         'upgrade-fw/',   /* README.md */
         'move-a-device/'   /* README.md */
+  ],
+      '/gen3/explanations/': [
+        '',      /* /README.md/ */
+        'permissions/', /* /README.md */
+        'cellular-data-usage/',  /* /README.md */
+        'grouping-and-tagging/',  /* /README.md */
+        'billing/',  /* /README.md */
+        'dashboard-graphs/',  /* /README.md */
+        'alerts/',  /* /README.md */
+        '2fa/',  /* /README.md */
+        'auditing-options/',  /* /README.md */
+        'cant-connect-my-device/',  /* /README.md */
+        'bunch-claiming-devices/',  /* /README.md */
+        'wadmp-ports/'  /* /README.md */
       ],
-      '/explanations/': [
+      '/gen2/explanations/': [
         '',      /* /README.md/ */
         'companies-and-users/',  /* /README.md */
         'permissions/', /* /README.md */
@@ -89,9 +128,11 @@ module.exports = {
         'adding-or-claiming-devices-in-bulk/',  /* /README.md */
         'bunch-claiming-devices/',  /* /README.md */
         'wadmp-ports/'  /* /README.md */
-
       ],
-      '/release-notes/': [
+      '/gen3/release-notes/': [
+        ''      /* /README.md/ */
+      ],
+      '/gen2/release-notes/': [
         '',      /* /README.md/ */
         '2.5.2/',      /* /README.md/ */
         '2.5.1/',      /* /README.md/ */
@@ -109,7 +150,9 @@ module.exports = {
       ],
       '/contact/': [
       ],
-      '/client/': [
+      '/gen3/client/': [
+      ],
+      '/gen2/client/': [
       ],
       '/eula': [
       ],
