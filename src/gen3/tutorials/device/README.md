@@ -1,4 +1,4 @@
-# Claim a Device to your Company
+# Claim a Device to Your Company
 
 To Claim a Device from one of your Companies, you must have the authority to Claim a Device. 
 

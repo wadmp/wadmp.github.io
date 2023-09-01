@@ -1,4 +1,4 @@
-# Upgrade devices to the latest Firmware
+# Upgrade Devices to the Latest Firmware
 
 To upgrade your devices to the latest Firmware, filter the devices you want to upgrade.
 

@@ -55,16 +55,16 @@ module.exports = {
         ]
       },
       {
-        text: 'Release Notes',
-        ariaLabel: 'Release Notes',
+        text: 'Release Notes (Server)',
+        ariaLabel: 'Release Notes (Server)',
         items: [
           { text: 'Version 3.x.x', link: '/gen3/release-notes/' },
           { text: 'Version 2.x.x', link: '/gen2/release-notes/' }
         ]
       },
       {
-        text: 'Client Release Notes',
-        ariaLabel: 'Client Release Notes',
+        text: 'Release Notes (Client)',
+        ariaLabel: 'Release Notes (Client)',
         items: [
           { text: 'Version 3.x.x', link: '/gen3/client/' },
           { text: 'Version 2.x.x', link: '/gen2/client/' }

@@ -1,4 +1,4 @@
-# Adding / Claiming devices in bulk
+# Adding / Claiming Devices in Bulk
 
 ## Introduction
 
@@ -79,7 +79,7 @@ Serial No. is mandatory when creating, claiming, or releasing a device.
 
 Order Code is an optional string.
 
-### **MAC address**
+### **MAC Address**
 This is the MAC address of the primary ethernet interface on the device. It is also printed on the physical label of the device.
 
 MAC is mandatory when creating, claiming, releasing, or deleting a device.

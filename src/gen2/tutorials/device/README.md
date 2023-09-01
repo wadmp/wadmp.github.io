@@ -1,4 +1,4 @@
-# Claim a Device to your Company
+# Claim a Device to Your Company
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cS1EdMOR430" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

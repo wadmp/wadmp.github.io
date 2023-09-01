@@ -13,13 +13,13 @@ features:
   
 **Release Notes:**
   * [Latest Release Notes of Public Cloud Instance](/gen3/release-notes/)
-  * [Latest Release Notes of the device Client](/gen3/client/)
+  * [Latest Release Notes of the Device Client](/gen3/client/)
 
 **Useful links:**
-* [Wadmp.com](https://wadmp.com) - UI of Public Cloud Instance
-* [Api.wadmp.com](https://api.wadmp.com) - API reference
-* [Status.wadmp.com](https://status.wadmp.com) - Status Page
-* [Wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP product page
+* [wadmp.com](https://wadmp.com) - UI of Public Cloud Instance
+* [api.wadmp.com](https://api.wadmp.com) - API reference
+* [status.wadmp.com](https://status.wadmp.com) - Status Page
+* [wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP product page
 * [WebAccess/DMP EULA](/eula.html) - End User License Agreement
 * [Privacy Policy](/privacy-policy.html)
 * [Support & Contact](/contact/)  

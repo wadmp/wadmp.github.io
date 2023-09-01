@@ -55,7 +55,7 @@ Additionally, you can access these user permissions:
 
 &nbsp;    
 &nbsp;    
-## Invoices (Premium type companies)
+## Invoices (Premium Type Companies)
 
 If your company type is Premium, you are billed monthly. The invoices are coming automatically on the Primary Contact Email at the company.
 

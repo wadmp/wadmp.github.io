@@ -25,7 +25,7 @@ When there is not any online device, the dashboard looks like this:
 
 &nbsp;    
 &nbsp; 
-### Description of individual graphs
+### Description of Individual Graphs
 
 |        Name of graph/table         |    Description       |
 | :--------------------------  | :------------------- |
@@ -75,7 +75,7 @@ When the device has never been online, there are no monitoring data to be displa
 
 &nbsp;    
 &nbsp; 
-### Description of individual graphs
+### Description of Individual Graphs
 
 |        Name of stat/graph         |  Description       |
 | :--------------------------  | :----------------- |
@@ -105,7 +105,7 @@ When the device has never been online, there are no monitoring data to be displa
 
 &nbsp;    
 &nbsp; 
-## Grafana tips & tricks
+## Grafana Tips & Tricks
 
 &nbsp;    
 &nbsp; 
@@ -155,7 +155,7 @@ You can find more information [here](https://grafana.com/docs/grafana/latest/sha
 
 &nbsp;    
 &nbsp; 
-### Data download
+### Data Download
 
 Grafana allows you to inspect a graph and download a CSV of the data presented.
 

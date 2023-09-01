@@ -24,7 +24,7 @@ When there is not any online device, the dashboard looks like this:
 
 &nbsp;    
 &nbsp; 
-### Description of individual fields
+### Description of Individual Fields
 
 |        Name of graph/widget         |    Description       |
 | :--------------------------  | :------------------- |

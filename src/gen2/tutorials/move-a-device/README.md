@@ -1,4 +1,4 @@
-# How to move a device from one WebAccess/DMP Management Server to another
+# How to Move a Device from One WebAccess/DMP Management Server to Another
 
 ## Introduction
 
@@ -22,7 +22,7 @@ The Management Server performs all of the actual device management tasks: firmwa
 
 The Management Server may occasionally direct the client to download a file from the Content Server, but the Content Server is irrelevant for this discussion.
 
-### Client configuration
+### Client Configuration
 
 When a client on a device is starting for the first time, the only information it has is the address of a Bootstrap Server.
 
@@ -63,7 +63,7 @@ The rest of this article will explain the procedure for this approach (Option 2)
   This procedure has been automated in a Jupyter Notebook that is available in our public GitHub repo:
   [github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb](https://github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb)
 
-## General case
+## General Case
 
 In the block diagrams above, we assume that the client on the device was initially configured to connect to the Bootstrap Server on Server 1.
 
@@ -86,7 +86,7 @@ You should have an equivalent page for the second server instance.
 
 Alternatively, the whole procedure has been automated in a Jupyter Notebook that is available in our public GitHub repo: [github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb](https://github.com/wadmp/wadmp.github.io/blob/master/jupyter_notebooks/move_device.ipynb)
 
-### Step 1: Tell the Bootstrap Server to which Management Server the device should be directed
+### Step 1: Tell the Bootstrap Server to which Management Server the Device Should Be Directed
 
 By default, in any particular WebAccess/DMP server deployment, the Bootstrap Server is configured to direct all devices to the Management Server co-located with the Bootstrap Server.
 
@@ -117,7 +117,7 @@ This means that the next time the devices perform a Bootstrap procedure, they wi
 
 But we are not ready to re-direct it yet.
 
-### Step 2: Tell the new Management Server to trust the device's Bootstrap Server
+### Step 2: Tell the New Management Server to Trust the Device's Bootstrap Server
 
 The Management Server uses TLS with mutual authentication. i.e., The client must present a digital certificate. Furthermore, the Management Server must trust the *issuer* of this certificate.
 
@@ -405,7 +405,7 @@ i.e., Pass the following JSON object in the body:
 > 
 > If you used the `openssl s_client` command earlier, you could rerun it now, and you should find the new client CA(s) listed under "Acceptable client certificate CA names".
 
-### Step 3: Trigger a new Bootstrap procedure
+### Step 3: Trigger a New Bootstrap Procedure
 
 **_Using the Public API of Server 1 ..._**
 

@@ -1,4 +1,4 @@
-# Create more Users
+# Create More Users
 
 The only way to add users to your companies is by creating them yourself. When a user signs up, he will also create a company, one with no relation to yours.
 
@@ -20,6 +20,8 @@ To create a user:
 3. On the prompt that follows, enter the following criteria: 
 
    1. E-mail address of the user. 
+   2. Choose the permissions of the user.
+   3. Click the submit button.
 
 ![create_user](./create_user.png)
 

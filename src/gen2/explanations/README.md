@@ -9,7 +9,7 @@ If you are curious about the ideas behind them, please visit the documentation f
 - [Azure IoT](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-iot-hub) and the similar [Device Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins)
 [Eclipse Ditto](https://www.eclipse.org/ditto/intro-overview.html) also provides a similar solution.
 
-## How it works
+## How It Works
 
 ![Desired Reported](./desired-reported.png "Desired and Reported states")
 
@@ -24,7 +24,7 @@ The device needs a process capable of monitoring changes to report them and also
 DMP also needs to be able to send changes to the device, possibly waiting for the device to connect.
 If the device doesn't apply the changes, DMP should be able to re-apply them.
 
-### DMP client
+### DMP Client
 Routers allow extensibility through [Router Apps](/references/routers-overview.md). We created the "WebAccess/DMP client" Router App to be the service that updates DMP when the router changes and applies all changes sent by DMP, among other tasks. It maintains a connection with DMP using the [MQTT protocol](/explanations-discussions/what-is-webaccess-dmp.md) so changes on both sides can be reported to the other end.
 
 Because the router is the source of truth when this client connects, it reports all its configurations. This allows DMP to have a detailed report of all the changes when the device was disconnected.
@@ -33,7 +33,7 @@ Configuration on routers is naturally separated into sections, so we take advant
 
 The client knows where the changes need to be applied and what extra steps need to be taken. When finished, it reports back the changed configuration.
 
-### Applying configuration changes
+### Applying Configuration Changes
 Every time the Desired state is changed, DMP will determine the difference with the reported state and send it to the device. If the device is online, it will receive the change immediately, but if it is offline, all subsequent changes will be merged into the Desired state. When the device connects again, it will receive only one change request per section modified.
 This behavior has a downside. For example, if a user wants to apply a set of changes, wait or request a reboot, and then use other modifications to the same section while the device is offline, all changes will be merged into one request only. In this exceptional scenario, the user should wait for the device to reboot before applying the second set of changes.
 
@@ -41,7 +41,7 @@ This behavior has a downside. For example, if a user wants to apply a set of cha
 DMP treats both Firmware and Router Apps as applications. An application is a versioned set of properties grouped in sections. It can be replaced by a different version that may have a different set of properties. The Firmware is still a unique application because it is related to the device type and cannot be uninstalled.
 This simplification allows to use of Desired and Reported states in all applications.
 
-## How to use Desired and Reported states
+## How to Use Desired and Reported States
 DMP groups all properties into sections. The DMP UI reflects this on the left column of the configuration screen:
 ![Device configuration](./device-configuration.png "UI Device configuration")
 The desired value always takes priority in the UI. The reported is shown only if it is different from the reported (like the "Name" property above, that was changed but not saved) or if there is no desired value. This simplified view allows focusing on what the user wants to change, showing details about the reported data only when relevant.
@@ -54,7 +54,7 @@ The following endpoints are the ones that allow us to interact with Desired and 
 For example, the image of the UI above called the following endpoint to get the Desired and Reported states for the SNMP section :
 ![Device Desired and Reported through the API](./device-configuration-api.png "API Device configuration")
 
-### Re-applying configuration with SyncEngine
+### Re-Applying Configuration With SyncEngine
 When a user applies a configuration change, DMP will send it to the device immediately or as soon as the device connects. However, if the device does not use the difference, DMP needs to re-apply the changes configured previously by the user. This is the job of SyncEngine.
 
 SyncEngine is an active agent in DMP in charge of detecting not applied differences in all devices and re-applying them following the policy set for the company to which the device belongs.

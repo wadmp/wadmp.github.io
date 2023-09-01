@@ -9,7 +9,7 @@ If you want to be notified that the alert triggered, read through and prepare no
 * To see the create icon in Rules and Endpoints, and to be able to mark alerts read/unread, you need to have *Alerts* permission *Manage*
 
 
-## To be Notified - Create Endpoint(s)
+## To Be Notified - Create Endpoint(s)
 
 In Alerts -> Endpoints use the plus icon to prepare Endpoint for the alert. This is simply the saved contact that can be later chosen to be notified by the Alert rule. You can create as many as you want and then add multiple endpoints to an Alert to be announced. 
 

@@ -38,7 +38,7 @@ The default time interval in this view is 24 hours.
 * Similarly, you may also decide to leave monitoring enabled but adjust the monitoring interval.
 Please be aware of this impact on your cellular data bill.
 
-## Further details
+## Further Details
 
 * The most significant factor that leads to the data usage figures above is the transport keepalive interval we use in the WebAccess/DMP Client Router App.
 This is hard-coded to be 60 seconds (1 minute). This may seem aggressive, but we have encountered cellular operators with VERY short timeouts on their networks. Of the order of 2 minutes!

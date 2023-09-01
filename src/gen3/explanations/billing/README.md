@@ -51,7 +51,7 @@ Additionally, you can access these user permissions:
 
 &nbsp;    
 &nbsp;    
-## Billing (Premium type companies)
+## Billing (Premium Type Companies)
 
 If your company type is Premium, you are billed monthly. The billings are coming automatically on the Primary Contact Email at the company.
 

@@ -1,4 +1,4 @@
-# Create new Companies
+# Create New Companies
 
 You can create more companies to represent a logical subdivision for practical purposes. For example, you may want to make a new company under your organization with different devices because:
 

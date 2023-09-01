@@ -1,4 +1,4 @@
-# Sign Up and create your company
+# Sign Up
 
 
 
@@ -9,7 +9,7 @@ Use Sign Up only if you are the first from your company to access the platform. 
 Sign in straight away if your company is listed as an external provider under the Sign-in button (see details below the video).
 
 
-## Sign up Process
+## Sign Up Process
 
 These are the steps if you prefer instructions instead of a video:
 - Go to [wadmp.com](https://wadmp.com). You will be redirected to the login page

@@ -65,7 +65,7 @@ API authorization will only succeed for those users who have the appropriate per
 
 
 
-## More details
+## More Details
 
 OAuth is an *authorization* framework.
 OAuth 2.0 is defined in [RFC 6749](https://tools.ietf.org/html/rfc6749) and Bearer Token Usage is in [RFC 6750](https://tools.ietf.org/html/rfc6750).
@@ -108,7 +108,7 @@ WebAccess/DMP uses [IdentityServer4](https://identityserver4.readthedocs.io/en/a
 
 ![alt text](./openid_certified.png "OpenID Certified logo")
 
-### Grant type
+### Grant Type
 
 The model for the payload for the `POST /api-clients` endpoint looks like this:
 

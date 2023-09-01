@@ -1,4 +1,4 @@
-# Create more Users
+# Create More Users
 
 The only way to add users to your companies is by creating them yourself. When a user signs up, he will also create a company, one with no relation to yours.
 

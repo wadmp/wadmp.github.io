@@ -2,7 +2,7 @@
 
 ## Latest version:
 
-### v3.0.0 (2023-XX-XX)
+### v3.0.0 (2023-09-01)
 * WebAccess/DMP Client GEN3 first release.
 
 ## Download:
@@ -16,5 +16,4 @@ The client router app can also be upgraded via WebAccess/DMP.
 
 ## Previous versions:
 
-### v2.2.3 (2023-04-25)
-* Bugfix: Fixed installation of user modules (router apps) that do not contain install script.
+* None released at the moment.

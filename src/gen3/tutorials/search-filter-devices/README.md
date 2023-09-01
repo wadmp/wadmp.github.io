@@ -1,4 +1,4 @@
-# Searching, filtering, and sorting devices
+# Searching, Filtering, and Sorting Devices
 
 You can search, filter and sort your devices at will, but remember that this only applies to your active view.
 
