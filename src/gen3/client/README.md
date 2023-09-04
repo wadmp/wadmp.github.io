@@ -16,4 +16,4 @@ The client router app can also be upgraded via WebAccess/DMP.
 
 ## Previous versions:
 
-* None released at the moment.
+* None previous versions released at the moment.
