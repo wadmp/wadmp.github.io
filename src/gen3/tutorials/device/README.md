@@ -4,7 +4,8 @@ To Claim a Device from one of your Companies, you must have the authority to Cla
 
 Claiming a Device depends on 2 User criteria: 
 
-User Authentication (successful login) is the first: User Authorisation (permissions) is the second. 
+1. *User Authentication* (successful login)
+2. *User Authorisation* (permissions) 
 
 You may select your username from the Users list to check your user permissions.
 
@@ -12,7 +13,7 @@ Your assigned permissions are shown in the example picture below.
 
 e.g. 
 
-![permssions](./permissions_table.png)
+![permissions](./permissions_user.png)
 
 **Rules**: 
 
@@ -30,11 +31,11 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
 1. Select "Dashboard" on the Title Panel menu. 
 
-2. click the "Add devices" action button on the Filter Panel.
+2. Click the "Add devices" action button on the Filter Panel.
 
-   ![](./claimDevice.png) 
+![Claim Device](./add_device.png) 
 
-3. You can choose "add device" or "create device" on the open form. On the "add device" form, there are four fields.
+3. On the *Add Device* form, there are four fields.
 
    1. **Alias**
 
@@ -72,20 +73,17 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
 4. If you have more than one Device to Claim, you may enable the "Add multiple devices from CSV".
 
-5. Submit.
+5. Click the *Submit* button.
 
 Here's an example of a printed Device label: 
 
 ![label](./04_deviceLabel.png)
 
-
-
 For this device, the Claim Device form would look something like this:
 
-![filledForm](./claimDeviceForm.png) 
-
+![filledForm](./FormLabel.png) 
 
 
 After a Company has successfully claimed a Device, it will appear in the Device List for that Company, for example like this: 
 
-![claimedDevice](./claimedDevice.png)
+![claimedDevice](./added-device.png)

@@ -12,7 +12,7 @@ You can check your permissions if you edit your user. Your assigned permissions 
 
 To create a user, you can do it in two almost identical ways:
 
-1. Make sure that you're in the right company where you want to invite the user, then select "Users" from the Context menu.
+1. Make sure that you're in the right company where you want to invite the user, then select "Users" from the *Title Menu*.
 2. On the Users page, click the *Invite User* action button on the right top of the page.
 
 ![users-invite](./users-invite.png)
@@ -35,7 +35,7 @@ To create a user, you can do it in two almost identical ways:
 
 The second way to create a user:
 
-1. Select "Companies" from the Context menu. 
+1. Select "Companies" from the *Title Menu*. 
 2. On the Companies page, click on your desired company, then on "Invite User" action button.
 
 ![companies-invite](./companies-invite.png)
