@@ -2,7 +2,7 @@
 
 The UI is structured into four main areas. 
 
-![Structure](./01_dashboard.png)
+![Structure](./General-UI.png)
 
 
 
@@ -10,7 +10,7 @@ The UI is structured into four main areas.
 
 The Title Panel contains a link to the context panel (as shown in the picture below), where you can specify your output on panel C. It also includes a link to the documentation and information about the currently logged user.
 
-![Structure](./action_bar.png)
+![Structure](./General-UI2.png)
 
 <u>B: The Views Panel</u>
 
@@ -20,7 +20,7 @@ This is where you can create empty or select already defined panel C and D setti
 
 This is the central panel of information. The details presented here depend on the context and actions selected. You can access the edit menu by clicking the top icon next to the blue marker.
 
-![Structure](./widget_edit.png)
+![Structure](./General-UI3.png)
 
 You can specify your desired widgets, including Company Stats Widgets, Charts Widgets, and Tables. All of these can be moved at will. By clicking on the red floppy disc, you save your current view.
 

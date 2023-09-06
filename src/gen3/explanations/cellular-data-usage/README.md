@@ -16,19 +16,21 @@ This means that the cellular network provider (or "carrier") charges for all dat
 
 The amount of data consumed is based on the type of the used Field, you can check the Traffic Usage of individual fields in the Fields section.
 
-![Traffic Usage](./traffic_usage.png "Traffic Usage")
+![Traffic Usage](./traffic-usage.png "Traffic Usage")
 
 ## Monitoring Cellular Data Usage on Device
 
 
-* If monitoring is enabled in the WebAccess/DMP client on a device, you can observe the *actual* cellular data usage on the Monitoring tab of the device: On this example you can see 2 graphs with average Download / Upload in MB in the past 21 hours.
+* If monitoring is enabled in the WebAccess/DMP client on a device, you can observe the *actual* cellular data usage on the Monitoring tab of the device.
 The default time interval in these views is 24 hours, but only If your device has been UP for at least that time.
 
-![Device Dashboard](./device-dashboard.png "Device Dashboard")
+![Router Details](./click_on_router.png "Router Details")
 
-* To disable WebAccess/DMP monitoring on a device, you can re-configure the WebAccess/DMP Router App via its local web server or via WebAccess/DMP itself. First, from the WebAccess/DMP UI, activate the "toggle" beside the "Enable Monitoring" checkbox, then unclick the checkbox and Submit:
+![Device Dashboard](./cellular-usage2.png "Device Dashboard")
 
-![alt text](./client_config.png "WebAccess/DMP Client configuration options")
+* To disable WebAccess/DMP monitoring on a device, you can re-configure the WebAccess/DMP Router App via its local web server, unclick the checkbox and press apply:
+
+![alt text](./client-config.png "WebAccess/DMP Client configuration options")
 
 * Similarly, you may also decide to leave monitoring enabled but adjust the monitoring interval.
 Please be aware of this impact on your cellular data bill.

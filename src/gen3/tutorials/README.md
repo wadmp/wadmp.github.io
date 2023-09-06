@@ -12,7 +12,7 @@ Use Sign Up link only if you are the first from your company to access the platf
 
 ![Login Page](./LogIn.png)
 
-- Click on the Sign Up link and fill in your details and the ones of your company.
+- Click on the Sign Up link and fill in your details.
 
 ![Sign Up Page](./SignUp.png)
 

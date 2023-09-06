@@ -13,9 +13,9 @@ There are two ways to become a user on WADMP:
 
 In both cases, the user will receive an email from the platform to confirm their email address. Then, using the 1st option, the user is the administrator for their company with the following permissions.
 
-![user_permissions](./user_permissions.png)
+![user_permissions](./user-permissions.png)
 
-As you can see, you have permission to view, add, edit and delete most entities on the system. The only permissions that are not present are the permissions to add companies, delete devices and delete alerts.
+As you can see, you have permission to view, add, edit and delete every entity on the system.
 
 Using the 2nd option, the permissions are set by the company administrator.
 
@@ -26,7 +26,7 @@ A user may be a member of one or more companies. Therefore, the user permissions
 
 When you log in to WADMP, you can manage devices and users for all companies you belong to.
 
-![companies_view](./companies_view.png)
+![companies_view](./companies-view.png)
 
 Click on a company to filter devices belonging to that company.
 

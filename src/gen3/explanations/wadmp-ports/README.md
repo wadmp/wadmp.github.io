@@ -12,9 +12,9 @@ Please be aware that IP addresses may change with updates to our infrastructure.
 
 | DNS                  | Windows        | Port | Accessed from router?      |
 | ---------------------| -------------- | ---- | -------------------------- |
-| management.wadmp.com | 20.166.164.47  | 8883 | <center> Yes </center>     |
-| bootstrap.wadmp.com  | 20.166.162.82  | 443  | <center> Yes </center>     |
-| content.wadmp.com    | 20.166.163.223 | 443  | <center> Yes </center>     |
-| gateway.wadmp.com    | 20.223.85.77   | 443  | <center> Yes </center>     |
+| management.wadmp3.com | 20.166.164.47  | 8883 | <center> Yes </center>     |
+| bootstrap.wadmp3.com  | 20.166.162.82  | 443  | <center> Yes </center>     |
+| content.wadmp3.com    | 20.166.163.223 | 443  | <center> Yes </center>     |
+| gateway.wadmp3.com    | 20.223.85.77   | 443  | <center> Yes </center>     |
 
 </div>

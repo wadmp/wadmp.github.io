@@ -13,9 +13,15 @@ Permissions regarding Companies and Users behave according to this rules:
 
 ## Permissions Description
 
-![user_permissions](./permissions-1.png "Permissions")
+![user_permissions](./user-permissions.png "Permissions")
 
 * Company Admin - sets a fixed set of permissions
+
+* User
+  * View - Allows viewing a list of users they have access to
+  * Create - Allows the user to create new users to their company in the system
+  * Edit - Allows the user to edit an existing user in the system
+  * Delete - Allows the user to delete another user in the system
 
 * Company
   * Create - Allows the user to create new standalone companies
@@ -26,12 +32,6 @@ Permissions regarding Companies and Users behave according to this rules:
   * Claim & Release - Allows the user to claim a device in the system
   * Edit - Allows the user to make changes to a device
   * Delete - Allows the user to delete a device from the system
-
-* Users
-  * View - Allows viewing a list of users they have access to
-  * Create - Allows the user to create new users to their company in the system
-  * Edit - Allows the user to edit an existing user in the system
-  * Delete - Allows the user to delete another user in the system
 
 * Alerts History, Rules & endpoints
   
@@ -48,9 +48,9 @@ Permissions regarding Companies and Users behave according to this rules:
 
 * Views
   * Manage - Allows the user to manage the Views
+
+* AppStore
+  * Manage - Allows the user to manage the AppStore 
   
 * Biling
   * Manage - Allows the user to manage the billing section
-
-* API Scripts
-  * Manage - Allows the user to enable the API scripts 
