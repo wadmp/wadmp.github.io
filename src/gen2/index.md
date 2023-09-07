@@ -16,7 +16,7 @@ features:
   * [Latest Release Notes of the Device Client](/gen2/client/)
 
 **Useful links:**
-* [wadmp.com](https://wadmp.com) - UI of Public Cloud Instance
+* [wadmp3.com](https://wadmp3.com) - UI of Public Cloud Instance
 * [api.wadmp.com](https://api.wadmp.com) - API reference
 * [status.wadmp.com](https://status.wadmp.com) - Status Page
 * [wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP product page

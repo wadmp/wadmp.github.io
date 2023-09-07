@@ -25,6 +25,9 @@ Similar to the User detail page. Click on your profile in the Title Panel, then 
 
 ## Filtering of Audit Logs
 
-You can specify your desired Audit Logs, the date & time with the "Start Time" and "End Time" selections.
+- You can specify your desired Audit Logs, the date & time with the "Start Time" and "End Time" selections. 
+- It is also possible to filter Audit logs by Action Type.
 
 ![Filtering Audit Logs](./auditing-filters.png "Filtering Audit Logs")
+
+![Filtering by Action Type](./action_type.png "Filtering by Action Type")

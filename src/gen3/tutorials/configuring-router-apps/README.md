@@ -24,7 +24,18 @@ Configuration profiles are used for easy installation of any of our Router Apps,
 
 ![Configuration Profile Edit](./ApplyingConfP.png)
 
-7. You can overview, compare and delete your Configuration Profiles in the *Config Profiles* section.
+::: tip Example Tip: 
+If you apply Configuration Profile, the router will apply all configurations from the router from which Config Profile was created. 
+
+For example:
+
+- You have router_1 with an IP address on eth0=10.10.10.1 and router_2 with an IP address on eth0=10.10.10.2.
+- If you create a Config Profile from router_1, it will contain setting ETH_IPADDR=10.10.10.1. and if you apply that Config Profile to router_2, setting ETH_IPADDR on router_2 will be overwritten to 10.10.10.1.
+- Only if you create a Unique setting with Setting Name ETH_IPADDR (the exact name of the setting from the router) and display the name, for example, Unique_ETH_IPADDR, and edit that field to Unique_ETH_IPADDR=10.10.10.2, the setting will not be overwritten.
+
+:::
+
+1. You can overview, compare and delete your Configuration Profiles in the *Config Profiles* section.
 
 ![config_prof_menu](./ConfigProfile1.png)
 

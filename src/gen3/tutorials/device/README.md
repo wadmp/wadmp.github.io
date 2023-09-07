@@ -1,6 +1,6 @@
 # Claim a Device to Your Company
 
-To Claim a Device from one of your Companies, you must have the authority to Claim a Device. 
+To Claim a Device to one of your Companies, you must have the authority to Claim a Device. 
 
 Claiming a Device depends on 2 User criteria: 
 
@@ -17,13 +17,11 @@ e.g.
 
 **Rules**: 
 
-Only unclaimed (aka "Released") Devices can be Claimed by a Company.
-
-A Device may only be claimed by one Company. 
-
-That Company may release a Device that a Company has claimed. 
-
-A Company must claim a Device before it may be managed or monitored by that Company. 
+- Only unclaimed (aka "Released") Devices can be Claimed by a Company.
+- A Device may only be claimed by one Company. 
+- That Company may release a Device that a Company has claimed. 
+- A Company must claim a Device before it may be managed or monitored by that Company. 
+- Free Company can claim only five unique devices. Claiming another device is not possible, only the one device that you released before.
 
 **Steps**: 
 
@@ -51,7 +49,7 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
       The MAC address format is 00:0A:14:aa:bb:cc
 
-      You may enter the MAC address with or without the semi-colons.
+      You need to enter the MAC address with the semi-colons.
 
       This is a required field: enter a valid MAC address for your device here.
 

@@ -22,8 +22,8 @@ This is the central panel of information. The details presented here depend on t
 
 ![Structure](./General-UI3.png)
 
-You can specify your desired widgets, including Company Stats Widgets, Charts Widgets, and Tables. All of these can be moved at will. By clicking on the red floppy disc, you save your current view.
+You can specify your desired widgets, including Company Stats Widgets, Charts Widgets, and columns in the Table. All of these can be moved at will. By clicking on the red floppy disc, you save your current view.
 
 <u>D: The Filter Panel</u>
 
-In this section, you can filter based on any available parameters. Export, import (from CSV file), or delete devices and config your current filters at will.
+In this section, you can filter based on any available parameters. You can also export, import (from CSV file), add device, delete device, reboot device, create configuration profiles and configurate your current filters at will.

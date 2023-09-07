@@ -17,7 +17,7 @@ To configure 2FA, you should first download the Authenticator app to your phone.
 
 ## Enable 2FA
 
-You are able to activate 2FA in the **Company edit form**.
+You are able to activate 2FA in the *Company Edit Form*.
 
 ![2FA](./fa1.png "2fA")
 
@@ -28,9 +28,6 @@ After it is turned on, you can configure a 2FA using your Auth application.
 ![Enable 2FA](./fa2.png "Enable 2fA")
 
 When you enable 2FA for a company all users will be forced to setup the 2FA after they login, they will not be able to use the system until they complete the 2FA setup.
-
-2FA Setup is also accessible via top right user menu for cases like change of the phone or switching to different auth app:
-![Enable 2FA](./fa5.png "Setup 2fa")
 
 ## 2FA Login
 

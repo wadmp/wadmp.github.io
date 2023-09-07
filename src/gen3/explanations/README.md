@@ -24,7 +24,7 @@ A user may be a member of one or more companies. Therefore, the user permissions
 **Note**: You cannot assign permission that you do not have yourself.
 
 
-When you log in to WADMP, you can manage devices and users for all companies you belong to.
+When you log in to WADMP, you can manage devices and users for all companies you belong to and have permission to do so.
 
 ![companies_view](./companies-view.png)
 
@@ -34,17 +34,20 @@ Click on a company to filter devices belonging to that company.
 
 ## Company
 
-Every user on WADMP must belong to at least one company. When registering on WADMP for the first time, you will be asked to enter your company details. This is now your parent company. You are automatically the administrator for this company. You may also be added to an existing company by that company's administrator. 
+Company cannot exist without at least one Company admin. When registering on WADMP for the first time, you will be asked to enter your company details. You are automatically the administrator for this company. You may also be added to an existing company by that company's administrator. 
 
 Once you have signed up to WADMP, you can now create users and add them to companies with a set of permissions. You may also create other companies and assign users to those companies.
 
 
 
-A parent company is a root-level company. You can create as many parent companies as you wish. Parent companies may have many children or sub-companies. Child companies may also have sub-companies. There are no restrictions on the number of levels of child companies you can create.
+A parent company is a root-level company. You can create a maximum of three parent companies. Parent companies may have many child-companies. Child-companies may also have child-companies. There are no restrictions on the number of levels of child-companies you can create.
 
 
+Example of Company hierarchy:
 
-![](./company-hierarchy.png)
+| Root and Parent | Parent and Child | Child                 |
+|-----------------|------------------|-----------------------|
+| company_1       | company_1_child  | company_1_child_child |
 
 
 Having created your companies, you can now begin to manage and monitor devices. To control a device, you must first claim it to your company. See [Claim my device](http://localhost:8080/gen3/tutorials/device/) 

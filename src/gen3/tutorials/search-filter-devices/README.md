@@ -20,7 +20,7 @@ If you want to search for a specific device, choose your particular column and w
 
 ![FilterSearch](./FilterSearch.png)
 
-If you want to sort, for example, by the *Description* of the device, you press the claimed date button and choose either descending or ascending mode.
+If you want to sort, for example, by the *Description* of the device, you press the *Description* button and choose either descending or ascending mode.
 
 ![SortingFilter](./SortingFilter.png)
 
@@ -28,6 +28,6 @@ You can edit, show/hide, or add more columns in the Edit View mode, as mentioned
 
 ![Fields](./Fields.png)
 
-By pressing the "Add field" button, you'll be able to customize your custom table fields and edit the available ones.  
+By pressing the "Add field" button, you'll be able to customize your custom table fields.
 
 ![AddFields](./AddFields.png)

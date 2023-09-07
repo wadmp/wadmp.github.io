@@ -6,7 +6,7 @@ When a router installs the “WebAccess/DMP Client” User Module, the client ma
 
 On the WADMP client, the “Enable Monitoring” checkbox must be checked (the default is yes), and note the “Monitoring Interval”.
 
-![WebAccess/DMP Client](./01client.png "WebAccess/DMP Client")
+![WebAccess/DMP Client](./DMP-Client.png "WebAccess/DMP Client")
 
 
 &nbsp;    
@@ -16,11 +16,11 @@ On the WADMP client, the “Enable Monitoring” checkbox must be checked (the d
 When there are some online devices for the selected company, you should see aggregated company data like this:
 
 
-![Company Dashboard with data](./03compdash.png "Company Dashboard with data")
+![Company Dashboard with data](./03company-dashboard.png "Company Dashboard with data")
 
 When there is not any online device, the dashboard looks like this:
 
-![Company Dashboard with no data](./04compdashempty.png "Company Dashboard with no data")
+![Company Dashboard with no data](./04company-dashboard.png "Company Dashboard with no data")
 
 &nbsp;    
 &nbsp; 
@@ -28,29 +28,29 @@ When there is not any online device, the dashboard looks like this:
 
 |        Name of graph/widget         |    Description       |
 | :--------------------------  | :------------------- |
-| Online | Connection status. |
-| Online / Offline Since | Date and time when this device has last connected or disconnected from DMP. |
-| Device ID | ID of the device. |
-| Name | Name of the device. |
+| Claimed Date | Date of claim. |
 | Configuration Profile | Assigned configuration profile. |
-| Synchronization Status | Synchronization status of the device. |
-| Device Type | Type of the device. |
-| Mobile Operator | The name of the mobile operator. |
-| Serial Number | Serial number of a device. |
-| Mobile Card | Mobile Card ID. |
-| Date Created | Date when this device was created on the server (usually corresponding to its manufacture date). |
-| Reconnects Count | Number of times the device went from offline to online state. |
-| Mobile Technology | Mobile technology (e.g., GSM, UMTS, LTE), ("N/A" when no SIM is present). |
-| Data Usage Total | Total amount of data uploaded + downloaded. |
-| Data Uploaded | Amount of data uploaded through mobile WAN interface. |
-| Description | Description of the device. |
+| Connection Status | Connection Status. |
+| Data Downloaded (recent) | Amount of data downloaded within the last monitoring period. |
+| Data Up+Down (cumulative) | Total amount of data uploaded + downloaded. |
+| Data Up+Down (recent) | Amount of data uploaded + downloaded within the last monitoring period. |
+| Data Uploaded (recent) | Amount of data uploaded within the last monitoring period. |
+| Date Created | Date when this device was created on server (usually corresponds to date of it being manufactured). |
+| Description | Description of a device. |
+| Device ID | ID of the device. |
+| Device Type | Type of device. |
 | IMEI | IMEI of a device. |
-| RouterPassword | Password of some user on a device. |
-| GpsLongitude | GPS longitude in degrees. |
-| GpsLatitude | GPS latitude in degrees. |
-| GpsAltitude | GPS altitude in meters. |
-| SMS on Connect | A unique setting to this router (overrides configuration profile). |
-| Phone Number | A unique setting to this router (overrides configuration profile). |
+| MAC Address | MAC address of device's primary LAN interface. |
+| Mobile Operator | The name of a mobile operator. |
+| Mobile Technology | Mobile technology (e.g. GSM, UMTS, LTE), ("N/A" when no SIM is present). |
+| Name | Name of the device. |
+| Online/Offline Since | Date and time when this device has last connected or disconnected from DMP. |
+| Reconnects Count | Number of times the device went from offline to online state. |
+| Serial Number | Serial number of a device. |
+| SIM Card | Active SIM card. |
+| Synchronization Status | Synchronization status of device. |
+
+> **NOTE:** These are the default fields that you will find in the *Fields* section placed in the Title Panel. Information about additional fields can be acquired by clicking the *+ ADD* button in the *Fields* section and browsing through all available ones.
 
 &nbsp;    
 &nbsp; 
@@ -58,15 +58,24 @@ When there is not any online device, the dashboard looks like this:
 
 To see the device dashboard go to the Dashboard section → Filter Panel → And select a specific device.
 
-When the device is online, there should be data displayed similar to this example:
+When the device is offline or online for the first time, the page will be blank with no monitoring data to be displayed:
 
-![Device Dashboard](./05dev1.png "Device Dashboard")
+![Device Dashboard with no data](./06device-nodata.png "Device Dashboard with no data")
 
+You can customize dashboard of your device with the *Edit View* to be looking like on the example:
 
+![Device Dashboard](./05device-dashboard.png "Device Dashboard")
 
-When the device has never been online, there are no monitoring data to be displayed:
+To add Tables to the device's dashboard, press *Edit VIew* → *Table* and make your already added Tables visible. You can also add additional ones by clicking *+ Add Field* button.
 
-![Device Dashboard with no data](./06devnodata.png "Device Dashboard with no data")
+![Device Dashboard Table](./07-device-table.png "Device Dashboard Table")
+
+To add Charts to the device's dashboard, press *Edit View* → *Charts*, select either Line Chart or Map (this is online functionable when device has GPS active), select your desired *Field* that will appear as graph widget on the device's dashboard. Click the "Save" button.
+
+![Device Dashboard Charts](./08-device-charts.png "Device Dashboard Charts")
+
+> **NOTE:** Remember that every action in the *Edit View* needs to be save by clicking on the Floppy Disc icon.
+
 
 &nbsp;    
 &nbsp; 
@@ -76,21 +85,21 @@ When the device has never been online, there are no monitoring data to be displa
 &nbsp; 
 ### Sizing and Moving
 
-You can specify the sizing and position of your Graphs & Widgets by selecting "edit view" mode and then dragging your specified field. To end edit view mode click the "save view" button or undo made changes with undo button next to it.
+You can specify the sizing and position of your Graphs & Widgets by selecting *Edit View* mode and then dragging your specified field. To end *Edit View* mode click the Floppy Disc icon or undo made changes with undo button next to it.
 
-![Move/Resize](./move_resize.png "Move/Resize")
+![Move/Resize](./move-resize.png "Move/Resize")
 
 &nbsp;    
 &nbsp; 
 ### Filtering
 
-You can interact with Graphs by clicking on a specific part of it. For example, If you want to show only devices located in "Prague", click on the particular part of the graph that represents devices from "Prague". This will add your active filter that can be removed by clicking the "Clear Filters" button.
+You can interact with Graphs by clicking on a specific part of it. For example, If you want to show only devices of "Vodafone CZ" operator, click on the particular part of the graph that represents devices of "Vodafone CZ". This will add your active filter that can be removed by clicking the "Clear Filters" button.
 
-![Filter/Click-Change](./filter_click-change.png "Filter/Click-Change")
+![Filter/Click-Change](./filter-click-change.png "Filter/Click-Change")
 
-![Filter/Change](./filter_change.png "Filter/Change")
+![Filter/Change](./filter-change.png "Filter/Change")
 
-![Filter Clear](./clear_filter.png "Filter Clear")
+![Filter Clear](./clear-filter.png "Filter Clear")
 
 &nbsp;    
 &nbsp; 
@@ -102,4 +111,4 @@ You can export CSV data files in Excel from your devices:
 
 2. You can select your preferred devices and export only data. There's also an option to selection your preferable devices on the graph, and then download data from them in bulk.
 
-![Export](./export.png "Export")
+![Export](./data-export.png "Export")

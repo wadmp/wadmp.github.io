@@ -30,7 +30,7 @@ The default time interval in these views is 24 hours, but only If your device ha
 
 * To disable WebAccess/DMP monitoring on a device, you can re-configure the WebAccess/DMP Router App via its local web server, unclick the checkbox and press apply:
 
-![alt text](./client-config.png "WebAccess/DMP Client configuration options")
+![WebAccess/DMP Client configuration options](./dmp-client1.png "WebAccess/DMP Client configuration options")
 
 * Similarly, you may also decide to leave monitoring enabled but adjust the monitoring interval.
 Please be aware of this impact on your cellular data bill.

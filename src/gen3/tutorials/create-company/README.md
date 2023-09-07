@@ -17,9 +17,11 @@ Go to Companies on the top left menu and click on the *+ ADD* button for a new c
 
 ![companies_add](./company-add.png)
 
-Remember, the creation of a company depends on two conditions:
+Remember, the creation of a company depends on these conditions:
 - That you can log in to the platform and
 - That you have permissions to create companies
+- Free company cannot create create subcompanies
+- User can only create three root companies
 
 If you can't see the new company icon, contact your company's admin to get the appropriate permissions.
 
