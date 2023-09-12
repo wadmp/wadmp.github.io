@@ -38,7 +38,7 @@ Permissions regarding Companies and Users behave according to this rules:
   * View - Allows viewing a list of Alerts History, Rules & Endpoints
   * Create - Allows the user to create new Alerts History, Rules & Endpoints
   * Edit - Allows the user to edit an existing Alerts History, Rules & Endpoints
-  * Delete - Allows the user to delete Alerts History, Rules & Endpoints (This feature has not been implemented yet)
+  * Delete - Allows the user to delete Alerts History, Rules & Endpoints
 
 * Auditing
   * View - Allows the user to view the auditing

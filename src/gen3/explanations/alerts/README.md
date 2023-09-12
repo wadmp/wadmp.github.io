@@ -2,7 +2,7 @@
 
 *Alerts* is the **Premium feature only** (Alerts and everything related can be created only for a company of Premium type).
 
-If you want to be notified that the alert triggered, read through and prepare notification Endpoint(s) first. It is possible to have an Alert without an Endpoint and check only the Alerts History in DMP. In that case, skip to Create Endpoint(s) below.
+If you want to be notified that the alert triggered, read through and prepare notification Endpoint(s) first. It is possible to have an Alert without an Endpoint and check only the Alerts History in DMP. In that case, skip to Create Rule(s) below.
 
 **Notice:** Permissions apply to Alerts.
 * To read Alerts History, Rules, and Endpoints, you need to have *Alerts* permission *View*. 
@@ -55,6 +55,6 @@ And always, the alert is recorded in Alerts -> History, even if no endpoint is s
 
 ![Alerts history](./alerts-history.png "Alerts history")
 
-Alerts in History can be marked as read or marked back as unread by one using checkboxes. It is possible also filter read/unread Alerts via the icon at the top left.
+Alerts in History can be marked as read or marked back as unread by clicking on the envelope icon on the right side. It is possible also filter read/unread Alerts via the icon at the top left.
 
 Alerts stay in History, and they are not automatically deleted.

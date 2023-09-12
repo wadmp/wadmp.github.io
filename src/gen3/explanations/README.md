@@ -40,7 +40,7 @@ Once you have signed up to WADMP, you can now create users and add them to compa
 
 
 
-A parent company is a root-level company. You can create a maximum of three parent companies. Parent companies may have many child-companies. Child-companies may also have child-companies. There are no restrictions on the number of levels of child-companies you can create.
+You can create a maximum of three root companies. Parent companies may have many child-companies. Child-companies may also have child-companies. There are no restrictions on the number of levels of child-companies you can create.
 
 
 Example of Company hierarchy:

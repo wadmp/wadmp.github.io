@@ -58,7 +58,7 @@ When there is not any online device, the dashboard looks like this:
 
 To see the device dashboard go to the Dashboard section → Filter Panel → And select a specific device.
 
-When the device is offline or online for the first time, the page will be blank with no monitoring data to be displayed:
+When you're configuring your first device, the page will be blank with no monitoring data to be displayed:
 
 ![Device Dashboard with no data](./06device-nodata.png "Device Dashboard with no data")
 
@@ -66,11 +66,11 @@ You can customize dashboard of your device with the *Edit View* to be looking li
 
 ![Device Dashboard](./05device-dashboard.png "Device Dashboard")
 
-To add Tables to the device's dashboard, press *Edit VIew* → *Table* and make your already added Tables visible. You can also add additional ones by clicking *+ Add Field* button.
+To add Tables to the device's dashboard, press *Edit View* → *Table* and make your already added Tables visible. You can also add additional ones by clicking *+ Add Field* button.
 
 ![Device Dashboard Table](./07-device-table.png "Device Dashboard Table")
 
-To add Charts to the device's dashboard, press *Edit View* → *Charts*, select either Line Chart or Map (this is online functionable when device has GPS active), select your desired *Field* that will appear as graph widget on the device's dashboard. Click the "Save" button.
+To add Charts to the device's dashboard, press *Edit View* → *Charts*, select either Line Chart or Map (this is only functionable when device has GPS active), select your desired *Field* that will appear as graph widget on the device's dashboard. Click the "Save" button.
 
 ![Device Dashboard Charts](./08-device-charts.png "Device Dashboard Charts")
 
