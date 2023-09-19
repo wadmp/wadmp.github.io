@@ -87,7 +87,7 @@ To add Charts to the device's dashboard, press *Edit View* → *Charts*, select 
 
 You can specify the sizing and position of your Graphs & Widgets by selecting *Edit View* mode and then dragging your specified field. To end *Edit View* mode click the Floppy Disc icon or undo made changes with undo button next to it.
 
-![Move/Resize](./move-resize.png "Move/Resize")
+![Move/Resize](./move-resize-1.png "Move/Resize")
 
 &nbsp;    
 &nbsp; 
@@ -111,4 +111,11 @@ You can export CSV data files in Excel from your devices:
 
 2. You can select your preferred devices and export only data. There's also an option to selection your preferable devices on the graph, and then download data from them in bulk.
 
-![Export](./data-export.png "Export")
+![Export](./data_export-1.png "Export")
+
+
+### Data Import
+
+You can import your devices from CSV data files by clicking on the *CSV Import* button, and selecting the your specified data file. You can scroll down the *Help for for input format* for details about importing your data files. Click *Submit* button. 
+
+![Import](./Data_Import.png "Import")

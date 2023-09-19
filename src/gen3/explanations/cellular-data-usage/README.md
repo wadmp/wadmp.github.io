@@ -16,7 +16,7 @@ This means that the cellular network provider (or "carrier") charges for all dat
 
 The amount of data consumed is based on the type of the used Field, you can check the Traffic Usage of individual fields in the Fields section.
 
-![Traffic Usage](./traffic-usage.png "Traffic Usage")
+![Traffic Usage](./traffic-usage1.png "Traffic Usage")
 
 ## Monitoring Cellular Data Usage on Device
 

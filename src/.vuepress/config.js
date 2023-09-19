@@ -81,6 +81,7 @@ module.exports = {
             'ui-general-structure/',   /* README.md */
             'create-company/',   /* README.md */
             'create-users/',   /* README.md */
+            'invite-existing-or-new-user/',   /* README.md */
             'device/',   /* README.md */
             'search-filter-devices/',   /* README.md */
             'configuring-router-apps/'   /* README.md */

@@ -25,7 +25,7 @@ After it is turned on, you can configure a 2FA using your Auth application.
 
 **Important Notice:** Enabling 2FA will add an extra option “Service Account” (in user's permissions settings) so company admins are able to enable/disable this feature for users in a company having 2FA enabled (this will allow users to use the scripts even if they have 2FA enabled otherwise they will not be able to).
 
-![Enable 2FA](./fa2.png "Enable 2fA")
+![Enable 2FA](./2fa.png "Enable 2fA")
 
 When you enable 2FA for a company all users will be forced to setup the 2FA after they login, they will not be able to use the system until they complete the 2FA setup.
 

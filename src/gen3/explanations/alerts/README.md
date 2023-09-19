@@ -53,7 +53,7 @@ For Endpoint type Email, the alert looks like this in your mail inbox:
 
 And always, the alert is recorded in Alerts -> History, even if no endpoint is selected at the rule.
 
-![Alerts history](./alerts-history.png "Alerts history")
+![Alerts history](./alerts-history-1.png "Alerts history")
 
 Alerts in History can be marked as read or marked back as unread by clicking on the envelope icon on the right side. It is possible also filter read/unread Alerts via the icon at the top left.
 

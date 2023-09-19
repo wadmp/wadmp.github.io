@@ -18,11 +18,11 @@ Configuration profiles are used for easy installation of any of our Router Apps,
 
 5. At this point, you will head for the Dashboard section into the Filter Panel section, where you will make a Configuration Profile out of this router.
 
-![Create Configuration Profile](./Create-ConfP.png)
+![Create Configuration Profile](./Create-ConfigP2.png)
 
 6. Now, you can apply your newly created Configuration Profile to any router in your current Company, as showcased in the picture below.
 
-![Configuration Profile Edit](./ApplyingConfP.png)
+![Configuration Profile Edit](./ApplyingConfP2.png)
 
 ::: tip Example Tip: 
 If you apply Configuration Profile, the router will apply all configurations from the router from which Config Profile was created. 
@@ -39,8 +39,8 @@ For example:
 
 ![config_prof_menu](./ConfigProfile1.png)
 
-![Config Profile Compare](./ConfigProfileCompare.png)
+![Config Profile Compare](./ConfigProfileCompare3.png)
 
  8. Compare by choosing 2 Configuration Profiles of your desire.
 
-![Config Profile Compare 2](./ConfigProfileCompare2.png)
+![Config Profile Compare 2](./CompareConfigurationProfile-2.png)

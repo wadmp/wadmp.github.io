@@ -13,7 +13,7 @@ Your assigned permissions are shown in the example picture below.
 
 e.g. 
 
-![permissions](./permissions_user.png)
+![permissions](./permissions_user-1.png)
 
 **Rules**: 
 
@@ -29,7 +29,7 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
 1. Select "Dashboard" on the Title Panel menu. 
 
-2. Click the "Add devices" action button on the Filter Panel.
+2. Click the "Add Devices" action button on the Filter Panel.
 
 ![Claim Device](./add_device.png) 
 
@@ -75,11 +75,11 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
 Here's an example of a printed Device label: 
 
-![label](./04_deviceLabel.png)
+![label](./device_label.png)
 
 For this device, the Claim Device form would look something like this:
 
-![filledForm](./FormLabel.png) 
+![filledForm](./claimDeviceForm_1.png) 
 
 
 After a Company has successfully claimed a Device, it will appear in the Device List for that Company, for example like this: 

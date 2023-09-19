@@ -1,6 +1,6 @@
 # Create More Users
 
-Creating them yourself is the only way to add users to your companies. When a user signs up, he will also create a company, one with no relation to yours.
+Creating them yourself is the only way to add users to your companies. When a user signs up, he will also be able create a company, one with no relation to yours.
 
 As with companies, remember that the creation of a user depends on two conditions:
 - That you can log in to the platform and
@@ -8,18 +8,18 @@ As with companies, remember that the creation of a user depends on two condition
 
 You can check your permissions if you edit your user. Your assigned permissions are shown as check marks.
 
-![permissions_user](./permissions_user.png)
+![permissions_user](./permissions_user-1.png)
 
 To create a user, you can do it in two almost identical ways:
 
-1. Make sure that you're in the right company where you want to invite the user, then select "Users" from the *Title Menu*.
-2. On the Users page, click the *Invite User* action button on the right top of the page.
+1. Make sure that you're in the right company where you want to invite the user, then select *Users* from the *Title Menu*.
+2. On the *Users* page, click the *Invite User* action button on the right top of the page.
 
 ![users-invite](./users-invite.png)
 
 3. To the invitation form, fill in the user's email and set up your specific permissions for him to use.
 
-![user-permissions](./user-permissions.png)
+![user-permissions](./user-inviteform.png)
 
 4. Now the user needs to head to his email to confirm sent invitation by clicking on link in the email.
 
@@ -38,7 +38,7 @@ The second way to create a user:
 1. Select "Companies" from the *Title Menu*. 
 2. On the Companies page, click on your desired company, then on "Invite User" action button.
 
-![companies-invite](./companies-invite.png)
+![companies-invite](./companies-invite(1).png)
 
 3. From now on the proccess is the same like in the first way of creating a user.
 

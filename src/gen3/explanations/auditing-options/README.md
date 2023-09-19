@@ -18,7 +18,7 @@ On the Dashboard > Filter Panel section, head into the Device detail page and �
 
 ## User Audit Logs
 
-Similar to the User detail page. Click on your profile in the Title Panel, then “auditing”, where all the Audit Logs related to this user can be found.
+Similar to the User detail page. Click on your profile in the Title Panel, then “Auditing”, where all the Audit Logs related to this user can be found.
 
 ![User Audit Logs](./auditing-user.png "User Audit Logs")
 
