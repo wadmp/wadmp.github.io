@@ -28,6 +28,6 @@ You can edit, show/hide, or add more columns in the Edit View mode, as mentioned
 
 ![Fields](./Fields.png)
 
-By pressing the "Add field" button, you'll be able to customize your custom table fields.
+You can customize your custom table fields by pressing the "Add field" button.
 
 ![AddFields](./AddFields.png)

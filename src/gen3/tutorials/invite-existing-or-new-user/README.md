@@ -1,6 +1,6 @@
 # Invite Already Existing or New Users
 
-You can invite existing users or new users that just created their account to any company you have permission to do so. You can do it similarly, like when creating a new user.
+You can invite existing or new users who just created their account to any company you have permission to. You can do it similarly, like when creating a new user.
 
 You can check your permissions if you edit your user. Your assigned permissions are shown as check marks.
 
@@ -23,7 +23,7 @@ To invite a user:
 
 ![invite-confirmation](./accept-invite2.png)
 
-6. From now on, the user can click on the "Continue to Dashboard" link, and check that he's in the company.
+6. From now on, the user can click the "Continue to Dashboard" link and check that he's in the company.
 
 ![check-company](./check-company.png)
 

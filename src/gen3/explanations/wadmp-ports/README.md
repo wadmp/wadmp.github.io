@@ -1,6 +1,6 @@
 # WADMP Ports / Addresses
 
-This section provides a list of addresses and ports that the **customer needs to whitelist** in his firewall.
+This section provides a list of addresses and ports the **customer needs to whitelist** in his firewall.
 
 :::warning  Caution:
 

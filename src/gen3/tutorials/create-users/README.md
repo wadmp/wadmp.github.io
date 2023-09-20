@@ -1,9 +1,9 @@
 # Create More Users
 
-Creating them yourself is the only way to add users to your companies. When a user signs up, he will also be able create a company, one with no relation to yours.
+Creating them yourself is the only way to add users to your companies. When a user signs up, he can also make a company with no relation to yours.
 
 As with companies, remember that the creation of a user depends on two conditions:
-- That you can log in to the platform and
+- You can log in to the platform and
 - That you have permission to create companies
 
 You can check your permissions if you edit your user. Your assigned permissions are shown as check marks.
@@ -21,7 +21,7 @@ To create a user, you can do it in two almost identical ways:
 
 ![user-permissions](./user-inviteform.png)
 
-4. Now the user needs to head to his email to confirm sent invitation by clicking on link in the email.
+4. Now, the user needs to head to his email to confirm the sent invitation by clicking on the link in the email.
 
 ![email-invitation](./email-invitation.png)
 
@@ -29,18 +29,18 @@ To create a user, you can do it in two almost identical ways:
 
 ![test_subject](./test_subject.png)
 
-6. After clicking the create account button, you will get a message that your registration has been completed. You can now access your account by clicking on the *Dashboard* link or just logging in on the main page.
+6. After clicking the create account button, you will get a message that your registration has been completed. You can now access your account by clicking the *Dashboard* link or logging in on the main page.
 
 ![subject_success](./subject_success.png)
 
 The second way to create a user:
 
 1. Select "Companies" from the *Title Menu*. 
-2. On the Companies page, click on your desired company, then on "Invite User" action button.
+2. On the Companies page, click on your desired company, then on the "Invite User" action button.
 
 ![companies-invite](./companies-invite(1).png)
 
-3. From now on the proccess is the same like in the first way of creating a user.
+3. From now on, the process is the same as in the first way of creating a user.
 
 
 

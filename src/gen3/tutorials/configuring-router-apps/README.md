@@ -14,7 +14,7 @@ Configuration profiles are used for easy installation of any of our Router Apps,
 
 ![WADMP Client Version](./client-vers.png)
 
-4. From now on, you can make all desired settings that will be used in the Configuration Profile. This includes all your desired Router Apps, Firmware, and Configuration settings of the router.
+4. From now on, you can make all desired settings in the Configuration Profile. This includes all your desired Router Apps, Firmware, and Configuration settings of the router.
 
 5. At this point, you will head for the Dashboard section into the Filter Panel section, where you will make a Configuration Profile out of this router.
 
@@ -35,7 +35,7 @@ For example:
 
 :::
 
-1. You can overview, compare and delete your Configuration Profiles in the *Config Profiles* section.
+7. You can overview, compare, and delete your Configuration Profiles in the *Config Profiles* section.
 
 ![config_prof_menu](./ConfigProfile1.png)
 

@@ -8,7 +8,7 @@ Company type can be:
 | Company type |   | Features     |
 |------|----------------------------------------------------------|-------------------------------------------|
 | Free | ![Free company type](./free-1.png) | Can claim and manage up to 5 devices.     |
-| Premium | ![Premium company type](./premium-1.png)        | Can claim and manage an unlimited number of devices, has access to the *Alerts* section and can use the API. Billed monthly.    |
+| Premium | ![Premium company type](./premium-1.png)        | Can claim and manage an unlimited number of devices, has access to the *Alerts* section, and can use the API. Billed monthly.    |
 
 
 
@@ -20,11 +20,11 @@ Company type can be changed only for the parent company. Child companies inherit
 &nbsp; 
 ## Request Upgrade to Premium
 
-To request the change to Premium, go to the Companies list (in the context menu) and click on your parent company, then in the company menu click on the crown icon with "upgrade" on it. 
+To request the change to Premium, go to the Companies list (in the context menu) and click on your parent company. Then, in the company menu, click on the crown icon with "upgrade" on it. 
 
 ![Request upgrade](./UpgradePremium.png "Request upgrade")
 
-Optionally you can fill up the *ERPID* of your Company, otherwise press the *Submit Request* button.
+Optionally, you can fill up the *ERPID* of your Company. Otherwise, press the *Submit Request* button.
 
 ![Request upgrade form](./UpgradePremium2.png "Request upgrade form")
 
@@ -35,7 +35,7 @@ Email is sent to the sales manager for your region, and a confirmation email is 
 
 ## Request Downgrade from Premium
 
-To downgrade a Premium account to Free, you need to release all devices which exceed a total amount of 5 and send a request for downgrading to [wadmp@advantech.com](mailto:wadmp@advantech.com).
+To downgrade a Premium account to Free, you need to release all devices that exceed a total amount of 5 and send a request for downgrading to [wadmp@advantech.com](mailto:wadmp@advantech.com).
 
 &nbsp;    
 &nbsp; 
@@ -43,8 +43,8 @@ To downgrade a Premium account to Free, you need to release all devices which ex
 
 With Premium:
 
-- You are not limited with the number of devices to 5.
-- You gain access to create rules in *Alerts* section.
+- You are not limited to the number of devices to 5.
+- You gain access to create rules in the *Alerts* section.
 - You can access the API Clients and Device Management Server.
 
 &nbsp;    

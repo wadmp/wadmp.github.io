@@ -21,11 +21,11 @@ e.g.
 - A Device may only be claimed by one Company. 
 - That Company may release a Device that a Company has claimed. 
 - A Company must claim a Device before it may be managed or monitored by that Company. 
-- Free Company can claim only five unique devices. Claiming another device is not possible, only the one device that you released before.
+- Free Company can claim only five unique devices. Claiming another device is not possible. Only the one device that you released before.
 
 **Steps**: 
 
-Assuming you have the required permissions, you may Claim a Device to one of your Companies by following these steps: 
+Assuming you have the required permissions, you may Claim a Device from one of your Companies by following these steps: 
 
 1. Select "Dashboard" on the Title Panel menu. 
 
@@ -33,7 +33,7 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
 ![Claim Device](./add_device.png) 
 
-3. On the *Add Device* form, there are four fields.
+3. There are four fields on the *Add Device* form.
 
    1. **Alias**
 
@@ -41,7 +41,7 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
       This will help you to identify the physical device by Alias name later. 
 
-      This is not a required field: you may leave this empty.  
+      This is not a required field; you may leave this empty.  
 
    2. **MAC Address**
 
@@ -55,17 +55,17 @@ Assuming you have the required permissions, you may Claim a Device to one of you
 
    3. **Serial Number**
 
-      Please enter the exact Serial Number for this device, as it is printed on the label for the device.
+      Please enter the exact Serial Number for this device, as it is printed on the label.
 
       Some Serial Numbers have alphanumeric characters: enter them as you see them. 
 
-      This is a required field: you must enter a valid Serial Number for your device here. 
+      This is a required field: enter a valid Serial Number for your device here. 
 
    4. **IMEI**
 
-      Please enter the exact IMEI for this device, as it is printed on the label for the device.
+      Please enter the exact IMEI for this device, as it is printed on the label.
 
-      This is a required field: you must enter a valid IMEI for your device.
+      This is a required field: enter a valid IMEI for your device.
 
       **Note**: Some Devices do _not_ have an IMEI number. For those Devices, you will not be required to enter an IMEI. 
 

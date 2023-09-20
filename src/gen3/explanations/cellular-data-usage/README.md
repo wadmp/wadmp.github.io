@@ -2,19 +2,19 @@
 
 ## Introduction
 
-WebAccess/DMP requires every device to have the [WebAccess/DMP Client](https://ep.advantech-bb.cz/products/software/user-modules#webaccessdmp-client) Router App installed.
+WebAccess/DMP requires every device to install the [WebAccess/DMP Client](https://ep.advantech-bb.cz/products/software/user-modules#webaccessdmp-client) Router App.
 
 The basic principle of operation is that the WebAccess/DMP client maintains a TCP connection with the WebAccess/DMP management server.
-This means that the device is *always connected*, and therefore the user can reach the device immediately, as required.
+This means the device is *always connected*, so the user can reach the device immediately, as required.
 
 However, there is a cost associated with maintaining this always-on TCP connection.
 Packets of data must be sent periodically to maintain the connection.
 In addition, for most of our customers, the device connects to WebAccess/DMP via cellular.
-This means that the cellular network provider (or "carrier") charges for all data exchanged: even if it is only TCP "keepalive" data and not "application" data.
+This means that the cellular network provider (or "carrier") charges for all data exchanged, even if it is only TCP "keepalive" data and not "application" data.
 
 ## Summary
 
-The amount of data consumed is based on the type of the used Field, you can check the Traffic Usage of individual fields in the Fields section.
+The amount of data consumed is based on the type of the used Field. You can check the Traffic Usage of individual fields in the Fields section.
 
 ![Traffic Usage](./traffic-usage1.png "Traffic Usage")
 
@@ -28,11 +28,11 @@ The default time interval in these views is 24 hours, but only If your device ha
 
 ![Device Dashboard](./cellular-usage2.png "Device Dashboard")
 
-* To disable WebAccess/DMP monitoring on a device, you can re-configure the WebAccess/DMP Router App via its local web server, unclick the checkbox and press apply:
+* To disable WebAccess/DMP monitoring on a device, you can re-configure the WebAccess/DMP Router App via its local web server, unclick the checkbox, and press apply:
 
 ![WebAccess/DMP Client configuration options](./dmp-client1.png "WebAccess/DMP Client configuration options")
 
-* Similarly, you may also decide to leave monitoring enabled but adjust the monitoring interval.
+* Similarly, you may leave monitoring enabled but adjust the monitoring interval.
 Please be aware of this impact on your cellular data bill.
 
 ## Further Details
@@ -40,12 +40,12 @@ Please be aware of this impact on your cellular data bill.
 * The most significant factor that leads to the data usage figures above is the transport keepalive interval we use in the WebAccess/DMP Client Router App.
 This is hard-coded to be 60 seconds (1 minute). This may seem aggressive, but we have encountered cellular operators with VERY short timeouts on their networks. Of the order of 2 minutes!
 
-* The Configuration manual for your device has a section on the "Check Connection" feature, which is part of the Mobile WAN configuration.
+* The Configuration manual for your device has a section on the "Check Connection" feature, part of the Mobile WAN configuration.
 It states unequivocally:
 
 > Enabling the Check Connection function for mobile networks is necessary for the uninterrupted and continuous operation of the router.
 
-* This advice still applies to any device using WebAccess/DMP, *but the "Enable Traffic Monitoring" item should also be enabled.*
+* This advice applies to any device using WebAccess/DMP, *but the "Enable Traffic Monitoring" item should also be enabled.*
 The device will monitor all traffic on the cellular interface and only send ping requests if the selected Ping Interval is less than the WebAccess/DMP keepalive interval (60 seconds).
 If you do not "Enable Traffic Monitoring", the device will send periodic ping requests to check the cellular connection. This will add to your cellular data usage.
 
@@ -61,4 +61,4 @@ For example:
   * Router App installation or upgrade = anything from 30kB for a small app such as Pinger to 6MB for a large app such as Python;
   * Re-configuration = varies, depending on the section or sections being re-configured and the content of the configuration data.
 
-* In this article, we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc. The difference to base-2 (aka "binary" or "IEC") is 2.4%. However **on WebAccess/DMP we always use base-2 (1024) counted data units!** It is to maintain unification with our routers, where we use the customary practice of base-2 counts and B, KB, MB, GB units. To sum up: On WebAccess/DMP may occur, both types of units B, KB, MB, ... and B, KiB, MiB, ... but they always use the base-2 (1024) count.
+* In this article, we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc. The difference to base-2 (aka "binary" or "IEC") is 2.4%. However **on WebAccess/DMP we always use base-2 (1024) counted data units!** It is to maintain unification with our routers, using the customary practice of base-2 counts and B, KB, MB, and GB units. To sum up: On WebAccess/DMP may occur, both types of units B, KB, MB, ... and B, KiB, MiB, ... but they always use the base-2 (1024) count.

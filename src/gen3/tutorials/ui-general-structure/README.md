@@ -24,4 +24,4 @@ You can specify your desired widgets, including Company Stats Widgets, Charts Wi
 
 **D: The Filter Panel**
 
-In this section, you can filter based on any available parameters. You can also export, import (from CSV file), add device, delete device, reboot device, create configuration profiles and configurate your current filters at will.
+In this section, you can filter based on any available parameters. You can also export, import (from CSV file), add devices, delete devices, reboot devices, create configuration profiles, and configure your current filters at will.

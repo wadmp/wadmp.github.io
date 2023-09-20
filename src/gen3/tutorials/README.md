@@ -16,11 +16,10 @@ Use Sign Up link only if you are the first from your company to access the platf
 
 ![Sign Up Page](./SignUp.png)
 
-- After clicking on the Create Account button, go to your email inbox and confirm your new user.
+- After clicking the Create Account button, enter your email inbox and confirm your new user.
   
 ![Email Confirmation](./EmailConfirm.png)
 
 - After clicking the confirmation in your email, your account will be ready to log in to WebAccess/DMP with your login data on the main page.
 
 ![Email Click](./emailconfirm2.png)
-

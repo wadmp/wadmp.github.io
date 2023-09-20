@@ -2,7 +2,7 @@
 
 When it comes to creating a company, we will distinguish two different scenarios:
 
-1. You're creating your first company, which will lead you to the Creating Company form by clicking the *+ ADD COMPANY* button. In the first scenario, you can skip the next step about creating additional companies.
+1. You're creating your first company, which will lead you to the Creating Company form by clicking the *+ ADD COMPANY* button. In the first scenario, you can skip the next step of creating additional companies.
 
 ![add_company](./add_company.png)
 
@@ -13,14 +13,14 @@ You can create more companies to represent a logical subdivision for practical p
 You want your devices to be managed by different users
 You want one aggregated dashboard per device group
 It makes sense for the structure to resemble the hierarchy of your organization. e.g., Buildings or Areas where devices are installed
-Go to Companies on the top left menu and click on the *+ ADD* button for a new company on right of the page menu.
+Go to Companies on the top left menu and click on the *+ ADD* button for a new company on the right of the page menu.
 
 ![companies_add](./company-add.png)
 
 Remember, the creation of a company depends on these conditions:
-- That you can log in to the platform and
-- That you have permissions to create companies
-- Free company cannot create create subcompanies
+- You can log in to the platform and
+- That you have permission to create companies
+- Free companies cannot create child-companies
 - User can only create three root companies
 
 If you can't see the new company icon, contact your company's admin to get the appropriate permissions.

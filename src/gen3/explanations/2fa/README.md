@@ -2,7 +2,7 @@
 
 **2FA** (*Two-Factor authentication*) provides an additional level of security to protect your account.
 
-If it is enabled and already setup after a successful login you will be asked for one time password to enter from your Auth App (Microsoft Authenticator, Google Authenticator, Authy, etc.…)
+Suppose it is enabled and already set up after a successful login. In that case, you will be asked for a one-time password to enter from your Auth App (Microsoft Authenticator, Google Authenticator, Authy, etc.)
 
 ## Authenticator Apps
 To configure 2FA, you should first download the Authenticator app to your phone. We support a wide array of Auth apps.
@@ -17,21 +17,21 @@ To configure 2FA, you should first download the Authenticator app to your phone.
 
 ## Enable 2FA
 
-You are able to activate 2FA in the *Company Edit Form*.
+You can activate 2FA in the *Company Edit Form*.
 
 ![2FA](./fa1.png "2fA")
 
-After it is turned on, you can configure a 2FA using your Auth application.
+After turning it on, you can configure a 2FA using your Auth application.
 
-**Important Notice:** Enabling 2FA will add an extra option “Service Account” (in user's permissions settings) so company admins are able to enable/disable this feature for users in a company having 2FA enabled (this will allow users to use the scripts even if they have 2FA enabled otherwise they will not be able to).
+**Important Notice:** Enabling 2FA will add an extra option, “Service Account” (in the user's permissions settings), so company admins can enable/disable this feature for users in a company having 2FA enabled (this will allow users to use the scripts even if they have 2FA enabled otherwise they will not be able to).
 
 ![Enable 2FA](./2fa.png "Enable 2fA")
 
-When you enable 2FA for a company all users will be forced to setup the 2FA after they login, they will not be able to use the system until they complete the 2FA setup.
+When you enable 2FA for a company, all users will be forced to set up the 2FA after they log in. They cannot use the system until they complete the 2FA setup.
 
 ## 2FA Login
 
-Once you have downloaded the application, you need to scan the QR code or enter the given code manually.
+Once you have downloaded the application, you must scan the QR code or enter the given code manually.
 
 ![2FA app](./fa3.png "2fA app")
 
