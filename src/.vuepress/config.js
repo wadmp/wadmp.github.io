@@ -131,7 +131,8 @@ module.exports = {
         'wadmp-ports/'  /* /README.md */
       ],
       '/gen3/release-notes/': [
-        ''      /* /README.md/ */
+        '',      /* /README.md/ */
+        '3.0.0/'      /* /README.md/ */
       ],
       '/gen2/release-notes/': [
         '',      /* /README.md/ */
