@@ -1,38 +1,45 @@
-# Migration from 2.x.x to 3.x.x Version
+# Migration from 2.x.x to 3.x.x Instance
 
-The migration feature is meant to export data from version 2.x.x Company and import them to version 3.x.x Company. This means that migration data is independent of the structure of companies, and only data exported from the selected company in the 2.x.x version can be imported to the selected company in the 3.x.x version. Company Edit permission is needed for export/import to be available.
+This guide explains the process of transferring data from a 2.x.x instance (www.wadmp.com ) to 3.x.x. instance (www.wadmp3.com). The migration specifically moves data from one company in GEN2 to another company in GEN3 without affecting the company structure. It's important to note that the presence of both companies in their respective instances is a necessary condition for the migration to take place.
 
-**What is migrated**:
+**What is migrated:**
 
-- Devices - will be claimed to 3.x.x Company.
-- Tags and Groups - Will be both added as _Fields_ of type _Tag - True/False_ in 3.x.x version, and Devices belonging to this Tag/Group will be marked as True.
-- Alerts, including Alert Endpoints - will be added as Alerts and Alert Endpoints in the 3.x.x version.
+- Device Memberships (the same devices from 2.x.x will be added to your 3.x.x. company)
+- Tags and Groups (added through automatically created _Fields_ of type _Tag - True/False_)
+- Alerts and Alert Endpoints
 
-## Export Data from 2.x.x Version
+## Step 1. Export Data from 2.x.x Instance
 
-When logged in to your WebAccess/DMP version 2.x.x account,
-go to _Companies_, find the company you want to export data from and click the Export icon on the right:
+Go to _Companies_. Find a company you want to export data from. Click the _Export_ icon on the right.
 
 ![Gen2Export](./gen2-export.png)
 
-The dialog will appear with information about the export. Save the file _company_name_export.data_ to your computer.
+A dialog box will pop up, providing details about the export. Save the file company_name_export.data to your computer.
 
 ![Gen2ExportDialog](./gen2-export-dialog.png)
 
-## Import Data to 3.x.x Version
+## Step 2. Import Data into 3.x.x Instance
 
-Log in to your WebAccess/DMP version 3.x.x account. Select or create the company you want data to be imported to. Go to _Companies_ in the menu and select the company detail. On the Company Profile page, click on the _Import_ button:
+Log in to your account at www.wadmp3.com. Select or create a company you want data to be imported to. Go to _Companies_ in the menu and select the company details. On the _Company Profile_ page, click on the _Import_ button:
 
 ![Gen3Import](./gen3-import.png)
 
-Choose the data file with exported data from version 2.x.x and submit.
+Select the data file containing exported data from 2.x.x instance and press Submit.
 
 ![Gen3File](./gen3-file.png)
 
-After a while (depending on the data file size) the result of import will appear with an overview like this:
+After a while (which depends on the volume of imported data), the import results will be displayed, along with the following overview:
 
 ![Gen3Result](./gen3-result.png)
 
-You can review the result of import - numbers of what was added in every category, what was skipped (the reason for skipping is e.g. that the same Device/Tag/Alert is already present in the company), and most importantly what failed. For failed items, you can click on the number and see error messages with information about why it failed. Also, you can save this report in CSV file using the export icon at the top, so you can solve it later.
+You have the option to examine the outcome of the import process. If certain items appear as skipped, it indicates they were either previously imported or manually added. If any failures occur, you can investigate the reasons by selecting the number of failed items. Additionally, you can generate a CSV failure report by using the export icon at the top.
 
 ![Gen3DetailCsv](./gen3-detail-csv.png)
+
+## Step 3. Migrate Devices
+
+To effectively administer your devices in the 3.x.x instance, it is essential to upgrade the _wadmp_client_ Router App on your devices to version 3.0.0. To achieve this, utilize the 2.x.x instance.
+
+![Gen2upgrade](./gen2-upgrade-client.png)
+
+Installing the updated Router App version will seamlessly transition your device to connect to the 3.x.x instance. Note that following this procedure, those devices will lose the ability to connect to the 2.x.x instance. We highly recommend testing the migration process first on a small number of devices.

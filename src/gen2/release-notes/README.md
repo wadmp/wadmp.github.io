@@ -1,13 +1,11 @@
-# 2.5.3: May 3, 2023
+# 2.5.5: December 15, 2023
 
-This release contains improvements.
+This release provides tools for migration of company data to version 3.x.x. Detailed migration guide can be found here: [Migration from 2.x.x to 3.x.x Instance](/gen3/tutorials/migration-gen2-gen3)
 
 ### Improvements:
 
-* Improved monitoring database performace by setting up sharding, so the database load is spread accross multiple databases and much better handled.
- 
-* Added alert in UI: If the latest version of WebAccess/DMP Client is not installed on the device, the user is noticed on a Device detail page, Router Apps, where installations are managed.
+* Added a button that lets the users export company data for the purposes of migration to GEN3.
 
-![2FA](./2.5.3/client-alert.png "Client alert")
+### Bug Fixes:
 
-* Updated wording in billing PDF automatically sent. Changed "Invoice Number" to "Order Number" and added notice that this is not an invoice.
+* Replaced incorrect pictures of ICR-321x devices.

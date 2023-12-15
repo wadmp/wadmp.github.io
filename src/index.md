@@ -16,8 +16,8 @@ features:
   * [Latest Release Notes of the Device Client](/gen3/client/)
 
 **Useful links:**
-* [wadmp3.com](https://wadmp3.com) - UI of Public Cloud Instance
-* [api.wadmp.com](https://api.wadmp.com) - API reference
+* [wadmp.com](https://wadmp.com), [wadmp3.com](https://wadmp3.com) - UI of Public Cloud Instances
+* [api.wadmp.com](https://api.wadmp.com), [api.wadmp3.com](https://api.wadmp3.com) - API reference
 * [status.wadmp.com](https://status.wadmp.com) - Status Page
 * [wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP product page
 * [WebAccess/DMP EULA](/eula.html) - End User License Agreement

@@ -1,10 +1,8 @@
 # Sign Up
 
-To start using WebAccess/DMP, you need a user account first. 
+To start using WebAccess/DMP, you need a user account first.
 
 Use Sign Up link only if you are the first from your company to access the platform. If someone else has already Signed Up, ask them to create a user to add you to the company.
-
-
 
 ## Sign Up Process
 
@@ -17,7 +15,7 @@ Use Sign Up link only if you are the first from your company to access the platf
 ![Sign Up Page](./SignUp.png)
 
 - After clicking the Create Account button, enter your email inbox and confirm your new user.
-  
+
 ![Email Confirmation](./EmailConfirm.png)
 
 - After clicking the confirmation in your email, your account will be ready to log in to WebAccess/DMP with your login data on the main page.

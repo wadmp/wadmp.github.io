@@ -1,37 +1,59 @@
-# 3.0.1: September 21, 2023
+# 3.0.2: December 15, 2023
 
-This release focuses mainly on fixing bugs that were found in version 3.0.0.
+This is primarily a bug-fixing release, which also brings a few quality-of-life improvements.
 
 ### Improvements:
 
-* Added an option to change the order of View tabs (Drag & Drop).
+* Added a button to enable/disable alert rules on the *Alerts* page. 
 
-* On-premises deployments may now be configured to create all companies as type Trial instead of type Free.
+* Added a feature to convert audit log timestamps to the user's local time.
 
-* Added a button for deleting information about alerts` triggering history.
+* Added a “*Billing*” page for premium companies, which displays a list of historical billings. 
+
+* Added persistence to the *page size* table setting (the UI now remembers the last selected value).
+
+* The default time range for Audit logs has been changed from “the last 24 hours” to “the last 2 months”.
+
+* Simplified the creation of charts on the Device page (the “*Aggregation Type*” parameter is no longer used).
+
+* Added names of affected fields to DEVICE_UPDATED auditing message.
+
+* [On-Premises] Added a button for creating users without an email confirmation.
 
 ### Bug Fixes:
 
-* Fixed Dashboard lacking some fields in the list of options for creating Charts and Company Stats.
+* Fixed Alerts page and email messages showing internal representations of *Operand* and *Operator* (e.g. displaying “0” instead of “offline”).
 
-* Fixed Device page offering for Chart creation fields that do not support this functionality.
+* Fixed Dashboard page showing a loading animation for as long as a company has no views.
 
-* Fixed Device page showing incorrect value for Connection Status field.
+* Fixed Dashboard table showing duplicate devices after table`s page size is changed.
 
-* Fixed Alert Creation/Update page not allowing users to change Period and Cooldown.
+* Fixed Companies page not showing a newly created company until the page is refreshed.
 
-* Fixed Alert Creation/Update page offering multiple invalid options when a Single Device target was selected.
+* Fixed user being unable to switch from an existing company to a company that was just created by that user.
 
-* Fixed alerts targeting Invalid Login Attempts Count source not getting triggered when they should.
+* Fixed user being shown in a table of users after having been removed from a company until a page is manually refreshed.
 
-* Removed the date of EULA`s confirmation from the EULA_CONFIRMED auditing message.
+* Fixed chart`s name being reset to an empty string after a user edits it and saves it unchanged. It is also no longer possible to save a chart with an empty name.
 
-* Fixed Fields page not being refreshed after field deletions.
+* Fixed export of devices including only the data from the first or last page.
 
-* Fixed Alert Endpoints page loading very slowly when accessed for the first time after each login.
+* Fixed batch edit affecting only the data from the first or last page.
 
-* Fixed user invitation to the company failing when the requester selects no permissions.
+* Fixed Device page showing green icon for all possible values of synchronization status.
 
-* Fixed message for successful claiming device saying "undefined" in place of a company name.
+* Fixed multiple auditing messages showing names of variables instead of their values.
 
-* Fixed the User Permissions page showing a miss-aligned permissions table when viewed on small screens.
+* Fixed DEVICE_CREATED audit logs not being associated with a device.
+
+* Fixed AlertDetail page sometimes not loading up correctly for alerts that target a single device.
+
+* Fixed user`s email change not being reflected in the top right menu until the user relogs.
+
+* Fixed various small UI issues that occurred only to users with Vivaldi browser.
+
+* Fixed various small API issues (endpoints returning incorrect status code, etc.)
+
+* [On-Premises] Fixed SearchDevices service not starting up if there exists a company without any reportable fields.
+
+* [On-Premises] Improved handling of failures to send emails due to unsupported SMTP configuration. Also, using authentication for SMTP server is now optional.

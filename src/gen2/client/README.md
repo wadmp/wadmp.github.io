@@ -10,7 +10,7 @@
 
 We recommend always using the most up-to-date version of the client.
 
-[Download the latest client and Application Note (Manual)](https://icr.advantech.cz/products/software/user-modules#webaccessdmp-client)
+[Download the latest client and Application Note (Manual)](https://icr.advantech.com/products/software/user-modules#webaccessdmp-client-2xx)
 
 The client router app can also be upgraded via WebAccess/DMP.
 
