@@ -2,24 +2,24 @@
 home: true
 tagline: Open-source documentation for users of Advantech WebAccess/DMP software
 actionText: Tutorials →
-actionLink: /tutorials/
+actionLink: /gen3/tutorials/
 features:
 
 ---
 
 **Documentation:**
-  * [Tutorials](/tutorials/) - get started with practical steps
-  * [Explanations](/explanations/) - understand important topics
+  * [Tutorials](/gen3/tutorials/) - get started with practical steps
+  * [Explanations](/gen3/explanations/) - understand important topics
   
 **Release Notes:**
-  * [Latest Release Notes of Public Cloud Instance](/release-notes/)
-  * [Latest Release Notes of the device Client](/client/)
+  * [Latest Release Notes of Public Cloud Instance](/gen3/release-notes/)
+  * [Latest Release Notes of the Device Client](/gen3/client/)
 
 **Useful links:**
-* [Wadmp.com](https://wadmp.com) - UI of Public Cloud Instance
-* [Api.wadmp.com](https://api.wadmp.com) - API reference
-* [Status.wadmp.com](https://status.wadmp.com) - Status Page
-* [Wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP product page
+* [wadmp.com](https://wadmp.com), [wadmp3.com](https://wadmp3.com) - UI of Public Cloud Instances
+* [api.wadmp.com](https://api.wadmp.com), [api.wadmp3.com](https://api.wadmp3.com) - API reference
+* [status.wadmp.com](https://status.wadmp.com) - Status Page
+* [wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP product page
 * [WebAccess/DMP EULA](/eula.html) - End User License Agreement
 * [Privacy Policy](/privacy-policy.html)
 * [Support & Contact](/contact/)  
