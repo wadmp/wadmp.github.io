@@ -92,7 +92,7 @@ module.exports = {
         "invite-existing-or-new-user/" /* README.md */,
         "device/" /* README.md */,
         "search-filter-devices/" /* README.md */,
-        "configuring-router-apps/" /* README.md */,
+        "config-profiles/" /* README.md */,
       ],
       "/gen2/tutorials/": [
         "" /* /README.md/ */,
