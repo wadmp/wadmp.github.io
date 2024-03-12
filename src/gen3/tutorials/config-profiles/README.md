@@ -70,20 +70,32 @@ This tutorial describes how to create a configuration profile directly (rather t
 
 4. Specify the company ID and the name of the config profile.
 
-   - Input the ID of your company and the name for your configuration profile.  
-     ![Config Profile API](./conf_prof_api_04.png)
+   - Input the ID of your company and the name for your configuration profile.
+     ```
+     "company_id": 5427,
+     "name": "testProfile",
+     ```
 
 5. You may add settings.
 
    - If you want this configuration profile to manage any settings, the “settings” section is used for that. You can add as many settings as you want. Each item consists of the name of the setting (equal to the one that can be found in setting files located within _/etc/_ folder of routers) and the structured object containing a value for that setting (see the example bellow). Any settings whose names do not match those on router will be ignored.
-
-     ![Config Profile API](./conf_prof_api_05.png)
+     ```
+     "settings": {
+       "ETH_IPADDR": { "v": "192.168.1.1" },
+       "ETH_NETMASK": { "v": "255.255.255.0" },
+       "WIFI_AP2_CHANNEL": { "v": "1" }
+     },
+     ```
 
 6. You may add applications.
 
    - If you want this configuration profile to manage apps on your devices, you need to list those apps within the “applications” section. See the example bellow. Please beware that if you do not add “wadmp_client” here, the newest available version will automaticly be inserted into the configuration profile for you.
-
-     ![Config Profile API](./conf_prof_api_06.png)
+     ```
+       "applications": {
+         "wadmp_client": { "version": "3.0.1" },
+         "pinger": { "version": "2.6.1" }
+       },
+     ```
 
 7. You may add firmware version and behavior.
 
@@ -95,7 +107,12 @@ This tutorial describes how to create a configuration profile directly (rather t
 
      - “Purge” - The client will uninstall any applications that are not specified in the Applications section of the configuration profile.
 
-       ![Config Profile API](./conf_prof_api_07.png)
+     ```
+     "system": {
+       "firmware": { "version": "6.4.0" },
+       "unlisted_behavior": "Ignore"
+     }
+     ```
 
 8. You may add files.
 
@@ -105,12 +122,29 @@ This tutorial describes how to create a configuration profile directly (rather t
 
      - “data” - the contents of the file, encoded into a base64 string.
 
-       ![Config Profile API](./conf_prof_api_08.png)
+     ```
+     "files": {
+       "ip-down-script": {
+         "path": "/etc/scripts/ip-down.local",
+         "data": "IyEvYmluL2Jhc2gKCnVjaG8gIkhlbGxvIFdvcmxkISIKCmV4aXQgMA=="
+       },
+       "ip-up-script": {
+         "path": "/etc/scripts/ip-up.local",
+         "data": "IyEvYmluL2Jhc2gKCnVjaG8gIkhlbGxvIFdvcmxkISIKCmV4aXQgMA=="
+       }
+     },
+     ```
 
 9. You may add users.
 
    - If you want to manage users (and/or their passwords) through the configuration profile, you can add them within the “users” section. For each user you can only specify their name and password (hash). The value for the password must be obtained from the “/etc/shadows” file of a router.
-     ![Config Profile API](./conf_prof_api_09.png)
+     ```
+     "users": {
+       "root": {
+         "password": "$5$O3T0K11ShCR0/59E$AZE6cxDijHEARuXDNQECqE7AgJgumf5Qfepi/piAWHD"
+       },
+     },
+     ```
 
 10. Press execute button.
 
