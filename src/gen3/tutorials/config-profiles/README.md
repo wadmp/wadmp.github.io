@@ -60,7 +60,7 @@ This tutorial describes how to create a configuration profile directly (rather t
 
    - Go to api.wadmp3.com, select _DMP Protected API_ and press _Authorize_ button.
 
-   - Fill in “swagger*ui” as \_client_id*, tick _MainAPI_ and press _Authorize_.
+   - Fill in _“swagger_ui”_ as _client_id_, tick _MainAPI_ and press _Authorize_.
      ![Config Profile API](./conf_prof_api_02.png)
 
 3. Find the endpoint for creating configuration profiles.
