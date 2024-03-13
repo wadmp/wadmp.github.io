@@ -148,6 +148,43 @@ This tutorial describes how to create a configuration profile directly (rather t
 
 10. Press execute button.
 
+    - Example of the whole profile create model:
+
+      ```
+      {
+        "company_id": 5427,
+        "name": "testProfile",
+        "settings": {
+          "ETH_IPADDR": { "v": "192.168.1.1" },
+          "ETH_NETMASK": { "v": "255.255.255.0" },
+          "WIFI_AP2_CHANNEL": { "v": "1" }
+        },
+        "files": {
+          "ip-down-script": {
+            "path": "/etc/scripts/ip-down.local",
+            "data": "IyEvYmluL2Jhc2gKCnVjaG8gIkhlbGxvIFdvcmxkISIKCmV4aXQgMA=="
+          },
+          "ip-up-script": {
+            "path": "/etc/scripts/ip-up.local",
+            "data": "IyEvYmluL2Jhc2gKCnVjaG8gIkhlbGxvIFdvcmxkISIKCmV4aXQgMA=="
+          }
+        },
+        "users": {
+          "root": {
+            "password": "$5$O3T0K11ShCR0/59E$AZE6cxDijHEARuXDNQECqE7AgJgumf5Qfepi/piAWHD"
+          }
+        },
+        "applications": {
+          "wadmp_client": { "version": "3.0.1" },
+          "pinger": { "version": "2.6.1" }
+        },
+        "system": {
+          "firmware": { "version": "6.4.0" },
+          "unlisted_behavior": "Ignore"
+        }
+      }
+      ```
+
     - Your configuration profile should now be complete. Press the Execute button.
 
     ![Config Profile API](./conf_prof_api_10.png)
