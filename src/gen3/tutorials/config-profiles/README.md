@@ -87,11 +87,11 @@ This tutorial describes how to create a configuration profile directly (rather t
      },
      ```
 
-6. You may add applications.
+6. You may add apps.
 
-   - If you want this configuration profile to manage apps on your devices, you need to list those apps within the “applications” section. See the example bellow. Please beware that if you do not add “wadmp_client” here, the newest available version will automaticly be inserted into the configuration profile for you.
+   - If you want this configuration profile to manage apps on your devices, you need to list those apps within the “apps” section. See the example bellow. Please beware that if you do not add “wadmp_client” here, the newest available version will automaticly be inserted into the configuration profile for you.
      ```
-       "applications": {
+       "apps": {
          "wadmp_client": { "version": "3.0.1" },
          "pinger": { "version": "2.6.1" }
        },
@@ -101,11 +101,11 @@ This tutorial describes how to create a configuration profile directly (rather t
 
    - If you want to manage firmware, you can specify its version in the “firmware” subsection of a “system” section.
 
-   * The “unlisted_behavior” property configures how the client should treat the applications that are installed in the router but not mentioned in the configuration profile. There are 2 possible values:
+   * The “unlisted_behavior” property configures how the client should treat the apps that are installed in the router but not mentioned in the configuration profile. There are 2 possible values:
 
-     - “Ignore” - The client will ignore applications that are not listed in Applications section.
+     - “Ignore” - The client will ignore applications that are not listed in apps section.
 
-     - “Purge” - The client will uninstall any applications that are not specified in the Applications section of the configuration profile.
+     - “Purge” - The client will uninstall any applications that are not specified in the apps section of the configuration profile.
 
      ```
      "system": {
@@ -174,7 +174,7 @@ This tutorial describes how to create a configuration profile directly (rather t
             "password": "$5$O3T0K11ShCR0/59E$AZE6cxDijHEARuXDNQECqE7AgJgumf5Qfepi/piAWHD"
           }
         },
-        "applications": {
+        "apps": {
           "wadmp_client": { "version": "3.0.1" },
           "pinger": { "version": "2.6.1" }
         },
