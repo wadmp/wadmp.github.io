@@ -1,61 +1,231 @@
-# Companies and Users
-
-This article explains the concepts of company and user on the WebAccess/DMP (WADMP) platform. We will explain the differences between signing up to WADMP and having an account created for you by an administrator. We will also explain the concept of parent and child companies.
-
-## Users
-
-There are two ways to become a user of WADMP:
-
-1. Signup at [WADMP](https://wadmp.com/) by creating an account.
-2. The company administrator creates an account for you.
-
-In both cases, the user will receive an email from the platform to confirm their email address. Then, using the 1st option, the user is the administrator for their company with the following permissions.
-
-![user_permissions](./user-permissions.png)
-
-As you can see, you have permission to view, add, edit, and delete every entity on the system.
-
-Using the 2nd option, the permissions are set by the company administrator.
-
-A user may be a member of one or more companies. Therefore, the user permissions may be different for each company. For example, a user may have to create and view user permissions on "Company A" but only view user permission on "Company B". 
-
-**Note**: You cannot assign permission that you do not have yourself.
+# User management
 
 
-When you log in to WADMP, you can manage devices and users for all companies you belong to and have permission to do so.
+To start using WebAccess/DMP, you need a user account first.
 
-![companies_view](./companies-view.png)
+Use Sign Up link only if you are the first from your company to access the platform. If someone else has already Signed Up, ask them to create a user to add you to the company.
 
-Click on a company to filter devices belonging to that company.
-
-
-
-## Company
-
-The company can only exist with at least one Company admin. When registering on WADMP for the first time, you will be asked to enter your company details. You are automatically the administrator for this company. You may also be added to an existing company by that company's administrator. 
-
-Once you have signed up to WADMP, you can create users and add them to companies with a set of permissions. You may also create other companies and assign users to those companies.
+## 1- Sign up / Sign in
 
 
+- Go to [wadmp3.com](https://wadmp3.com). You will be redirected to the login page.
 
-You can create a maximum of three root companies. Parent companies may have many child-companies. Child-companies may also have child-companies. There are no restrictions on the number of levels of child-companies you can create.
+![Login Page](./LogIn.png)
+
+- Click on the Sign Up link and fill in your details.
+
+![Sign Up Page](./SignUp.png)
+
+- After clicking the Create Account button, enter your email inbox and confirm your new user.
+
+![Email Confirmation](./EmailConfirm.png)
+
+- After clicking the confirmation in your email, your account will be ready to log in to WebAccess/DMP with your login data on the main page.
+
+![Email Click](./emailconfirm2.png)
 
 
-Example of Company hierarchy:
+### Using other identity providers to sign up/sign in
 
-| Root and Parent | Parent and Child | Child                 |
-|-----------------|------------------|-----------------------|
-| company_1       | company_1_child  | company_1_child_child |
+ Sign in with External Provider 
 
+If your company is listed as an external provider, you can sign in immediately.
 
-Having created your companies, you can now begin to manage and monitor devices. To control a device, you must first claim it to your company. See [Claim my device](http://localhost:8080/gen3/tutorials/device/) 
+![External provider](./external_provider.png "External provider")
 
-Having claimed your device, you can now configure and monitor it.
-
+OAuth/OpenIP type of authentication is supported for external providers. Don't hesitate to contact us if you want your company to be listed as an external provider.
 
 
-## System Administrator
+## 2- Add users
+xxxxxxxxxxxxxx
 
-The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices and claim devices to any company.
+### Invite existing users
+You can invite existing or new users who just created their account to any company you have permission to. You can do it similarly, like when creating a new user.
 
-Contact your Sysadmin if you have any issues that your company administrator cannot resolve.
+You can check your permissions if you edit your user. Your assigned permissions are shown as check marks.
+
+![permissions_user](./images/permissions_user-1.png)
+
+To invite a user:
+
+1. Make sure that you're in the right company where you want to invite the user, then select *Users* from the *Title Menu*.
+2. On the *Users* page, click the *Invite User* action button on the right top of the page.
+
+3. To the invitation form, fill in the user's email and set up your specific permissions for him to use.
+
+![users-invite](./images/invite-user.png)
+
+4. Now, the user needs to head to his email to confirm the sent invitation by clicking on the link in the email.
+
+![email-invitation](./images/email-invite.png)
+
+5. After clicking on the invitation, the link will redirect him to our main page, where he will be notified that he has been added to the company.
+
+![invite-confirmation](./images/accept-invite2.png)
+
+6. From now on, the user can click the "Continue to Dashboard" link and check that he's in the company.
+
+![check-company](./images/check-company.png)
+
+
+
+### Create new users
+
+Creating them yourself is the only way to add users to your companies. When a user signs up, he can also make a company with no relation to yours.
+
+As with companies, remember that the creation of a user depends on two conditions:
+- You can log in to the platform and
+- That you have permission to create companies
+
+You can check your permissions if you edit your user. Your assigned permissions are shown as check marks.
+
+![permissions_user](./images/permissions_user-1.png)
+
+To create a user, you can do it in two almost identical ways:
+
+1. Make sure that you're in the right company where you want to invite the user, then select *Users* from the *Title Menu*.
+2. On the *Users* page, click the *Invite User* action button on the right top of the page.
+
+![users-invite](./images/users-invite.png)
+
+3. To the invitation form, fill in the user's email and set up your specific permissions for him to use.
+
+![user-permissions](./images/user-inviteform.png)
+
+4. Now, the user needs to head to his email to confirm the sent invitation by clicking on the link in the email.
+
+![email-invitation](./images/email-invitation.png)
+
+5. After clicking on the invitation, the link will redirect him to our main page, where he will need to fill up his login data and click the *Create Account* button, as shown in the picture below. The email is already set up from the link and cannot be changed.
+
+![test_subject](./images/test_subject.png)
+
+6. After clicking the create account button, you will get a message that your registration has been completed. You can now access your account by clicking the *Dashboard* link or logging in on the main page.
+
+![subject_success](./images/subject_success.png)
+
+The second way to create a user:
+
+1. Select "Companies" from the *Title Menu*. 
+2. On the Companies page, click on your desired company, then on the "Invite User" action button.
+
+![companies-invite](./images/companies-invite(1).png)
+
+3. From now on, the process is the same as in the first way of creating a user.
+
+
+
+## 3- Remove users 
+xxxxxxxxxxxx
+
+### Remove a user from a company
+xxxxxxxxxxxxxxxxx
+
+### Delete a user account
+xxxxxxxxxxxxxxxxx
+
+
+## 4- Two-Factor authentication (2-FA)
+
+**2FA** (*Two-Factor authentication*) provides an additional level of security to protect your account.
+
+Suppose it is enabled and already set up after a successful login. In that case, you will be asked for a one-time password to enter from your Auth App (Microsoft Authenticator, Google Authenticator, Authy, etc.)
+
+ **Authenticator Apps**
+
+To configure 2FA, you should first download the Authenticator app to your phone. We support a wide array of Auth apps.
+
+- [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US)
+
+- [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=en&gl=US)
+
+- [Google Authenticator (IOS)](https://apps.apple.com/us/app/google-authenticator/id388497605)
+
+- [Microsoft Authenticator (IOS)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
+
+### How to enable 2-FA
+
+You can activate 2FA in the *Company Edit Form*.
+
+![2FA](./images/2f/fa1.png "2fA")
+
+After turning it on, you can configure a 2FA using your Auth application.
+
+**Important Notice:** Enabling 2FA will add an extra option, “Service Account” (in the user's permissions settings), so company admins can enable/disable this feature for users in a company having 2FA enabled (this will allow users to use the scripts even if they have 2FA enabled otherwise they will not be able to).
+
+![Enable 2FA](./images/2f/2fa.png "Enable 2fA")
+
+When you enable 2FA for a company, all users will be forced to set up the 2FA after they log in. They cannot use the system until they complete the 2FA setup.
+
+
+
+### Using 2-FA
+
+Once you have downloaded the application, you must scan the QR code or enter the given code manually.
+
+![2FA app](./images/2f/fa3.png "2fA app")
+
+Type in the unique password you see in your Auth app to sign in.
+
+![2FA app password](./images/2f/fa4.png "2fA app password")
+
+**Important Notice:** Turning 2FA off for the company will turn it off for all users in that company.
+
+## 5- Permissions 
+
+### Permissions management
+
+Permissions regarding Companies and Users behave according to these rules:
+
+* A user can not edit his own permissions.
+* A user may not add himself to any company.
+* A user can remove himself from a company if that company contains at least one other Company Admin and if the user has "Edit Users" permission on the company he is leaving.
+* User may always edit his profile information (email, name, etc.), no matter his permissions.
+* A user may remove another user from a company only if the change initiating user has "Edit Users" permission on that company.
+* A user may edit another user's profile information (email, name, etc.) only if the change-initiating user has "Edit Users" permission for at least one of the companies the user is in.
+
+
+### Explanations of individual permissions
+
+![user_permissions](./images/user-permissions.png "Permissions")
+
+* Company Admin - sets a fixed set of permissions
+
+* User
+  * View - Allows viewing a list of users they have access to
+  * Create - Allows the user to create new users for their company in the system
+  * Edit - Allows the user to edit an existing user in the system
+  * Delete - Allows the user to delete another user in the system
+
+* Company
+  * Create - Allows the user to create new standalone companies
+  * Edit - Allows the user to edit an existing company
+  
+* Devices
+  * View - Allows the user to view the device's details
+  * Claim & Release - Allows the user to claim a device in the system
+  * Edit - Allows the user to make changes to a device
+  * Delete - Allows the user to delete a device from the company. Delete devices from the system can only be done by a user with sysadmin permissions.
+
+* Alerts History, Rules & endpoints
+  
+  * View - Allows viewing a list of Alerts History, Rules & Endpoints
+  * Create - Allows the user to create new Alerts History, Rules & Endpoints
+  * Edit - Allows the user to edit an existing Alerts History, Rules & Endpoints
+  * Delete - Allows the user to delete Alerts History, Rules & Endpoints
+
+* Auditing
+  * View - Allows the user to view the auditing
+
+* Fields
+  * Manage - Allows the user to manage fields in the Fields section
+
+* Views
+  * Manage - Allows the user to manage the Views
+
+* AppStore
+  * Manage - Allows the user to manage the AppStore 
+  
+* Billing
+  * Manage - Allows the user to manage the billing section
+
