@@ -37,7 +37,7 @@ OAuth/OpenIP type of authentication is supported for external providers. Don't h
 
 
 ## 2- Add users
-xxxxxxxxxxxxxx
+
 
 ### Invite existing users
 You can invite existing or new users who just created their account to any company you have permission to. You can do it similarly, like when creating a new user.
@@ -127,105 +127,24 @@ xxxxxxxxxxxxxxxxx
 
 ## 4- Two-Factor authentication (2-FA)
 
-**2FA** (*Two-Factor authentication*) provides an additional level of security to protect your account.
-
-Suppose it is enabled and already set up after a successful login. In that case, you will be asked for a one-time password to enter from your Auth App (Microsoft Authenticator, Google Authenticator, Authy, etc.)
-
- **Authenticator Apps**
-
-To configure 2FA, you should first download the Authenticator app to your phone. We support a wide array of Auth apps.
-
-- [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US)
-
-- [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=en&gl=US)
-
-- [Google Authenticator (IOS)](https://apps.apple.com/us/app/google-authenticator/id388497605)
-
-- [Microsoft Authenticator (IOS)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
+xxxxx
 
 ### How to enable 2-FA
 
-You can activate 2FA in the *Company Edit Form*.
-
-![2FA](./images/2f/fa1.png "2fA")
-
-After turning it on, you can configure a 2FA using your Auth application.
-
-**Important Notice:** Enabling 2FA will add an extra option, “Service Account” (in the user's permissions settings), so company admins can enable/disable this feature for users in a company having 2FA enabled (this will allow users to use the scripts even if they have 2FA enabled otherwise they will not be able to).
-
-![Enable 2FA](./images/2f/2fa.png "Enable 2fA")
-
-When you enable 2FA for a company, all users will be forced to set up the 2FA after they log in. They cannot use the system until they complete the 2FA setup.
-
+xxxxxx
 
 
 ### Using 2-FA
-
-Once you have downloaded the application, you must scan the QR code or enter the given code manually.
-
-![2FA app](./images/2f/fa3.png "2fA app")
-
-Type in the unique password you see in your Auth app to sign in.
-
-![2FA app password](./images/2f/fa4.png "2fA app password")
-
-**Important Notice:** Turning 2FA off for the company will turn it off for all users in that company.
+xxxxxx
 
 ## 5- Permissions 
 
 ### Permissions management
 
-Permissions regarding Companies and Users behave according to these rules:
-
-* A user can not edit his own permissions.
-* A user may not add himself to any company.
-* A user can remove himself from a company if that company contains at least one other Company Admin and if the user has "Edit Users" permission on the company he is leaving.
-* User may always edit his profile information (email, name, etc.), no matter his permissions.
-* A user may remove another user from a company only if the change initiating user has "Edit Users" permission on that company.
-* A user may edit another user's profile information (email, name, etc.) only if the change-initiating user has "Edit Users" permission for at least one of the companies the user is in.
+xxxxxxx
 
 
 ### Explanations of individual permissions
 
-![user_permissions](./images/user-permissions.png "Permissions")
-
-* Company Admin - sets a fixed set of permissions
-
-* User
-  * View - Allows viewing a list of users they have access to
-  * Create - Allows the user to create new users for their company in the system
-  * Edit - Allows the user to edit an existing user in the system
-  * Delete - Allows the user to delete another user in the system
-
-* Company
-  * Create - Allows the user to create new standalone companies
-  * Edit - Allows the user to edit an existing company
-  
-* Devices
-  * View - Allows the user to view the device's details
-  * Claim & Release - Allows the user to claim a device in the system
-  * Edit - Allows the user to make changes to a device
-  * Delete - Allows the user to delete a device from the company. Delete devices from the system can only be done by a user with sysadmin permissions.
-
-* Alerts History, Rules & endpoints
-  
-  * View - Allows viewing a list of Alerts History, Rules & Endpoints
-  * Create - Allows the user to create new Alerts History, Rules & Endpoints
-  * Edit - Allows the user to edit an existing Alerts History, Rules & Endpoints
-  * Delete - Allows the user to delete Alerts History, Rules & Endpoints
-
-* Auditing
-  * View - Allows the user to view the auditing
-
-* Fields
-  * Manage - Allows the user to manage fields in the Fields section
-
-* Views
-  * Manage - Allows the user to manage the Views
-
-* AppStore
-  * Manage - Allows the user to manage the AppStore 
-  
-* Billing
-  * Manage - Allows the user to manage the billing section
+xxxxx
 

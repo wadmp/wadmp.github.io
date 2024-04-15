@@ -45,7 +45,7 @@ module.exports = {
         text: "Tutorials",
         ariaLabel: "Tutorials",
         items: [
-          { text: "Version 3.x.x", link: "/gen3/tutorials/" },
+      
           { text: "Version 2.x.x", link: "/gen2/tutorials/" },
           {
             text: "Migration 2.x.x to 3.x.x",
@@ -83,17 +83,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/gen3/tutorials/": [
-        "" /* /README.md/ */,
-        "ui-general-structure/" /* README.md */,
-        "create-company/" /* README.md */,
-        "migration-gen2-gen3/" /* README.md */,
-        "create-users/" /* README.md */,
-        "invite-existing-or-new-user/" /* README.md */,
-        "device/" /* README.md */,
-        "search-filter-devices/" /* README.md */,
-        "config-profiles/" /* README.md */,
-      ],
+      
       "/gen2/tutorials/": [
         "" /* /README.md/ */,
         "ui-general-structure/" /* README.md */,
