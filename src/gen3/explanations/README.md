@@ -116,26 +116,89 @@ The second way to create a user:
 
 
 ## 3- Remove users 
-xxxxxxxxxxxx
 
-### Remove a user from a company
-xxxxxxxxxxxxxxxxx
 
-### Delete a user account
-xxxxxxxxxxxxxxxxx
+### A- Remove a user from a company
 
+ **To remove a user**:
+
+1. Make sure that you're in the right company where you want to remove the user, then select *Users* from the *Title Menu*.
+
+2. On the *"Users"* page, click the *"Remove User from Company"* action button on the right of the schedule.
+
+![users-remove](./images/remove-user.png)
+
+
+### B- Delete a user account
+
+#### General User Permissions:
+
+- Normal users cannot delete other users.
+
+- They can remove users from a company (kick out).
+
+---
+
+#### System Administrator Privileges:
+
+- Only system administrators have the authority to delete other users.
+
+---
+
+#### Self-deletion of User Account:
+
+- Users have the capability to delete their own account.
+
+- This functionality is currently not available in the User Interface (UI).
+
+-Until it is added to the UI, users must delete their accounts directly using the "API".
 
 ## 4- Two-Factor authentication (2-FA)
 
-xxxxx
+**2FA** (*Two-Factor authentication*) provides an additional level of security to protect your account.
+
+Suppose it is enabled and already set up after a successful login. In that case, you will be asked for a one-time password to enter from your Auth App (Microsoft Authenticator, Google Authenticator, Authy, etc.)
+
+ **Authenticator Apps**
+
+To configure 2FA, you should first download the Authenticator app to your phone. We support a wide array of Auth apps.
+
+- [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US)
+
+- [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator&hl=en&gl=US)
+
+- [Google Authenticator (IOS)](https://apps.apple.com/us/app/google-authenticator/id388497605)
+
+- [Microsoft Authenticator (IOS)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
 
 ### How to enable 2-FA
 
-xxxxxx
+You can activate 2FA in the *Company Edit Form*.
+
+![2FA](./images/2f/fa1.png "2fA")
+
+After turning it on, you can configure a 2FA using your Auth application.
+
+ <font color="red">**Important Notice:**</font> Enabling 2FA will add an extra option, “Service Account” (in the user's permissions settings), so company admins can enable/disable this feature for users in a company having 2FA enabled (this will allow users to use the scripts even if they have 2FA enabled otherwise they will not be able to).
+
+![Enable 2FA](./images/2f/2fa.png "Enable 2fA")
+
+When you enable 2FA for a company, all users will be forced to set up the 2FA after they log in. They cannot use the system until they complete the 2FA setup.
 
 
 ### Using 2-FA
-xxxxxx
+
+Once you have downloaded the application, you must scan the QR code or enter the given code manually.
+
+![2FA app](./images/2f/fa3.png "2fA app")
+
+Type in the unique password you see in your Auth app to sign in.
+
+![2FA app password](./images/2f/fa4.png "2fA app password")
+
+ :warning: <font color="red">**Important Notice:**</font>  
+
+**Turning 2FA off for the company will turn it off for all users in that company.**
 
 ## 5- Permissions 
 
