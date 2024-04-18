@@ -3,7 +3,8 @@
 This section will cover company setup and management on the WADMP platform, including the distinctions between premium and non-premium companies, child company management, and audit log procedures. It will also explain upgrading to premium, downgrading, and accessing billing history.
 
 ##	1. General
-cccccccccccccccccccccccc
+
+
 ###	Introduction to companies
 
 * **Company Creation:** 
