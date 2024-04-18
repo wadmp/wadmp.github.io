@@ -42,7 +42,6 @@ xxxxx
 ### Create new users
 
 
-
 * **Overview:**
   Creating users is the primary method to add them to your companies. When a user is invited, the process differs based on whether they are an **existing user** or a **new one**:
 
