@@ -5,7 +5,7 @@ To start using WebAccess/DMP, you need a user account first.
 
 Use Sign Up link only if you are the first from your company to access the platform. If someone else has already Signed Up, ask them to create a user to add you to the company.
 
-## 1- Sign up / Sign in
+## 1. Sign up / Sign in
 
 
 - Go to [wadmp3.com](https://wadmp3.com). You will be redirected to the login page.
@@ -36,7 +36,7 @@ If your company is listed as an external provider, you can sign in immediately.
 OAuth/OpenIP type of authentication is supported for external providers. Don't hesitate to contact us if you want your company to be listed as an external provider.
 
 
-## 2- Add users
+## 2. Add users
 
 
 ### Invite existing users
@@ -115,35 +115,26 @@ The second way to create a user:
 
 
 
-## 3- Remove users 
+## 3. Remove users 
 
 
-### A- Remove a user from a company
+### A. Remove a user from a company
 
  **To remove a user**:
 
-1. Make sure that you're in the right company where you want to remove the user, then select *Users* from the *Title Menu*.
+1. Make sure that you're in the right company where you want to remove the user, then select *Users* from the *Side Menu*.
 
-2. On the *"Users"* page, click the *"Remove User from Company"* action button on the right of the schedule.
+2. On the *"Users"* page, click the *"Remove User from Company"* action button on the right of the page.
 
 ![users-remove](./images/remove-user.png)
 
 
-### B- Delete a user account
+### B. Delete a user account
 
-#### General User Permissions:
+* Each user can delete his or her own account (this feature is currently available only directly via **API**)
 
-- Normal users cannot delete other users.
+* On-Premises user accounts with System Administrator priviledges are also able to delete accounts of other users.
 
-- They can remove users from a company (kick out).
-
----
-
-#### System Administrator Privileges:
-
-- Only system administrators have the authority to delete other users.
-
----
 
 #### Self-deletion of User Account:
 
@@ -153,7 +144,7 @@ The second way to create a user:
 
 -Until it is added to the UI, users must delete their accounts directly using the "API".
 
-## 4- Two-Factor authentication (2-FA)
+## 4. Two-Factor authentication (2-FA)
 
 **2FA** (*Two-Factor authentication*) provides an additional level of security to protect your account.
 
@@ -200,7 +191,7 @@ Type in the unique password you see in your Auth app to sign in.
 
 **Turning 2FA off for the company will turn it off for all users in that company.**
 
-## 5- Permissions 
+## 5. Permissions 
 
 ### Permissions management
 
