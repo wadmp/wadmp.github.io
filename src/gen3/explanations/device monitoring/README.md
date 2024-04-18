@@ -3,7 +3,7 @@ ccccccccccccccccccccccccc
 
 
 
-##	1- Collecting data from routers
+##	1. Collecting data from routers
 xxxxxxxxxxxxxxxxx
 ###	How device data reporting works
 xxxxxxxxxxxxxxxxxxxxx
@@ -13,5 +13,5 @@ xxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxx
 
 
-##	2- Exporting data to CSV
+##	2. Exporting data to CSV
 xxxxxxxxxxxxxxxxxxxxxxxxxx

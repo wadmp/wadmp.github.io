@@ -3,7 +3,7 @@ xxxxxxxxxxxxxxxxxxxxxxx
 
 
 
-## 1- WebAccess/DMP client app
+## 1. WebAccess/DMP client app
 xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### Configure client application
@@ -13,7 +13,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxx
 
 
-##	2- Fields
+##	2. Fields
 xxxxxxxxxxxxxxxxx
 
 ###	What are fields and how they work
@@ -26,7 +26,7 @@ xxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxx
 
 
-##	3- Device configuration
+##	3. Device configuration
 ccccccccccccccccccccccc
 
 ###	Configuration profiles
