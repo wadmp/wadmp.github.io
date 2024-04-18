@@ -2,8 +2,8 @@
 xxxxxxxxxxxxxxxxx
 
 
-##	1- Customization of views
+##	1. Customization of views
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-##	2- Searching and filtering
+##	2. Searching and filtering
 xxxxxxxxxxxxxxxxxxxxxxxx
