@@ -1,61 +1,162 @@
-# Companies and Users
-
-This article explains the concepts of company and user on the WebAccess/DMP (WADMP) platform. We will explain the differences between signing up to WADMP and having an account created for you by an administrator. We will also explain the concept of parent and child companies.
-
-## Users
-
-There are two ways to become a user of WADMP:
-
-1. Signup at [WADMP](https://wadmp.com/) by creating an account.
-2. The company administrator creates an account for you.
-
-In both cases, the user will receive an email from the platform to confirm their email address. Then, using the 1st option, the user is the administrator for their company with the following permissions.
-
-![user_permissions](./user-permissions.png)
-
-As you can see, you have permission to view, add, edit, and delete every entity on the system.
-
-Using the 2nd option, the permissions are set by the company administrator.
-
-A user may be a member of one or more companies. Therefore, the user permissions may be different for each company. For example, a user may have to create and view user permissions on "Company A" but only view user permission on "Company B". 
-
-**Note**: You cannot assign permission that you do not have yourself.
+# User management
 
 
-When you log in to WADMP, you can manage devices and users for all companies you belong to and have permission to do so.
+To start using WebAccess/DMP, you need a user account first.
 
-![companies_view](./companies-view.png)
+Use Sign Up link only if you are the first from your company to access the platform. If someone else has already Signed Up, ask them to create a user to add you to the company.
 
-Click on a company to filter devices belonging to that company.
-
-
-
-## Company
-
-The company can only exist with at least one Company admin. When registering on WADMP for the first time, you will be asked to enter your company details. You are automatically the administrator for this company. You may also be added to an existing company by that company's administrator. 
-
-Once you have signed up to WADMP, you can create users and add them to companies with a set of permissions. You may also create other companies and assign users to those companies.
+## 1. Sign up / Sign in
 
 
+**Access the WebAccess/DMP Site: Navigate to wadmp3.com, which will redirect you to the login page.**
 
-You can create a maximum of three root companies. Parent companies may have many child-companies. Child-companies may also have child-companies. There are no restrictions on the number of levels of child-companies you can create.
+![Login Page](./images/LogIn.png)
+
+* Initiate Sign Up:
+Click on the "Sign Up" link if you are the first from your company to register. If another company member is already registered,request them to add you to the company.
+
+![Sign Up Page](./images/SignUp.png)
+
+* Complete the Registration Form:
+  Fill in your details on the sign-up page and click the "Create Account" button.
+
+* Email Confirmation:
+ Check your email inbox for the confirmation email. Click the confirmation link to activate your account.
+
+![Email Confirmation](./images/EmailConfirm.png)
+
+* Finalize Account Setup:
+ After confirming your email, your account will be ready. You can now log in to WebAccess/DMP using your login credentials.
+
+![Email Click](./images/emailconfirm2.png)
+
+### Using other identity providers to sign up/sign in
+
+xxxxx
 
 
-Example of Company hierarchy:
-
-| Root and Parent | Parent and Child | Child                 |
-|-----------------|------------------|-----------------------|
-| company_1       | company_1_child  | company_1_child_child |
+## 2. Add users
 
 
-Having created your companies, you can now begin to manage and monitor devices. To control a device, you must first claim it to your company. See [Claim my device](http://localhost:8080/gen3/tutorials/device/) 
-
-Having claimed your device, you can now configure and monitor it.
+### Create new users
 
 
 
-## System Administrator
+* **Overview:**
+  Creating users is the primary method to add them to your companies. When a user is invited, the process differs based on whether they are an **existing user** or a **new one**:
 
-The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices and claim devices to any company.
 
-Contact your Sysadmin if you have any issues that your company administrator cannot resolve.
+* **New User:**
+ Will receive a registration link via email, which, upon completion of registration, will not only create their account but also add them to your company.
+
+* **Preconditions:**
+
+   * You must be logged into the platform.
+   * You must have permissions to create users, which can be verified by editing your profile and checking for the appropriate permissions.
+
+![permissions_user](./images/permissions_user-1.png)
+
+
+**Steps to Create a New User:**
+
+* Select the Appropriate Context:
+  * Navigate to Users from the Title Menu in the context of the company where you want to add the user.
+
+  * Alternatively, select "Companies" from the Title Menu, choose your desired company, then proceed to invite a user.
+
+* **Initiate User Invitation:**
+  * Click the Invite User button located on the right top of the Users or Companies page.
+
+![users-invite](./images/users-invite.png)
+
+![companies-invite](./images/companies-invite(1).png)
+
+
+* **Fill Out the Invitation Form:**
+  * Enter the prospective user's email and define specific permissions for their role.
+
+![user-permissions](./images/user-inviteform.png)
+
+* **User Email Confirmation:**
+  * The invitee will receive an email with a link to confirm the invitation. They must click this link to proceed.
+
+![email-invitation](./images/email-invitation.png)
+
+* **Account Registration:**
+  * The link directs the invitee to the main page to complete their account setup. The email field is pre-filled from the link and cannot be changed. They must fill up the remaining login data and click the Create Account button.
+
+![test_subject](./images/test_subject.png)
+
+* **Confirmation of Registration:**
+   * After account creation, a confirmation message is displayed. The new user can now access their account either by clicking the Dashboard link or by logging in on the main page.
+
+![subject_success](./images/subject_success.png)
+
+
+### Invite existing users
+
+* You can invite existing or new users who just created their account to any company you have permission to. You can do it similarly, like when creating a new user.
+
+* You can check your permissions if you edit your user. Your assigned permissions are shown as check marks.
+
+![permissions_user](./images/permissions_user-1.png)
+
+**To invite existing users to your company:**
+
+* **Navigate to Users:**
+  Select Users from the Title Menu in the context of the company where you want to add the user.
+
+* **Initiate Invitation:**
+  Click on the Invite User button located at the top right of the Users page.
+
+* **Fill Out Invitation Form:**
+  Enter the user's email address and assign specific permissions for the user.
+
+![users-invite](./images/invite-user.png)
+
+* **Send and Confirm Invitation:**
+  The user will receive an email invitation. They must click the link in the email to proceed with account setup.
+
+![email-invitation](./images/email-invite.png)
+
+![invite-confirmation](./images/accept-invite2.png)
+
+* **Complete Account Setup:**
+  The user follows the link to the main page, fills in their login details, and clicks Create Account. The email used is pre-filled and cannot be changed.
+
+![check-company](./images/check-company.png)
+
+
+## 3. Remove users 
+xxxxxxxxxxxx
+
+### Remove a user from a company
+xxxxxxxxxxxxxxxxx
+
+### Delete a user account
+xxxxxxxxxxxxxxxxx
+
+
+## 4. Two-Factor authentication (2-FA)
+
+xxxxx
+
+### How to enable 2-FA
+
+xxxxxx
+
+
+### Using 2-FA
+xxxxxx
+
+## 5. Permissions 
+
+### Permissions management
+
+xxxxxxx
+
+
+### Explanations of individual permissions
+
+xxxxx
+

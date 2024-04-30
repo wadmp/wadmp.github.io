@@ -45,7 +45,7 @@ module.exports = {
         text: "Tutorials",
         ariaLabel: "Tutorials",
         items: [
-          { text: "Version 3.x.x", link: "/gen3/tutorials/" },
+      
           { text: "Version 2.x.x", link: "/gen2/tutorials/" },
           {
             text: "Migration 2.x.x to 3.x.x",
@@ -83,17 +83,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/gen3/tutorials/": [
-        "" /* /README.md/ */,
-        "ui-general-structure/" /* README.md */,
-        "create-company/" /* README.md */,
-        "migration-gen2-gen3/" /* README.md */,
-        "create-users/" /* README.md */,
-        "invite-existing-or-new-user/" /* README.md */,
-        "device/" /* README.md */,
-        "search-filter-devices/" /* README.md */,
-        "config-profiles/" /* README.md */,
-      ],
+      
       "/gen2/tutorials/": [
         "" /* /README.md/ */,
         "ui-general-structure/" /* README.md */,
@@ -108,17 +98,16 @@ module.exports = {
       ],
       "/gen3/explanations/": [
         "" /* /README.md/ */,
-        "permissions/" /* /README.md */,
-        "cellular-data-usage/" /* /README.md */,
-        "grouping-and-tagging/" /* /README.md */,
-        "billing/" /* /README.md */,
-        "dashboard-graphs/" /* /README.md */,
+        "companies/" /* /README.md */,
+        "adding devices/" /* /README.md */,
+        "device management/" /* /README.md */,
+        "device monitoring/" /* /README.md */,
+        "dashboards & Widgets/" /* /README.md */,
         "alerts/" /* /README.md */,
-        "2fa/" /* /README.md */,
-        "auditing-options/" /* /README.md */,
-        "cant-connect-my-device/" /* /README.md */,
-        "bunch-claiming-devices/" /* /README.md */,
-        "wadmp-ports/" /* /README.md */,
+        "api/" /* /README.md */,
+        "troubleshooting/" /* /README.md */,
+        "Migration from 2.x.x to 3.x.x instance/" /* /README.md */,
+      
       ],
       "/gen2/explanations/": [
         "" /* /README.md/ */,
