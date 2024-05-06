@@ -1,11 +1,12 @@
 # User management
 
 
-To start using WebAccess/DMP, you need a user account first.
+To start using WebAccess/DMP, you will first need a user account .
 
-Use Sign Up link only if you are the first from your company to access the platform. If someone else has already Signed Up, ask them to create a user to add you to the company.
+**Use Sign Up Link:** If you are the first individual from your company to access the platform, utilize the provided Sign Up link to create your account.
 
-## 1. Sign up / Sign in
+**Invitation Requirement:** If someone else from your company has already signed up, you will need to request an invitation link from them. This invitation link will be sent to your email address, enabling you to register for access to the platform.
+
 ## 1. Sign up / Sign in
 
 
@@ -33,7 +34,15 @@ Click on the "Sign Up" link if you are the first from your company to register. 
 
 ### Using other identity providers to sign up/sign in
 
-xxxxx
+**Below are the provided options:**
+
+**Facebook:** Enable users to register or log in using their existing Facebook accounts. 
+
+**Gmail:** Allow users to utilize their Gmail accounts for registration or login purposes. 
+
+**Microsoft:** Integrate with Microsoft accounts for authentication. 
+
+**Custom Providers**: Implement custom identity providers tailored to your service. These could be proprietary accounts created specifically for your platform, offering users a dedicated authentication method apart from popular third-party options.
 
 
 ## 2. Add users
@@ -130,7 +139,7 @@ xxxxx
 ## 3. Remove users 
 
 
-### A. Remove a user from a company
+###  Remove a user from a company
 
  **To remove a user**:
 
@@ -141,14 +150,14 @@ xxxxx
 ![users-remove](./images/remove-user.png)
 
 
-### B. Delete a user account
+###  Delete a user account
 
 * Each user can delete his or her own account (this feature is currently available only directly via **API**)
 
 * On-Premises user accounts with System Administrator priviledges are also able to delete accounts of other users.
 
 
-## 4- Two-Factor authentication (2-FA)
+## 4. Two-Factor authentication (2-FA)
 
 **2FA** (*Two-Factor authentication*) provides an additional level of security to protect your account.
 
