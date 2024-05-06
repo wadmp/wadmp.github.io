@@ -42,8 +42,10 @@ Click on the "Sign Up" link if you are the first from your company to register. 
 
 **Microsoft:** Integrate with Microsoft accounts for authentication. 
 
+
 **Custom Providers**: Implement custom identity providers tailored to your service. These could be proprietary accounts created specifically for your platform, offering users a dedicated authentication method apart from popular third-party options.
 
+![providers options](./images/providers.jpg)
 
 ## 2. Add users
 
