@@ -9,7 +9,6 @@ cccccccccccccccc
 ccccccccccccccccccccc
 
 ##	3. Install a WebAccess/DMP client app
-**Installing WebAccess/DMP Client App**
 
 To connect a device to the platform, the WebAccess/DMP router app (client) needs to be installed first. Below are the steps to install the client app:
 
@@ -32,6 +31,8 @@ To connect a device to the platform, the WebAccess/DMP router app (client) needs
    - Log in to the device to view installed apps.
    - The client app should be visible in the router apps section. Here, users can find details for adding the device to the platform and copy necessary information.
    - Below is an example screenshot of the router apps section with the installed client app:
+   -  ![Router Apps Screenshot](../images/devices/router_apps_screenshot.png)
+
 
 
 ##	4. Firewall considerations (ports & addresses to whitelist)
