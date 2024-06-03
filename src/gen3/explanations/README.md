@@ -7,7 +7,15 @@ To start using WebAccess/DMP, you will first need a user account .
 
 **Invitation Requirement:** If someone else from your company has already signed up, you will need to request an invitation link from them. This invitation link will be sent to your email address, enabling you to register for access to the platform.
 
-## 1. Sign up / Sign in
+* **system Adminstrator:**
+
+   * The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices, claim devices to any company and Only the Sysadmin has the privilege to *directly create* new user accounts within the system..
+   * Contact your Sysadmin if you have any issues that your company administrator cannot resolve.
+
+* **User and Company Management:**
+   * Once registered, you can create users, invite them to companies, and set their permissions. You can also create additional companies and invite users to these companies.
+
+## 1. Sign Up / Sign In
 
 
 **Access the WebAccess/DMP Site: Navigate to wadmp3.com, which will redirect you to the login page.**
@@ -47,11 +55,9 @@ Click on the "Sign Up" link if you are the first from your company to register. 
 
 ![providers options](./images/providers.jpg)
 
-## 2. Add users
-
+## 2. Add Users
 
 ### Create new users
-
 
 * **Overview:**
   Creating users is the primary method to add them to your companies. When a user is invited, the process differs based on whether they are an **existing user** or a **new one**:
@@ -71,9 +77,9 @@ Click on the "Sign Up" link if you are the first from your company to register. 
 **Steps to Create a New User:**
 
 * Select the Appropriate Context:
-  * Navigate to Users from the Title Menu in the context of the company where you want to add the user.
+  * Navigate to Users from the Side Menu in the context of the company where you want to add the user.
 
-  * Alternatively, select "Companies" from the Title Menu, choose your desired company, then proceed to invite a user.
+  * Alternatively, select "Companies" from the Side Menu, choose your desired company, then proceed to invite a user.
 
 * **Initiate User Invitation:**
   * Click the Invite User button located on the right top of the Users or Companies page.
@@ -115,7 +121,7 @@ Click on the "Sign Up" link if you are the first from your company to register. 
 **To invite existing users to your company:**
 
 * **Navigate to Users:**
-  Select Users from the Title Menu in the context of the company where you want to add the user.
+  Select Users from the Side Menu in the context of the company where you want to add the user.
 
 * **Initiate Invitation:**
   Click on the Invite User button located at the top right of the Users page.
@@ -138,7 +144,7 @@ Click on the "Sign Up" link if you are the first from your company to register. 
 ![check-company](./images/check-company.png)
 
 
-## 3. Remove users 
+## 3. Remove Users 
 
 
 ###  Remove a user from a company
@@ -177,7 +183,7 @@ To configure 2FA, you should first download the Authenticator app to your phone.
 
 - [Microsoft Authenticator (IOS)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
 
-### How to enable 2-FA
+### How to enable 2-FA?
 
 You can activate 2FA in the *Company Edit Form*.
 
