@@ -58,6 +58,6 @@ Having claimed your device, you will now be able to configure and monitor it.
 
 ## System Administrator
 
-The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices and claim devices to any company.
+The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices and Add devices to any company.
 
 Contact your Sysadmin if you have any issues that your company administrator cannot resolve.

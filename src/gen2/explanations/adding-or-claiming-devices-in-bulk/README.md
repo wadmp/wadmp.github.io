@@ -37,7 +37,7 @@ usage: claim_from_csv.py [-h] [-host HOST] [-username USERNAME]
                          [-file_loglevel {debug,info,warning,error,critical}]
                          CSVfile Company
 
-Claim devices to a company on WA/DMP
+Add Devices to a company on WA/DMP
 
 positional arguments:
   CSVfile               Path to CSV file.

@@ -9,7 +9,7 @@ To start using WebAccess/DMP, you will first need a user account .
 
 * **system Adminstrator:**
 
-   * The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices, claim devices to any company and Only the Sysadmin has the privilege to *directly create* new user accounts within the system..
+   * The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices, Add devices to any company and Only the Sysadmin has the privilege to *directly create* new user accounts within the system..
    * Contact your Sysadmin if you have any issues that your company administrator cannot resolve.
 
 * **User and Company Management:**
