@@ -95,14 +95,13 @@ By following these steps, administrators can efficiently register devices in the
 ![added Device](../images/devices/added-device.png)
 
 **You can also obtain router information through the WebAccess/DMP Client application by following these steps:**
-1. Enter the router settings.
-2. Navigate to Router Apps.
+1. Login to the router's user interface.
+2. Navigate to Router Apps (in Customization section of the menu).
 3. Enter the WebAccess/DMP Client application.
 4. Click on Create Device on WA/DMP.
 
   You will find the information about this router there.
-
-  ![Router informations](../images/devices/routerinformations2.jpg)
+   ![Router informations](../images/devices/routerinformations2.jpg)
 
 ##	3. Install a WebAccess/DMP client app
 xxxxxxxxxxxxxxxxxxxxxxxx
