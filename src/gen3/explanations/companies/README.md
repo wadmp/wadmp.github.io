@@ -138,32 +138,26 @@ Please note that changing a company type (to or from premium) always applies to 
 2. Send an email your request for downgrade to [wadmp@advantech.com](mailto:wadmp@advantech.com).
 
 ##	5. Billing 
-
 **If your company type is Premium, you are billed monthly. The invoices are coming automatically on the Primary Contact Email at the company.**
 
 ![Company contact](../images/companies/primary-contact.png "Company contact")
 
 **Email example:**
 
-![Email example](../images/companies/email_1.png "Email example")
+![Email example](../images/companies/EmailExample.png "Email example")
 
 ### How to view billing history?
 
-**Switch to the Root company in your company hiearchy.**
+**To access the Billing item in the side menu, you must be in a root (top parent) company and have permissions to view Billing or be a Company Admin (A list of monthly invoices will appear).**
 
-* **Locate Billing Information:**
+![View Billing History](../images/companies/ViewBillingHistory.png "View Billing History")
 
-  Click the paper button next to your company to access the billing information.
+* **Billing Summaries list:**
 
-![Invoices link](../images/companies/invoices.png "Invoices link")
+  Click on an invoice to view details or download it as a PDF by clicking the download button on the right (Arrow-Icon). 
 
-* **Review Invoices:**
-  A list of monthly invoices will appear. Click on an invoice to view details or download it as a PDF by clicking the download button.
+![Billing Summaries List](../images/companies/BillingSummariesList.png "Billing Summaries List")
 
-* **Invoice list:**
+  By clicking the Billing summary, you can go to the Billing Detail page, where you can also download a PDF.
 
-![Invoices list](../images/companies/invoices_list.png "Invoices list")
-
-* **Invoice example:**
-
-![Invoice example](../images/companies/invoice.png "Invoice example")
+![Billing Summaries List](../images/companies/DownloadPDF.png "Billing Summaries List")
