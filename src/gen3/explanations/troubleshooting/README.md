@@ -1,16 +1,16 @@
 # Troubleshooting
 
 ### Introduction
+**Connecting to Bootstrap Server:** is a process that enables the router to acquire certificates and keys, which are essential for connecting to the Management Server.
 
-> <font size="4"><b> Bootstrap Server: is a process that enables the router to acquire certificates and keys, which are essential for connecting to the Management Server. </b></font> 
 
-
-### <font size="4"><b>We explore three different scenarios when a router fails to connect:</b></font>
+### <font size="4"><b>Three different scenarios when a router fails to connect are described bellow:</b></font>
 
 ## Scenario 1: Router Stuck in Bootstrap
 
 * **Problem:** 
-   * The router lacks an internet connection and remains stuck in the Bootstrap Server process without receiving any successful response.
+   * The router lacks an internet connection because it is stuck in the permanent Bootstrap Server process and is not receiving any successful response from the server. This issue could arise if the router was not loaded into DMP during the manufacturing process.
+
 
 * **Potential Causes and Solutions:**
    * This issue may arise if the router was not properly registered in **DMP** during manufacturing.
@@ -19,23 +19,23 @@
 ## Scenario 2: Failure to Connect to Bootstrap Server
 
 * **Problem:** 
-  * The router displays the error: "Connection to Bootstrap Server failed."
+  * The router can't connect to the Bootstrap Server and shows the message: "Connection to Bootstrap Server failed."
 
 * **Potential Causes and Solutions:**
 
-   1. **Firewall Interference:** A firewall may be blocking the router’s connection to the server.
+   1. **Firewall Blockage:** A firewall may be preventing the router from connecting to the endpoint.
    
-   2. **Incorrect Bootstrap Server Configuration:** Verify that the Bootstrap Server settings on your router match the public configuration if connecting to a public server. For private DMP servers, ensure the address is correct and accessible.
+   2. **Incorrect Default Bootstrap Server Value:** Verify that the Bootstrap Server configuration on the customer's router matches the public configuration if connecting to the public server. If using a private DMP server, ensure the address is correct and reachable.
 
-   3. **No Internet Connection:** Ensure that the router has a stable internet connection.
+   3. **No Internet Connection:** Check the customer's internet connection.
 
 ## Scenario 3: Failure Post-Bootstrap
 
 * **Problem:** 
-  * The router connects to the Bootstrap Server and completes the process successfully, but it fails to connect to the Management Server.
+  * The router successfully connects to the Bootstrap Server, completing the Bootstrap Server process, but it fails to connect to the Management Server.
 
 * **Potential Causes and Solutions:**
 
-   1. **Firewall and Internet Issues:** Check for any firewall settings that might be blocking internet access.
+   1. **Firewall Blockage:** A firewall may be preventing the router from connecting to the Internet.
 
-   2. **Incorrect Router Time Settings:** If the router's time setting is significantly different from the server’s (by months or more), it could affect the validity of the certificates. Adjust the router’s time settings accordingly.
+   2. **Incorrect Time Setting:** The router's time may differ significantly from the server's, causing issues with the certificate's validity. Ensure the router's time is correctly set.

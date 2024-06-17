@@ -1,6 +1,10 @@
 # Migration from 2.x.x to 3.x.x Instance
 
-This guide explains the process of migrating data from a 2.x.x instance at [www.wadmp.com](http://www.wadmp.com) to a 3.x.x instance at [www.wadmp3.com](http://www.wadmp3.com). The migration involves transferring data from one company in GEN2 to another in GEN3, without altering the company structure. Both companies must already exist in their respective instances for the migration to proceed.
+This page explains the process of migrating data from a 2.x.x instance at [www.wadmp.com](http://www.wadmp.com) to a 3.x.x instance at [www.wadmp3.com](http://www.wadmp3.com). 
+
+1. The migration involves transferring data from one company in GEN2 to another in GEN3, without altering the company structure. 
+
+2. Both companies must already exist in their respective instances for the migration to proceed.
 
 **What is migrated:**
 
@@ -38,7 +42,7 @@ You can examine the outcome of the import process. Skipped items indicate they w
 
 ## Step 3: Migrate Devices
 
-To manage your devices in the 3.x.x instance effectively, upgrade the _wadmp_client_ Router App on your devices to version 3.0.0 using the 2.x.x instance.
+To manage your devices in the 3.x.x instance , upgrade the _wadmp_client_ Router App on your devices to version 3.0.0 using the 2.x.x instance.
 
 ![Gen2upgrade](../images/migration-gen2-gen3/gen2-upgrade-client.png)
 
