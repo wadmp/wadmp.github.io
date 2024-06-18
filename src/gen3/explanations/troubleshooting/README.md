@@ -1,7 +1,8 @@
 # Troubleshooting
 
 ### Introduction
-**Connecting to Bootstrap Server:** is a process that enables the router to acquire certificates and keys, which are essential for connecting to the Management Server.
+
+**Connecting to Bootstrap Server** is a process that enables the router to acquire certificates and keys, which are essential for connecting to the Management Server.
 
 
 ### <font size="4"><b>Three different scenarios when a router fails to connect are described bellow:</b></font>
