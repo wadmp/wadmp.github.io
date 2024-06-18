@@ -3,17 +3,17 @@
 ##	1. General
 
 
-###	Introduction to companies
+###	Introduction To Companies
 
 * It's free to create a company. Just log in or sign up. You can create as many companies as you want.
 * When you create a company, you become the "Company Admin". You can manage and control the devices added to the company. The permissions for users you invite are set by you or another user with the right permissions.
 
 
-###	Limitations of non-premium companies
+###	Limitations Of Non-Premium Companies
 
 * After a new company is created, the company type is automatically set to "Free".
 
-* **Company type can be:**
+* Company type can be:
 
 | Company type |   | Features     |
 |------|----------------------------------------------------------|-------------------------------------------|
@@ -22,7 +22,7 @@
 
 
 
-* **Company type configuration:** Company type can only be changed for the parent company. Child companies inherit their type from their parent.
+* Company type configuration: Company type can only be changed for the parent company. Child companies inherit their type from their parent.
 
 ![Parent companies](../images/companies/parents_1.png "Parent companies")
 
@@ -40,7 +40,7 @@ Each company hierarchy consists of a single Root company and zero or more Child 
 
 - Child companies may create their own sub-companies. There is no limit on the number of child companies or the number of levels the company hierarchy may have.
 
-### Managing child companies
+### Managing Child Companies
 
 - Each company must have at least one user with a "Company Admin" role. This role provides full permissions over the company and includes the following abilities for direct sub-companies:
   - Delete sub-company (deletes the entire sub-hierarchy).
@@ -111,18 +111,18 @@ Please note that changing a company type (to or from premium) always applies to 
 
 ### How to upgrade to a premium company?
 
-**1. To request the change to Premium, go to the Companies list (in the context menu) and click on your parent company.**
+*  To request the change to Premium, go to the Companies list (in the context menu) and click on your parent company.
 
-**2. Then, in the company menu, click on the crown icon with "upgrade" on it.**
+*  Then, in the company menu, click on the crown icon with "upgrade" on it.
 
  ![Request upgrade](../images/companies/UpgradePremium.png "Request upgrade")
 
 
-**3. Optionally, you can fill up the *ERPID* of your Company. Otherwise, press the *Submit Request* button.**
+*  Optionally, you can fill up the *ERPID* of your Company. Otherwise, press the *Submit Request* button.
 
  ![Request upgrade form](../images/companies/UpgradePremium2.png "Request upgrade form")
 
-**4. Confirmation and Follow-Up:**
+*  Confirmation and Follow-Up:**
 
  Upon submission, an email will be sent to the sales manager for your region, and a confirmation email will be sent to you. The sales manager will contact you to negotiate the details.
 
@@ -133,7 +133,7 @@ Please note that changing a company type (to or from premium) always applies to 
 2. Send an email your request for downgrade to [wadmp@advantech.com](mailto:wadmp@advantech.com).
 
 ##	5. Billing 
-**If your company type is Premium, you are billed monthly. The invoices are coming automatically on the Primary Contact Email at the company.**
+* If your company type is Premium, you are billed monthly. The billing are coming automatically on the Primary Contact Email at the company
 
 ![Company contact](../images/companies/primary-contact.png "Company contact")
 
@@ -143,13 +143,13 @@ Please note that changing a company type (to or from premium) always applies to 
 
 ### How to view billing history?
 
-**To access the Billing item in the side menu, you must be in a root (top parent) company and have permissions to view Billing or be a Company Admin (A list of monthly invoices will appear).**
+* To access the Billing item in the side menu, you must be in a root (top parent) company and have permissions to view Billing or be a Company Admin (A list of monthly billing will appear).
 
 ![View Billing History](../images/companies/ViewBillingHistory.png "View Billing History")
 
 * **Billing Summaries list:**
 
-  Click on an invoice to view details or download it as a PDF by clicking the download button on the right (Arrow-Icon). 
+  Click on an billing to view details or download it as a PDF by clicking the download button on the right (Arrow-Icon). 
 
 ![Billing Summaries List](../images/companies/BillingSummariesList.png "Billing Summaries List")
 
