@@ -5,18 +5,13 @@
 
 ###	Introduction to companies
 
-* **Company Creation:** 
-   * Creating a company is free and requires you to log in or sign up for a new account. You can create multiple companies.
-
-   * Users who create a company are automatically Company Admins and can control or manage added devices. Permissions of users who join the company (are invited) depend on the permissions set by the Company Admin or another user in the company with these capabilities.
-
+* It's free to create a company. Just log in or sign up. You can create as many companies as you want.
+* When you create a company, you become the "Company Admin". You can manage and control the devices added to the company. The permissions for users you invite are set by you or another user with the right permissions.
 
 
 ###	Limitations of non-premium companies
 
-
 * After a new company is created, the company type is automatically set to "Free".
-
 
 * **Company type can be:**
 
@@ -27,12 +22,12 @@
 
 
 
-* **Company Type Configuration:** Company type can only be changed for the parent company. Child companies inherit their type from their parent.
+* **Company type configuration:** Company type can only be changed for the parent company. Child companies inherit their type from their parent.
 
 ![Parent companies](../images/companies/parents_1.png "Parent companies")
 
 
-##	2. Company structure
+##	2. Company Structure
 
 Each company hierarchy consists of a single Root company and zero or more Child companies (also called sub-companies).
 
@@ -45,7 +40,7 @@ Each company hierarchy consists of a single Root company and zero or more Child 
 
 - Child companies may create their own sub-companies. There is no limit on the number of child companies or the number of levels the company hierarchy may have.
 
-### Managing Child Companies
+### Managing child companies
 
 - Each company must have at least one user with a "Company Admin" role. This role provides full permissions over the company and includes the following abilities for direct sub-companies:
   - Delete sub-company (deletes the entire sub-hierarchy).
@@ -59,7 +54,7 @@ Each company hierarchy consists of a single Root company and zero or more Child 
 
 
 
-##	3. Audit logs
+##	3. Audit Logs
 
 Each user action that creates, updates, or deletes anything generates an auditing record. These records are kept for **6 months** after their creation.
 
