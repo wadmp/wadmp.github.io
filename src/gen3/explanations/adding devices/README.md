@@ -84,16 +84,12 @@ By following these steps, administrators can efficiently register devices in the
    - **IMEI:**
     Enter the exact IMEI number as printed on the device label. Note that some devices may not have an IMEI number; *this field is only required if applicable.*
 
-   ![add decice](../images/devices/adddevice1.png)
+  ![filled Form](../images/devices/claimDeviceForm_1.png)
 
 4. If you need to add more than one device at a time, enable the option "Add multiple devices from CSV".
 
 5. Click the *Submit* button to complete the add.
 
-
-* Here’s how the Add Device form would look when filled out:
-
-![filled Form](../images/devices/claimDeviceForm_1.png)
 
 * **After successfully adding a device, it will appear in the Device List for your company, as shown here:**
 
@@ -101,9 +97,58 @@ By following these steps, administrators can efficiently register devices in the
 
 
 
-##	3. Install a WebAccess/DMP client app
-xxxxxxxxxxxxxxxxxxxxxxxx
+##	3. Install/Upgrade a WebAccess/DMP client app
+
+Router Apps can enhance the device's capabilities beyond the standard firmware features.
+
+1. Select the device.
+2. Click on "Router Apps".
+3. Review the installed Router Apps.
+4. Please note the following: *Yellow (unknown) Router Apps cannot have their properties edited because the platform does not yet support them. If the platform recognizes the app but not the installed version, it will also appear in yellow. You can reinstall it with a known version.*
+
+![Install](../images/RouterAPP/1.png)
+
+
+* To add more Router Apps, click on this icon:
+
+![Install](../images/RouterAPP/2.png)
+
+
+#### Upgrade Devices to the Latest Firmware
+
+To upgrade your devices to the latest Firmware, follow these steps:
+
+1. Choose *"My Devices"*.
+2. Select exactly *"one company"* to enable device selection. Optionally, filter the devices using Groups, Tags, other filters at the top right, or search.
+3. Select all filtered devices (or manually select specific devices from the list).
+4. Click the *"Upgrade Firmware"* button at the bottom.
+
+![Upgrade Firmware](../images/RouterAPP/01_upgrade_fw.png)
+
+5. For every *Device Type*, select the version of Firmware.
+6. Click on *"Upgrade"*.
+
+![Upgrade Firmware](../images/RouterAPP/02_upgrade_fw.png)
 
 ##	4. Firewall considerations (ports & addresses to whitelist)
-xxxxxxxxxxxxxxxxx
+
+### WADMP Ports/Addresses
+
+This section provides a list of addresses and ports that **customers need to whitelist** in their firewall.
+
+:::warning Caution:
+Please be aware that IP addresses may change with updates to our infrastructure.
+Only the FQDN names will remain stable.
+:::
+
+<div align="center">
+
+| FQDN                  | IP                                                          | Port | Accessed from router?      |
+| --------------------- | ----------------------------------------------------------- | ---- | -------------------------- |
+| management.wadmp3.com | <center>3.73.182.61<br>3.124.54.255<br>52.29.40.29</center> | 8883 | <center>Yes</center>       |
+| bootstrap.wadmp3.com  | <center>3.124.228.128<br>52.28.186.90<br>3.67.107.51</center> | 8884 | <center>Yes</center>       |
+| content.wadmp3.com    | <center>3.72.206.176<br>3.124.104.54<br>52.29.166.166</center> | 443  | <center>Yes</center>       |
+| gateway.wadmp3.com    | 52.57.47.37                                                 | 443  | <center>Yes</center>       |
+
+</div>
 
