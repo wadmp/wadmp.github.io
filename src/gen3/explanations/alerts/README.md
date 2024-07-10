@@ -51,7 +51,7 @@ In the **Alerts -> Endpoints** section, use the plus icon to add an Endpoint. Th
 
 <font size="4"> **5.** Press the **Submit** button to save the changes in rule.</font>
 
-<font size="4"> **6.** You can manage created rules in the Rules table by enabling/disabling them in the first column, editing them by clicking on the rule name or pencil icon, and duplicating them by clicking the copy icon in the right column, which opens the **Edit New Rule** form for adjustments.</font>
+<font size="4"> **6.** You can manage created rules in the Rules table by enabling/disabling them in the first column, edit them by clicking on the rule name or pencil icon, and duplicate them by clicking the copy icon in the right column, which opens the **Edit New Rule** form for adjustments.</font>
 
 ![Alerts rule](../images/alerts/ManageRules.png "Manage Rules")
 

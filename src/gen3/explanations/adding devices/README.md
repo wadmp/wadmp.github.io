@@ -1,6 +1,6 @@
 # Adding Devices
 
-##	1. Register A Device (On-Premises Only)
+##	1. Register a Device (On-Premises Only)
 
 In the on-premises version of our system, administrators must register devices before they can be added. This process is necessary because on-premises installations lack access to our manufacturing database, which is utilized for device registration in the public instance. Here's how administrators can register a device:
 
@@ -29,9 +29,8 @@ By following these steps, administrators can efficiently register devices in the
 
 **Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automaticaly when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](https://docs.wadmp.com/gen3/explanations/adding%20devices/#_3-install-upgrade-a-webaccess-dmp-client-app).
 
-### User Criteria for adding a Device
-
-* You need to have the right permissions, Check the [permissions](https://docs.wadmp.com/gen3/explanations/#_5-permissions).
+* **User Criteria for adding a Device:**
+     You need to have the right permissions, Check the [permissions](https://docs.wadmp.com/gen3/explanations/#_5-permissions).
 
 ### Rules
 
@@ -72,7 +71,7 @@ By following these steps, administrators can efficiently register devices in the
 **3. Fill out the "Add Device" form with the following information:**
 
    - **Alias:**
-    Enter a human-friendly name to help identify the device later.*This field is optional.*
+    Enter a human-friendly name to help identify the device later. *This field is optional.*
 
    - **MAC Address:**
     Enter the exact MAC Address for ETH0 of your device as it appears on the device label. The format should be `00:0A:14:aa:bb:cc`. *This is a required field.*
@@ -91,8 +90,7 @@ By following these steps, administrators can efficiently register devices in the
 
   ![multiple devices from CSV](../images/devices/CSV.png)
  
-  * You can also download an example CSV file that you can edit for your needs:[CSV file example](https://advantecho365-my.sharepoint.com/:x:/g/personal/jan_svoboda_advantech_com/EdaGjukivhVOr27kSyinoREBkJmhzTbvhCZjn6LM9-ypNA?e=e7lVad)
-
+  * You can also download an example CSV file that you can edit for your needs: [CSV Example File](../exampelsfiles/routers-example.csv)
 
 **5. Click the *Submit* button to complete the add.**
 
@@ -107,18 +105,6 @@ By following these steps, administrators can efficiently register devices in the
 
 If you want to migrate your device from 2.x.x instance, you need to upgrade Router App to 3.x.x version via 2.x.x WebAccess/DMP Instance - go to [Migration from 2.x.x to 3.x.x Instance](https://docs.wadmp.com/gen3/explanations/Migration%20from%202.x.x%20to%203.x.x%20instance/#step-1-export-data-from-2-x-x-instance).
 
-To install a "WebAccess/DMP client app" user needs to:
-1. Select the device.
-2. Click on "Router Apps".
-3. Review the installed Router Apps.
-4. Please note the following: *Yellow (unknown) Router Apps cannot have their properties edited because the platform does not yet support them. If the platform recognizes the app but not the installed version, it will also appear in yellow. You can reinstall it with a known version.*
-
-![Install](../images/RouterAPP/1.png)
-
-
-* To add more Router Apps, click on this icon:
-
-![Install](../images/RouterAPP/2.png)
 
 If you do not have WebAccess/DMP Router App client installed, or you are not sure if you have client installed, follow these steps:
 
@@ -151,41 +137,7 @@ If you do not have WebAccess/DMP Router App client installed, or you are not sur
 * For manual upgrades of the client, follow the same steps and reinstall by adding the file to the device via Customize > Router Apps page.
 ![APP-5](../images/RouterAPP/APP-5.png)
 
-### Upgrade Devices to the Latest Firmware
 
-To upgrade your devices to the latest Firmware, follow these steps:
-
-1. Choose *"My Devices"*.
-2. Select exactly *"one company"* to enable device selection. Optionally, filter the devices using Groups, Tags, other filters at the top right, or search.
-3. Select all filtered devices (or manually select specific devices from the list).
-4. Click the *"Upgrade Firmware"* button at the bottom.
-
-![Upgrade Firmware](../images/RouterAPP/01_upgrade_fw.png)
-
-5. For every *Device Type*, select the version of Firmware.
-6. Click on *"Upgrade"*.
-
-![Upgrade Firmware](../images/RouterAPP/02_upgrade_fw.png)
-
-##	4. Firewall considerations (ports & addresses to whitelist)
-
-### WADMP Ports/Addresses
-
-This section provides a list of addresses and ports that **customers need to whitelist** in their firewall.
 
 :::warning Caution:
-Please be aware that IP addresses may change with updates to our infrastructure.
-Only the FQDN names will remain stable.
-:::
-
-<div align="center">
-
-| FQDN                  | IP                                                          | Port | Accessed from router?      |
-| --------------------- | ----------------------------------------------------------- | ---- | -------------------------- |
-| management.wadmp3.com | <center>3.73.182.61<br>3.124.54.255<br>52.29.40.29</center> | 8883 | <center>Yes</center>       |
-| bootstrap.wadmp3.com  | <center>3.124.228.128<br>52.28.186.90<br>3.67.107.51</center> | 8884 | <center>Yes</center>       |
-| content.wadmp3.com    | <center>3.72.206.176<br>3.124.104.54<br>52.29.166.166</center> | 443  | <center>Yes</center>       |
-| gateway.wadmp3.com    | 52.57.47.37                                                 | 443  | <center>Yes</center>       |
-
-</div>
-
+**If you are having difficulties to connect your device to WebAccess/DMP, please try [Troubleshooting page](https://docs.wadmp.com/gen3/explanations/troubleshooting/#troubleshooting)**.
