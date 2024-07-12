@@ -1,16 +1,22 @@
 # Device management
 
+xxxxxxxxxxxxxxxxxxxxxxx
+
 ## 1. WebAccess/DMP client app
+
 xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### Configure client application
+
 xxxxxxxxxxxxxxxxxxxxxxxxx
 
-###	Handling router-side changesn
+### Handling router-side changesn
+
 xxxxxxxxxxxxxxxxxxxxxxx
 
+## 2. Fields
 
-##	2. Fields
+## 2. Fields
 
 ### What Are Fields and How They Work?
 
@@ -19,23 +25,26 @@ xxxxxxxxxxxxxxxxxxxxxxx
 Fields are individual data points or pieces of information related to devices in your dashboard. They provide specific details about various aspects of each device, such as its status, performance, and configuration.
 
 #### How Fields Work
+
 Fields are integral to the customization of views in both the Company Dashboard and the Device Dashboard. They allow users to tailor the information displayed to meet specific needs. When a field is added to a dashboard, it becomes a widget or a part of a table, providing real-time data about the selected parameter. Users can interact with these fields to get detailed insights and take necessary actions based on the information provided.
 
 ![Fields](../images/Fields/Fields.png)
 
-&nbsp;    
+&nbsp;  
 &nbsp;
-###	Field categories
 
-* In the side menu, under the Fields section, you can change the category, arrange the fields, and classify them by type by clicking on the word *All* below the *Category* field title. In addition, you can search within fields by clicking on the search icon at the top left of the table.
+### Field categories
+
+- In the side menu, under the Fields section, you can change the category, arrange the fields, and classify them by type by clicking on the word _All_ below the _Category_ field title. In addition, you can search within fields by clicking on the search icon at the top left of the table.
 
 ![Fields](../images/Fields/ChangeCategory.png)
-
 
 Fields are categorized to streamline their management and usage. The primary categories include:
 
 #### Static Fields
+
 These fields hold constant information that typically doesn't change over time. Examples include:
+
 - Device ID
 - MAC Address
 - Name
@@ -44,7 +53,9 @@ These fields hold constant information that typically doesn't change over time. 
 - IMEI
 
 #### Monitoring Fields
+
 These fields provide real-time or periodically updated information about the device's performance and status. Examples include:
+
 - Connection Status
 - Data Downloaded (momentary)
 - Data Uploaded (momentary)
@@ -52,51 +63,57 @@ These fields provide real-time or periodically updated information about the dev
 - CPU Usage
 
 #### Cumulative Fields
+
 These fields aggregate data over time to give a comprehensive view of the device's performance. Examples include:
+
 - Data Downloaded (cumulative)
 - Data Uploaded (cumulative)
 - Data Up+Down (cumulative)
 - Reconnects Count
 
 #### Configuration Fields
+
 These fields pertain to settings and configurations specific to the device. Examples include:
+
 - Configuration Profile
 - Unique Script
 - User Password
 
-&nbsp;    
+&nbsp;  
 &nbsp;
+
 ### Description of Individual Fields
 
-|        Name of graph/widget         |    Description       |
-| :--------------------------  | :------------------- |
-| Claimed Date | Date of claim. |
-| Configuration Profile | Assigned configuration profile. |
-| Connection Status | Connection Status. |
-| Data Downloaded (recent) | Amount of data downloaded within the last monitoring period. |
-| Data Up+Down (cumulative) | Total amount of data uploaded + downloaded. |
-| Data Up+Down (recent) | Amount of data uploaded + downloaded within the last monitoring period. |
-| Data Uploaded (recent) | Amount of data uploaded within the last monitoring period. |
-| Date Created | Date when this device was created on the server (usually corresponding to its manufacture date). |
-| Description | Description of a device. |
-| Device ID | ID of the device. |
-| Device Type | Type of device. |
-| IMEI | IMEI of a device. |
-| MAC Address | MAC address of the device's primary LAN interface. |
-| Mobile Operator | The name of a mobile operator. |
-| Mobile Technology | Mobile technology (e.g., GSM, UMTS, LTE) ("N/A" when no SIM is present). |
-| Name | Name of the device. |
-| Online/Offline Since | Date and time when this device has last connected or disconnected from DMP. |
-| Reconnects Count | Number of times the device went from offline to online state. |
-| Serial Number | Serial number of a device. |
-| SIM Card | Active SIM card. |
-| Synchronization Status | Synchronization status of device. |
+| Name of graph/widget      | Description                                                                                      |
+| :------------------------ | :----------------------------------------------------------------------------------------------- |
+| Claimed Date              | Date of claim.                                                                                   |
+| Configuration Profile     | Assigned configuration profile.                                                                  |
+| Connection Status         | Connection Status.                                                                               |
+| Data Downloaded (recent)  | Amount of data downloaded within the last monitoring period.                                     |
+| Data Up+Down (cumulative) | Total amount of data uploaded + downloaded.                                                      |
+| Data Up+Down (recent)     | Amount of data uploaded + downloaded within the last monitoring period.                          |
+| Data Uploaded (recent)    | Amount of data uploaded within the last monitoring period.                                       |
+| Date Created              | Date when this device was created on the server (usually corresponding to its manufacture date). |
+| Description               | Description of a device.                                                                         |
+| Device ID                 | ID of the device.                                                                                |
+| Device Type               | Type of device.                                                                                  |
+| IMEI                      | IMEI of a device.                                                                                |
+| MAC Address               | MAC address of the device's primary LAN interface.                                               |
+| Mobile Operator           | The name of a mobile operator.                                                                   |
+| Mobile Technology         | Mobile technology (e.g., GSM, UMTS, LTE) ("N/A" when no SIM is present).                         |
+| Name                      | Name of the device.                                                                              |
+| Online/Offline Since      | Date and time when this device has last connected or disconnected from DMP.                      |
+| Reconnects Count          | Number of times the device went from offline to online state.                                    |
+| Serial Number             | Serial number of a device.                                                                       |
+| SIM Card                  | Active SIM card.                                                                                 |
+| Synchronization Status    | Synchronization status of device.                                                                |
 
-> **NOTE:** These are the default fields that you will find in the *Fields* section placed in the Title Panel. Information about additional fields can be acquired by clicking the *+ ADD* button in the *Fields* section and browsing through all available ones.
+> **NOTE:** These are the default fields that you will find in the _Fields_ section placed in the Title Panel. Information about additional fields can be acquired by clicking the _+ ADD_ button in the _Fields_ section and browsing through all available ones.
 
-&nbsp;    
+&nbsp;  
 &nbsp;
-###	Adding/Removing fields
+
+### Adding/Removing fields
 
 #### Adding Fields:
 
@@ -115,36 +132,41 @@ These fields pertain to settings and configurations specific to the device. Exam
 
 1. In the Side Menu select "Fields", locate the field you want to remove.
 2. Click the "Delete" icon (A trash can) next to the field.
-* Note: There are some fields that cannot be deleted such as “Static” type fields
+
+- Note: There are some fields that cannot be deleted such as “Static” type fields
 
 ![Removing Fields](../images/Fields/RemovingFields-1.png)
 
 3. Confirm the removal.
 4. Save your changes by clicking the "Floppy Disc" icon.
 
-
-&nbsp;    
+&nbsp;  
 &nbsp;
-##	3. Device configuration
+
+## 3. Device configuration
+
 ccccccccccccccccccccccc
 
-###	Configuration profiles
+### Configuration profiles
+
 cccccccccccccccccccc
 
-###	Overriding specific settings
+### Overriding specific settings
+
 ccccccccccccccccccc
 
-###	Performing batch edit of field values
+### Performing batch edit of field values
 
 ### Batch Editing Devices
 
 To edit multiple devices at once:
+
 1. Select your desired devices (you can also choose all devices).
-2. Click on the *Batch Edit Filtered Devices* icon.
+2. Click on the _Batch Edit Filtered Devices_ icon.
 
 ![Batch Filter](../images/dashboards/BatchFilter.png)
 
-3. Specify your changes in the *Batch Edit Devices* table.
-4. Confirm the changes by clicking the *Submit* button. The changes will apply only to the selected devices.
+3. Specify your changes in the _Batch Edit Devices_ table.
+4. Confirm the changes by clicking the _Submit_ button. The changes will apply only to the selected devices.
 
 ![Batch Filter2](../images/dashboards/BatchFilter2.png)

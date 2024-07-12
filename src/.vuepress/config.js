@@ -45,7 +45,6 @@ module.exports = {
         text: "Tutorials",
         ariaLabel: "Tutorials",
         items: [
-      
           { text: "Version 2.x.x", link: "/gen2/tutorials/" },
           {
             text: "Migration 2.x.x to 3.x.x",
@@ -83,7 +82,6 @@ module.exports = {
       },
     ],
     sidebar: {
-      
       "/gen2/tutorials/": [
         "" /* /README.md/ */,
         "ui-general-structure/" /* README.md */,
@@ -106,8 +104,8 @@ module.exports = {
         "alerts/" /* /README.md */,
         "api/" /* /README.md */,
         "troubleshooting/" /* /README.md */,
+        "faq/" /* /README.md */,
         "Migration from 2.x.x to 3.x.x instance/" /* /README.md */,
-      
       ],
       "/gen2/explanations/": [
         "" /* /README.md/ */,
