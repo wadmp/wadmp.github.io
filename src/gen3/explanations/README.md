@@ -121,7 +121,7 @@ Click on the "Sign Up" link if you are the first from your company to register. 
 **To invite existing users to your company:**
 
 * **Navigate to Users:**
-  Select Users from the Side Menu in the context of the company where you want to add the user.
+  Select Users from the  Menu in the context of the company where you want to add the user.
 
 * **Initiate Invitation:**
   Click on the Invite User button located at the top right of the Users page.

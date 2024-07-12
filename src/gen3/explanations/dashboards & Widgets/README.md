@@ -83,28 +83,6 @@ You can search, filter, and sort your devices at will, but remember that this on
 
 ![ActiveView](../images/dashboards/ActiveView.png)
 
-### Editing or Adding a Device Description
-
-To edit or add a new description to a device:
-1. Click the *Edit* icon on the router you wish to modify.
-2. Enter your desired description.
-3. Save the changes by clicking on the *Floppy* disc icon that replaced the *Edit* icon.
-
-![Filter1](../images/dashboards/Filter1.png)
-
-### Batch Editing Devices
-
-To edit multiple devices at once:
-1. Select your desired devices (you can also choose all devices).
-2. Click on the *Batch Edit Filtered Devices* icon.
-
-![Batch Filter](../images/dashboards/BatchFilter.png)
-
-3. Specify your changes in the *Batch Edit Devices* table.
-4. Confirm the changes by clicking the *Submit* button. The changes will apply only to the selected devices.
-
-![Batch Filter2](../images/dashboards/BatchFilter2.png)
-
 ### Searching for a Specific Device
 
 To search for a specific device:
@@ -122,6 +100,20 @@ To sort devices by a specific column, such as *Description*:
 2. Choose either descending or ascending mode.
 
 ![Sorting Filter](../images/dashboards/SortingFilter.png)
+
+### Filtering
+
+* You can interact with graphs by clicking on specific parts of them. 
+
+![Filter/Click-Change](../images/dashboards/filter-click-change.png)
+
+* For example, to display only devices of the "Vodafone CZ" operator, click on the section of the graph representing "Vodafone CZ" devices. This action will apply an active filter.
+
+![Filter/Change](../images/dashboards/filter-change.png)
+
+* To remove this filter, click the "Clear Filters" button.
+
+![Filter Clear](../images/dashboards/clear-filter.png)
 
 
 ## Customizing Columns
@@ -173,6 +165,8 @@ When a router installs the “WebAccess/DMP Client” User Module, the client ma
 
 &nbsp;    
 &nbsp; 
+
+
 ## Tips & Tricks
 
 ### Sizing and Moving
@@ -188,24 +182,48 @@ To exit *Edit View* mode, click the *Floppy Disc* icon to save your changes, or 
 
 &nbsp;    
 &nbsp; 
-### Filtering
+### Editing or Adding a Device Description
 
-* You can interact with graphs by clicking on specific parts of them. 
+To edit or add a new description to a device:
+1. Click the *Edit* icon on the router you wish to modify.
+2. Enter your desired description.
+3. Save the changes by clicking on the *Floppy* disc icon that replaced the *Edit* icon.
 
-![Filter/Click-Change](../images/dashboards/filter-click-change.png)
-
-* For example, to display only devices of the "Vodafone CZ" operator, click on the section of the graph representing "Vodafone CZ" devices. This action will apply an active filter.
-
-![Filter/Change](../images/dashboards/filter-change.png)
-
-* To remove this filter, click the "Clear Filters" button.
-
-![Filter Clear](../images/dashboards/clear-filter.png)
-
-For more information, visit [Aaaaaa].
+![Filter1](../images/dashboards/Filter1.png)
 
 &nbsp;    
 &nbsp;
+
+### Devices Tagging
+
+* You can filter and overview the devices using tags. Using tags, you can create overlapping bunches of devices.
+
+Tagging can make it easier to find the devices by giving them specific properties with tags and then filtering or searching for them.
+After logging in to the [system](https://wadmp3.com), you must ensure a *Tag - Textual* field in the Filter Panel of the Devices.
+
+![Tag Dashboard](../images/dashboards/Tagg.png)
+
+If you don't have it, you can add this field by check [Adding/Removing fields](https://docs.wadmp.com/gen3/explanations/device%20management/#adding-removing-fields).
+
+* After adding the *Tag - Textual* field and making it visible, Select your desired devices to create a Tag for your device and click the *Batch Edit Filtered Devices* icon.
+
+![Editing Tag](../images/dashboards/Tagg-3.png)
+
+* In the *Batch Edit Filtered Devices* form, specify the name tag you want to use for the selected devices in the Tag - Textual Desired Value field and click submit. Above the submit button, there's a note showing how many devices are affected by this action.
+
+![Editing Tag](../images/dashboards/Tagg-4.png)
+
+![Editing Tag](../images/dashboards/Tagg4.png)
+
+* Your desired devices should now be Tagged.
+
+![Editing Tag](../images/dashboards/Tagg-5.png)
+
+* You can filter devices by simply typing in your specified tag; only the devices with this tag will appear.
+
+![Applied Tag](../images/dashboards/Tagg-6.png)
+
+
 ### Data Export
 
 You can export CSV data files from your devices in Excel format:
@@ -215,7 +233,8 @@ You can export CSV data files from your devices in Excel format:
 
 ![Export data](../images/dashboards/data_export-1.png)
 
-
+&nbsp;    
+&nbsp;
 * For more information, visit [Exporting data to CSV](https://docs.wadmp.com/gen3/explanations/device%20monitoring/#_2-exporting-data-to-csv).
 
 &nbsp;    
@@ -231,4 +250,6 @@ You can import your devices from CSV data files by following these steps:
 
 ![Import data](../images/dashboards/Data_Import.png)
 
+&nbsp;    
+&nbsp;
 * For more information, visit [Device monitoring](https://docs.wadmp.com/gen3/explanations/device%20monitoring/#device-monitoring).
