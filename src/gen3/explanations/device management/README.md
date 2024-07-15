@@ -1,20 +1,18 @@
-# Device management
+# Device Management
 
-xxxxxxxxxxxxxxxxxxxxxxx
+## 1. WebAccess/DMP Client App
 
-## 1. WebAccess/DMP client app
+### Configure Client Application
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxx
+If you want to propagate your managed configuration to the device, it is recommended to have a device in Synced and Online state. In WebAccess/DMP Client router app, this checkbox has to be enabled for the sync to by working:
 
-### Configure client application
+![Fields](../images/management/client-enable.png)
 
-xxxxxxxxxxxxxxxxxxxxxxxxx
+(Enable monitoring is not necessary for settings propagation, it is for reporting of metrics.)
 
-### Handling router-side changesn
+### Handling Router-side Changes
 
-xxxxxxxxxxxxxxxxxxxxxxx
-
-## 2. Fields
+If configuration change is done directly on the router localy (via router's Web interface), it is touched and overrided by WebAccess/DMP only if this particular setting is also set as managed on WebAccess/DMP. This can be done via Configuration Profile, or via individual Field from Configuration category.
 
 ## 2. Fields
 
@@ -22,20 +20,22 @@ xxxxxxxxxxxxxxxxxxxxxxx
 
 #### Definition of Fields
 
-Fields are individual data points or pieces of information related to devices in your dashboard. They provide specific details about various aspects of each device, such as its status, performance, and configuration.
+Fields are data tracked in database for your company. They have different categories, so they are related to both monitoring (may provide specific details about various aspects of each device, such as its status, performance), and configuration. They may be further used for data presentation on dashboard, individual or batch configuration, alerts, etc.
 
 #### How Fields Work
 
 Fields are integral to the customization of views in both the Company Dashboard and the Device Dashboard. They allow users to tailor the information displayed to meet specific needs. When a field is added to a dashboard, it becomes a widget or a part of a table, providing real-time data about the selected parameter. Users can interact with these fields to get detailed insights and take necessary actions based on the information provided.
+
+Here for example fields are shown as columns in the table on Company Dashboard, and editable field values may be edited directly by clicking edit pencil icon:
 
 ![Fields](../images/Fields/Fields.png)
 
 &nbsp;  
 &nbsp;
 
-### Field categories
+### Field Categories
 
-- In the side menu, under the Fields section, you can change the category, arrange the fields, and classify them by type by clicking on the word _All_ below the _Category_ field title. In addition, you can search within fields by clicking on the search icon at the top left of the table.
+On Fields page you can filter Fields by category. In addition, you can search within fields by clicking on the search icon at the top left of the table.
 
 ![Fields](../images/Fields/ChangeCategory.png)
 
@@ -64,7 +64,7 @@ These fields provide real-time or periodically updated information about the dev
 
 #### Cumulative Fields
 
-These fields aggregate data over time to give a comprehensive view of the device's performance. Examples include:
+These fields aggregate data over time to give a comprehensive view of the device's performance. Periodical reset may be set up on this type of fields. Examples include:
 
 - Data Downloaded (cumulative)
 - Data Uploaded (cumulative)
@@ -73,16 +73,19 @@ These fields aggregate data over time to give a comprehensive view of the device
 
 #### Configuration Fields
 
-These fields pertain to settings and configurations specific to the device. Examples include:
+These enable settings and configuration specific to the device. Examples include:
 
 - Configuration Profile
 - Unique Script
 - User Password
+- etc.
+
+![Fields](../images/management/config-fields.png)
 
 &nbsp;  
 &nbsp;
 
-### Description of Individual Fields
+There is a set of default Fields listed below, that you will find in the _Fields_ section in side menu. **Information about additional fields is shown in Add Field dialog** that can be acquired by clicking the _+ ADD_ button in the _Fields_ section and browsing through all available ones.
 
 | Name of graph/widget      | Description                                                                                      |
 | :------------------------ | :----------------------------------------------------------------------------------------------- |
@@ -108,8 +111,6 @@ These fields pertain to settings and configurations specific to the device. Exam
 | SIM Card                  | Active SIM card.                                                                                 |
 | Synchronization Status    | Synchronization status of device.                                                                |
 
-> **NOTE:** These are the default fields that you will find in the _Fields_ section placed in the Title Panel. Information about additional fields can be acquired by clicking the _+ ADD_ button in the _Fields_ section and browsing through all available ones.
-
 &nbsp;  
 &nbsp;
 
@@ -117,7 +118,7 @@ These fields pertain to settings and configurations specific to the device. Exam
 
 #### Adding Fields:
 
-1. Navigate to the "Edit View" mode in your dashboard.
+1. Either click +ADD on Fields page, or from "Edit View" mode in your dashboard:
 
 ![Adding Fields](../images/Fields/AddingFields-1.png)
 
@@ -138,30 +139,82 @@ These fields pertain to settings and configurations specific to the device. Exam
 ![Removing Fields](../images/Fields/RemovingFields-1.png)
 
 3. Confirm the removal.
-4. Save your changes by clicking the "Floppy Disc" icon.
 
 &nbsp;  
 &nbsp;
 
-## 3. Device configuration
+## 3. Device Configuration
 
-ccccccccccccccccccccccc
+Device Configuration may be done individually via specific managed settings (Fields from Configuration category), that can be changed per device, and via Configuration Profiles (these are sets of settings values, that serve as a template).
 
-### Configuration profiles
+Combination of both is possible - for example when you have hundreds of devices and need same Firmware version on all of them, specific Router App version on all of them, but interface IP address different for each device, you can prepare Configuration Profile (that would include settings shared for all devices), and then add Unique Setting Value Field for interface IP address. Then you can setup a view on dashboard, that would contain devices table with columns from Configuration Profile Field and Unique Setting Value Field. You can select all devices in table and using Batch Edit dialog setup the same Configuration Profile for all devices. For individual IP adress setting, you can Export the table data to CSV file, open in Excel, copy increasing IP adresses to the Unique Setting Value column and import Excel file back. For individual device both values from Configuration Profile and Unique Setting Value Field are tracked as managed by WebAccess/DMP, which you can check on Desired Configuration tab on Device page.
 
-cccccccccccccccccccc
+### Configuration Profiles
 
-### Overriding specific settings
+Configuration profiles are used for easy installation of any of our Router Apps, as well as router firmware and its overall settings as individual devices or bunch devices in bulk.
 
-ccccccccccccccccccc
+1. First, you must choose an example router that will be used as a default configuration for your Configuration Profile.
 
-### Performing batch edit of field values
+2. Connect to your router via IP address to the user GUI.
 
-### Batch Editing Devices
+![login](../images/management/login.png)
+
+3. Ensure you're running the latest WebAccess/DMP Client in the Router Apps section so the router is connected with WA/DMP. You can check the Client Release Notes section for the latest version of WA/DMP.
+
+![WADMP Client Version](../images/management/client-vers.png)
+
+1. Now you can make all desired settings localy via Web interface in the selected device. This includes all your desired Router Apps, Firmware version, and Configuration settings of the router.
+
+2. At this point, head for the Dashboard in WebAccess/DMP and find your device in the table, where you can make a Configuration Profile out of this router (the icon button to create Configuration Profile is also accessible in the header of individual Device Page).
+
+   Note: If you create Configuration Profile from the device that already has Configuration Profile setup, the created Configuration Profile will be the result of original Configuration Profile and ather individual configuration fields if applicable.
+
+![Create Configuration Profile](../images/management/Create-ConfigP2.png)
+
+1. Now you can apply your newly created Configuration Profile to any router in your current Company, as showcased in the picture below.
+
+![Configuration Profile Edit](../images/management/ApplyingConfP2.png)
+
+::: tip Example Tip:
+If you apply Configuration Profile, the router will apply all configurations from the router from which Config Profile was created.
+
+For example:
+
+- You have router_1 with an IP address on eth0=10.10.10.1 and router_2 with an IP address on eth0=10.10.10.2.
+- If you create a Config Profile from router_1, it will contain setting ETH_IPADDR=10.10.10.1. and if you apply that Config Profile to router_2, setting ETH_IPADDR on router_2 will be overwritten to 10.10.10.1.
+- Only if you create a Unique setting with Setting Name ETH_IPADDR (the exact name of the setting from the router) and display the name, for example, Unique_ETH_IPADDR, and edit that field to Unique_ETH_IPADDR=10.10.10.2, the setting will not be overwritten, because the individual Unique Settings fields have priority over Configuration Profile values.
+
+:::
+
+7. You can overview, compare, and delete your Configuration Profiles in the _Configuration Profiles_ section.
+
+![config_prof_menu](../images/management/ConfigProfile1.png)
+
+8. You can overview Configuration Profile values by clicking on it, you can Clone or delete, or you can create new Config Profile from scratch, if you know your desired settings names and values.
+
+![Config Profile Compare](../images/management/ConfigProfileCompare3.png)
+
+9.  Compare by choosing 2 Configuration Profiles of your desire.
+
+![Config Profile Compare 2](../images/management/CompareConfigurationProfile-2.png)
+
+### Overriding Specific Settings
+
+You may override specific setting as desribed above in introduction and example tip (via field edited on devices table). You may also set or overide specific setting directly on device page:
+
+On Device page on Desired Configuration tab, there is your individual device configuration overview and control:
+
+![Config Profile Compare](../images/management/desired-config.png)
+
+You can assign Configuration Profile here. When unassigned, you need to Read Router Configuration first (press the button) to see individual settings and their values on the device. You can set them as Desired (managed) which in fact creates a new Field if needed and overrides the Unique Setting Value. You can do that for Firmware and Apps, Setings, Scripts and Users, as seen on the tabs available. Changes are propagated to device after clicking on Apply Desired Configuration button.
+
+### Performing Batch Edit of Field Values
+
+#### In Devices Table on Dashboard
 
 To edit multiple devices at once:
 
-1. Select your desired devices (you can also choose all devices).
+1. Select your desired devices (you can also choose all devices, which really selects all ignoring pagination).
 2. Click on the _Batch Edit Filtered Devices_ icon.
 
 ![Batch Filter](../images/dashboards/BatchFilter.png)
@@ -170,3 +223,9 @@ To edit multiple devices at once:
 4. Confirm the changes by clicking the _Submit_ button. The changes will apply only to the selected devices.
 
 ![Batch Filter2](../images/dashboards/BatchFilter2.png)
+
+#### Via CSV Export/Import
+
+You can also set editable Fields (including configuration) vie CSV Import. It is advisable to setup your dashboard devices table to contain all columns (Fileds) you want to edit in CSV file (via Excel), and the Export them first (as described in Monitoring section - [Exporting data to CSV](/gen3/explanations/device%20monitoring/#_2-exporting-data-to-csv)), edit them vie Excel and Import back on the same Dashboard view:
+
+![Import data](../images/dashboards/Data_Import.png)
