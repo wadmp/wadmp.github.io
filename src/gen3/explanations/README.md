@@ -42,15 +42,11 @@ To start using WebAccess/DMP, you will first need a user account .
 
 **Below are the provided options:**
 
-**Facebook:** Enable users to register or log in using their existing Facebook accounts.
-
 **Gmail:** Allow users to utilize their Gmail accounts for registration or login purposes.
 
 **Microsoft:** Integrate with Microsoft accounts for authentication.
 
-**Custom Providers**: Implement custom identity providers tailored to your service. These could be proprietary accounts created specifically for your platform, offering users a dedicated authentication method apart from popular third-party options.
-
-![providers options](./images/providers.jpg)
+![providers options](./images/providers.png)
 
 ## 2. Add Users
 
