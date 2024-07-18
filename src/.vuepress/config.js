@@ -1,4 +1,6 @@
 const { description } = require("../../package");
+const path = require("path");
+const { getVersionedNav } = require("./utils/getVersionedNav");
 
 module.exports = {
   /**
@@ -40,47 +42,7 @@ module.exports = {
     repo: "",
     docsDir: "",
     lastUpdated: true,
-    nav: [
-      {
-        text: "Tutorials",
-        ariaLabel: "Tutorials",
-        items: [
-          { text: "Version 2.x.x", link: "/gen2/tutorials/" },
-          {
-            text: "Migration 2.x.x to 3.x.x",
-            link: "/gen3/tutorials/migration-gen2-gen3/",
-          },
-        ],
-      },
-      {
-        text: "Explanations",
-        ariaLabel: "Explanations",
-        items: [
-          { text: "Version 3.x.x", link: "/gen3/explanations/" },
-          { text: "Version 2.x.x", link: "/gen2/explanations/" },
-        ],
-      },
-      {
-        text: "Release Notes (Server)",
-        ariaLabel: "Release Notes (Server)",
-        items: [
-          { text: "Version 3.x.x", link: "/gen3/release-notes/" },
-          { text: "Version 2.x.x", link: "/gen2/release-notes/" },
-        ],
-      },
-      {
-        text: "Release Notes (Client)",
-        ariaLabel: "Release Notes (Client)",
-        items: [
-          { text: "Version 3.x.x", link: "/gen3/client/" },
-          { text: "Version 2.x.x", link: "/gen2/client/" },
-        ],
-      },
-      {
-        text: "Support & Contact",
-        link: "/contact/",
-      },
-    ],
+    nav: getVersionedNav("Version 3.x.x"), // Default version nav
     sidebar: {
       "/gen2/tutorials/": [
         "" /* /README.md/ */,
@@ -124,6 +86,7 @@ module.exports = {
         "adding-or-claiming-devices-in-bulk/" /* /README.md */,
         "bunch-claiming-devices/" /* /README.md */,
         "wadmp-ports/" /* /README.md */,
+        "Migration from 2.x.x to 3.x.x instance/" /* /README.md */,
       ],
       "/gen3/release-notes/": [
         "" /* /README.md/ */,
@@ -171,5 +134,20 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+  plugins: [
+    [
+      "@vuepress/plugin-back-to-top",
+      "@vuepress/plugin-medium-zoom",
+      "@vuepress/plugin-register-components",
+    ],
+    {
+      components: [
+        {
+          name: "VersionSwitcher",
+          path: path.resolve(__dirname, "./components/VersionSwitcher.vue"),
+        },
+      ],
+    },
+    path.resolve(__dirname, "./plugins/versionSwitcherPlugin.js"),
+  ],
 };
