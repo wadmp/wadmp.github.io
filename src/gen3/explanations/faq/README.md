@@ -1,6 +1,6 @@
 # FAQ
 
-### WADMP Ports/Addresses - What should I put on firewall whitelist?
+## WADMP Ports/Addresses - What should I put on firewall whitelist?
 
 This section provides a list of addresses and ports that **customers need to whitelist** in their firewall.
 
@@ -20,7 +20,7 @@ Only the FQDN names will remain stable.
 
 </div>
 
-### Cellular Data Usage - How much data will some operations take?
+## Cellular Data Usage - How much data will some operations take?
 
 - Data usage examples for steady-state operation. i.e., The device has already connected to the WebAccess/DMP Management Server.
   If your device's cellular connection is unstable (for example, due to poor signal strength), you may experience occasional re-connects.

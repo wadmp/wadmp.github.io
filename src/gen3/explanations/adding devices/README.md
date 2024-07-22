@@ -12,7 +12,7 @@ In the on-premises version of our system, administrators must register devices b
 2. **Registration Process:**
 
    - Upon clicking the "+" icon, administrators will be directed to the device registration interface.
-   - Administrators will notice an additional tab labeled "Create Device."
+   - Administrators will notice an additional tab labeled "Register Device."
 
      ![create device](../images/devices/create-device.png)
 

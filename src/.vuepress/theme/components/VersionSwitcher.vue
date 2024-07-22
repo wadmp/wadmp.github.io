@@ -1,6 +1,6 @@
 <template>
   <div class="version-switcher">
-    <select @change="switchVersion" v-model="currentVersion">
+    <select @change="switchVersion" v-model="$store.state.version">
       <option v-for="version in versions" :key="version" :value="version">
         {{ version }}
       </option>
@@ -13,16 +13,18 @@ import { EventBus } from "../../eventBus.js";
 import { getVersionedNav } from "../../utils/getVersionedNav.js";
 
 export default {
-  data() {
-    return {
-      versions: ["Version 3.x.x", "Version 2.x.x"], // Add your versions here
-      currentVersion: sessionStorage.getItem("docs-version") || "Version 3.x.x", // Default version
-    };
+  computed: {
+    versions() {
+      return ["Version 3.x.x", "Version 2.x.x"];
+    },
+    currentVersion() {
+      return this.$store.state.version;
+    },
   },
   methods: {
     switchVersion(event) {
       const selectedVersion = event.target.value;
-      sessionStorage.setItem("docs-version", selectedVersion);
+      this.$store.mutations.setVersion(selectedVersion);
       // Emit an event to notify other components of the version change
       EventBus.$emit("version-changed", selectedVersion);
 
@@ -43,13 +45,6 @@ export default {
       this.$router.app.$emit("nav-updated"); // Emit event to force re-render
     },
   },
-  /*
-  beforeUnmount() {
-    // Clear local storage version and set default version
-    localStorage.removeItem("docs-version");
-    localStorage.setItem("docs-version", "Version 3.x.x");
-  },
-  */
 };
 </script>
 

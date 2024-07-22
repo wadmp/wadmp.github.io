@@ -10,11 +10,12 @@
 
 - **Problem:**
 
-  - The router lacks an internet connection because it is stuck in the permanent Bootstrap Server process and is not receiving any successful response from the server. This issue could arise if the router was not loaded into DMP during the manufacturing process.
+  - The router is stuck in the permanent Bootstrap Server process and is not receiving any successful response from the server. This issue could arise if the router was not registered into DMP during the manufacturing process.
 
 - **Potential Causes and Solutions:**
-  - This issue may arise if the router was not properly registered in **DMP** during manufacturing.
-  - Contact [DMP support](mailto:wadmp@advantech.com) to request registration of the router in the DMP instance.
+  - This issue may arise if the router was not properly registered in **WebAccess/DMP** during manufacturing.
+  - Contact [WebAccess/DMP support](mailto:wadmp@advantech.com) to request registration of the router in the DMP instance.
+  - On-Prem only: contact your System Administrator to register the device to the WebAccess/DMP.
 
 ## Scenario 2: Failure to Connect to Bootstrap Server
 

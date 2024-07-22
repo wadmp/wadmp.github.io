@@ -1,10 +1,10 @@
 import { EventBus } from "../eventBus.js";
 import { getVersionedNav } from "../utils/getVersionedNav.js";
+import store from "../store";
 
 export default {
   mounted() {
-    const savedVersion =
-      sessionStorage.getItem("docs-version") || "Version 3.x.x";
+    const savedVersion = store.state.version || "Version 3.x.x";
     this.updateNav(savedVersion);
 
     // Listen for version changes

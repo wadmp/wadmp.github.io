@@ -1,10 +1,19 @@
-# Release Notes for Client Router App: 
+# Release Notes for Client Router App:
 
 ## Latest version:
 
+### v3.1.0 (2024-07-22)
+
+- Upgraded openssl and paho.mqtt libraries.
+- Added watchdog.
+- Added user role management.
+- Reduced missing GPS metrics message count in syslog.
+- Removed cumulative metrics from client side.
+
 ### v3.0.1 (2023-12-15)
-* Decreased the retry timeout for device reconnection.
-* Added an automatic configuration of bootstrap address to 3.x.x instance.
+
+- Decreased the retry timeout for device reconnection.
+- Added an automatic configuration of bootstrap address to 3.x.x instance.
 
 ## Download:
 
@@ -14,8 +23,8 @@ We recommend always using the most up-to-date version of the client.
 
 The client router app can also be upgraded via WebAccess/DMP.
 
-
 ## Previous versions:
 
 ### v3.0.0 (2023-09-01)
-* WebAccess/DMP Client GEN3 first release.
+
+- WebAccess/DMP Client GEN3 first release.
