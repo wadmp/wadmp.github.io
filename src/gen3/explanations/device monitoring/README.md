@@ -1,6 +1,15 @@
 # Device Monitoring
 
-Every device is connected to the WebAccess/DMP instance via the WebAccess/DMP Client Router App, which in default state sends periodicaly (15 minutes) monitoring data to the instance. What data are sent is based on your [Fields](/gen3/explanations/device%20management/#_2-fields) settings. How often sent is based on the Client router app setting. Monitoring data can be interpreted on the Dashboard as Stats, Charts or in the Table (for company / filtered in View), or individualy per device on Device Page Monitoring tab. [Alerts](/gen3/explanations/alerts/) may be set based on rules and monitoring data received. Monitoring data can be exported to CSV file.
+1. Every device is connected to the WebAccess/DMP instance via the WebAccess/DMP Client Router App, which, by default, sends monitoring data to the instance every 15 minutes.
+
+- **Data Sent**: The data sent is based on your [Fields](/gen3/explanations/device%20management/#_2-fields) settings.
+- **Frequency**: The frequency of data sending is based on the Client Router App settings.
+
+2. Monitoring data can be interpreted on the Dashboard as Stats, Charts, or in the Table (for company/filtered in View), or individually per device on the Device Page Monitoring tab. 
+
+- [Alerts](/gen3/explanations/alerts/) can be set based on rules and monitoring data received.
+- **Export**: Monitoring data can be exported to a [CSV file](/gen3/explanations/device%20monitoring/#_2-exporting-data-to-csv).
+
 
 ## 1. Collecting Data from Routers
 
@@ -13,7 +22,14 @@ You may disable WebAccess/DMP monitoring on a device, when disable the checkbox,
 Note that monitoring interval may affect your cellular data bill (more often - more data sent in long time interval).
 Amount of data sent in every regular message is affected by Fields configured for your company. This may also affect your cellular data bill - see example below.
 
-Fields have different categories you can filter, but monitoring (further representaton in Stats, Charts, Tables) can be generaly done above all types of Fields (not only Monitoring or Cumulative monitoring categories, but also Static information and Configuration). Adding of Field means it is tracked in the database and some may take more cellular data when reported.
+* Fields have different categories you can filter. Monitoring (further representation in Stats, Charts, Tables) can be generally done above all types of Fields, including:
+
+   - Monitoring or Cumulative Monitoring categories
+   - Static Information
+   - Configuration
+
+- Adding a Field means it is tracked in the database, and some fields may take more cellular data when reported.
+
 
 ![CSV export](../images/monitoring/field-cat.png)
 
@@ -21,7 +37,12 @@ Fields have different categories you can filter, but monitoring (further represe
 
 The basic principle of operation is that the WebAccess/DMP client maintains a TCP connection with the WebAccess/DMP management server. This means the device is always connected, so the user can reach the device immediately, as required.
 
-However, there is a cost associated with maintaining this always-on TCP connection. Packets of data must be sent periodically to maintain the connection. In addition, for most of our customers, the device connects to WebAccess/DMP via cellular. This means that the cellular network provider (or "carrier") charges for all data exchanged, even if it is only TCP "keepalive" data and not "application" data.
+However, there is a cost associated with maintaining this always-on TCP connection:
+
+- Packets of data must be sent periodically to maintain the connection.
+- For most of our customers, the device connects to WebAccess/DMP via cellular.
+
+This means that the cellular network provider (or "carrier") charges for all data exchanged, even if it is only TCP "keepalive" data and not "application" data.
 
 The amount of data consumed is based on the type of the used Field. You can set Reporting behaviour for some Fields (Always, Never, On Change with Treshold). For examples on how much data are used by some actions, check the [FAQ](/gen3/explanations/faq/) section.
 
@@ -61,8 +82,15 @@ These Fields can be programmaticaly connected to any customer desired string or 
 
 - **Custom Reportable String** is up to 40 characters long string stored in a local file on router (/var/data/wadmp_client/custom_metrics/custom_str) that is reported.
 - **Custom Reportable Number** is a number stored in a local file on router (/var/data/wadmp_client/custom_metrics/custom_number) that is reported.
+  
 
-  For example there is an industrial sensor connected to the router (lets say flow meter in a tube), and the script exists that writes the value from sensor to the file (script may be added via Desired Configuration tab or Configuration Profile). It is then reported to WebAccess/DMP and may be presented as data in Stats, Charts or Tables, used for Alerts or exported (lets say a flow in tube history chart can be observed in a View, or Alert may be sent based on a flow in tube value).
+
+ **For example**, consider an industrial sensor connected to the router (let's say a flow meter in a tube). A script exists that writes the value from the sensor to a file. This script can be added via the Desired Configuration tab or a Configuration Profile.
+  
+  The value is then reported to WebAccess/DMP and may be presented as data in Stats, Charts, or Tables. It can also be used for Alerts or exported.
+
+  - For instance, a flow in the tube history chart can be observed in a View.
+  - An Alert may be sent based on the flow in tube value.
 
 ![CSV export](../images/monitoring/cust-ex.png)
 

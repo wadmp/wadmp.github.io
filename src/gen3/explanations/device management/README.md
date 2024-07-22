@@ -12,7 +12,9 @@ If you want to propagate your managed configuration to the device, it is recomme
 
 ### Handling Router-side Changes
 
-If configuration change is done directly on the router localy (via router's Web interface), it is touched and overrided by WebAccess/DMP only if this particular setting is also set as managed on WebAccess/DMP. This can be done via Configuration Profile, or via individual Field from Configuration category.
+If a configuration change is made directly on the router locally (via the router's web interface), it will be overridden by WebAccess/DMP only under certain conditions:
+   - The particular setting must be set as managed on WebAccess/DMP.
+   - This can be done through a Configuration Profile or via an individual Field from the Configuration category.
 
 ## 2. Fields
 
@@ -20,11 +22,18 @@ If configuration change is done directly on the router localy (via router's Web 
 
 #### Definition of Fields
 
-Fields are data tracked in database for your company. They have different categories, so they are related to both monitoring (may provide specific details about various aspects of each device, such as its status, performance), and configuration. They may be further used for data presentation on dashboard, individual or batch configuration, alerts, etc.
+Fields are data points tracked in the database for your company. They fall into different categories and are related to both monitoring and configuration. 
+
+- **Monitoring Fields**: Provide specific details about various aspects of each device, such as its status and performance.
+- **Configuration Fields**: Used for setting up and managing device configurations.
+
+Fields can be used for data presentation on dashboards, individual or batch configuration, alerts, and more.
 
 #### How Fields Work
+Fields are integral to the customization of views in both the Company Dashboard and the Device Dashboard. They allow users to tailor the information displayed to meet specific needs. 
 
-Fields are integral to the customization of views in both the Company Dashboard and the Device Dashboard. They allow users to tailor the information displayed to meet specific needs. When a field is added to a dashboard, it becomes a widget or a part of a table, providing real-time data about the selected parameter. Users can interact with these fields to get detailed insights and take necessary actions based on the information provided.
+- When a field is added to a dashboard, it becomes a widget or part of a table, providing real-time data about the selected parameter.
+- Users can interact with these fields to gain detailed insights and take necessary actions based on the information provided.
 
 Here for example fields are shown as columns in the table on Company Dashboard, and editable field values may be edited directly by clicking edit pencil icon:
 
@@ -145,9 +154,27 @@ There is a set of default Fields listed below, that you will find in the _Fields
 
 ## 3. Device Configuration
 
-Device Configuration may be done individually via specific managed settings (Fields from Configuration category), that can be changed per device, and via Configuration Profiles (these are sets of settings values, that serve as a template).
+**1.** Device configuration may be done individually via specific managed settings (Fields from the Configuration category) that can be changed per device, and via Configuration Profiles (these are sets of settings values that serve as a template).
 
-Combination of both is possible - for example when you have hundreds of devices and need same Firmware version on all of them, specific Router App version on all of them, but interface IP address different for each device, you can prepare Configuration Profile (that would include settings shared for all devices), and then add Unique Setting Value Field for interface IP address. Then you can setup a view on dashboard, that would contain devices table with columns from Configuration Profile Field and Unique Setting Value Field. You can select all devices in table and using Batch Edit dialog setup the same Configuration Profile for all devices. For individual IP adress setting, you can Export the table data to CSV file, open in Excel, copy increasing IP adresses to the Unique Setting Value column and import Excel file back. For individual device both values from Configuration Profile and Unique Setting Value Field are tracked as managed by WebAccess/DMP, which you can check on Desired Configuration tab on Device page.
+**2.** A combination of both is possible. For example, when you have hundreds of devices and need the same firmware version on all of them, the same Router App version on all of them, but a different interface IP address for each device, **you can**:
+
+   * Prepare a Configuration Profile (that would include settings shared by all devices).
+   * Add a Unique Setting Value Field for the interface IP address.
+
+
+#### Setting Up the Dashboard
+
+**1.** Set up a view on the dashboard that contains a devices table with columns from the Configuration Profile Field and the Unique Setting Value Field.
+
+**2.** Select all devices in the table and, using the Batch Edit dialog, apply the same Configuration Profile to all devices.
+
+**3.** For the individual IP address setting:
+    - Export the table data to a CSV file.
+    - Open the CSV file in Excel and copy increasing IP addresses to the Unique Setting Value column.
+    - Import the updated CSV file back.
+
+* For each individual device, both values from the Configuration Profile and the Unique Setting Value Field are tracked as managed by WebAccess/DMP. You can check this on the Desired Configuration tab on the Device page.
+
 
 ### Configuration Profiles
 
@@ -206,7 +233,20 @@ On Device page on Desired Configuration tab, there is your individual device con
 
 ![Config Profile Compare](../images/management/desired-config.png)
 
-You can assign Configuration Profile here. When unassigned, you need to Read Router Configuration first (press the button) to see individual settings and their values on the device. You can set them as Desired (managed) which in fact creates a new Field if needed and overrides the Unique Setting Value. You can do that for Firmware and Apps, Setings, Scripts and Users, as seen on the tabs available. Changes are propagated to device after clicking on Apply Desired Configuration button.
+
+* You can assign Configuration Profile here. When unassigned, you need to Read Router Configuration first (press the button) to see individual settings and their values on the device.
+
+* You can set these settings as Desired (managed). This action creates a new Field if needed and overrides the Unique Setting Value. 
+
+* You can do this for (These options are available on the respective tabs.):
+    - Firmware and Apps
+    - Settings
+    - Scripts
+    - Users
+
+      
+* Changes are propagated to the device after clicking on the Apply Desired Configuration button.
+
 
 ### Performing Batch Edit of Field Values
 
