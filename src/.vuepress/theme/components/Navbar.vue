@@ -81,8 +81,9 @@ export default {
 
   methods: {
     homeLink() {
-      const version = sessionStorage.getItem("docs-version") || "Version 3.x.x";
-      return version === "Version 2.x.x" ? "/gen2/" : "/gen3/";
+      return this.$store.state.version === "Version 2.x.x"
+        ? "/gen2/"
+        : "/gen3/";
     },
   },
 
