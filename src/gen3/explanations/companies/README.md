@@ -61,7 +61,8 @@ Each user action that creates, updates, or deletes anything generates an auditin
 ### Searching Through Audit Logs
 
 #### Accessing Overall Audit Logs
-**Navigation:** Click on "Audit Logs" in the left navigation menu.
+**Navigation:** Click on "Audit Logs" in the left side menu.
+
 
 ![Overall Audit Logs](../images/companies/auditing-overall.png "Overall Audit Logs")
 
