@@ -190,15 +190,15 @@ Configuration profiles are used for easy installation of any of our Router Apps,
 
 ![WADMP Client Version](../images/management/client-vers.png)
 
-1. Now you can make all desired settings localy via Web interface in the selected device. This includes all your desired Router Apps, Firmware version, and Configuration settings of the router.
+4. Now you can make all desired settings localy via Web interface in the selected device. This includes all your desired Router Apps, Firmware version, and Configuration settings of the router.
 
-2. At this point, head for the Dashboard in WebAccess/DMP and find your device in the table, where you can make a Configuration Profile out of this router (the icon button to create Configuration Profile is also accessible in the header of individual Device Page).
+5. At this point, head for the Dashboard in WebAccess/DMP and find your device in the table, where you can make a Configuration Profile out of this router (the icon button to create Configuration Profile is also accessible in the header of individual Device Page).
 
    Note: If you create Configuration Profile from the device that already has Configuration Profile setup, the created Configuration Profile will be the result of original Configuration Profile and ather individual configuration fields if applicable.
 
 ![Create Configuration Profile](../images/management/Create-ConfigP2.png)
 
-1. Now you can apply your newly created Configuration Profile to any router in your current Company, as showcased in the picture below.
+6. Now you can apply your newly created Configuration Profile to any router in your current Company, as showcased in the picture below.
 
 ![Configuration Profile Edit](../images/management/ApplyingConfP2.png)
 
@@ -217,13 +217,19 @@ For example:
 
 ![config_prof_menu](../images/management/ConfigProfile1.png)
 
-8. You can overview Configuration Profile values by clicking on it, you can Clone or delete, or you can create new Config Profile from scratch, if you know your desired settings names and values.
+8. You can overview Configuration Profile values by clicking on it. 
 
 ![Config Profile Compare](../images/management/ConfigProfileCompare3.png)
 
-9.  Compare by choosing 2 Configuration Profiles of your desire.
+9. you can Clone or delete, or you can create new Config Profile from scratch, if you know your desired settings names and values.
+
+![create Config Profile](../images/management/CreateNewCompareConfigurationProfile.png)
+
+10.  Compare by choosing 2 Configuration Profiles of your desire.
 
 ![Config Profile Compare 2](../images/management/CompareConfigurationProfile-2.png)
+
+
 
 ### Overriding Specific Settings
 
