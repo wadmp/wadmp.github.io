@@ -30,7 +30,7 @@ function getVersionedNav(version) {
       {
         text: "Docs",
         ariaLabel: "Docs",
-        link: "/gen3/explanations/",
+        link: "/gen3/docs/",
       },
       {
         text: "Release Notes (Server)",

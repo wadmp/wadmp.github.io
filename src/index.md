@@ -2,13 +2,13 @@
 home: true
 tagline: Open-source documentation for users of Advantech WebAccess/DMP software
 actionText: Explanations →
-actionLink: /gen3/explanations/
+actionLink: /gen3/docs/
 features:
 ---
 
 **Documentation for version 3.x.x:**
 
-- [Docs](/gen3/explanations/) - Get started and understand important topics
+- [Docs](/gen3/docs/) - Get started and understand important topics
 - [Migration from 2.x.x to 3.x.x](/gen3/explanations/Migration%20from%202.x.x%20to%203.x.x%20instance/)
 
 **Release Notes:**

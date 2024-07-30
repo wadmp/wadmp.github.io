@@ -56,19 +56,43 @@ module.exports = {
         "upgrade-fw/" /* README.md */,
         "move-a-device/" /* README.md */,
       ],
-      "/gen3/explanations/": [
-        "" /* /README.md/ */,
-        "companies/" /* /README.md */,
-        "adding devices/" /* /README.md */,
-        "device management/" /* /README.md */,
-        "device monitoring/" /* /README.md */,
-        "dashboards & Widgets/" /* /README.md */,
-        "alerts/" /* /README.md */,
-        "api/" /* /README.md */,
-        "troubleshooting/" /* /README.md */,
-        "faq/" /* /README.md */,
-        "Migration from 2.x.x to 3.x.x instance/" /* /README.md */,
+      "/gen3/docs/": [
+        {
+          title: "User Management", // required
+          path: "/gen3/docs/", // optional, link of the title, which should be an absolute path and must exist
+          collapsable: false, // optional, defaults to true
+          sidebarDepth: 0, // optional, defaults to 1
+          children: [
+            "/gen3/docs/user-management/sign-up/",
+            "/gen3/docs/user-management/add-users/",
+            "/gen3/docs/user-management/remove-users/",
+            "/gen3/docs/user-management/2fa/",
+            "/gen3/docs/user-management/permissions/",
+          ],
+        },
+        {
+          title: "Companies",
+          path: "/gen3/docs/companies/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [],
+        },
       ],
+      /*
+      "/gen3/explanations/": [
+        "" ,
+        "companies/" ,
+        "adding devices/" ,
+        "device management/" ,
+        "device monitoring/" ,
+        "dashboards & Widgets/" ,
+        "alerts/" ,
+        "api/" ,
+        "troubleshooting/" ,
+        "faq/" /* ,
+        "Migration from 2.x.x to 3.x.x instance/" ,
+      ],
+      */
       "/gen2/explanations/": [
         "" /* /README.md/ */,
         "companies-and-users/" /* /README.md */,
