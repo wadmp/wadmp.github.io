@@ -17,12 +17,12 @@ Please note that changing a company type (to or from premium) always applies to 
 
 *  Then, in the company menu, click on the crown icon with "upgrade" on it.
 
- ![Request upgrade](../images/companies/UpgradePremium.png "Request upgrade")
+ ![Request upgrade](../../images/companies/UpgradePremium.png "Request upgrade")
 
 
 *  Optionally, you can fill up the *ERPID* of your Company. Otherwise, press the *Submit Request* button.
 
- ![Request upgrade form](../images/companies/UpgradePremium2.png "Request upgrade form")
+ ![Request upgrade form](../../images/companies/UpgradePremium2.png "Request upgrade form")
 
 *  Confirmation and Follow-Up:**
 

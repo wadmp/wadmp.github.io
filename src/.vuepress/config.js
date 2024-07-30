@@ -72,10 +72,16 @@ module.exports = {
         },
         {
           title: "Companies",
-          path: "/gen3/docs/companies/",
+          path: "/gen3/docs/",
           collapsable: false,
           sidebarDepth: 0,
-          children: [],
+          children: [
+            "/gen3/docs/companies/general/",
+            "/gen3/docs/companies/company-structure/",
+            "/gen3/docs/companies/audit-logs/",
+            "/gen3/docs/companies/premium-features/",
+            "/gen3/docs/companies/billing/",
+          ],
         },
     
       ],
