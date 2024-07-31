@@ -70,6 +70,7 @@ module.exports = {
             "/gen3/docs/user-management/permissions/",
           ],
         },
+
         {
           title: "Companies",
           path: "/gen3/docs/",
@@ -83,7 +84,18 @@ module.exports = {
             "/gen3/docs/companies/billing/",
           ],
         },
-    
+
+        {
+          title: "adding devices",
+          path: "/gen3/docs/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/adding devices/register-a-device/",
+            "/gen3/docs/adding devices/add-a-device/",
+            "/gen3/docs/adding devices/install-client-app/",
+          ],
+        },
       ],
       /*
       "/gen3/explanations/": [

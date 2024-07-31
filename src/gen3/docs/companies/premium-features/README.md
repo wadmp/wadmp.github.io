@@ -33,3 +33,4 @@ Please note that changing a company type (to or from premium) always applies to 
 1. Remove all excess devices. Your company must not hold more than 5 devices to be eligible for downgrade.
 2. Remove all subcompanies (you may keep only the Root company).
 2. Send an email your request for downgrade to [wadmp@advantech.com](mailto:wadmp@advantech.com).
+

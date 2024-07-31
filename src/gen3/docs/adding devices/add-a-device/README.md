@@ -3,10 +3,10 @@
 
 ⚠️ You must have the appropriate permissions to add a device to your company.
 
-**Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automaticaly when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](https://docs.wadmp.com/gen3/explanations/adding%20devices/#_3-install-upgrade-a-webaccess-dmp-client-app).
+**Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automaticaly when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](https://docs.wadmp.com/gen3/explanations/adding%20devices/#_3-install-upgrade-a-webaccess-dmp-client-app).  <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
 
 - **User Criteria for adding a Device:**
-  You need to have the right permissions, Check the [permissions](https://docs.wadmp.com/gen3/explanations/#_5-permissions).
+  You need to have the right permissions, Check the [permissions](https://docs.wadmp.com/gen3/explanations/#_5-permissions).  <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
 
 ### Rules
 
@@ -30,11 +30,11 @@
 4.  Click on Create Device on WA/DMP.
 5.  You will find the information about this router there.
 
-![Router informations](../images/devices/routerinformations2.jpg)
+![Router informations](../../images/devices/routerinformations2.jpg)
 
 - You can also use the printed device labe:
 
-![label](../images/devices/device_label.png)
+![label](../../images/devices/device_label.png)
 
 #### Steps to add a device for your company (Assuming you have the required permissions):
 
@@ -42,7 +42,7 @@
 
 **2. Click the "Add Devices" action button above the table.**
 
-![add Device](../images/devices/add_device.png)
+![add Device](../../images/devices/add_device.png)
 
 **3. Fill out the "Add Device" form with the following information:**
 
@@ -58,14 +58,14 @@
 - **IMEI:**
   Enter the exact IMEI number as printed on the device label. Note that some devices may not have an IMEI number; _this field is only required if applicable._
 
-![filled Form](../images/devices/claimDeviceForm_1.png)
+![filled Form](../../images/devices/claimDeviceForm_1.png)
 
 **4. If you need to add more than one device at a time, enable the option "Add multiple devices from CSV":**
 
 - Prepare the CSV file for your devices. Expandable help on the required format will be available after you enable "Add multiple devices from CSV".
 - For large shipments of devices, you can optionally request a prepared list of devices from support. Please contact support for assistance with this.
 
-![multiple devices from CSV](../images/devices/CSV.png)
+![multiple devices from CSV](../../images/devices/CSV.png)
 
 - You can also download an example CSV file that you can edit for your needs: [CSV Example File](/assets/routers-example.csv)
 
@@ -73,4 +73,4 @@
 
 - After successfully adding a device, it will appear in the Device List for your company, as shown here:
 
-![added Device](../images/devices/added-device.png)
+![added Device](../../images/devices/added-device.png)
