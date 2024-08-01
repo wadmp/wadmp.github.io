@@ -1,4 +1,4 @@
-## 3. Remove Users
+## Remove Users
 
 ### Remove a user from a company
 

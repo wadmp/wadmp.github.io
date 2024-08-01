@@ -1,4 +1,4 @@
-## 2. Add Users
+## Add Users
 
 ### Create new users
 

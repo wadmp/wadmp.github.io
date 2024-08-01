@@ -1,5 +1,5 @@
 
-## 1. WebAccess/DMP Client App
+## WebAccess/DMP Client App
 
 ### Configure Client Application
 

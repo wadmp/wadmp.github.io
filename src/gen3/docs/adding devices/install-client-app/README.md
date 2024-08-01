@@ -1,4 +1,4 @@
-## 3. Install/Upgrade a WebAccess/DMP client app
+## Install/Upgrade a WebAccess/DMP client app
 
 If you want to migrate your device from 2.x.x instance, you need to upgrade Router App to 3.x.x version via 2.x.x WebAccess/DMP Instance - go to [Migration from 2.x.x to 3.x.x Instance](https://docs.wadmp.com/gen3/explanations/Migration%20from%202.x.x%20to%203.x.x%20instance/#step-1-export-data-from-2-x-x-instance). <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
 

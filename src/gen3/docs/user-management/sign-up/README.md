@@ -1,4 +1,4 @@
-## 1. Sign Up / Sign In
+## Sign Up / Sign In
 
 **Access the WebAccess/DMP Site: Navigate to wadmp3.com, which will redirect you to the login page.**
 

@@ -1,4 +1,4 @@
-## 5. Permissions
+## Permissions
 
 ### Permissions management
 

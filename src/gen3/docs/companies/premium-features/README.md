@@ -1,6 +1,6 @@
 
 
-##	4. Premium Features
+##	Premium Features
 
 With premium:
 

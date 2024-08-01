@@ -1,5 +1,5 @@
 
-## 2. Add A Device
+## Add A Device
 
 ⚠️ You must have the appropriate permissions to add a device to your company.
 

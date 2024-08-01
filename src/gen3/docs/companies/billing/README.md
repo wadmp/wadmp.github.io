@@ -1,5 +1,5 @@
 
-##	5. Billing 
+##	Billing 
 * If your company type is Premium, you are billed monthly. The billing are coming automatically on the Primary Contact Email at the company
 
 ![Company contact](../../images/companies/primary-contact.png "Company contact")

@@ -1,5 +1,5 @@
 
-## 3. Device Configuration
+## Device Configuration
 
 **1.** Device configuration may be done individually via specific managed settings (Fields from the Configuration category) that can be changed per device, and via Configuration Profiles (these are sets of settings values that serve as a template).
 

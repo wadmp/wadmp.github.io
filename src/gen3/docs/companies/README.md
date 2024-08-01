@@ -1,5 +1,5 @@
 
-##	1. General
+##	General
 
 
 ###	Introduction To Companies
@@ -16,12 +16,12 @@
 
 | Company type |   | Features     |
 |------|----------------------------------------------------------|-------------------------------------------|
-| Free | ![Free company type](../../images/companies/free-1.png) | Can claim and manage up to 5 devices.     |
-| Premium | ![Premium company type](../../images/companies/premium-1.png)        | Can claim and manage an unlimited number of devices, has access to the *Alerts* section.    |
+| Free | ![Free company type](../images/companies/free-1.png) | Can claim and manage up to 5 devices.     |
+| Premium | ![Premium company type](../images/companies/premium-1.png)        | Can claim and manage an unlimited number of devices, has access to the *Alerts* section.    |
 
 
 
 * Company type configuration: Company type can only be changed for the parent company. Child companies inherit their type from their parent.
 
-![Parent companies](../../images/companies/parents_1.png "Parent companies")
+![Parent companies](../images/companies/parents_1.png "Parent companies")
 

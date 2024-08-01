@@ -1,5 +1,5 @@
 
-##	2. Company Structure
+##	Company Structure
 
 Each company hierarchy consists of a single Root company and zero or more Child companies (also called sub-companies).
 

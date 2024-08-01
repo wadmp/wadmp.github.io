@@ -1,5 +1,5 @@
 
-## 2. Fields
+## Fields
 
 ### What Are Fields and How They Work?
 

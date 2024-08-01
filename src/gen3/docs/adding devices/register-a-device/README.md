@@ -1,4 +1,4 @@
-## 1. Register a Device (On-Premises Only)
+## Register a Device (On-Premises Only)
 
 In the on-premises version of our system, administrators must register devices before they can be added. This process is necessary because on-premises installations lack access to our manufacturing database, which is utilized for device registration in the public instance. Here's how administrators can register a device:
 

@@ -1,5 +1,5 @@
 
-##	3. Audit Logs
+##	Audit Logs
 
 Each user action that creates, updates, or deletes anything generates an auditing record. These records are kept for **6 months** after their creation.
 

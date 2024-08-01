@@ -73,11 +73,10 @@ module.exports = {
 
         {
           title: "Companies",
-          path: "/gen3/docs/",
+          path: "/gen3/docs/companies/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            "/gen3/docs/companies/general/",
             "/gen3/docs/companies/company-structure/",
             "/gen3/docs/companies/audit-logs/",
             "/gen3/docs/companies/premium-features/",
@@ -87,7 +86,7 @@ module.exports = {
 
         {
           title: "adding devices",
-          path: "/gen3/docs/",
+          path: "/gen3/docs/adding devices/register-a-device/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
@@ -98,7 +97,7 @@ module.exports = {
         },
         {
           title: "device management",
-          path: "/gen3/docs/",
+          path: "/gen3/docs/device management/dmp-client-app/",
           collapsable: false,
           sidebarDepth: 0,
           children: [

@@ -1,4 +1,4 @@
-## 4. Two-Factor authentication (2-FA)
+## Two-Factor authentication (2-FA)
 
 **2FA** (_Two-Factor authentication_) provides an additional level of security to protect your account.
 
