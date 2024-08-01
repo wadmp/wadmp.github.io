@@ -1,4 +1,3 @@
-# Device Management
 
 ## 1. WebAccess/DMP Client App
 
@@ -6,7 +5,7 @@
 
 If you want to propagate your managed configuration to the device, it is recommended to have a device in Synced and Online state. In WebAccess/DMP Client router app, this checkbox has to be enabled for the sync to by working:
 
-![Fields](../images/management/client-enable.png)
+![Fields](../../images/management/client-enable.png)
 
 (Enable monitoring is not necessary for settings propagation, it is for reporting of metrics.)
 

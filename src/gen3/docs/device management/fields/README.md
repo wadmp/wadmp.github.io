@@ -20,7 +20,7 @@ Fields are integral to the customization of views in both the Company Dashboard 
 
 Here for example fields are shown as columns in the table on Company Dashboard, and editable field values may be edited directly by clicking edit pencil icon:
 
-![Fields](../images/Fields/Fields.png)
+![Fields](../../images/Fields/Fields.png)
 
 &nbsp;  
 &nbsp;
@@ -29,7 +29,7 @@ Here for example fields are shown as columns in the table on Company Dashboard, 
 
 On Fields page you can filter Fields by category. In addition, you can search within fields by clicking on the search icon at the top left of the table.
 
-![Fields](../images/Fields/ChangeCategory.png)
+![Fields](../../images/Fields/ChangeCategory.png)
 
 Fields are categorized to streamline their management and usage. The primary categories include:
 
@@ -72,7 +72,7 @@ These enable settings and configuration specific to the device. Examples include
 - User Password
 - etc.
 
-![Fields](../images/management/config-fields.png)
+![Fields](../../images/management/config-fields.png)
 
 &nbsp;  
 &nbsp;
@@ -112,14 +112,14 @@ There is a set of default Fields listed below, that you will find in the _Fields
 
 1. Either click +ADD on Fields page, or from "Edit View" mode in your dashboard:
 
-![Adding Fields](../images/Fields/AddingFields-1.png)
+![Adding Fields](../../images/Fields/AddingFields-1.png)
 
 2. Click the "+ Add Field" button to open the field selection panel.
 3. Select the desired field from the list. You can browse through categories such as Cumulative, Monitoring, Static, or Configuration.
 4. Enter the display name for the new field.
 5. Click "Save" to add the field to your dashboard.
 
-![Adding Fields](../images/Fields/AddingFields-2.png)
+![Adding Fields](../../images/Fields/AddingFields-2.png)
 
 #### Removing Fields:
 
@@ -128,7 +128,7 @@ There is a set of default Fields listed below, that you will find in the _Fields
 
 - Note: There are some fields that cannot be deleted such as “Static” type fields
 
-![Removing Fields](../images/Fields/RemovingFields-1.png)
+![Removing Fields](../../images/Fields/RemovingFields-1.png)
 
 3. Confirm the removal.
 

@@ -96,6 +96,18 @@ module.exports = {
             "/gen3/docs/adding devices/install-client-app/",
           ],
         },
+        {
+          title: "device management",
+          path: "/gen3/docs/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/device management/dmp-client-app/",
+            "/gen3/docs/device management/fields/",
+            "/gen3/docs/device management/device-configuration/",
+
+          ],
+        },
       ],
       /*
       "/gen3/explanations/": [

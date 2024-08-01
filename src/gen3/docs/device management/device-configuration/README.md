@@ -31,11 +31,11 @@ Configuration profiles are used for easy installation of any of our Router Apps,
 
 2. Connect to your router via IP address to the user GUI.
 
-![login](../images/management/login.png)
+![login](../../images/management/login.png) 
 
 3. Ensure you're running the latest WebAccess/DMP Client in the Router Apps section so the router is connected with WA/DMP. You can check the Client Release Notes section for the latest version of WA/DMP.
 
-![WADMP Client Version](../images/management/client-vers.png)
+![WADMP Client Version](../../images/management/client-vers.png)
 
 4. Now you can make all desired settings localy via Web interface in the selected device. This includes all your desired Router Apps, Firmware version, and Configuration settings of the router.
 
@@ -43,11 +43,11 @@ Configuration profiles are used for easy installation of any of our Router Apps,
 
    Note: If you create Configuration Profile from the device that already has Configuration Profile setup, the created Configuration Profile will be the result of original Configuration Profile and ather individual configuration fields if applicable.
 
-![Create Configuration Profile](../images/management/Create-ConfigP2.png)
+![Create Configuration Profile](../../images/management/Create-ConfigP2.png)
 
 6. Now you can apply your newly created Configuration Profile to any router in your current Company, as showcased in the picture below.
 
-![Configuration Profile Edit](../images/management/ApplyingConfP2.png)
+![Configuration Profile Edit](../../images/management/ApplyingConfP2.png)
 
 ::: tip Example Tip:
 If you apply Configuration Profile, the router will apply all configurations from the router from which Config Profile was created.
@@ -62,19 +62,19 @@ For example:
 
 7. You can overview, compare, and delete your Configuration Profiles in the _Configuration Profiles_ section.
 
-![config_prof_menu](../images/management/ConfigProfile1.png)
+![config_prof_menu](../../images/management/ConfigProfile1.png)
 
 8. You can overview Configuration Profile values by clicking on it. 
 
-![Config Profile Compare](../images/management/ConfigProfileCompare3.png)
+![Config Profile Compare](../../images/management/ConfigProfileCompare3.png)
 
 9. you can Clone or delete, or you can create new Config Profile from scratch, if you know your desired settings names and values.
 
-![create Config Profile](../images/management/CreateNewCompareConfigurationProfile.png)
+![create Config Profile](../../images/management/CreateNewCompareConfigurationProfile.png)
 
 10.  Compare by choosing 2 Configuration Profiles of your desire.
 
-![Config Profile Compare 2](../images/management/CompareConfigurationProfile-2.png)
+![Config Profile Compare 2](../../images/management/CompareConfigurationProfile-2.png)
 
 
 
@@ -84,7 +84,7 @@ You may override specific setting as desribed above in introduction and example 
 
 On Device page on Desired Configuration tab, there is your individual device configuration overview and control:
 
-![Config Profile Compare](../images/management/desired-config.png)
+![Config Profile Compare](../../images/management/desired-config.png)
 
 
 * You can assign Configuration Profile here. When unassigned, you need to Read Router Configuration first (press the button) to see individual settings and their values on the device.
@@ -110,15 +110,16 @@ To edit multiple devices at once:
 1. Select your desired devices (you can also choose all devices, which really selects all ignoring pagination).
 2. Click on the _Batch Edit Filtered Devices_ icon.
 
-![Batch Filter](../images/dashboards/BatchFilter.png)
+![Batch Filter](../../images/dashboards/BatchFilter.png)
 
 3. Specify your changes in the _Batch Edit Devices_ table.
 4. Confirm the changes by clicking the _Submit_ button. The changes will apply only to the selected devices.
 
-![Batch Filter2](../images/dashboards/BatchFilter2.png)
+![Batch Filter2](../../images/dashboards/BatchFilter2.png)
 
 #### Via CSV Export/Import
 
 You can also set editable Fields (including configuration) vie CSV Import. It is advisable to setup your dashboard devices table to contain all columns (Fileds) you want to edit in CSV file (via Excel), and the Export them first (as described in Monitoring section - [Exporting data to CSV](/gen3/explanations/device%20monitoring/#_2-exporting-data-to-csv)), edit them vie Excel and Import back on the same Dashboard view:
+<!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
 
-![Import data](../images/dashboards/Data_Import.png)
+![Import data](../../images/dashboards/Data_Import.png)
