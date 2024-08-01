@@ -9,7 +9,7 @@ Alerts are a **Premium** feature only available for companies with a Premium sub
     * Manage permission to create or modify Rules and Endpoints and to mark alerts as read/unread
 
 
-##	1. Creating New Alerts
+##	Creating New Alerts
 
 ### To Be Notified - Create Endpoint(s)
 

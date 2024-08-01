@@ -1,5 +1,5 @@
 
-## 2. Tips & Tricks
+## Tips & Tricks
 
 #### Sizing and Moving
 

@@ -11,7 +11,7 @@
 - **Export**: Monitoring data can be exported to a [CSV file](/gen3/explanations/device%20monitoring/#_2-exporting-data-to-csv).
 
 
-## 1. Collecting Data from Routers
+## Collecting Data from Routers
 
 In the the WebAccess/DMP Client router app, the “Enable Monitoring” checkbox must be checked (default state is checked) in order to collect data from the device. Note the “Monitoring Interval” (default is 15 minutes).
 

@@ -1,5 +1,5 @@
 
-## 2. Exporting data to CSV
+## Exporting data to CSV
 
 You can export data to CSV file from devices table in any of your views: click on export icon above the table. Setup your table columns to contain desired monitored data before the export (Edit View button on right -> Table -> eye icon). All data (rows) are always exported - filters are taken into account. The result is not affected by neither pagination settings, nor rows individual selection.
 

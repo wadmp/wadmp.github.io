@@ -2,7 +2,7 @@
 
 The Company Dashboard (home page) allows you to create different views, and the Device Dashboard lets you similarly customize views for data per single device.
 
-## 1. Customization Of Views
+## Customization Of Views
 
 ### Structure of Company Dashboard
 

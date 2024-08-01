@@ -1,6 +1,6 @@
 
 
-##	2. Alerting Limitations
+##	Alerting Limitations
 <font size="4">Alerts are subject to the following limitations:</font>
 
 - **Availability:** 

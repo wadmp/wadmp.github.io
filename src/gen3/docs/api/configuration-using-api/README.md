@@ -1,5 +1,5 @@
 
-## 2. How to Create Configuration Profile, including Scripts, Using API
+## How to Create Configuration Profile, including Scripts, Using API
 
 This tutorial describes how to create a configuration profile directly (rather than from an existing device).
 

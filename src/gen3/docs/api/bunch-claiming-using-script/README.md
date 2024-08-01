@@ -1,5 +1,5 @@
 
-## 3. Bunch Claiming Devices Using Script
+## Bunch Claiming Devices Using Script
 
 This topic is a tutorial for bunch claiming devices using API, Python scripts, and CSV files.
 

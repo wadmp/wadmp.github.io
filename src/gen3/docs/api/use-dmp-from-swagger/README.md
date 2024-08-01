@@ -1,6 +1,6 @@
 # API
 
-## 1. How to Use DMP API from a Swagger Page
+## How to Use DMP API from a Swagger Page
 
 You can use API endpoints directly from a Swagger page, available at [api.wadmp3.com](https://api.wadmp3.com).
 
