@@ -129,6 +129,30 @@ module.exports = {
 
           ],
         },
+        
+        {
+          title: "alerts",
+          path: "/gen3/docs/alerts/creating-new-alerts/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/alerts/creating-new-alerts/",
+            "/gen3/docs/alerts/alerting-limitations/",
+
+          ],
+        },
+
+        {
+          title: "api",
+          path: "/gen3/docs/api/use-dmp-from-swagger/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/api/use-dmp-from-swagger/",
+            "/gen3/docs/api/configuration-using-api/",
+            "/gen3/docs/api/bunch-claiming-using-script/",
+          ],
+        },
       ],
       /*
       "/gen3/explanations/": [

@@ -29,18 +29,18 @@ python3 -m build
 ```
 
 - You should see build status coming up:
-  ![build status](../images/bunch-claiming-devices/build-status.png)
+  ![build status](../../images/bunch-claiming-devices/build-status.png)
 
 - If build is sucesfull you should see:
-  ![build is sucesfull](../images/bunch-claiming-devices/build-is-sucesfull.png)
+  ![build is sucesfull](../../images/bunch-claiming-devices/build-is-sucesfull.png)
 
 - Then you can proceed with installing the dmp library by going into the dist folder:
-  ![dist folder](../images/bunch-claiming-devices/dist-folder.png)
+  ![dist folder](../../images/bunch-claiming-devices/dist-folder.png)
 
 - And execute pip install **dmp-3.0.3.tar.gz** (in the dist folder)
 
 - If everything goes well you should be able to list the dmp library by pip3 list:
-  ![dmp library](../images/bunch-claiming-devices/dmp-library.png)
+  ![dmp library](../../images/bunch-claiming-devices/dmp-library.png)
 
 3. Clone of the DMP repository that contains python_scripts (ZIP file from the previous step should contain this): [https://bitbucket.org/bbsmartworx/dmp-public](https://bitbucket.org/bbsmartworx/dmp-public)
 
@@ -54,7 +54,7 @@ bbsmartworx-dmp-public-00b7e5bd78a6\gen3\python_scripts\csv_utilities
 
 - Edit the example.csv file to include all the devices you want to claim.
 
-![CSV_example](../images/bunch-claiming-devices/CSV_example.png "CSV Example")
+![CSV_example](../../images/bunch-claiming-devices/CSV_example.png "CSV Example")
 
 - Once example.csv is ready, open the command line and navigate to the repository folder:
 
@@ -72,7 +72,7 @@ python claim_devices.py -username "WADMP_EMAIL" -password "PASSWORD" example.csv
 Please note that the Company name parameter is CASE SENSITIVE!
 :::
 
-![ConsoleExample_1](../images/bunch-claiming-devices/ConsoleExample_1.png "Console Example 1")
+![ConsoleExample_1](../../images/bunch-claiming-devices/ConsoleExample_1.png "Console Example 1")
 
 - Example Command (_from the_ \python*scripts\csv_utilities\ \_folder*):
 
@@ -80,12 +80,12 @@ Please note that the Company name parameter is CASE SENSITIVE!
 python claim_devices.py -username user@wadmp.com -password S3CR3T_PASS example.csv AdvantechTest
 ```
 
-![ConsoleExample_2](../images/bunch-claiming-devices/ConsoleExample_2.png "Console Example 2")
+![ConsoleExample_2](../../images/bunch-claiming-devices/ConsoleExample_2.png "Console Example 2")
 
 - If the script executes successfully, the device will be claimed to your company.
 
-![ConsoleExample_3](../images/bunch-claiming-devices/ConsoleExample_3.png "Console Example 3")
+![ConsoleExample_3](../../images/bunch-claiming-devices/ConsoleExample_3.png "Console Example 3")
 
 - If there is an issue with claiming the device, an error message will be displayed:
 
-![ConsoleExample_4](../images/bunch-claiming-devices/ConsoleExample_4.png "Console Example 4")
+![ConsoleExample_4](../../images/bunch-claiming-devices/ConsoleExample_4.png "Console Example 4")

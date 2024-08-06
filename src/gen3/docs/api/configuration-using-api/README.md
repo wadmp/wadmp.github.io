@@ -6,12 +6,12 @@ This tutorial describes how to create a configuration profile directly (rather t
 1. Learn the ID of the company where you want to create the configuration profile.
 
    - Go to a company page in the main DMP UI. The ID of the currently viewed company can be found in the URL. Write this ID down, you will need it later.
-     ![Config Profile API](../images/api/conf_prof_api_01.png)
+     ![Config Profile API](../../images/api/conf_prof_api_01.png)
 
 2. Find the endpoint for creating configuration profiles.
 
    - Press the “Try it out” button that is shown after clicking at the POST endpoint in _ConfigProfiles_ section.
-     ![Config Profile API](../images/api/conf_prof_api_03.png)
+     ![Config Profile API](../../images/api/conf_prof_api_03.png)
 
 3. Specify the company ID and the name of the config profile.
 
@@ -132,7 +132,7 @@ This tutorial describes how to create a configuration profile directly (rather t
 
    - Your configuration profile should now be complete. Press the Execute button.
 
-   ![Config Profile API](../images/api/conf_prof_api_10.png)
+   ![Config Profile API](../../images/api/conf_prof_api_10.png)
 
 ### Using an Already Existing Configuration Profile as a Template.
 
@@ -140,16 +140,16 @@ Rather than creating a new configuration profile from scratch, you can use an ex
 
 - Firstly, list existing configuration profiles in your company to learn the ID of your configuration profile.
 
-  ![Config Profile API](../images/api/conf_prof_api_11.png)
+  ![Config Profile API](../../images/api/conf_prof_api_11.png)
 
 - Secondly, obtain the configuration profile by its ID.
 
-  ![Config Profile API](../images/api/conf_prof_api_12.png)
+  ![Config Profile API](../../images/api/conf_prof_api_12.png)
 
 - Lastly, copy the value of the “body” element of the configuration profile into a text editor and replace all occurences of `\"` with just `"`. After that, remove `"{` from the beginning (the first two characters) and `}"` from the end (the last two characters). Then edit the contents (delete settings/apps/scripts/files/users that you do not want to manage or add new ones) and paste the result into the endpoint for creating new configuration profiles (shown in the step #3 above). Add "company*id" and "name" and press the \_Execute* button.
 
-  ![Config Profile API](../images/api/conf_prof_api_13.png)
+  ![Config Profile API](../../images/api/conf_prof_api_13.png)
 
-  ![Config Profile API](../images/api/conf_prof_api_14.png)
+  ![Config Profile API](../../images/api/conf_prof_api_14.png)
 
-  ![Config Profile API](../images/api/conf_prof_api_15.png)
+  ![Config Profile API](../../images/api/conf_prof_api_15.png)
