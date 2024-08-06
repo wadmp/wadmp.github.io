@@ -107,6 +107,28 @@ module.exports = {
 
           ],
         },
+        {
+          title: "device monitoring",
+          path: "/gen3/docs/device monitoring/collecting-data/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/device monitoring/collecting-data/",
+            "/gen3/docs/device monitoring/exporting-data-to-csv/",
+
+          ],
+        },
+        {
+          title: "dashboards & Widgets",
+          path: "/gen3/docs/dashboards & Widgets/customization-of-views/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/dashboards & Widgets/customization-of-views/",
+            "/gen3/docs/dashboards & Widgets/tips-tricks/",
+
+          ],
+        },
       ],
       /*
       "/gen3/explanations/": [
