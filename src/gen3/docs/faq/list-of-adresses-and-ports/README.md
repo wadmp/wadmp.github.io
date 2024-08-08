@@ -1,6 +1,5 @@
-# FAQ
 
-## WADMP Ports/Addresses - What should I put on firewall whitelist?
+# WADMP Ports/Addresses - What should I put on firewall whitelist?
 
 This section provides a list of addresses and ports that **customers need to whitelist** in their firewall.
 

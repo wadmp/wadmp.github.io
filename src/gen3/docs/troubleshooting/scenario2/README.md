@@ -1,3 +1,4 @@
+# Scenario 2
 
 ## Scenario 2: Failure to Connect to Bootstrap Server
 

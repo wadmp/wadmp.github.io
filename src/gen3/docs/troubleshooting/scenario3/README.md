@@ -1,3 +1,4 @@
+# Scenario 3
 
 ## Scenario 3: Failure Post-Bootstrap
 

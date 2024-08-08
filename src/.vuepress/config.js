@@ -153,6 +153,39 @@ module.exports = {
             "/gen3/docs/api/bunch-claiming-using-script/",
           ],
         },
+        {
+          title: "troubleshooting",
+          path: "/gen3/docs/troubleshooting/scenario1/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/troubleshooting/scenario1/",
+            "/gen3/docs/troubleshooting/scenario2/",
+            "/gen3/docs/troubleshooting/scenario3/",
+          ],
+        },
+        {
+          title: "faq",
+          path: "/gen3/docs/faq/list-of-adresses-and-ports/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/faq/list-of-adresses-and-ports/",
+            "/gen3/docs/faq/cellular-data-usage/",
+          ],
+        },
+        {
+          title: "Migration from 2.x.x to 3.x.x instance",
+          path: "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step1/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step1/",
+            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step2/",
+            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step3/",
+
+          ],
+        },
       ],
       /*
       "/gen3/explanations/": [

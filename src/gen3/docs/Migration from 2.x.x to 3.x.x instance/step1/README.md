@@ -1,4 +1,6 @@
-# Migration from 2.x.x to 3.x.x Instance
+# Step 1: Export Data from 2.x.x Instance
+
+## Migration from 2.x.x to 3.x.x Instance
 
 This page explains the process of migrating data from a 2.x.x instance at [www.wadmp.com](http://www.wadmp.com) to a 3.x.x instance at [www.wadmp3.com](http://www.wadmp3.com). 
 
@@ -16,8 +18,8 @@ This page explains the process of migrating data from a 2.x.x instance at [www.w
 
 Navigate to _Companies_. Locate the company from which you wish to export data and click the _Export_ icon on the right.
 
-![Gen2Export](../images/migration-gen2-gen3/gen2-export.png)
+![Gen2Export](../../images/migration-gen2-gen3/gen2-export.png)
 
 A dialog box will appear providing details about the export. Save the file as `company_name_export.data` to your computer.
 
-![Gen2ExportDialog](../images/migration-gen2-gen3/gen2-export-dialog.png)
+![Gen2ExportDialog](../../images/migration-gen2-gen3/gen2-export-dialog.png)
