@@ -56,7 +56,11 @@ module.exports = {
         "upgrade-fw/" /* README.md */,
         "move-a-device/" /* README.md */,
       ],
+
+      
       "/gen3/docs/": [
+
+        
         {
           title: "User Management", // required
           path: "/gen3/docs/", // optional, link of the title, which should be an absolute path and must exist
@@ -69,6 +73,13 @@ module.exports = {
             "/gen3/docs/user-management/2fa/",
             "/gen3/docs/user-management/permissions/",
           ],
+
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
 
         {
@@ -82,10 +93,16 @@ module.exports = {
             "/gen3/docs/companies/premium-features/",
             "/gen3/docs/companies/billing/",
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
 
         {
-          title: "adding devices",
+          title: "Adding devices",
           path: "/gen3/docs/adding devices/register-a-device/",
           collapsable: false,
           sidebarDepth: 0,
@@ -94,9 +111,15 @@ module.exports = {
             "/gen3/docs/adding devices/add-a-device/",
             "/gen3/docs/adding devices/install-client-app/",
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
         {
-          title: "device management",
+          title: "Device management",
           path: "/gen3/docs/device management/dmp-client-app/",
           collapsable: false,
           sidebarDepth: 0,
@@ -106,9 +129,15 @@ module.exports = {
             "/gen3/docs/device management/device-configuration/",
 
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
         {
-          title: "device monitoring",
+          title: "Device monitoring",
           path: "/gen3/docs/device monitoring/collecting-data/",
           collapsable: false,
           sidebarDepth: 0,
@@ -117,9 +146,15 @@ module.exports = {
             "/gen3/docs/device monitoring/exporting-data-to-csv/",
 
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
         {
-          title: "dashboards & Widgets",
+          title: "Dashboards & Widgets",
           path: "/gen3/docs/dashboards & Widgets/customization-of-views/",
           collapsable: false,
           sidebarDepth: 0,
@@ -128,10 +163,16 @@ module.exports = {
             "/gen3/docs/dashboards & Widgets/tips-tricks/",
 
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
         
         {
-          title: "alerts",
+          title: "Alerts",
           path: "/gen3/docs/alerts/creating-new-alerts/",
           collapsable: false,
           sidebarDepth: 0,
@@ -140,10 +181,16 @@ module.exports = {
             "/gen3/docs/alerts/alerting-limitations/",
 
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
 
         {
-          title: "api",
+          title: "Api",
           path: "/gen3/docs/api/use-dmp-from-swagger/",
           collapsable: false,
           sidebarDepth: 0,
@@ -152,41 +199,66 @@ module.exports = {
             "/gen3/docs/api/configuration-using-api/",
             "/gen3/docs/api/bunch-claiming-using-script/",
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
+
+
         {
-          title: "troubleshooting",
+          title: "Troubleshooting",
           path: "/gen3/docs/troubleshooting/scenario1/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
             "/gen3/docs/troubleshooting/scenario1/",
-            "/gen3/docs/troubleshooting/scenario2/",
-            "/gen3/docs/troubleshooting/scenario3/",
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
+
+
         {
-          title: "faq",
+          title: "FAQ",
           path: "/gen3/docs/faq/list-of-adresses-and-ports/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
             "/gen3/docs/faq/list-of-adresses-and-ports/",
-            "/gen3/docs/faq/cellular-data-usage/",
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
         {
           title: "Migration from 2.x.x to 3.x.x instance",
-          path: "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step1/",
+          path: "/gen3/docs/Migration from 2.x.x to 3.x.x instance/steps/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step1/",
-            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step2/",
-            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/step3/",
-
+            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/steps/",
           ],
+          themeConfig: {
+            // default value is true. Set it to false to hide next page links on all pages
+            nextLinks: true,
+            // default value is true. Set it to false to hide prev page links on all pages
+            prevLinks: true
+          }
         },
       ],
+
+
+      
       /*
       "/gen3/explanations/": [
         "" ,
