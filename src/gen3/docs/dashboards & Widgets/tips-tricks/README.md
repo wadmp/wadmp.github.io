@@ -33,12 +33,12 @@ To edit or add a new description to a device:
 - You can filter and overview the devices using tags. Using tags, you can create overlapping bunches of devices.
 
 Tagging can make it easier to find the devices by giving them specific properties with tags and then filtering or searching for them.
-After logging in to the [system](https://wadmp3.com), you must ensure a _Tag - Textual_ field in the Filter Panel of the Devices. <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+After logging in to the [system](https://wadmp3.com), you must ensure a _Tag - Textual_ field in the Filter Panel of the Devices. <!-- new link -->
 
 
 ![Tag Dashboard](../../images/dashboards/Tagg.png)
 
-If you don't have it, you can add this field by check [Adding/Removing fields](https://docs.wadmp.com/gen3/explanations/device%20management/#adding-removing-fields). <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+If you don't have it, you can add this field by check [Adding/Removing fields](https://docs.wadmp.com/gen3/docs/device%20management/fields/#adding-removing-fields). <!-- new link -->
 
 
 - After adding the _Tag - Textual_ field and making it visible, Select your desired devices to create a Tag for your device and click the _Batch Edit Filtered Devices_ icon.

@@ -119,7 +119,6 @@ To edit multiple devices at once:
 
 #### Via CSV Export/Import
 
-You can also set editable Fields (including configuration) vie CSV Import. It is advisable to setup your dashboard devices table to contain all columns (Fileds) you want to edit in CSV file (via Excel), and the Export them first (as described in Monitoring section - [Exporting data to CSV](/gen3/explanations/device%20monitoring/#_2-exporting-data-to-csv)), edit them vie Excel and Import back on the same Dashboard view:
-<!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+You can also set editable Fields (including configuration) vie CSV Import. It is advisable to setup your dashboard devices table to contain all columns (Fileds) you want to edit in CSV file (via Excel), and the Export them first (as described in Monitoring section - [Exporting data to CSV](https://docs.wadmp.com/gen3/docs/device%20monitoring/exporting-data-to-csv), edit them vie Excel and Import back on the same Dashboard view: <!-- new link -->
 
 ![Import data](../../images/dashboards/Data_Import.png)

@@ -2,14 +2,13 @@
 
 1. Every device is connected to the WebAccess/DMP instance via the WebAccess/DMP Client Router App, which, by default, sends monitoring data to the instance every 15 minutes.
 
-- **Data Sent**: The data sent is based on your [Fields](/gen3/explanations/device%20management/#_2-fields) settings. <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+- **Data Sent**: The data sent is based on your [Fields](https://docs.wadmp.com/gen3/docs/device%20management/fields) settings. <!-- new link -->
 - **Frequency**: The frequency of data sending is based on the Client Router App settings.
 
 2. Monitoring data can be interpreted on the Dashboard as Stats, Charts, or in the Table (for company/filtered in View), or individually per device on the Device Page Monitoring tab. 
 
-- [Alerts](/gen3/explanations/alerts/) can be set based on rules and monitoring data received. <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
-- **Export**: Monitoring data can be exported to a [CSV file](/gen3/explanations/device%20monitoring/#_2-exporting-data-to-csv). <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
-
+- [Alerts](https://docs.wadmp.com/gen3/docs/alerts) can be set based on rules and monitoring data received. <!-- new link -->
+- **Export**: Monitoring data can be exported to a [CSV file](https://docs.wadmp.com/gen3/docs/device%20monitoring/exporting-data-to-csv). <!-- new link -->
 
 ## Collecting Data from Routers
 
@@ -48,7 +47,7 @@ The amount of data consumed is based on the type of the used Field. You can set 
 
 ### Example: Monitoring Cellular Data Usage
 
-For example you can observe the actual cellular data usage on the Monitoring tab of the device like this, after you make visible Data Up+Down Field in the Table (click on eye icon), and add charts for Data Up+Down Field. See [Dashboards & Widgets](/gen3/explanations/dashboards%20&%20Widgets/) for more information on how to work with widgets and table. <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+For example you can observe the actual cellular data usage on the Monitoring tab of the device like this, after you make visible Data Up+Down Field in the Table (click on eye icon), and add charts for Data Up+Down Field. See [Dashboards & Widgets](https://docs.wadmp.com/gen3/docs/dashboards%20&%20Widgets/customization-of-views) for more information on how to work with widgets and table. <!-- new link -->
 
 ![CSV export](../../images/monitoring/data-device.png)
 

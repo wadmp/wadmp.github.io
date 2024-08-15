@@ -3,10 +3,10 @@
 
 ⚠️ You must have the appropriate permissions to add a device to your company.
 
-**Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automaticaly when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](https://docs.wadmp.com/gen3/explanations/adding%20devices/#_3-install-upgrade-a-webaccess-dmp-client-app).  <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+**Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automaticaly when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](https://docs.wadmp.com/gen3/docs/adding%20devices/install-client-app).  <!-- new link-->
 
 - **User Criteria for adding a Device:**
-  You need to have the right permissions, Check the [permissions](https://docs.wadmp.com/gen3/explanations/#_5-permissions).  <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+  You need to have the right permissions, Check the [permissions](https://docs.wadmp.com/gen3/docs/user-management/permissions).  <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
 
 ### Rules
 

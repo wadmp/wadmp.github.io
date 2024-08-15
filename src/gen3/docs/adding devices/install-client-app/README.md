@@ -1,6 +1,6 @@
 ## Install/Upgrade a WebAccess/DMP client app
 
-If you want to migrate your device from 2.x.x instance, you need to upgrade Router App to 3.x.x version via 2.x.x WebAccess/DMP Instance - go to [Migration from 2.x.x to 3.x.x Instance](https://docs.wadmp.com/gen3/explanations/Migration%20from%202.x.x%20to%203.x.x%20instance/#step-1-export-data-from-2-x-x-instance). <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+If you want to migrate your device from 2.x.x instance, you need to upgrade Router App to 3.x.x version via 2.x.x WebAccess/DMP Instance - go to [Migration from 2.x.x to 3.x.x Instance](https://docs.wadmp.com/gen3/docs/Migration%20from%202.x.x%20to%203.x.x%20instance/steps). <!-- new link -->
 
 If you do not have WebAccess/DMP Router App client installed, or you are not sure if you have client installed, follow these steps:
 
@@ -21,7 +21,7 @@ If you do not have WebAccess/DMP Router App client installed, or you are not sur
 
 ![APP-3](../../images/RouterAPP/APP-3.png)
 
-- This will direct you to the **download link** on our website: [WebAccess/DMP Client 3.x.x](https://icr.advantech.com/products/software/user-modules#webaccessdmp-client-3xx) <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+- This will direct you to the **download link** on our website: [WebAccess/DMP Client 3.x.x](https://icr.advantech.com/products/software/user-modules#webaccessdmp-client-3xx)
 
 - **Note:** An Application Note is available for reference and settings of the client Router App if needed.
 
@@ -36,4 +36,4 @@ If you do not have WebAccess/DMP Router App client installed, or you are not sur
   ![APP-5](../../images/RouterAPP/APP-5.png)
 
 :::warning Caution:
-**If you are having difficulties to connect your device to WebAccess/DMP, please try [Troubleshooting page](https://docs.wadmp.com/gen3/explanations/troubleshooting/#troubleshooting) or [FAQ](/gen3/explanations/faq/)**. <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+If you are having difficulties to connect your device to WebAccess/DMP, please try [Troubleshooting page](https://docs.wadmp.com/gen3/docs/troubleshooting/scenario1) or [FAQ](https://docs.wadmp.com/gen3/docs/faq/list-of-adresses-and-ports). <!-- new links. -->

@@ -1,8 +1,8 @@
-# Dashboards & Widgets
+
+
+# Customization Of Views
 
 The Company Dashboard (home page) allows you to create different views, and the Device Dashboard lets you similarly customize views for data per single device.
-
-## Customization Of Views
 
 ### Structure of Company Dashboard
 
@@ -72,7 +72,7 @@ In this section, you can filter based on any available parameters. You can also 
 &nbsp;
 
 **Description of Individual Fields:**
-For detailed information about the fields, visit [Fields](https://docs.wadmp.com/gen3/explanations/device%20management/#_2-fields).<!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
+For detailed information about the fields, visit [Fields](https://docs.wadmp.com/gen3/docs/device%20management/fields).<!-- new link -->
 
 
 #### Searching And Filtering

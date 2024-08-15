@@ -5,5 +5,4 @@ You can export data to CSV file from devices table in any of your views: click o
 
 ![CSV export](../../images/monitoring/csv-export.png)
 
-Note, that exported data can be also used for bulk configuration - see [Performing Batch Edit of Field Values](/gen3/explanations/device%20management/#performing-batch-edit-of-field-values). <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
-
+Note, that exported data can be also used for bulk configuration - see [Performing Batch Edit of Field Values](https://docs.wadmp.com/gen3/docs/device%20management/fields). <!-- new link -->
