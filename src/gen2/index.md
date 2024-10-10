@@ -26,6 +26,7 @@ features:
 - [WebAccess/DMP EULA](/eula.html) - End User License Agreement
 - [Privacy Policy](/privacy-policy.html)
 - [Support & Contact](/contact/)
+- [Security Statement](/security-statement.html)
 
 ::: slot footer
 Made by [Advantech](https://icr.advantech.cz) | [GitHub repo of this docs](https://github.com/wadmp/wadmp.github.io)

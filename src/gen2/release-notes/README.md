@@ -1,11 +1,9 @@
-# 2.5.5: December 15, 2023
-
-This release provides tools for migration of company data to version 3.x.x. Detailed migration guide can be found here: [Migration from 2.x.x to 3.x.x Instance](/gen3/docs/migration/)
+# 2.5.6: August 1, 2024
 
 ### Improvements:
 
-- Added a button that lets the users export company data for the purposes of migration to GEN3.
+- Small internal changes to how billing operates that will not directly affect users of DMP.
 
 ### Bug Fixes:
 
-- Replaced incorrect pictures of ICR-321x devices.
+- Fixed services becoming stuck in a broken state when reaching their memory limit. Now the system restores them to a functional state without a manual intervention.
