@@ -1,6 +1,6 @@
 ## Add Users
 
-### Create new users
+### Create New Users
 
 - **Overview:**
   Creating users is the primary method to add them to your companies. When a user is invited, the process differs based on whether they are an **existing user** or a **new one**:
@@ -50,7 +50,7 @@
 
 ![subject_success](../../images/subject_success.png)
 
-### Invite existing users
+### Invite Existing Users
 
 - You can invite existing or new users who just created their account to any company you have permission to. You can do it similarly, like when creating a new user.
 

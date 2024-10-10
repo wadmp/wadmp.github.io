@@ -41,7 +41,7 @@ module.exports = {
     logo: "/assets/img/logo.png",
     repo: "",
     docsDir: "",
-    lastUpdated: true,
+    // lastUpdated: true,
     nav: getVersionedNav("Version 3.x.x"), // Default version nav
     sidebar: {
       "/gen2/tutorials/": [
@@ -57,10 +57,7 @@ module.exports = {
         "move-a-device/" /* README.md */,
       ],
 
-      
       "/gen3/docs/": [
-
-        
         {
           title: "User Management", // required
           path: "/gen3/docs/", // optional, link of the title, which should be an absolute path and must exist
@@ -73,12 +70,6 @@ module.exports = {
             "/gen3/docs/user-management/2fa/",
             "/gen3/docs/user-management/permissions/",
           ],
-
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
 
         {
@@ -92,179 +83,89 @@ module.exports = {
             "/gen3/docs/companies/premium-features/",
             "/gen3/docs/companies/billing/",
           ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
 
         {
-          title: "Adding devices",
-          path: "/gen3/docs/adding devices/register-a-device/",
+          title: "Adding Devices",
+          path: "/gen3/docs/adding-devices/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            "/gen3/docs/adding devices/register-a-device/",
-            "/gen3/docs/adding devices/add-a-device/",
-            "/gen3/docs/adding devices/install-client-app/",
+            "/gen3/docs/adding-devices/register-a-device/",
+            "/gen3/docs/adding-devices/add-a-device/",
+            "/gen3/docs/adding-devices/install-client-app/",
           ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
         {
-          title: "Device management",
-          path: "/gen3/docs/device management/dmp-client-app/",
+          title: "Device Management",
+          path: "/gen3/docs/device-management/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            "/gen3/docs/device management/dmp-client-app/",
-            "/gen3/docs/device management/fields/",
-            "/gen3/docs/device management/device-configuration/",
-
+            "/gen3/docs/device-management/dmp-client-app/",
+            "/gen3/docs/device-management/fields/",
+            "/gen3/docs/device-management/device-configuration/",
           ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
         {
-          title: "Device monitoring",
-          path: "/gen3/docs/device monitoring/collecting-data/",
+          title: "Device Monitoring",
+          path: "/gen3/docs/device-monitoring/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            "/gen3/docs/device monitoring/collecting-data/",
-            "/gen3/docs/device monitoring/exporting-data-to-csv/",
-
+            "/gen3/docs/device-monitoring/collecting-data/",
+            "/gen3/docs/device-monitoring/exporting-data-to-csv/",
           ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
         {
           title: "Dashboards & Widgets",
-          path: "/gen3/docs/dashboards & Widgets/customization-of-views/",
+          path: "/gen3/docs/dashboards-widgets/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
-            "/gen3/docs/dashboards & Widgets/customization-of-views/",
-            "/gen3/docs/dashboards & Widgets/tips-tricks/",
-
+            "/gen3/docs/dashboards-widgets/customization-of-views/",
+            "/gen3/docs/dashboards-widgets/tips-tricks/",
           ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
-        
+
         {
           title: "Alerts",
-          path: "/gen3/docs/alerts/creating-new-alerts/",
+          path: "/gen3/docs/alerts/",
           collapsable: false,
           sidebarDepth: 0,
           children: [
             "/gen3/docs/alerts/creating-new-alerts/",
             "/gen3/docs/alerts/alerting-limitations/",
-
           ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
 
         {
-          title: "Api",
-          path: "/gen3/docs/api/use-dmp-from-swagger/",
-          collapsable: false,
-          sidebarDepth: 0,
-          children: [
-            "/gen3/docs/api/use-dmp-from-swagger/",
-            "/gen3/docs/api/configuration-using-api/",
-            "/gen3/docs/api/bunch-claiming-using-script/",
-          ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
+          title: "API",
+          path: "/gen3/docs/api/",
+          collapsable: true,
+          sidebarDepth: 1,
         },
-
 
         {
           title: "Troubleshooting",
-          path: "/gen3/docs/troubleshooting/scenario1/",
+          path: "/gen3/docs/troubleshooting/",
           collapsable: false,
           sidebarDepth: 0,
-          children: [
-            "/gen3/docs/troubleshooting/scenario1/",
-          ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            prevLinks: true
-          }
         },
-
 
         {
           title: "FAQ",
-          path: "/gen3/docs/faq/list-of-adresses-and-ports/",
+          path: "/gen3/docs/faq/",
           collapsable: false,
           sidebarDepth: 0,
-          children: [
-            "/gen3/docs/faq/list-of-adresses-and-ports/",
-          ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            // default value is true. Set it to false to hide prev page links on all pages
-            prevLinks: true
-          }
         },
         {
-          title: "Migration from 2.x.x to 3.x.x instance",
-          path: "/gen3/docs/Migration from 2.x.x to 3.x.x instance/steps/",
+          title: "Migration from 2.x.x to 3.x.x Instance",
+          path: "/gen3/docs/migration/",
           collapsable: false,
           sidebarDepth: 0,
-          children: [
-            "/gen3/docs/Migration from 2.x.x to 3.x.x instance/steps/",
-          ],
-          themeConfig: {
-            // default value is true. Set it to false to hide next page links on all pages
-            nextLinks: true,
-            // default value is true. Set it to false to hide prev page links on all pages
-            prevLinks: true
-          }
         },
       ],
-
-
-      
-      /*
-      "/gen3/explanations/": [
-        "" ,
-        "companies/" ,
-        "adding devices/" ,
-        "device management/" ,
-        "device monitoring/" ,
-        "dashboards & Widgets/" ,
-        "alerts/" ,
-        "api/" ,
-        "troubleshooting/" ,
-        "faq/" /* ,
-        "Migration from 2.x.x to 3.x.x instance/" ,
-      ],
-      */
       "/gen2/explanations/": [
         "" /* /README.md/ */,
         "companies-and-users/" /* /README.md */,
@@ -323,9 +224,9 @@ module.exports = {
     // docsDir: 'docs',
     // if your docs are in a specific branch (defaults to 'master'):
     // defaults to false, set to true to enable
-    editLinks: true,
+    // editLinks: true,
     // custom text for edit link. Defaults to "Edit this page"
-    editLinkText: "Help us improve this page!",
+    // editLinkText: "Help us improve this page!",
   },
 
   /**

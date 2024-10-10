@@ -1,4 +1,4 @@
-## Two-Factor authentication (2-FA)
+## Two-Factor Authentication (2-FA)
 
 **2FA** (_Two-Factor authentication_) provides an additional level of security to protect your account.
 
@@ -16,7 +16,7 @@ To configure 2FA, you should first download the Authenticator app to your phone.
 
 - [Microsoft Authenticator (IOS)](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
 
-### How to enable 2-FA?
+### How to Enable 2-FA?
 
 You can activate 2FA in the _Company Edit Form_.
 

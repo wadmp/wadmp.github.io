@@ -1,6 +1,11 @@
+---
+prev: ../../
+next: ../add-users/
+---
+
 ## Sign Up / Sign In
 
-**Access the WebAccess/DMP Site: Navigate to wadmp3.com, which will redirect you to the login page.**
+**Access the WebAccess/DMP Site: Navigate to [wadmp3.com](https://wadmp3.com), which will redirect you to the login page.**
 
 ![Login Page](../../images/LogIn.png)
 
@@ -22,11 +27,11 @@
 
 ![Email Click](../../images/emailconfirm2.png)
 
-### Using other identity providers to sign up/sign in
+### Using Other Identity Providers to Sign up/Sign in
 
 **Below are the provided options:**
 
-**Gmail:** Allow users to utilize their Gmail accounts for registration or login purposes.
+**Google:** Allow users to utilize their Google accounts for registration or login purposes.
 
 **Microsoft:** Integrate with Microsoft accounts for authentication.
 

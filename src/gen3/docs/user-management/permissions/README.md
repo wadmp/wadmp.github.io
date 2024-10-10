@@ -1,6 +1,11 @@
+---
+prev: ../2fa/
+next: ../../companies/
+---
+
 ## Permissions
 
-### Permissions management
+### Permissions Management
 
 - User Restrictions:
 
@@ -22,7 +27,7 @@ Managing Other Users:
 - A user can remove another user from a company if they have "Edit Users" permission on that company.
 - A user can edit another user's profile information only if they have "Edit Users" permission for at least one of the companies the user is in.
 
-### Explanations of individual permissions
+### Explanations of Individual Permissions
 
 ![user_permissions](../../images/user-permissions.png "Permissions")
 

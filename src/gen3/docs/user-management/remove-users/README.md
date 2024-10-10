@@ -1,6 +1,6 @@
 ## Remove Users
 
-### Remove a user from a company
+### Remove a User from a Company
 
 **To remove a user**:
 
@@ -10,7 +10,7 @@
 
 ![users-remove](../../images/remove-user.png)
 
-### Delete a user account
+### Delete a User Account
 
 - Each user can delete his or her own account (this feature is currently available only directly via **API**)
 
