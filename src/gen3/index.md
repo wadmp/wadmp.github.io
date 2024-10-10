@@ -1,8 +1,8 @@
 ---
 home: true
 tagline: Open-source documentation for users of Advantech WebAccess/DMP software
-actionText: Explanations →
-actionLink: /gen3/explanations/
+actionText: Documentation →
+actionLink: /gen3/docs/
 features:
 ---
 

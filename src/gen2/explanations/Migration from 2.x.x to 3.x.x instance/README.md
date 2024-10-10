@@ -16,34 +16,34 @@ This page explains the process of migrating data from a 2.x.x instance at [www.w
 
 Navigate to _Companies_. Locate the company from which you wish to export data and click the _Export_ icon on the right.
 
-![Gen2Export](../../../gen3/explanations/images/migration-gen2-gen3/gen2-export.png)
+![Gen2Export](../../../gen3/docs/images/migration-gen2-gen3/gen2-export.png)
 
 A dialog box will appear providing details about the export. Save the file as `company_name_export.data` to your computer.
 
-![Gen2ExportDialog](../../../gen3/explanations/images/migration-gen2-gen3/gen2-export-dialog.png)
+![Gen2ExportDialog](../../../gen3/docs/images/migration-gen2-gen3/gen2-export-dialog.png)
 
 ## Step 2: Import Data into 3.x.x Instance
 
 Log in to your account at [www.wadmp3.com](http://www.wadmp3.com). Select or create the company where data will be imported. Navigate to _Companies_ in the menu and click on the company details. On the _Company Profile_ page, click on the _Import_ button:
 
-![Gen3Import](../../../gen3/explanations/images/migration-gen2-gen3/gen3-import.png)
+![Gen3Import](../../../gen3/docs/images/migration-gen2-gen3/gen3-import.png)
 
 Choose the data file containing exported data from the 2.x.x instance and press **Submit**.
 
-![Gen3File](../../../gen3/explanations/images/migration-gen2-gen3/gen3-file.png)
+![Gen3File](../../../gen3/docs/images/migration-gen2-gen3/gen3-file.png)
 
 The results of the import will be displayed after the process completes, which depends on the volume of data. This will include an overview of successful imports, skipped items, and any failures.
 
-![Gen3Result](../../../gen3/explanations/images/migration-gen2-gen3/gen3-result.png)
+![Gen3Result](../../../gen3/docs/images/migration-gen2-gen3/gen3-result.png)
 
 You can examine the outcome of the import process. Skipped items indicate they were previously imported or manually added. For any failures, select the number of failed items to investigate the reasons. You can also generate a CSV failure report using the export icon at the top.
 
-![Gen3DetailCsv](../../../gen3/explanations/images/migration-gen2-gen3/gen3-detail-csv.png)
+![Gen3DetailCsv](../../../gen3/docs/images/migration-gen2-gen3/gen3-detail-csv.png)
 
 ## Step 3: Migrate Devices
 
 To manage your devices in the 3.x.x instance , upgrade the _wadmp_client_ Router App on your devices to version 3.0.0 using the 2.x.x instance.
 
-![Gen2upgrade](../../../gen3/explanations/images/migration-gen2-gen3/gen2-upgrade-client.png)
+![Gen2upgrade](../../../gen3/docs/images/migration-gen2-gen3/gen2-upgrade-client.png)
 
 Installing this updated Router App version enables your devices to connect to the 3.x.x instance. Note that after this upgrade, devices will no longer be able to connect to the 2.x.x instance. It is advisable to test this migration process on a small number of devices first.
