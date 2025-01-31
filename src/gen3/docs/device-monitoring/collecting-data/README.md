@@ -59,15 +59,105 @@ Example of ping Fields made visible in Table on company dashboard, Ping Latency 
 
 These Fields can be programmaticaly connected to any customer desired string or number to be reported from device, e.g. via Script.
 
+- **Custom Reportable String** is up to 40 characters long string stored in a local file on router that is reported. Files are located in /var/data/wadmp_client/custom_metrics/custom_str1 to custom_str5. Up to 5 custom strings can be added.
+
+- **Custom Reportable Number** is a number stored in a local file on router that is reported. Files are located in /var/data/wadmp_client/custom_metrics/custom_number1 to custom_number5. Up to 5 custom numbers can be added.
+
 ![CSV export](../../images/monitoring/cust-reportable.png)
 
-- **Custom Reportable String** is up to 40 characters long string stored in a local file on router (/var/data/wadmp_client/custom_metrics/custom_str) that is reported.
-- **Custom Reportable Number** is a number stored in a local file on router (/var/data/wadmp_client/custom_metrics/custom_number) that is reported.
+::: tip Example of the script using Custom Reportable Number to report download speed:
 
-::: tip For example:
+- Add this code as Startup Script (e. g. in Device Configuration):
 
-There is an industrial sensor connected to the router - a flow meter in a tube. A script exists in device, that writes the value from the sensor to a file. This script can be added via the Desired Configuration tab or a Configuration Profile. The value is then reported to WebAccess/DMP and may be presented as data in Stats, Charts, or Tables. It can also be used for Alerts or exported. A flow in the tube history chart can be observed in a View. An Alert may be sent based on the flow in tube value.
+```
+#!/bin/sh
+# -----------------------------------------------------------------------------
+# Initialization Script
+# -----------------------------------------------------------------------------
+# This script will run *after* all other init scripts and is intended to set up
+# a custom metric collection script that downloads a file and logs download speed.
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Create the metric collection script
+# -----------------------------------------------------------------------------
+cat << 'EOF' > /var/scripts/script.sh
+#!/bin/bash
+
+# URL of the file to be downloaded
+url="http://ipv4.download.thinkbroadband.com/10MB.zip"
+
+# Define the directory and file path for storing metrics
+dir_path="/var/data/wadmp_client/custom_metrics"
+file_path="$dir_path/custom_number1"
+
+# -----------------------------------------------------------------------------
+# Ensure the required directory and file exist
+# -----------------------------------------------------------------------------
+# Check if the directory exists; if not, create it
+if [ ! -d "$dir_path" ]; then
+    mkdir -p "$dir_path"
+fi
+
+# Check if the file exists; if not, create it
+if [ ! -f "$file_path" ]; then
+    touch "$file_path"
+fi
+
+# -----------------------------------------------------------------------------
+# Download the file and measure download speed
+# -----------------------------------------------------------------------------
+echo "Downloading 10MB file..."
+
+# Perform the download and capture the average download speed in bytes/sec
+speed_bytes=$(curl -o /dev/null --silent --write-out "%{speed_download}" "$url")
+
+# Verify if a valid speed value was captured
+if [[ -z "$speed_bytes" ]]; then
+  echo "Error: Speed not found in response"
+  exit 1
+fi
+
+# Convert the speed from bytes/sec to megabytes/sec
+mbps=$(awk "BEGIN {printf \"%.2f\", $speed_bytes / 1024 / 1024}")
+
+# Output the download speed in MBps
+echo "Average download speed: $mbps MBps"
+
+# Write the download speed to the specified file
+echo "$mbps" > "$file_path"
+EOF
+
+# -----------------------------------------------------------------------------
+# Make the script executable
+# -----------------------------------------------------------------------------
+chmod +x /var/scripts/script.sh
+
+# -----------------------------------------------------------------------------
+# Schedule the script to run daily using cron
+# -----------------------------------------------------------------------------
+# Append the script to the root crontab to execute at midnight daily
+echo "0 0 * * * root /var/scripts/script.sh" >> /etc/crontab
+
+# -----------------------------------------------------------------------------
+# Ensure the cron service is started
+# -----------------------------------------------------------------------------
+service cron start
+
+```
+
+- To show the number on Dashboard (column in table, Stat or Chart), ensure that the Field _Custom Reportable Number_ is added. If using more Custom Reportable fields, ensure that the path shown in the description is same as the file_path in the script (custom_number1).
+
+- To add chart, in this case select Line Chart, and select _Custom Reportable Number_ Field:
+
+![CSV export](../../images/monitoring/avg-speed-add-chart.png)
+
+- The chart then may look like this:
+
+![CSV export](../../images/monitoring/avg-speed-cust-no.png)
 
 :::
 
-![CSV export](../../images/monitoring/cust-ex.png)
+**Note:** Only _Custom Reportable Number_ Field can be used for charts (string data type can not be shown in charts).
+
+Generaly these custom Fields can be used also with a sensor connected to the router (via RS232/485, binary I/O or other industrial interface). If a flow meter in a tube would be connected, a script would exist in a device, that would write the value from the sensor to a file, the value could then be reported to WebAccess/DMP and could be presented as data in Stats, Charts, or Tables, exported or used for Alerts.

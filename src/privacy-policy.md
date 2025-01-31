@@ -6,71 +6,48 @@ This privacy policy will explain how our organization uses the personal data we 
 
 Topics:
 
--   What data do we collect?
-    
--   How do we collect your data?
-    
--   How will we use your data?
-    
--   How do we store your data?
-    
--   Marketing
-    
--   What are your data protection rights?
-    
--   What are cookies?
-    
--   How do we use cookies?
-    
--   What types of cookies do we use?
-    
--   How to manage your cookies
-    
--   Privacy policies of other websites
-    
--   Changes to our privacy policy
-    
--   How to contact us
-    
--   How to contact the appropriate authorities
-    
+- What data do we collect?
+- How do we collect your data?
+- How will we use your data?
+- How do we store your data?
+- Marketing
+- What are your data protection rights?
+- What are cookies?
+- How do we use cookies?
+- What types of cookies do we use?
+- How to manage your cookies
+- Privacy policies of other websites
+- Changes to our privacy policy
+- How to contact us
+- How to contact the appropriate authorities
 
 ## What data do we collect?
 
 Advantech collects the following data:
 
--   Personal identification information (Name, email address, phone number, etc.)
-    
+- Personal identification information (Name, email address, phone number, etc.)
 
 ## How do we collect your data?
 
 You directly provide Advantech with all of the data we collect. We collect data and process data when you:
 
--   Register online or place an order for any of our products or services.
-    
--   Voluntarily complete a customer survey or provide feedback on any of our message boards or via email.
-    
--   Use or view our website via your browser’s cookies.
-    
+- Register online or place an order for any of our products or services.
+- Voluntarily complete a customer survey or provide feedback on any of our message boards or via email.
+- Use or view our website via your browser’s cookies.
 
 ## How will we use your data?
 
 Advantech collects your data so that we can:
 
--   Process your order and manage your account.
-    
--   Email you with special offers on other products and services we think you might like.
-    
--   Enable you to use our products and services.
-    
+- Process your order and manage your account.
+- Email you with special offers on other products and services we think you might like.
+- Enable you to use our products and services.
 
 Advantech will not share the data you provide with any third parties, for any purpose.
 
 ## How do we store your data?
 
 Advantech securely stores your data on our secure data servers.
-
-All data on-disk is encrypted and secured behind firewalls.
 
 Advantech will keep your data for as long as you have subscribed to our services, or for as long as you are a Customer.
 
@@ -116,19 +93,15 @@ For further information, visit [allaboutcookies.org](http://allaboutcookies.org/
 
 Advantech uses cookies in a range of ways to improve your experience on our website, including:
 
--   Keeping you signed in
-    
--   Understanding how you use our website
-    
--   Analyze site operations
-    
+- Keeping you signed in
+- Understanding how you use our website
+- Analyze site operations
 
 ### **What types of cookies do we use?**
 
 There are a number of different types of cookies, however, WebAccess/DMP uses:
 
--   Functionality – Advantech uses these cookies so that we recognise you on our website and remember your previously selected preferences. These could include what language you prefer and location you are in. A mix of first-party and third-party cookies are used.
-    
+- Functionality – Advantech uses these cookies so that we recognise you on our website and remember your previously selected preferences. These could include what language you prefer and location you are in. A mix of first-party and third-party cookies are used.
 
 ### **How to manage cookies**
 
