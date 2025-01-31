@@ -108,6 +108,17 @@ module.exports = {
           ],
         },
         {
+          title: "VPN",
+          path: "/gen3/docs/vpn/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/vpn/overview/",
+            "/gen3/docs/vpn/networks/",
+            "/gen3/docs/vpn/roadwarriors/",
+          ],
+        },
+        {
           title: "Device Monitoring",
           path: "/gen3/docs/device-monitoring/",
           collapsable: false,

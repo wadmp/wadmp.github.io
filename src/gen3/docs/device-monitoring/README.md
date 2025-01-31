@@ -1,5 +1,5 @@
 ---
-prev: ../device-management/device-configuration/
+prev: ../vpn/roadwarriors/
 next: ./collecting-data/
 ---
 
