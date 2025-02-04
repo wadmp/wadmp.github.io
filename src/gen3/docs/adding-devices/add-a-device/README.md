@@ -45,7 +45,7 @@
 
 **3. Fill out the "Add Device" form with the following information:**
 
-- **Alias:**
+- **Name:**
   Enter a human-friendly name to help identify the device later. _This field is optional._
 
 - **MAC Address:**
