@@ -38,9 +38,9 @@ These fields hold constant information that typically doesn't change over time. 
 - Description
 - Serial Number
 - IMEI
-- VPN IP Address
-- VPN Proxy Link
-- VPN Subnet
+- VPN IP Address (if the VPN has been initialized)
+- VPN Proxy Link (if the VPN has been initialized)
+- VPN Subnet (if the VPN has been initialized)
 
 #### Monitoring Fields
 
@@ -60,7 +60,7 @@ These fields aggregate monitoring data over time to give a comprehensive view of
 - Data Uploaded (cumulative)
 - Data Up+Down (cumulative)
 - Reconnects Count
-- VPN Connected
+- VPN Connected (if the VPN has been initialized)
 
 #### Configuration Fields
 
@@ -101,10 +101,10 @@ There is a set of default Fields listed below, that you will find in the _Fields
 | Serial Number             | Serial number of a device.                                                                       |
 | SIM Card                  | Active SIM card.                                                                                 |
 | Synchronization Status    | Synchronization status of device.                                                                |
-| VPN Connected             | Indicates whether the device is connected to the VPN hub.                                        |
-| VPN IP Address            | VPN IP address of the device.                                                                    |
-| VPN Proxy Link            | Link for accessing router`s UI from browser through VPN.                                         |
-| VPN Subnet                | VPN subnet of the device.                                                                        |
+| VPN Connected             | Indicates whether the device is connected to the VPN hub. (if the VPN has been initialized)      |
+| VPN IP Address            | VPN IP address of the device. (if the VPN has been initialized)                                  |
+| VPN Proxy Link            | Link for accessing router`s UI from browser through VPN. (if the VPN has been initialized)       |
+| VPN Subnet                | VPN subnet of the device. (if the VPN has been initialized)                                      |
 
 &nbsp;  
 &nbsp;

@@ -59,7 +59,27 @@ Managing Other Users:
   - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
   - Delete: Allows deletion of Alerts, History, Rules & Endpoints.
 
+- VPN Networks
+
+  - View: Allows viewing a list of Alerts, History, Rules & Endpoints.
+  - Create: Allows the creation of new Alerts, History, Rules & Endpoints.
+  - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
+  - Delete: Allows deletion of Alerts, History, Rules & Endpoints.
+
+- VPN Roadwarrios
+
+  - View: Allows viewing a list of Alerts, History, Rules & Endpoints.
+  - Create: Allows the creation of new Alerts, History, Rules & Endpoints.
+  - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
+  - Delete: Allows deletion of Alerts, History, Rules & Endpoints.
+
+- VPN Settings
+
+  - View: Allows viewing a list of Alerts, History, Rules & Endpoints.
+  - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
+
 - Additional Permissions:
+
   - Auditing: View auditing details.
   - Fields: Manage fields.
   - Views: Manage views.

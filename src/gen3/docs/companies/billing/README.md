@@ -30,10 +30,10 @@ By clicking the Billing summary, you can go to the Billing Detail page, where yo
 
 ### VPN Billing Summary ###
 
-- Premium companies are charged 2 euros per GB. Additionally, there is a 2-euro charge per device. In the Parent Company settings under Companies → Edit, a data limit is defined for the entire company structure, including all subcompanies. Each subcompany, including the parent company, can independently purchase additional data (VPN Overview → Buy Data). These purchases are counted toward the overall data limit and are billed accordingly.
+- Premium companies are charged a fixed rate per GB of data, along with an additional charge per device. In the Parent Company settings under Companies → Edit, a data limit is defined for the entire company structure, including all subcompanies. Each subcompany, including the parent company, can independently purchase additional data (VPN Overview → Buy Data). These purchases count toward the overall data limit and are billed accordingly.
 
-- Data is billed as a one-time charge in the month of purchase and remains available until fully consumed—it does not expire at the end of the billing cycle.
+- Data is billed as a one-time charge in the month of purchase and remains available until fully consumed → it does not expire at the end of the billing cycle.
 
-- Roadwarrior VPN users are billed in the same manner as devices, at a rate of 2 euros per user.
+- Roadwarrior VPN users are billed in the same manner as devices, with a fixed charge per user.
 
 
