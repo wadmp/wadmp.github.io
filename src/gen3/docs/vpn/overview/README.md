@@ -20,7 +20,7 @@ By default, the overview displays the following information:
 2. VPN Network
 3. Addresses per Device
 
-- Additionally, there are two fields: *Data Usage per Month* and *Detailed Data Usage*.
+- Additionally, there are two fields: _Data Usage per Month_ and _Detailed Data Usage_.
 
 - You can stop it by clicking the red **STOP** button.
 
@@ -39,11 +39,14 @@ By default, the overview displays the following information:
 - This can affect:
 
 1. Connected devices behind routers
-2. *Roadwarriors*, who may no longer be able to connect
+2. _Roadwarriors_, who may no longer be able to connect
 3. Existing network settings and communication
 
 - Because of these potential disruptions, it is highly recommended to carefully review and update all dependent configurations after making changes in the Danger Zone.
 
+⚠️ Note, that the number of VPN Devices (given by VPN Configuration) is also maximum number of all devices that can be added to the Company, where VPN is initialized.
+
 ::: tip VPN Fields:
-- On the dashboard, you can add VPN-related fields to create a dedicated VPN overview. You can include columns such as Network Membership, VPN Connection Status, VPN IP, VPN Data Used, and more for a clear and organized view of your VPN details. 
-:::
+
+- On the dashboard, you can add VPN-related fields to create a dedicated VPN overview. You can include columns such as, VPN Connection Status, VPN IP, VPN Data Used, Network Role and more for a clear and organized view of your VPN details.
+  :::

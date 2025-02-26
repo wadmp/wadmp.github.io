@@ -14,12 +14,12 @@
 
 ![VPN Networks](../../images/vpn/vpn_networks_addnetwork.png)
 
-1. **All to All** &rarr; *All to All* refers to a network configuration where all devices are connected to each other, allowing direct communication between every device in the network without restrictions. Each device can send and receive data to and from any other device. Roadwarriors have a special role → they can see all devices, but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors also do not see each other.
+1. **All to All** &rarr; _All to All_ refers to a network configuration where all devices are connected to each other, allowing direct communication between every device in the network without restrictions. Each device can send and receive data to and from any other device. Roadwarriors have a special role → they can see all devices, but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors also do not see each other.
 
-2. **Master to Slave** &rarr; *Master-to-Slave* refers to a network configuration where the Master device (server) controls and manages the connections, while the Slave devices follow its instructions. This setup is often used for centralized management and control. The Master and Slave devices always see each other, but a Slave device does not see other Slaves. Roadwarriors have a special → role they can see all devices (both Master and Slave), but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors do not see each other.
+2. **Master to Slave** &rarr; _Master-to-Slave_ refers to a network configuration where the Master device (server) controls and manages the connections, while the Slave devices follow its instructions. This setup is often used for centralized management and control. The Master and Slave devices always see each other, but a Slave device does not see other Slaves. Roadwarriors have a special → role they can see all devices (both Master and Slave), but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors do not see each other.
 
 - Once you've created your networks, you can either enter them by clicking on their name, or edit/delete them using the options on the right side of each line.
-![VPN Networks](../../images/vpn/vpn_networks_select_2.png)
+  ![VPN Networks](../../images/vpn/vpn_networks_select_2.png)
 
 - When you enter your desired network, you can edit the network's name by clicking the **EDIT NETWORK** button, or add devices by clicking the **ADD DEVICES** button.
 
@@ -29,19 +29,19 @@
 
 ![VPN Networks](../../images/vpn/vpn_networks_add-device.png)
 
-- Using *Add Device*, a Roadwarrior can also be added to the network, and all of them are Clients.
+- Using _Add Device_, a Roadwarrior can also be added to the network, and all of them are Clients.
 
-- You can now either enter your device by clicking its name, or use the options on the right side of its line to access the *Proxy Link*, edit its role, or delete it.
+- You can now either enter your device by clicking its name, or use the options on the right side of its line to access the _Proxy Link_, edit its role, or delete it.
 
 ![VPN Networks](../../images/vpn/vpn_networks_proxy.png)
 
-- When editing your device's role, you can switch between *Master* and *Slave* modes.
+- When editing your device's role, you can switch between _Master_ and _Slave_ modes.
 
 ![VPN Networks](../../images/vpn/vpn_networks_master-slave.png)
 
-## Main VPN Device Interface 
+## VPN Tab on Device Detail Page
 
-- Once you're in the device's VPN interface, you can configure the following settings:
+- Once you're in the device's VPN tab, you can configure the following settings:
 
 1. Disable or Enable VPN client of the device
 2. Edit device VPN networks.
@@ -59,6 +59,10 @@
 ![VPN Networks](../../images/vpn/vpn_device-proxy_add.png)
 
 3. Delete the Proxy link from the device.
+
+⚠️ Note: Change in proxy link may take up to 3 minutes to update the config on server.
+
+⚠️ Note: When in UI on a device via VPN Proxy link, size of file that can be uploaded is limited to 256 MB.
 
 ### LANS
 

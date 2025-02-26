@@ -19,9 +19,11 @@ This section will guide you through the key functionalities of WADMP VPN, its se
 </p>
 
 - Click the INITIALIZE button to start your 31-day free trial with 100MB of starting data for your company. If you don’t upgrade to the premium company plan, the feature will be disabled after the trial period.
-![VPN Initialize](../images/vpn/vpn_initialize.png)
+  ![VPN Initialize](../images/vpn/vpn_initialize.png)
 
 - In the initialization form when configuring a VPN, selecting the correct network address is crucial. The VPN address defines the entire network for the company, including all connected devices. This address must be specified in CIDR notation, which determines the size of the network and how many devices can be accommodated.
+
+  ⚠️ Note, that if VPN is initialized for your company, the number of VPN Devices is also maximum number of all devices that can be added to the Company.
 
 - Additionally, the CIDR range and Addresses per Device settings influence the total number of available device connections. As you adjust these values, the system automatically recalculates the maximum number of devices that can be supported within the network.
 
