@@ -48,6 +48,8 @@ After configuring your VPN Hub, click the **Initialize** button to proceed. Conf
 
 ![VPN Initialize](../images/vpn/vpn_initialize_confirm.png)
 
+⚠️ **Note:** To connect a device to VPN, ensure the device has Client Router App version 3.2.0 or higher installed, where VPN is supported.
+
 ## VPN FAQs
 
 ### Does starting a VPN Hub cost anything? How do I purchase VPN data, and what are the costs?
@@ -65,3 +67,7 @@ Data are billed to parent Company in month of purchase and are available until s
 ### What features are available for free?
 
 VPN Features are not limited for Free company trial, only data limit of 100 MB, 30 days after initialization and also limit of max. 5 devices apply (including Roadwarriors - counted as devices). There are not speed limitations. After 30 days you can request upgrade to Premium to buy more data and add more devices.
+
+### How do I connect a device to VPN?
+
+With VPN Hub running, ensure that a device has Client Router App version 3.2.0 or higher installed. Then device should connect to VPN automatically. Check the status on device page header, or when added in Network, or via VPN Connected Field on Dashboard.

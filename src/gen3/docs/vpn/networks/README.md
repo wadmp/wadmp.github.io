@@ -43,7 +43,21 @@
 
 ![VPN Networks](../../images/vpn/vpn_networks_master-slave.png)
 
-## Devices - VPN Tab on Device Detail Page
+## Devices
+
+### Status of a Device
+
+⚠️ **Note:** To connect a device to VPN, ensure the device has Client Router App version 3.2.0 or higher installed, where VPN is supported.
+
+On WebAccess/DMP, the status of VPN connection of the device is visible on device page header. Also "VPN Connected" Field can be added on the dashboard. When the device is added in Network, connection status of devices is also visible on Network detail page.
+
+![VPN Networks](../../images/vpn/vpn_device_status.png)
+
+On device in client, you can check the VPN Connection status on this page in WebAccess/DMP Client Router App:
+
+![VPN Networks](../../images/vpn/vpn_client_status.png)
+
+### VPN Tab on Device Detail Page
 
 - Once you're in the device's VPN tab, you can configure the following settings:
 
@@ -52,7 +66,7 @@
 
 ![VPN Networks](../../images/vpn/vpn_device_edit-networks.png)
 
-### PROXY
+#### PROXY
 
 ![VPN Networks](../../images/vpn/vpn_device_online.png)
 
@@ -68,7 +82,7 @@
 
 ⚠️ Note: When in UI on a device via VPN Proxy link, size of file that can be uploaded is limited to 256 MB.
 
-### LANS
+#### LANS
 
 ![VPN Networks](../../images/vpn/vpn_device_lans.png)
 
@@ -88,13 +102,13 @@
   <img src="../../images/vpn/vpn_device-lans-access.png" alt="VPN Networks">
 </p>
 
-### DATA USAGE
+#### DATA USAGE
 
 1. In the Data Usage section, you can view the data usage over the past year.
 
 ![VPN Networks](../../images/vpn/vpn_device_data-usage.png)
 
-### CONNECTION HISTORY
+#### CONNECTION HISTORY
 
 1. In the Connection History section, you can track the times when your device was connected or disconnected.
 
