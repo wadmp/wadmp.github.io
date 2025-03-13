@@ -108,17 +108,6 @@ module.exports = {
           ],
         },
         {
-          title: "VPN",
-          path: "/gen3/docs/vpn/",
-          collapsable: false,
-          sidebarDepth: 0,
-          children: [
-            "/gen3/docs/vpn/overview/",
-            "/gen3/docs/vpn/networks/",
-            "/gen3/docs/vpn/roadwarriors/",
-          ],
-        },
-        {
           title: "Device Monitoring",
           path: "/gen3/docs/device-monitoring/",
           collapsable: false,
@@ -138,7 +127,17 @@ module.exports = {
             "/gen3/docs/dashboards-widgets/tips-tricks/",
           ],
         },
-
+        {
+          title: "VPN",
+          path: "/gen3/docs/vpn/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: [
+            "/gen3/docs/vpn/overview/",
+            "/gen3/docs/vpn/networks/",
+            "/gen3/docs/vpn/roadwarriors/",
+          ],
+        },
         {
           title: "Alerts",
           path: "/gen3/docs/alerts/",
@@ -149,7 +148,6 @@ module.exports = {
             "/gen3/docs/alerts/alerting-limitations/",
           ],
         },
-
         {
           title: "API",
           path: "/gen3/docs/api/",
@@ -198,6 +196,7 @@ module.exports = {
       ],
       "/gen3/release-notes/": [
         "" /* /README.md/ */,
+        "3.1.2/" /* /README.md/ */,
         "3.1.1/" /* /README.md/ */,
         "3.1.0/" /* /README.md/ */,
         "3.0.3/" /* /README.md/ */,

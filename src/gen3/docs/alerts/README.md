@@ -1,5 +1,5 @@
 ---
-prev: ../dashboards-widgets/tips-tricks/
+prev: ../vpn/roadwarriors/
 next: ./creating-new-alerts/
 ---
 

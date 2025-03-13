@@ -2,10 +2,13 @@
 
 ## Latest version:
 
-### v3.1.2 (2024-11-28)
+### v3.2.0 (2025-03-12)
 
-- Improved router application installation.
-- Lowered warning message count when loading configuration profile.
+- Added support of VPN features.
+- Fixed services sometimes not being restarted after their configuration was changed.
+- Fixed incorrect IP being sometimes reported as WAN IP Address.
+- Fixed installation of router apps for firmware versions below 6.4.0.
+- Fixed metrics sometimes incorrectly reported as "changed".
 
 ## Download:
 
@@ -16,6 +19,11 @@ We recommend always using the most up-to-date version of the client.
 The client router app can also be upgraded via WebAccess/DMP.
 
 ## Previous versions:
+
+### v3.1.2 (2024-11-28)
+
+- Improved router application installation.
+- Lowered warning message count when loading configuration profile.
 
 ### v3.1.1 (2024-10-10)
 

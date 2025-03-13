@@ -4,33 +4,35 @@ prev: ../../vpn/
 
 # Overview
 
-- Start by navigating to the VPN section in the Context Panel, then select the Overview section.
+- On VPN Overview page you can overview and control VPN Hub for your company. Navigate to the VPN - Overview section in menu.
 
 <p align="center">
   <img src="../../images/vpn/vpn_overview_select.png" alt="VPN Overview">
 </p>
 
-- By default, you will see that the VPN is in **Running** mode.
+## VPN Hub Overview
+
+- In top part, you can see VPN Hub status and you can manage VPN Hub (start, stop, configure). After VPN initialization, the VPN Hub is started by default.
 
 ![VPN Overview](../../images/vpn/vpn_overview_running.png)
 
-By default, the overview displays the following information:
+Below, the VPN Hub parameters and stats are shown:
 
-1. VPN Hub Region
-2. VPN Network
-3. Addresses per Device
-
-- Additionally, there are two fields: _Data Usage per Month_ and _Detailed Data Usage_.
-
-- You can stop it by clicking the red **STOP** button.
+- VPN Hub Region
+- VPN Network
+- Addresses per Device
+- Data Usage per Month
+- Detailed Data Usage.
 
 ![VPN Overview](../../images/vpn/vpn_overview_stopped.png)
 
-- As mentioned in the introduction (this applies only for Free companies, doesn't show up if you have Premium), the "days left" indicate when the VPN feature will be disabled for this company.
+- Premium companies do not have the "days left" indicator and have additional "Buy Data" button to purchase more data for VPN traffic. See [VPN Billing Summary](../../companies/billing/#vpn-billing-summary) for details on billing.
 
-![VPN Overview](../../images/vpn/vpn_overview_trial.png)
+![VPN Overview](../../images/vpn/vpn_purchase_data.png)
 
-- In this section you can also edit your VPN configuration by clicking on the **CONFIGURATION** button as showcased on the picture below, and confirm it with the **CONFIRM** button.
+## VPN Hub Configuration
+
+- In this section you can also edit your VPN configuration (VPN Hub) by clicking on the **CONFIGURATION** button as showcased on the picture below, and confirm it with the **CONFIRM** button.
 
 ![VPN Overview](../../images/vpn/vpn_overview_config.png)
 
@@ -44,7 +46,9 @@ By default, the overview displays the following information:
 
 - Because of these potential disruptions, it is highly recommended to carefully review and update all dependent configurations after making changes in the Danger Zone.
 
-⚠️ Note, that the number of VPN Devices (given by VPN Configuration) is also maximum number of all devices that can be added to the Company, where VPN is initialized.
+- See all configuration parameters explained in Initialization description: [Configure the VPN](../../vpn/#_2-configure-the-vpn)
+
+⚠️ Note, that if VPN initialized in the company, the number of VPN Devices (given by VPN Configuration) is also maximum number of all devices that can be added to the Company, where VPN is initialized.
 
 ::: tip VPN Fields:
 

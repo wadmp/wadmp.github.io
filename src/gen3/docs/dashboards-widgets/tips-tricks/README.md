@@ -1,5 +1,5 @@
 ---
-next: ../../alerts/
+next: ../../vpn/
 ---
 
 ## Tips & Tricks

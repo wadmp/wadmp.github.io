@@ -1,5 +1,5 @@
 ---
-next: ../../vpn/
+next: ../../device-monitoring/
 ---
 
 ## Device Configuration

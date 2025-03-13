@@ -1,34 +1,67 @@
 ---
-prev: ../device-management/device-configuration/
+prev: ../dashboards-widgets/tips-tricks/
 next: ./overview/
 ---
 
-# Introduction to WADMP VPN Service
+# VPN Service (Beta)
 
-WADMP VPN is a secure networking feature designed to facilitate encrypted communication between industrial routers, IoT gateways, and the WebAccess/DMP platform. By leveraging WireGuard, WADMP VPN ensures a secure and private connection for remote device management, configuration, and data transfer.
+## Introduction
 
-As part of the WADMP GEN 3 ecosystem, this feature simplifies the deployment of VPN connections without requiring complex manual configurations. It provides a centralized management interface that allows administrators to set up, monitor, and troubleshoot VPN connections across multiple devices efficiently.
+VPN Service on WebAccess/DMP is a secure networking feature that allows remote access to industrial routers, IoT gateways, and local networks. It simplifies VPN deployment through a centralized management interface and utilizes WireGuard for secure, high-performance communication.
 
-WADMP VPN utilizes WireGuard, a modern and high-performance VPN protocol known for its simplicity, speed, and strong cryptographic security. The service enhances cybersecurity by enforcing strong encryption, authentication mechanisms, and secure tunneling, reducing the risk of data breaches and unauthorized access.
+### Key Features
 
-This section will guide you through the key functionalities of WADMP VPN, its setup process, and best practices for ensuring secure and reliable connectivity within your network infrastructure.
+- Access devices from anywhere in the world
+- Get to router management pages effortlessly
+- Securely access your local networks behind routers
+- Group devices into networks
 
-- Start by navigating to the title panel and selecting the VPN section.
-<p align="center">
-  <img src="../images/vpn/dashboard_vpn.png" alt="VPN Selection">
-</p>
+## Setting Up VPN
 
-- Click the INITIALIZE button to start your 31-day free trial with 100MB of starting data for your company. If you don’t upgrade to the premium company plan, the feature will be disabled after the trial period.
-  ![VPN Initialize](../images/vpn/vpn_initialize.png)
+### 1. Initialize the VPN Hub
 
-- In the initialization form when configuring a VPN, selecting the correct network address is crucial. The VPN address defines the entire network for the company, including all connected devices. This address must be specified in CIDR notation, which determines the size of the network and how many devices can be accommodated.
+To start using VPN:
 
-  ⚠️ Note, that if VPN is initialized for your company, the number of VPN Devices is also maximum number of all devices that can be added to the Company.
+1. Navigate to the **VPN** section in menu.
+2. Click the **INITIALIZE** button to activate your **30-day free trial**, which includes **100 MB of data** for your company. If you do not upgrade to a premium company plan, the feature will be disabled after the trial period.
 
-- Additionally, the CIDR range and Addresses per Device settings influence the total number of available device connections. As you adjust these values, the system automatically recalculates the maximum number of devices that can be supported within the network.
+![VPN Initialize](../images/vpn/dashboard_vpn.png)
 
-- Next, complete the initialization form with your corresponding configuration. Once done, click the Initialize button to proceed.
+### 2. Configure the VPN
+
+When setting up VPN, you need to select VPN Hub region and setup VPN Network:
 
 ![VPN Initialize](../images/vpn/vpn_initialize_form.png)
 
-- For detailed information on billing, go to [Billing](../companies/billing/) and navigate to the VPN Billing Summary section.
+- VPN Hub Region - All VPN communication in your company runs through VPN Hub that will be started in this region (a virtual machine running on server dedicated for your company).
+- VPN IP and CIDR - This is your VPN Network. You can type in desired IP address. CIDR affects the maximum number of VPN devices (together with Addresses per Device). See the calculated number at the bottom changing interactively when adjusting CIDR and Addresses per Device.
+- Addresses per Device - How many VPN addresses can a device use. Affects the maximum number of VPN devices (together with CIDR). See the calculated number at the bottom changing interactively when adjusting CIDR and Addresses per Device. This parameter can be later changed individually per device.
+- Enable proxy by default for newly added devices - this determines if newly added device has proxy link active. Can be disabled/enabled individualy per device.
+
+All values can be changed later (Configuration on VPN Overview page).
+
+⚠️ **Note:** If VPN is initialized, the maximum number of VPN devices (determined by the **CIDR** range and **Addresses per Device** settings) is also the **maximum number of devices** that can be added to the company.
+
+### 3. Complete the Initialization Form
+
+After configuring your VPN Hub, click the **Initialize** button to proceed. Confirmation dialog with a maximum number of devices and in company will appear. Confirm, and the VPN Hub is starting.
+
+![VPN Initialize](../images/vpn/vpn_initialize_confirm.png)
+
+## VPN FAQs
+
+### Does starting a VPN Hub cost anything? How do I purchase VPN data, and what are the costs?
+
+Starting of VPN Hub is free. Both Free and Premium Companies have free 100 MB of traffic to be spent via VPN (VPN Downloaded counted as traffic).
+After 100 MB spent, you can upgrade to Premium, where you can purchase more data on VPN Overview page.
+Purchased data is then billed to parent company, price of 1 GB of VPN data traffic is equivalent to price per device (e.g. if you pay 2 Euros per device, every 1 GB of VPN data traffic would be additional 2 Euros). For detailed information on billing, go to [Billing](../companies/billing/) and navigate to the VPN Billing Summary section.
+
+### How and when do I pay for the data?
+
+Data are billed to parent Company in month of purchase and are available until spent. So if a subcompany buys data, the parent company is responsible for the payment. Since buying data is just a few clicks away, to prevent accidental excessive purchases you can set the overall data purchase limit in parent company (default is 2000 GB). Navigate to Companies - select parent Company - then edit Company Profile, including _Company Hierarchy monthly VPN Data Purchase limit_.
+
+![VPN Initialize](../images/vpn/vpn_company_data_limit.png)
+
+### What features are available for free?
+
+VPN Features are not limited for Free company trial, only data limit of 100 MB, 30 days after initialization and also limit of max. 5 devices apply (including Roadwarriors - counted as devices). There are not speed limitations. After 30 days you can request upgrade to Premium to buy more data and add more devices.
