@@ -82,6 +82,8 @@ On device in client, you can check the VPN Connection status on this page in Web
 
 ⚠️ Note: When in UI on a device via VPN Proxy link, size of file that can be uploaded is limited to 256 MB.
 
+⚠️ Known Issue: Proxy links do not work when the device has Firmware versions 6.5.1 or 6.5.0. Please update Firmware on the device.
+
 #### LANS
 
 ![VPN Networks](../../images/vpn/vpn_device_lans.png)

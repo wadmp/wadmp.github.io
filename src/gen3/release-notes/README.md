@@ -3,7 +3,7 @@
 ### Improvements:
 
 - Added a new, long-awaited VPN management feature to streamline network security and control. <br>
-  For more information see [VPN Documentation](../docs/vpn/)
+  For more information see [VPN Documentation](../docs/vpn/).
 
 ![VPN](./dashboard_vpn.png)
 
