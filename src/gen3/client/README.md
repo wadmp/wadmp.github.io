@@ -2,13 +2,9 @@
 
 ## Latest version:
 
-### v3.2.0 (2025-03-12)
+### v3.2.1 (2025-03-27)
 
-- Added support of VPN features.
-- Fixed services sometimes not being restarted after their configuration was changed.
-- Fixed incorrect IP being sometimes reported as WAN IP Address.
-- Fixed installation of router apps for firmware versions below 6.4.0.
-- Fixed metrics sometimes incorrectly reported as "changed".
+- Added support for 'v1' device platform (ICR-16xx).
 
 ## Download:
 
@@ -19,6 +15,14 @@ We recommend always using the most up-to-date version of the client.
 The client router app can also be upgraded via WebAccess/DMP.
 
 ## Previous versions:
+
+### v3.2.0 (2025-03-12)
+
+- Added support of VPN features.
+- Fixed services sometimes not being restarted after their configuration was changed.
+- Fixed incorrect IP being sometimes reported as WAN IP Address.
+- Fixed installation of router apps for firmware versions below 6.4.0.
+- Fixed metrics sometimes incorrectly reported as "changed".
 
 ### v3.1.2 (2024-11-28)
 
