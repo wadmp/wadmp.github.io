@@ -1,5 +1,8 @@
 ---
 prev: ../../device-monitoring/
+tags:
+  - MWAN Interface Reporting - Example of the Script Using Custom Reportable String
+  - Download Speed Reporting - Example of the Script Using Custom Reportable Number
 ---
 
 ## Collecting Data from Routers
@@ -65,7 +68,11 @@ These Fields can be programmaticaly connected to any customer desired string or 
 
 ![CSV export](../../images/monitoring/cust-reportable.png)
 
-::: tip Example of the script using Custom Reportable Number to report download speed:
+**Note:** Only _Custom Reportable Number_ Field can be used for charts (string data type can not be shown in charts).
+
+Custom Fields can be used also with a sensor connected to the router (via RS232/485, binary I/O or other industrial interface). E.g. If a flow meter in a tube would be connected, a script would exist in a device, that would write the value from the sensor to a file, the value could then be reported to WebAccess/DMP and could be presented as data in Stats, Charts, or Tables, exported or used for Alerts.
+
+#### Download Speed Reporting - Example of the Script Using Custom Reportable Number
 
 - Add this code as Startup Script (e. g. in Device Configuration):
 
@@ -156,8 +163,96 @@ service cron start
 
 ![CSV export](../../images/monitoring/avg-speed-cust-no.png)
 
-:::
+#### MWAN Interface Reporting - Example of the Script Using Custom Reportable String
 
-**Note:** Only _Custom Reportable Number_ Field can be used for charts (string data type can not be shown in charts).
+Follow this tutorial on how to get the MWAN interface into the WADMP3 table:
 
-Generaly these custom Fields can be used also with a sensor connected to the router (via RS232/485, binary I/O or other industrial interface). If a flow meter in a tube would be connected, a script would exist in a device, that would write the value from the sensor to a file, the value could then be reported to WebAccess/DMP and could be presented as data in Stats, Charts, or Tables, exported or used for Alerts.
+- First create custom reportable string field like this:
+
+![MWAN](../../images/monitoring/mwan1.png)
+
+![MWAN](../../images/monitoring/mwan2.png)
+
+- And then show it in table:
+
+![MWAN](../../images/monitoring/mwan3.png)
+
+- After this step you would need to apply this Startup Script (below) to the Routers where you would like to read the WAN interface from:
+
+![MWAN](../../images/monitoring/mwan4.png)
+
+```
+#!/bin/sh
+# -----------------------------------------------------------------------------
+# Initialization Script
+# -----------------------------------------------------------------------------
+# This script will run *after* all other init scripts and is intended to set up
+# a custom metric collection script that logs the primary network interface.
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Create the metric collection script
+# -----------------------------------------------------------------------------
+cat << 'EOF' > /var/scripts/script.sh
+#!/bin/bash
+
+# Define the directory and file path for storing metrics
+dir_path="/var/data/wadmp_client/custom_metrics"
+file_path="$dir_path/custom_str1"
+
+# -----------------------------------------------------------------------------
+# Ensure the required directory and file exist
+# -----------------------------------------------------------------------------
+# Check if the directory exists; if not, create it
+if [ ! -d "$dir_path" ]; then
+    mkdir -p "$dir_path"
+fi
+
+# Check if the file exists; if not, create it
+if [ ! -f "$file_path" ]; then
+    touch "$file_path"
+fi
+
+# -----------------------------------------------------------------------------
+# Retrieve the primary network interface
+# -----------------------------------------------------------------------------
+interface=$(ip route show | awk '/default/ {print $NF}')
+
+# Verify if a valid interface was found
+if [[ -z "$interface" ]]; then
+  echo "No interface" > "$file_path"
+  exit 1
+fi
+
+# Output the network interface name
+echo "Primary network interface: $interface"
+
+# Write the interface name to the specified file
+echo "$interface" > "$file_path"
+EOF
+
+# -----------------------------------------------------------------------------
+# Make the script executable
+# -----------------------------------------------------------------------------
+chmod +x /var/scripts/script.sh
+
+# -----------------------------------------------------------------------------
+# Schedule the script to run daily using cron
+# -----------------------------------------------------------------------------
+# Append the script to the root crontab to execute at midnight daily
+echo "* * * * * root /var/scripts/script.sh" >> /etc/crontab
+
+# -----------------------------------------------------------------------------
+# Ensure the cron service is started
+# -----------------------------------------------------------------------------
+service cron start
+
+```
+
+- And also set the WADMP3 Client monitoring interval to 1 minute to achieve the fastest reporting of the change of the WAN interface:
+  ![MWAN](../../images/monitoring/mwan5.png)
+
+- After this step you would need to reboot the Router and after reboot you should be able to see the WAN interface in the WADMP3:
+  ![MWAN](../../images/monitoring/mwan6.png)
+
+- If this solution is suitable for you, you can create the configuration profile from the Router and distribute it to the other routers if needed.
