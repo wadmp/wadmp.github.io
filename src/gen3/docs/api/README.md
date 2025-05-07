@@ -175,85 +175,88 @@ Rather than creating a new configuration profile from scratch, you can use an ex
 
   1. Python
 
-  2. DMP library
+  2. Clone of the DMP repository that contains python_scripts and DMP library to be installed:
 
-  - Download latest repository from [https://bitbucket.org/bbsmartworx/dmp-public](https://bitbucket.org/bbsmartworx/dmp-public):
+- Download latest repository from [https://bitbucket.org/bbsmartworx/dmp-public](https://bitbucket.org/bbsmartworx/dmp-public):
 
-    - [Direct link to download as ZIP file](https://bitbucket.org/bbsmartworx/dmp-public/get/00b7e5bd78a6.zip)
+![Download dmp-public repository](../images/api/dmp-public-down.png)
 
-  - Extract the ZIP file and go to folder:
+- Extract the ZIP file and go to folder:
 
-  ```
-  \bbsmartworx-dmp-public-00b7e5bd78a6\gen3\python_scripts\lib>
-  ```
+```
+\bbsmartworx-dmp-public-<commit>\gen3\python_scripts\lib>
+```
 
-  - Install build dependency: **pip3 install build.**
+- Install build dependency: **pip3 install build.**
 
-  - Build the dmp library like this:
+- Build the dmp library like this:
 
-  ```
-  python3 -m build
-  \bbsmartworx-dmp-public-00b7e5bd78a6\gen3\python_scripts\lib>python3 -m build
-  ```
+```
+python3 -m build
+\bbsmartworx-dmp-public-<commit>\gen3\python_scripts\lib>python3 -m build
+```
 
-  - You should see build status coming up:
-    ![build status](../images/bunch-claiming-devices/build-status.png)
+- You should see build status coming up:
+  ![build status](../images/bunch-claiming-devices/build-status.png)
 
-  - If build is sucesfull you should see:
-    ![build is sucesfull](../images/bunch-claiming-devices/build-is-sucesfull.png)
+- If build is sucesfull you should see:
+  ![build is sucesfull](../images/bunch-claiming-devices/build-is-sucesfull.png)
 
-  - Then you can proceed with installing the dmp library by going into the dist folder:
-    ![dist folder](../images/bunch-claiming-devices/dist-folder.png)
+- Then you can proceed with installing the dmp library by going into the dist folder:
 
-  - And execute pip install **dmp-3.0.3.tar.gz** (in the dist folder)
+```
+\bbsmartworx-dmp-public-<commit>\gen3\python_scripts\lib>cd dist
 
-  - If everything goes well you should be able to list the dmp library by pip3 list:
-    ![dmp library](../images/bunch-claiming-devices/dmp-library.png)
+\bbsmartworx-dmp-public-<commit>\gen3\python_scripts\lib\dist>
+```
 
-  3. Clone of the DMP repository that contains python_scripts (ZIP file from the previous step should contain this): [https://bitbucket.org/bbsmartworx/dmp-public](https://bitbucket.org/bbsmartworx/dmp-public)
+- And execute pip install **dmp-3.x.x.tar.gz** (in the dist folder)
 
-  **Execution**
+- If everything goes well you should be able to list the dmp library by pip3 list:
+  ![dmp library](../images/bunch-claiming-devices/dmp-library.png)
 
-  - Once you will have downloaded the DMP library and the DMP repository, head to the folder:
+**Execution**
 
-  ```
-  bbsmartworx-dmp-public-00b7e5bd78a6\gen3\python_scripts\csv_utilities
-  ```
+- Once you will have downloaded the DMP library and the DMP repository, head to the folder:
 
-  - Edit the example.csv file to include all the devices you want to claim.
+```
+bbsmartworx-dmp-public-<commit>\gen3\python_scripts\csv_utilities
+```
 
-  ![CSV_example](../images/bunch-claiming-devices/CSV_example.png "CSV Example")
+- Edit the example.csv file to include all the devices you want to claim.
 
-  - Once example.csv is ready, open the command line and navigate to the repository folder:
+![CSV_example](../images/bunch-claiming-devices/CSV_example.png "CSV Example")
 
-  ```
-  \python_scripts\csv_utilities\
-  ```
+- Once example.csv is ready, open the command line and navigate to the repository folder:
 
-  - Execute the following command:
+```
+\python_scripts\csv_utilities\
+```
 
-  ```
-  python claim_devices.py -username "WADMP_EMAIL" -password "PASSWORD" example.csv "COMPANY_NAME"
-  ```
+- Execute the following command:
 
-  ::: warning Caution:
-  Please note that the Company name parameter is CASE SENSITIVE!
-  :::
+```
+python claim_devices.py -username "WADMP_EMAIL" -password "PASSWORD" example.csv "COMPANY_NAME"
+```
 
-  ![ConsoleExample_1](../images/bunch-claiming-devices/ConsoleExample_1.png "Console Example 1")
+::: warning Caution:
+Please note that the Company name parameter is CASE SENSITIVE!
+:::
 
-  - Example Command (_from the_ \python*scripts\csv_utilities\ \_folder*):
+![ConsoleExample_1](../images/bunch-claiming-devices/ConsoleExample_1.png "Console Example 1")
 
-  ```
-  python claim_devices.py -username user@wadmp.com -password S3CR3T_PASS example.csv AdvantechTest
-  ```
+- Example Command (_from the_ \python*scripts\csv_utilities\ \_folder*):
 
-  ![ConsoleExample_2](../images/bunch-claiming-devices/ConsoleExample_2.png "Console Example 2")
+```
+python claim_devices.py -username user@wadmp.com -password S3CR3T_PASS example.csv AdvantechTest
+```
 
-  - If the script executes successfully, the device will be claimed to your company.
+![ConsoleExample_2](../images/bunch-claiming-devices/ConsoleExample_2.png "Console Example 2")
 
-  ![ConsoleExample_3](../images/bunch-claiming-devices/ConsoleExample_3.png "Console Example 3")
+- If the script executes successfully, the device will be claimed to your company.
 
-  - If there is an issue with claiming the device, an error message will be displayed:
+![ConsoleExample_3](../images/bunch-claiming-devices/ConsoleExample_3.png "Console Example 3")
 
-  ![ConsoleExample_4](../images/bunch-claiming-devices/ConsoleExample_4.png "Console Example 4")
+- If there is an issue with claiming the device, an error message will be displayed:
+
+![ConsoleExample_4](../images/bunch-claiming-devices/ConsoleExample_4.png "Console Example 4")
