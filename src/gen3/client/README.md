@@ -2,9 +2,13 @@
 
 ## Latest version:
 
-### v3.2.1 (2025-03-27)
+### v3.2.2 (2025-06-03)
 
-- Added support for 'v1' device platform (ICR-16xx).
+- Added new CA to default truststore.
+- Improved router application installation.
+- Fixed iptables rule duplication.
+- Fixed the unintended deletion of a config profile in some rare situations when the client is restarted.
+- Fixed VPN trafic denial caused by default firewall setting (only firmware version 6.5.2+).
 
 ## Download:
 
@@ -15,6 +19,10 @@ We recommend always using the most up-to-date version of the client.
 The client router app can also be upgraded via WebAccess/DMP.
 
 ## Previous versions:
+
+### v3.2.1 (2025-03-27)
+
+- Added support for 'v1' device platform (ICR-16xx).
 
 ### v3.2.0 (2025-03-12)
 
