@@ -5,10 +5,10 @@
 ### v3.2.2 (2025-06-03)
 
 - Added new CA to default truststore.
-- Improved router application installation.
-- Fixed iptables rule duplication.
-- Fixed the unintended deletion of a config profile in some rare situations when the client is restarted.
-- Fixed VPN trafic denial caused by default firewall setting (only firmware version 6.5.2+).
+- Improved router application installation process.
+- Fixed duplicate iptables rules.
+- Resolved rare issue causing unintended deletion of config profiles upon client restart.
+- Fixed VPN traffic denial caused by default firewall settings (applies to firmware version 6.5.2 and newer).
 
 ## Download:
 
