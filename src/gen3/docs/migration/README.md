@@ -1,5 +1,15 @@
 # Migration from 2.x.x to 3.x.x Instance
 
+::: warning
+**WebAccess/DMP GEN2 has been permanently discontinued.**
+
+Please proceed to **WebAccess/DMP GEN3** at [wadmp3.com](https://wadmp3.com).
+
+Devices previously claimed to GEN2 will be **migrated automatically (upgraded to GEN3 client)** when you claim them in WebAccess/DMP GEN3.
+
+If you have any questions or need assistance, contact us at [wadmp@advantech.com](mailto:wadmp@advantech.com).
+:::
+
 This page explains the process of migrating data from a 2.x.x instance at [www.wadmp.com](http://www.wadmp.com) to a 3.x.x instance at [www.wadmp3.com](http://www.wadmp3.com).
 
 1. The migration involves transferring data from one company in GEN2 to another in GEN3, without altering the company structure.
@@ -12,15 +22,35 @@ This page explains the process of migrating data from a 2.x.x instance at [www.w
 - Tags and Groups (added through automatically created _Fields_ of type _Tag - True/False_)
 - Alerts and Alert Endpoints
 
-## Step 1: Export Data from 2.x.x Instance
+## Step 1 – Export from WADMP 2.x.x *(No longer available)*
 
-Navigate to _Companies_. Locate the company from which you wish to export data and click the _Export_ icon on the right.
+> ⚠️ **As of now, access to the WADMP 2.x.x (GEN2) system has been discontinued.**  
+> It is no longer possible to export any data from the original instance.
 
-![Gen2Export](../images/migration-gen2-gen3/gen2-export.png)
+Customers who exported their data (e.g. device lists, configuration backups, user structures) **can continue with the migration** using those files.
 
-A dialog box will appear providing details about the export. Save the file as `company_name_export.data` to your computer.
+For everyone else, devices can still be reclaimed directly into WADMP 3.x.x using **serial number, MAC address, or via CSV import**, provided they were registered previously and are still known to our system.
 
-![Gen2ExportDialog](../images/migration-gen2-gen3/gen2-export-dialog.png)
+---
+
+### Why this is happening
+
+The WADMP 2.x.x system is now running only as a minimal **microinstance**, which preserves router-level references for potential future claims — but **no longer provides UI access or export features**.
+
+> Customers were notified about the migration in advance, and all necessary tools and timelines were provided during the migration window.
+
+---
+
+### What you can still do
+
+You can continue with the migration from **Step 2** onward:
+
+- Create companies and users in WADMP 3.x.x
+- Reclaim devices using CSV or manually
+- Recreate configuration profiles
+- Apply settings per device or in bulk
+
+See the full guide below for details.
 
 ## Step 2: Import Data into 3.x.x Instance
 

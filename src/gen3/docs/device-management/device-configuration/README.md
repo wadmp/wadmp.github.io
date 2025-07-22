@@ -130,6 +130,10 @@ To edit multiple devices at once:
 
 #### Via CSV Export/Import
 
-You can also set editable Fields (including configuration) vie CSV Import. It is advisable to setup your dashboard devices table to contain all columns (Fileds) you want to edit in CSV file (via Excel), and the Export them first (as described in Monitoring section - [Exporting data to CSV](/gen3/docs/device-monitoring/exporting-data-to-csv/)), edit them vie Excel and Import back on the same Dashboard view:
+You can also set editable Fields (including configuration) via CSV Import. It is advisable to setup your dashboard devices table to contain all columns (Fields) you want to edit in CSV file (via Excel), and the Export them first (as described in Monitoring section - [Exporting data to CSV](/gen3/docs/device-monitoring/exporting-data-to-csv/)), edit them via Excel and Import back on the same Dashboard view:
 
 ![Import data](../../images/dashboards/Data_Import.png)
+
+::: tip Need help with CSV imports?
+For detailed instructions on importing data using a CSV file, see the [CSV Import Guide](/gen3/docs/device-management/csv-import-guide/).
+:::

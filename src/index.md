@@ -9,6 +9,7 @@ features:
 **Documentation for version 3.x.x:**
 
 - [Docs](/gen3/docs/) - Get started and understand important topics
+- [API](/gen3/api/) - Explore available API endpoints and integration options
 - [Migration from 2.x.x to 3.x.x](/gen3/docs/migration/)
 
 **Release Notes:**

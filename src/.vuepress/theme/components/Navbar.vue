@@ -57,7 +57,7 @@ export default {
     NavLinks,
     SearchBox,
     AlgoliaSearchBox,
-    VersionSwitcher, // Register the VersionSwitcher component
+   //VersionSwitcher, // Register the VersionSwitcher component
   },
 
   data() {
