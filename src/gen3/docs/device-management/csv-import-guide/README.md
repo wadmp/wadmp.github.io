@@ -46,10 +46,9 @@ To import new devices into the system, use the **Claim CSV** format.
 Use the **Update CSV** format to modify settings or metadata of already existing devices.
 
 > ✅ **Recommended flow:**  
-> 1. On the device dashboard, add the fields you want to update using **"Add Field"**.  
-> 2. Use the settings sidebar (eye icon) to show them as visible columns.  
-> 3. Click **Export CSV**, make your changes, and import it back.  
-> This ensures proper column names and avoids mistakes.
+> 1. On the device dashboard, either create the fields you want to update using **"Add Field"**, or simply make existing fields visible using the settings sidebar (eye icon).  
+> 2. Click **Export CSV**, make your changes, and import the file back.  
+> This ensures correct column names and minimizes errors.
 
 #### Required Columns
 
