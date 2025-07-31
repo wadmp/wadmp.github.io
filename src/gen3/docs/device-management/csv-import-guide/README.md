@@ -8,8 +8,8 @@ This guide explains how to use CSV import features in WADMP3 to claim or update 
 
 Use the following templates to prepare your CSV files:
 
-- [`Claim CSV Template`](../_files/claim-template.csv)
-- [`Update CSV Template`](../_files/update-template.csv)
+- [Claim CSV Template](/assets/claim-template.csv)
+- [Update CSV Template](/assets/update-template.csv)
 
 Each file contains proper headers and sample data to help you get started.
 
