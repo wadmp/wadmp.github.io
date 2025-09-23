@@ -103,10 +103,10 @@ On Device page on Desired Configuration tab, there is your individual device con
 
 - You can do this for:
 
-  - Firmware and Apps,
-  - Settings,
-  - Scripts,
-  - Users,
+  - Firmware and Apps
+  - Settings
+  - Scripts
+  - Users
 
     as seen on the respective tabs.
 

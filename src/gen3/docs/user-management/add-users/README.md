@@ -26,14 +26,17 @@
 - **Initiate User Invitation:**
   - Click the Invite User button located on the right top of the Users or Companies page.
 
-![users-invite](../../images/users-invite.png)
-
 ![companies-invite](<../../images/companies-invite(1).png>)
 
 - **Fill Out the Invitation Form:**
   - Enter the prospective user's email and define specific permissions for their role.
 
 ![user-permissions](../../images/user-inviteform.png)
+
+- **Invited User Check**  
+  - You can view users who have already been invited. Invited users appear in the user list in a slightly gray color. Additionally, you can resend the invitation by clicking the blue arrow button, or choose to view details or delete the invitation. 
+
+![user-check](../../images/users-invite-gray.png)  
 
 - **User Email Confirmation:**
   - The invitee will receive an email with a link to confirm the invitation. They must click this link to proceed.
@@ -53,6 +56,8 @@
 ### Invite Existing Users
 
 - You can invite existing or new users who just created their account to any company you have permission to. You can do it similarly, like when creating a new user.
+
+![users-invite](../../images/users-invite.png)
 
 - You can check your permissions if you edit your user. Your assigned permissions are shown as check marks.
 

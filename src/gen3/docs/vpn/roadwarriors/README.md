@@ -8,10 +8,6 @@ Roadwarriors refer to a VPN configuration designed for mobile users (Windows, An
 
 - On Roadwarriors page, you can manage VPN Roadwarriors in your company. Navigate to VPN - Roadwarriors section in menu.
 
-<p align="center">
-  <img src="../../images/vpn/vpn_roadwarrior_panel.png" alt="VPN Road Warriors">
-</p>
-
 - Add your Roadwarrior by clicking the **ADD ROADWARRIOR** button.
 
 ![VPN Road Warriors](../../images/vpn/vpn_roadwarriors_add.png)

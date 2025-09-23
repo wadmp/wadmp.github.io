@@ -195,6 +195,7 @@ module.exports = {
       ],
       "/gen3/release-notes/": [
         "" /* /README.md/ */,
+        "3.2.1/" /* /README.md/ */,
         "3.2.0/" /* /README.md/ */,
         "3.1.2/" /* /README.md/ */,
         "3.1.1/" /* /README.md/ */,

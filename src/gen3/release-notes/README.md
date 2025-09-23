@@ -1,57 +1,80 @@
-# 3.2.1 May 12, 2025
+# 3.3.0 September XX, 2025
 
 ### Improvements:
 
-- Enhanced the desired configuration page by adding markings to indicate unsupported apps, improving user awareness and configuration accuracy.
+- **Device Pages**
+  - Added a **Connection History** tab.
+  - Added an **Interfaces** tab.
+  - Reworked the **VPN** tab for a more user-friendly experience.
+  - Added a visual indicator for unsupported apps on the **Desired Configuration** tab.
 
-- Implemented a confirmation dialog when initializing a VPN hub, ensuring users intentionally proceed with critical actions.
+- **Proxy Links**
+  - Proxy links can now have a custom **name**.
+  - Added support for **custom destination ports**.
+  - Added the ability to choose between **HTTP** and **HTTPS**.
+  - Added an option to configure an **expiration period**.
+  - Added the ability to **disable** a proxy link without deleting it.
+
+- **VPN Networks**
+  - Added bulk device removal from VPN networks.
+  - Reworked VPN data usage charts to show **monthly total usage** instead of immediate usage.
+  - Added tooltips explaining VPN **network types** and **roles**.
+
+- **Alerts**
+  - Improved the UI for creating, editing, and displaying alerts.
+  - Added the option to evaluate alerts only for devices with a specified **tag**.
+  - Added support for **custom alert messages** with placeholders for dynamic values.
+  - Added a button to delete multiple alert history records at once.
+
+- **Fields**
+  - Added read-only field **Firmware Version**.
+  - Added read-only field **DMP Client Version**.
+  - Added read-only field **VPN LAN Proxy Links**.
+  - Added read-only field **WAN Interface Name**.
+
+- **User Management**
+  - Added a UI option to **view and manage pending invitations**.
+  - Implemented measures to prevent accidental uninstallation of the WebAccess/DMP Client app.
+  - Uninstallation is now only allowed after disabling protection at the company level.
+
+- **UI and General Improvements**
+  - Implemented clustering of device markers in **Map widgets**.
+  - Improved validation and error messages across many API endpoints.
+  - Removed **Device Connected / Device Disconnected** events from auditing.
+  - Numerous small UI improvements.
+
+- **On-Premises**
+  - Added a user-friendly way to add new router apps via the **Administrative Portal**.
+  - Added an option to configure **password strictness requirements** for DMP users.
+  - Added an option to **batch register devices from CSV**.
+  - Added support for **StartTLS** mode in SMTP.
+
+
 
 ### Bug Fixes:
 
-- Fixed an issue where devices with disabled VPN settings could still connect under specific conditions.
+- **Dashboard & Widgets**
+  - Fixed widgets breaking in certain situations after cloning a View.
+  - Fixed widget order not being ordered correctly in new companies.
+  - Fixed UI freezing during data reload if a Map widget contains a very high number of devices.
 
-- Fixed the form for editing large text fields, ensuring that inputted values are now saved properly.
+- **Desired Configuration**
+  - Fixed pages getting stuck in a loading state in certain situations.
+  - Fixed newly created config profiles not appearing until a page refresh.
 
-- Fixed an issue where the roadwarrior configuration file could contain whitespace in its name, which previously prevented successful import into a WireGuard client.
+- **VPN & Roadwarrior**
+  - Fixed Roadwarrior configurations incorrectly containing IP addresses instead of DNS addresses, which required re-download after VPN hub restarts.
+  - Fixed Roadwarrior descriptions not displaying on detail pages.
+  - Fixed retry intervals sometimes being calculated incorrectly when resending messages to routers.
 
-- Fixed a bug causing the VPN Configuration form to become stuck in a loading state after encountering an error.
+- **User & Company Management**
+  - Fixed user deletion sometimes failing.
+  - Fixed **UserDeleted** auditing record not being visible in user’s companies.
+  - Fixed users being unable to leave a company without **RemoveUsers** permission.
+  - Fixed company deletion failing if a child company had existed in the past.
 
-- Fixed deletion of devices via dashboard table previously not unselecting them for batch operations.
+- **API & Backend**
+  - Fixed many cases where API endpoints returned generic **Internal Error** messages instead of more specific errors for invalid parameter combinations.
 
-- Fixed temporary UI freezes when adding a large number of devices to a VPN network, improving performance and responsiveness.
-
-- Fixed an issue where remaining VPN trial days were displaying negative values, now showing accurate counts.
-
-- Fixed an issue that allowed the creation of invalid alerts, causing crashes on the Alerts page.
-
-- Fixed CIDR validation within the VPN Configuration dialog to ensure correct input handling.
-
-- Fixed minor UI inconsistencies that occurred when switching between companies.
-
-- Fixed a display issue on the roadwarrior page where data usage temporarily appeared as 0 MB after disabling a roadwarrior.
-
-- Fixed an issue where audit log pages would incorrectly show an error when filtering by partial MAC address.
-
-- Fixed dashboard widgets that should show Top/Bottom device not displaying any value.
-
-- Fixed VPN hub being able to start for a short duration even for companies with expired trial period.
-
-- Fixed filtering functionality for the “VPN Connected” column on the Roadwarriors page.
-
-- Fixed several error messages to provide more detailed and informative feedback to users.
-
-- Fixed an issue in the configuration profile creation dialog where the list of applications would fail to display.
-
-- Fixed the issue so that a user’s email change now updates immediately in the top-right navigation, without requiring a re-login.
-
-- Fixed router images that previously did not fit properly into their designated areas.
-
-- Fixed an issue where dialogs were being submitted twice if the user confirmed input by pressing Enter.
-
-- Fixed a problem where the mouse cursor did not change appropriately when selecting a device on the Alerts page.
-
-- Fixed the line chart on the VPN Overview page to now refresh periodically.
-
-- Fixed _UserPassword_ field not being saved when unset value ('-') is selected on dashboard.
-
-- Fixed “Request body too large” error in _UpdateFile_ endpoint.
+- **On-Premises**
+  - Fixed error **413** when uploading large files via a VPN proxy link.
