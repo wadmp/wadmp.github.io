@@ -22,7 +22,7 @@ Here for example fields are shown as columns in the table on Company Dashboard, 
 
 ### Field Categories
 
-On Fields page you can filter Fields by category. In addition, you can search within fields by clicking on the search icon at the top left of the table.
+On Fields page you can filter Fields by how are they *reporting* (Never, Always and On Change). In addition, by their name, reset period and description.
 
 ![Fields](../../images/Fields/ChangeCategory.png)
 

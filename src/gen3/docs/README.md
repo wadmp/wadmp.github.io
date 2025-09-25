@@ -10,7 +10,7 @@ To start using WebAccess/DMP, you will first need a user account .
 
 **Invitation Requirement:** If someone else from your company has already signed up, you will need to request an invitation link from them. This invitation link will be sent to your email address, enabling you to register for access to the platform.
 
-- **System Adminstrator:**
+- **System Administrator:**
 
   - The System Administrator is the administrator of the platform. In addition to the standard permissions, the Sysadmin can also Register and Delete devices, Add devices to any company and Only the Sysadmin has the privilege to _directly create_ new user accounts within the system..
   - Contact your Sysadmin if you have any issues that your company administrator cannot resolve.
