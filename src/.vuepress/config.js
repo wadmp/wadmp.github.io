@@ -208,6 +208,7 @@ module.exports = {
       "/contact/": [],
       "/gen3/client/": [],
       "/eula": [],
+      "/data-act": [],
       "/privacy-policy": [],
     },
     sidebarDepth: 5,
