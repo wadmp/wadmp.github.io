@@ -1,4 +1,4 @@
-# 3.3.0 September XX, 2025
+# 3.3.0 September 30, 2025
 
 ### Improvements:
 
