@@ -4,7 +4,7 @@ next: ../../alerts/
 
 # Roadwarriors
 
-Roadwarriors refer to a VPN configuration designed for mobile users (Windows, Android, macOS, iOS, Linux and basically any device where [WireGuard](https://www.wireguard.com/install/) can be installed) who need secure remote access to a private network from various locations. Unlike site-to-site VPNs, which connect fixed networks, a Roadwarrior setup allows individual devices with dynamic IP addresses to establish encrypted connections over untrusted networks, such as public Wi-Fi or mobile data. This approach ensures secure access to corporate resources, protects sensitive data, and enhances online privacy.
+Roadwarrior (remote VPN user) refer to a VPN configuration designed for mobile users (Windows, Android, macOS, iOS, Linux and basically any device where [WireGuard](https://www.wireguard.com/install/) can be installed) who need secure remote access to a private network from various locations. Unlike site-to-site VPNs, which connect fixed networks, a Roadwarrior setup allows individual devices with dynamic IP addresses to establish encrypted connections over untrusted networks, such as public Wi-Fi or mobile data. This approach ensures secure access to corporate resources, protects sensitive data, and enhances online privacy.
 
 - On Roadwarriors page, you can manage VPN Roadwarriors in your company. Navigate to VPN - Roadwarriors section in menu.
 

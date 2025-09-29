@@ -66,7 +66,7 @@ Managing Other Users:
   - Edit: Allows editing existing VPN networks.
   - Delete: Allows deleting VPN networks.
 
-- VPN Roadwarriors
+- VPN Roadwarriors (remote VPN users)
 
   - View: Allows viewing the list of VPN roadwarriors.
   - Create: Allows creating new VPN roadwarriors.

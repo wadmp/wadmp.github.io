@@ -4,7 +4,7 @@ next: ../../adding-devices/
 
 ## Billing
 
-- If your company type is Premium, you are billed monthly. The billing are coming automatically on the Primary Contact Email at the company
+- If your company type is Premium, you are billed monthly. The billing is sent automatically to the Primary Contact Email at the company.
 
 ![Company contact](../../images/companies/primary-contact.png "Company contact")
 

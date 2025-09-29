@@ -45,7 +45,7 @@ Below, the VPN Hub parameters and stats are shown:
 - This can affect:
 
 1. Connected devices behind routers
-2. _Roadwarriors_, who may no longer be able to connect
+2. _Roadwarriors_ (remote VPN users), who may no longer be able to connect
 3. Existing network settings and communication
 
 - Because of these potential disruptions, it is highly recommended to carefully review and update all dependent configurations after making changes in the Danger Zone.

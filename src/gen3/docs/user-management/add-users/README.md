@@ -72,7 +72,7 @@
   Click on the Invite User button located at the top right of the Users page.
 
 - **Fill Out Invitation Form:**
-  Enter the user's email address and assign specific permissions for the user.
+  Enter the user's email address and assign specific permissions to the user.
 
 ![users-invite](../../images/invite-user.png)
 

@@ -1,6 +1,6 @@
 # Networks & Devices
 
-- You need to add Devices / Roadwarriors to same Network (group) to make them visible to each other via VPN.
+- You need to add Devices / Roadwarriors (remote VPN users) to same Network (group) to make them visible to each other via VPN.
 
 ## Networks
 
@@ -16,9 +16,9 @@
 
 - Tooltips are available for both network types and their roles. They are displayed as a small gray question mark icon — hovering over the icon provides additional explanations and guidance. For a more detailed, in-depth explanation, see the descriptions below:
 
-1. **All to All** &rarr; _All to All_ refers to a network configuration where all devices see each other, allowing direct communication between every device in the network without restrictions. Each device can send and receive data to and from any other device. Roadwarriors have a special role → they can see all devices, but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors also do not see each other.
+1. **All to All** &rarr; _All to All_ refers to a network configuration where all devices see each other, allowing direct communication between every device in the network without restrictions. Each device can send and receive data to and from any other device. Roadwarriors (remote VPN users) have a special role → they can see all devices, but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors also do not see each other.
 
-2. **Master to Slave** &rarr; _Master-to-Slave_ refers to a network configuration where the Master device (server) controls and manages the connections, while the Slave devices follow its instructions. This setup is often used for centralized management and control. The Master and Slave devices always see each other, but a Slave device does not see other Slaves. Roadwarriors have a special role → they can see all devices (both Master and Slave), but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors do not see each other.
+2. **Master to Slave** &rarr; _Master-to-Slave_ refers to a network configuration where the Master device (server) controls and manages the connections, while the Slave devices follow its instructions. This setup is often used for centralized management and control. The Master and Slave devices always see each other, but a Slave device does not see other Slaves. Roadwarriors (remote VPN users) have a special role → they can see all devices (both Master and Slave), but the devices do not see them, so the Roadwarrior must initiate the communication. Roadwarriors do not see each other.
 
 - Once you've created your networks, you can either enter them by clicking on their name, or edit/delete them using the options on the right side of each line.
   ![VPN Networks](../../images/vpn/vpn_networks_select_2.png)
