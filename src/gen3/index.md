@@ -23,7 +23,7 @@ features:
 - [status.wadmp.com](https://status.wadmp.com) - Status Page
 - [wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP Product Page
 - [WebAccess/DMP EULA](/eula.html) - End User License Agreement
-- [WebAccess/DMP Data Act](/data-act.html) - Data Transparency Notice
+- [WebAccess/DMP Data Act](/data-transparency-notice.html) - Data Transparency Notice
 - [Privacy Policy](/privacy-policy.html)
 - [Support & Contact](/contact/)
 - [Security Statement](/security-statement.html)
