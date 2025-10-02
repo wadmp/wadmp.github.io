@@ -35,53 +35,53 @@ Managing Other Users:
 
 - User Permissions:
 
-  - View: Allows viewing a list of users they have access to.
-  - Create: Allows the user to create new users for their company.
-  - Edit: Allows the user to edit an existing user.
-  - Delete: Allows the user to delete another user.
+  - View: Allows viewing the list of users the current user has access to.
+  - Create: Allows creating new users within the user's company.
+  - Edit: Allows editing existing users.
+  - Delete: Allows deleting other users within the same company.
 
 - Company Permissions:
 
-  - Create: Allows the user to create new standalone companies.
-  - Edit: Allows the user to edit an existing company.
+  - Create: Allows creating new standalone companies.
+  - Edit: Allows editing existing companies.
 
 - Devices Permissions:
 
-  - View: Allows the user to view device details.
-  - Claim & Release: Allows the user to claim a device in the system.
-  - Edit: Allows the user to make changes to a device.
-  - Delete: Allows the user to delete a device from the company. System-wide device deletion requires sysadmin permissions.
+  - View: Allows viewing device details.
+  - Claim & Release: Allows claiming or releasing a device in the system.
+  - Edit: Allows editing device settings.
+  - Delete: Allows deleting a device from the company. System-wide device deletion requires sysadmin permissions.
 
 - Alerts, History, Rules & Endpoints Permissions:
 
-  - View: Allows viewing a list of Alerts, History, Rules & Endpoints.
-  - Create: Allows the creation of new Alerts, History, Rules & Endpoints.
-  - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
-  - Delete: Allows deletion of Alerts, History, Rules & Endpoints.
+  - View: Allows viewing the list of alerts, history entries, rules, and endpoints.
+  - Create: Allows creating new alerts, history entries, rules, and endpoints.
+  - Edit: Allows editing existing alerts, history entries, rules, and endpoints.
+  - Delete: Allows deleting alerts, history entries, rules, and endpoints.
 
 - VPN Networks
 
-  - View: Allows viewing a list of Alerts, History, Rules & Endpoints.
-  - Create: Allows the creation of new Alerts, History, Rules & Endpoints.
-  - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
-  - Delete: Allows deletion of Alerts, History, Rules & Endpoints.
+  - View: Allows viewing the list of VPN networks.
+  - Create: Allows creating new VPN networks.
+  - Edit: Allows editing existing VPN networks.
+  - Delete: Allows deleting VPN networks.
 
-- VPN Roadwarrios
+- VPN Roadwarriors (remote VPN users)
 
-  - View: Allows viewing a list of Alerts, History, Rules & Endpoints.
-  - Create: Allows the creation of new Alerts, History, Rules & Endpoints.
-  - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
-  - Delete: Allows deletion of Alerts, History, Rules & Endpoints.
+  - View: Allows viewing the list of VPN roadwarriors.
+  - Create: Allows creating new VPN roadwarriors.
+  - Edit: Allows editing existing VPN roadwarriors.
+  - Delete: Allows deleting VPN roadwarriors.
 
 - VPN Settings
 
-  - View: Allows viewing a list of Alerts, History, Rules & Endpoints.
-  - Edit: Allows editing of existing Alerts, History, Rules & Endpoints.
+  - View: Allows viewing the VPN settings.
+  - Edit: Allows editing the VPN settings.
 
 - Additional Permissions:
 
-  - Auditing: View auditing details.
-  - Fields: Manage fields.
-  - Views: Manage views.
-  - AppStore: Manage the AppStore.
-  - Billing: Manage billing.
+  - Auditing: Allows viewing auditing details.
+  - Fields: Allows managing fields.
+  - Views: Allows managing views.
+  - AppStore: Allows managing the AppStore.
+  - Billing: Allows managing billing.

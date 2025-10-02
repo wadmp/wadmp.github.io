@@ -43,20 +43,7 @@ module.exports = {
     docsDir: "",
     // lastUpdated: true,
     nav: getVersionedNav("Version 3.x.x"), // Default version nav
-    sidebar: {
-      "/gen2/tutorials/": [
-        "" /* /README.md/ */,
-        "ui-general-structure/" /* README.md */,
-        "create-company/" /* README.md */,
-        "create-users/" /* README.md */,
-        "device/" /* README.md */,
-        "search-filter-devices/" /* README.md */,
-        "configuring-router-apps/" /* README.md */,
-        "configuring-on_off-devices/" /* README.md */,
-        "upgrade-fw/" /* README.md */,
-        "move-a-device/" /* README.md */,
-      ],
-
+    sidebar: {  
       "/gen3/docs/": [
         {
           title: "User Management", // required
@@ -105,6 +92,7 @@ module.exports = {
             "/gen3/docs/device-management/dmp-client-app/",
             "/gen3/docs/device-management/fields/",
             "/gen3/docs/device-management/device-configuration/",
+            "/gen3/docs/device-management/csv-import-guide/",
           ],
         },
         {
@@ -148,12 +136,12 @@ module.exports = {
             "/gen3/docs/alerts/alerting-limitations/",
           ],
         },
-        {
-          title: "API",
-          path: "/gen3/docs/api/",
-          collapsable: true,
-          sidebarDepth: 1,
-        },
+        //{
+        //  title: "API",
+        //  path: "/gen3/docs/api/",
+        //  collapsable: true,
+        // sidebarDepth: 1,
+        //},
 
         {
           title: "Troubleshooting",
@@ -175,27 +163,39 @@ module.exports = {
           sidebarDepth: 0,
         },
       ],
-      "/gen2/explanations/": [
-        "" /* /README.md/ */,
-        "companies-and-users/" /* /README.md */,
-        "permissions/" /* /README.md */,
-        "cellular-data-usage/" /* /README.md */,
-        "grouping-and-tagging/" /* /README.md */,
-        "billing/" /* /README.md */,
-        "playbooks/" /* /README.md */,
-        "grafana/" /* /README.md */,
-        "alerts/" /* /README.md */,
-        "2fa/" /* /README.md */,
-        "auditing-options/" /* /README.md */,
-        // 'gen1-to-gen2-migration/',  /* /README.md */
-        "cant-connect-my-device/" /* /README.md */,
-        "adding-or-claiming-devices-in-bulk/" /* /README.md */,
-        "bunch-claiming-devices/" /* /README.md */,
-        "wadmp-ports/" /* /README.md */,
-        "Migration from 2.x.x to 3.x.x instance/" /* /README.md */,
+      "/gen3/api/": [
+        {
+          title: "Overview", // required
+          path: "/gen3/api/", // optional, link of the title, which should be an absolute path and must exist
+          collapsable: false, // optional, defaults to true
+          sidebarDepth: 0, // optional, defaults to 1
+          children: []
+        },
+        {
+          title: "Authentication",
+          path: "/gen3/api/authentication/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: []
+        },
+        {
+          title: "Getting Started",
+          path: "/gen3/api/getting-started/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: []
+        },
+        {
+          title: "Useful Examples",
+          path: "/gen3/api/useful-examples/",
+          collapsable: false,
+          sidebarDepth: 0,
+          children: []
+        }
       ],
       "/gen3/release-notes/": [
         "" /* /README.md/ */,
+        "3.2.1/" /* /README.md/ */,
         "3.2.0/" /* /README.md/ */,
         "3.1.2/" /* /README.md/ */,
         "3.1.1/" /* /README.md/ */,
@@ -205,29 +205,10 @@ module.exports = {
         "3.0.1/" /* /README.md/ */,
         "3.0.0/" /* /README.md/ */,
       ],
-      "/gen2/release-notes/": [
-        "" /* /README.md/ */,
-        "2.5.5/" /* /README.md/ */,
-        "2.5.4/" /* /README.md/ */,
-        "2.5.3/" /* /README.md/ */,
-        "2.5.2/" /* /README.md/ */,
-        "2.5.1/" /* /README.md/ */,
-        "2.5.0/" /* /README.md/ */,
-        "2.4.4/" /* /README.md/ */,
-        "2.4.3/" /* /README.md/ */,
-        "2.4.2/" /* /README.md/ */,
-        "2.4.1/" /* /2.4.1.md */,
-        "2.4.0/" /* /2.4.0.md */,
-        "2.3.1/" /* /2.3.1.md */,
-        "2.3.0/" /* /2.3.0.md */,
-        "2.2.0/" /* /2.2.0.md */,
-        "2.1.1/" /* /2.1.1.md */,
-        "2.1.0/" /* /2.1.0.md */,
-      ],
       "/contact/": [],
       "/gen3/client/": [],
-      "/gen2/client/": [],
       "/eula": [],
+      "/data-act": [],
       "/privacy-policy": [],
     },
     sidebarDepth: 5,

@@ -11,6 +11,6 @@ Devices can be managed in a bulk on dashboard via [Fields](./fields/) (shown as 
 
 ![Manage multiple](../images/management/manage-multiple.png)
 
-Individual device can be additionaly managed on Desired Configuration tab (and via Fields on Monitoring tab as well).
+An individual device can also be managed on the **Desired Configuration** tab (and via the fields on the **Monitoring** tab). This allows you to detect unsupported router applications as well. 
 
 ![Manage single](../images/management/manage-single.png)

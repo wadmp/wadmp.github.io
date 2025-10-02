@@ -1,28 +1,29 @@
 ---
 home: true
-tagline: Open-source documentation for users of Advantech WebAccess/DMP software
-actionText: Explanations →
+tagline:
+actionText: Documentation →
 actionLink: /gen3/docs/
 features:
 ---
 
-**Documentation for version 3.x.x:**
+**Documentation:**
 
-- [Docs](/gen3/docs/) - Get started and understand important topics
-- [Migration from 2.x.x to 3.x.x](/gen3/docs/migration/)
+- [Docs](/gen3/docs/) - Get started and learn about key concepts
+- [API](/gen3/api/) - Explore the available API endpoints and integration options
 
 **Release Notes:**
 
-- [Latest Release Notes of 3.x.x Public Cloud Instance](/gen3/release-notes/)
-- [Latest Release Notes of 3.x.x Device Client](/gen3/client/)
+- [Latest Release Notes of the Public Cloud Instance](/gen3/release-notes/)
+- [Latest Release Notes of the Device Client](/gen3/client/)
 
 **Useful links:**
 
-- [wadmp3.com](https://wadmp3.com) - UI of 3.x.x Public Cloud Instances
-- [api.wadmp3.com](https://api.wadmp3.com) - 3.x.x API reference
+- [wadmp3.com](https://wadmp3.com) - UI for Public Cloud Instances
+- [api.wadmp3.com](https://api.wadmp3.com) - API Reference
 - [status.wadmp.com](https://status.wadmp.com) - Status Page
-- [wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP product page
+- [wadmp.advantech.cz](https://wadmp.advantech.cz) - WebAccess/DMP Product Page
 - [WebAccess/DMP EULA](/eula.html) - End User License Agreement
+- [WebAccess/DMP Data Act](/data-act.html) - Data Transparency Notice
 - [Privacy Policy](/privacy-policy.html)
 - [Support & Contact](/contact/)
 - [Security Statement](/security-statement.html)

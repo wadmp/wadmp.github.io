@@ -6,10 +6,6 @@ prev: ../../vpn/
 
 - On VPN Overview page you can overview and control VPN Hub for your company. Navigate to the VPN - Overview section in menu.
 
-<p align="center">
-  <img src="../../images/vpn/vpn_overview_select.png" alt="VPN Overview">
-</p>
-
 ## VPN Hub Overview
 
 - In top part, you can see VPN Hub status and you can manage VPN Hub (start, stop, configure). After VPN initialization, the VPN Hub is started by default.
@@ -22,13 +18,21 @@ Below, the VPN Hub parameters and stats are shown:
 - VPN Network
 - Addresses per Device
 - Data Usage per Month
-- Detailed Data Usage.
+- Detailed Data Usage for selected month
 
 ![VPN Overview](../../images/vpn/vpn_overview_stopped.png)
 
 - Premium companies do not have the "days left" indicator and have additional "Buy Data" button to purchase more data for VPN traffic. See [VPN Billing Summary](../../companies/billing/#vpn-billing-summary) for details on billing.
 
 ![VPN Overview](../../images/vpn/vpn_purchase_data.png)
+
+- **Data Usage per Month** — displays the total data consumption for each month over the past year.  
+
+![VPN Overview](../../images/vpn/data-usage-month.png)
+
+- **Detailed Data Usage** — shows the total data consumption for the entire duration of the selected month. The amount of data used is accumulated throughout the month and resets at the beginning of the next month. 
+
+![VPN Overview](../../images/vpn/detailed-data-usage-month.png)
 
 ## VPN Hub Configuration
 
@@ -41,7 +45,7 @@ Below, the VPN Hub parameters and stats are shown:
 - This can affect:
 
 1. Connected devices behind routers
-2. _Roadwarriors_, who may no longer be able to connect
+2. _Roadwarriors_ (remote VPN users), who may no longer be able to connect
 3. Existing network settings and communication
 
 - Because of these potential disruptions, it is highly recommended to carefully review and update all dependent configurations after making changes in the Danger Zone.

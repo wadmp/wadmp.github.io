@@ -1,0 +1,4 @@
+MacAddress;Name;settings_ETH_IPADDR_v;Description;
+00:11:22:33:44:55;Router A;192.168.1.1;Office Gateway;
+00:11:22:33:44:56;Router B;192.168.1.2;Backup Router Warehouse;
+
