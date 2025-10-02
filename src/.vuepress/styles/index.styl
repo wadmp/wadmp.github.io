@@ -1,85 +1,16 @@
-/* Custom navbar styling */
+/**
+ * Custom Styles here.
+ *
+ * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ */
 
-/* Gradient border effect for the header */
-.navbar
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  background: #fff !important
-  border: none
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1)
-  display: flex
-  align-items: center
-  min-height: 60px
-  padding: 0 32px
-  z-index: 1000
+.home .hero img
+  max-width 450px!important
 
-  /* Top gradient bar */
-  &::before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 8px
-    background: linear-gradient(to right, #00457c, #6ebd46)
-    z-index: 1
+.site-name
+  display: none
 
-  /* Bottom gradient bar */
-  &::after
-    content: ''
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 100%
-    height: 8px
-    background: linear-gradient(to right, #00457c, #6ebd46)
-    z-index: 1
-
-  /* Ensure content is above gradient bars */
-  > *
-    position: relative
-    z-index: 2
-
-/* Navbar links */
-.navbar .nav-links
-  flex: 1
-  display: flex
-  align-items: center
-
-.navbar .nav-links a
-  color: #00457c !important
-  font-weight: 500
-
-.navbar .nav-links a:hover
-  color: #6ebd46 !important   /* lighter green on hover */
-
-/* Active link */
-.navbar .nav-links .router-link-active
-  color: #6ebd46 !important   /* soft highlight */
-
-/* Search box adjustments */
-.search-box
-  margin-left: auto
-  display: flex
-  align-items: center
-  height: 40px
-
-.search-box input
-  background: rgba(0,69,124,0.05)
-  border: 1px solid rgba(0,69,124,0.15)
-  color: #00457c
-  placeholder-color: rgba(0,69,124,0.7)
-  height: 36px
-  margin-top: 0
-  margin-bottom: 0
-
-.search-box input:focus
-  background: rgba(0,69,124,0.1)
-  border-color: #6ebd46
-  outline: none
-
-/* Add top padding to main content so it doesn't hide behind navbar */
-.theme-container
-  padding-top: 68px
+@media print {
+   header {display:none;}
+   footer {display:none;}
+}

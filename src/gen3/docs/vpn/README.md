@@ -3,7 +3,7 @@ prev: ../dashboards-widgets/tips-tricks/
 next: ./overview/
 ---
 
-# VPN Service
+# VPN Service (Beta)
 
 ## Introduction
 
