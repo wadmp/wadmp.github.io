@@ -4,9 +4,9 @@ next: ../../device-management/
 
 ## Install/Upgrade a WebAccess/DMP Client App
 
-If you want to migrate your device from 2.x.x instance, you need to upgrade Router App to 3.x.x version via 2.x.x WebAccess/DMP Instance - go to [Migration from 2.x.x to 3.x.x Instance](../../migration/). <!-- new link -->
+If you want to migrate your device from 2.x.x instance, you need to upgrade the Router App to 3.x.x version via 2.x.x WebAccess/DMP Instance - go to [Migration from 2.x.x to 3.x.x Instance](../../migration/). <!-- new link -->
 
-If you do not have WebAccess/DMP Router App client installed, or you are not sure if you have client installed, follow these steps:
+If you do not have the WebAccess/DMP Router App client installed, or you are not sure if you have the client installed, follow these steps:
 
 **Step 1:** Check for the Installed client Router App:
 
@@ -19,7 +19,7 @@ If you do not have WebAccess/DMP Router App client installed, or you are not sur
 If you see the WebAccess/DMP Client Router App installed, it should be able to connect to the WebAccess/DMP instance. Check the version and upgrade to the latest one if necessary (recommended). You can upgrade directly from WebAccess/DMP by selecting managed version on Desired Configuration tab on device page, or apply Configuration Profile with desired Client App version for multiple devices.
 :::
 
-**Step 2:** If you do not see the WebAccess/DMP Router App installed in device, you need to download it first and install.
+**Step 2:** If you do not see the WebAccess/DMP Router App installed in your(?) device, you need to download it first and install.
 
 ![APP-2](../../images/RouterAPP/APP-2.png)
 
@@ -31,7 +31,7 @@ If you see the WebAccess/DMP Client Router App installed, it should be able to c
 
 - **Note:** An Application Note is available for reference and settings of the client Router App if needed.
 
-**Step 4:** Download the appropriate ".tgz" router app file based on your device platform and install it manually through your device user interface.
+**Step 4:** Download the appropriate ".tgz" Router App file based on your device platform and install it manually through your device user interface.
 
 ![APP-4](../../images/RouterAPP/APP-4.png)
 
