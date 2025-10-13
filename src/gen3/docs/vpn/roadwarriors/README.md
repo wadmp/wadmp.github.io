@@ -8,7 +8,7 @@ Roadwarrior (remote VPN user) refer to a VPN configuration designed for mobile u
 
 - On Roadwarriors page, you can manage VPN Roadwarriors in your company. Navigate to VPN - Roadwarriors section in menu.
 
-- Add your Roadwarrior by clicking the **ADD ROADWARRIOR** button.
+- Add your Roadwarrior by clicking the **ADD** button.
 
 ![VPN Road Warriors](../../images/vpn/vpn_roadwarriors_add.png)
 
@@ -20,7 +20,7 @@ Roadwarrior (remote VPN user) refer to a VPN configuration designed for mobile u
 
 ![VPN Road Warriors](../../images/vpn/vpn_roadwarrior_adding.png)
 
-- Now you can disable/enable Roadwarrior in the first column, view Roadwarror detail or click actions in column on the right:
+- Now you can *Disable or Enable* Roadwarrior in the first column, view Roadwarror detail or click actions in column on the right:
 
 ![VPN Road Warriors](../../images/vpn/vpn_roadwarrior_edit.png)
 

@@ -65,23 +65,23 @@ If you want to remove devices from a VPN network, open the desired network in th
 
 - Once you're in the device's VPN tab, you can configure the following settings:
 
-1. **VPN Enabled** - *Disable* or *Enable* VPN client of the device.
+1. **VPN Enabled** - *Enable* or *Disable* the device’s VPN client. When disabled, the device disconnects from the VPN network and stops routing any traffic through the VPN tunnel. When enabled, it reconnects and resumes secure communication with remote peers.
 
 ![VPN Networks](../../images/vpn/device-hub-1.png)
 
-2. **Networks** — add or remove the device from VPN networks. 
+2. **Networks** — add or remove the device from VPN networks, thereby controlling which devices can communicate with it over VPN. 
 
 ![VPN Networks](../../images/vpn/device-hub-2.png)
 
-3. **VPN Subnet** — modify the subnet configuration for the device's VPN connection.  
+3. **VPN Subnet** — allows you to configure how many virtual IP addresses are assigned to the device within the VPN network. Changing this setting reassigns IPs and removes all existing Proxy links.  
 
 ![VPN Networks](../../images/vpn/device-hub-3.png)
 
-4. **Exposed Interfaces** — manage which interfaces are exposed through the VPN.
+4. **Exposed Interfaces** — define which network interfaces are accessible through the VPN and can exchange traffic with remote VPN peers.
 
 ![VPN Networks](../../images/vpn/device-hub-4.png)
 
-5. **Data Usage This Month** — check the device's data usage for the current month. 
+5. **Data Usage This Month** — check the device's data usage over the the past year. 
 
 ![VPN Networks](../../images/vpn/device-hub-5.png)
 
@@ -90,26 +90,28 @@ If you want to remove devices from a VPN network, open the desired network in th
 
 ![VPN Networks](../../images/vpn/device-hub-6.png)
 
-1. In the **Proxy Links** section, you can *Enable* or *Disable* the proxy using the slide button. Disabling the proxy will not delete it.  
+1. In the **Proxy Links** section, you can *Enable* or *Disable* the Proxy using the slide button. Disabling the Proxy will not delete it.  
 
-2. You can add additional proxy links by specifying the following options:
+2. You can add additional Proxy links by specifying the following options:
 - **Proxy Type** — Router or LAN Device  
-- **Name** — Name of your device  
+- **Name** — Name of your Proxy link  
 - **Protocol** — HTTPS or HTTP  
 - **Port** — Choose the desired port  
-- **Expiration Date** — Set the expiration date for the proxy link  
+- **Expiration Date** — Set the expiration date for the Proxy link (after that the Proxy link will be deleted) 
 
-This is useful when you have a device with a Web User Interface behind the router and want to access it directly via VPN. You need to know the address of the local network where the device is accessible. Note that adding a proxy link will expose it to the Internet (a LAN interface will be automatically added on the LANs tab).
+This is useful when you have a device with a Web User Interface behind the router and want to access it directly via VPN. You need to know the address of the local network where the device is accessible. Note that adding a Proxy link will expose it to the Internet (a LAN interface will be automatically exposed on the LANs tab).
 
 ![VPN Networks](../../images/vpn/device-hub-7.png)
 
 3. Edit or Delete the Proxy link from the device.
 
-⚠️ Note: Change in proxy link may take up to 3 minutes to update the config on server.
+**Notes:**
 
-⚠️ Note: When in UI on a device via VPN Proxy link, size of file that can be uploaded is limited to 256 MB.
+- Change in Proxy link may take up to 3 minutes to update the config on server.
 
-⚠️ Known Issue: Proxy links do not work when the device has Firmware versions 6.5.1 or 6.5.0. Please update Firmware on the device.
+- When in UI on a device via VPN Proxy link, size of file that can be uploaded is limited to 256 MB.
+
+- Known Issue: Proxy links do not work when the device has Firmware versions 6.5.1 or 6.5.0. Please update Firmware on the device.
 
 #### INTERFACES
 
@@ -117,7 +119,7 @@ This is useful when you have a device with a Web User Interface behind the route
 
 In the **Interfaces** section, you can:
 
-1. **Expose or Unexpose an Interface** — use the slide button. Disabling exposure blocks VPN traffic to devices behind this interface. VPN subnets may change, which can shift existing proxy links to new IP addresses.  
+1. **Expose or Unexpose an Interface** — use the slide button. Disabling exposure blocks VPN traffic to devices behind this interface. VPN subnets may change, which can shift existing Proxy links to new IP addresses.  
 
 2. **Access the Local Address Translator (NAT)** — the interface must be exposed to view the NAT translator.
 
