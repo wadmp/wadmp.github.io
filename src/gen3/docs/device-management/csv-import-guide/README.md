@@ -34,6 +34,7 @@ To import new devices into the system, use the **Claim CSV** format.
 
 #### Notes
 - All devices in the CSV must belong to the same company.
+- Support for the WebAccess/DMP platform is limited for **S1 Router** version.
 - Devices must not already be claimed.
 - The CSV must use **semicolon ( ; )** as a separator.
 - Save the file using **UTF-8 encoding**.

@@ -2,6 +2,8 @@
 
 ⚠️ You must have the appropriate permissions to add a device to your company.
 
+⚠️ Support for the WebAccess/DMP platform is limited for **S1 Router** version.
+
 **Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automatically when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](../install-client-app/). <!-- new link-->
 
 - **User Criteria for adding a Device:**
