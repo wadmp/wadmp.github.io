@@ -1,4 +1,4 @@
-# WebAccess/DMP Data Act
+# WebAccess/DMP Data Transparency Notice
 
 DATA TRANSPARENCY NOTICE
 

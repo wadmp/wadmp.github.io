@@ -50,7 +50,7 @@ This is hard-coded to be 60 seconds (1 minute). This may seem aggressive, but we
 
 - In this article, we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc. The difference to base-2 (aka "binary" or "IEC") is 2.4%. However **on WebAccess/DMP we always use base-2 (1024) counted data units!** It is to maintain unification with our routers, using the customary practice of base-2 counts and B, KB, MB, and GB units. To sum up: On WebAccess/DMP may occur, both types of units B, KB, MB, ... and B, KiB, MiB, ... but they always use the base-2 (1024) count.
 
-## CSV Export - How to export all company data?
+## How to export all company data?
 
 You can export your company’s data from **wadmp3.com** in three different ways. Each export provides different information, and together they give you a complete backup of your device data, desired configurations, and time-series reports.
 
