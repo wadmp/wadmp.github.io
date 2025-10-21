@@ -49,3 +49,53 @@ The most significant factor that leads to the data usage (cumulative) slightly i
 This is hard-coded to be 60 seconds (1 minute). This may seem aggressive, but we have encountered cellular operators with VERY short timeouts on their networks. Of the order of 2 minutes!
 
 - In this article, we are using the traditional base-10 (aka "decimal" or "SI") prefixes for digital data. i.e. 1000B = 1kB, 1000kB = 1MB, etc. The difference to base-2 (aka "binary" or "IEC") is 2.4%. However **on WebAccess/DMP we always use base-2 (1024) counted data units!** It is to maintain unification with our routers, using the customary practice of base-2 counts and B, KB, MB, and GB units. To sum up: On WebAccess/DMP may occur, both types of units B, KB, MB, ... and B, KiB, MiB, ... but they always use the base-2 (1024) count.
+
+## How to export all company data?
+
+You can export your company’s data from **wadmp3.com** in three different ways. Each export provides different information, and together they give you a complete backup of your device data, desired configurations, and time-series reports.
+
+---
+
+### 1. Export Device Data from Dashboard Tables
+
+1. Navigate to the **Dashboard** in your wadmp3.com account.  
+2. Locate the table that lists your company’s devices.  
+3. Click the **Export** button located near the table.
+4. Enter name of your **CSV** file, click **Export** button.
+
+This will download a **CSV** file to your computer containing detailed device information. CSV files can be opened in spreadsheet applications like Microsoft Excel or Google Sheets for easier viewing and analysis.  
+
+![CSV Export data from wadmp3.com screenshot](..//images/faq/csv-data-export.png)
+
+---
+
+### 2. Export Desired Configurations via Swagger
+
+1. Open the [Swagger API page](https://api.wadmp3.com/catalog/api/d5d37cf4-7be4-45eb-937c-f47be455ebf4) in your browser.  
+2. Scroll down to the **ConfigProfiles** endpoint.  
+3. Expand the endpoint description and click the **Try it out** button.  
+4. Execute the request to download all desired configurations for your devices.  
+
+This export contains the configuration settings that your company has applied to its devices. It is useful for record keeping and troubleshooting.  
+
+![ConfigProfiles screenshot](../images/faq/configprofiles.png)
+
+---
+
+### 3. Export Time-Series Data via Swagger
+
+1. From the same [Swagger API page](https://api.wadmp3.com/catalog/api/d5d37cf4-7be4-45eb-937c-f47be455ebf4), scroll down to the **DeviceMonitoring** endpoint.  
+2. Expand the endpoint description and click the **Try it out** button.  
+3. Execute the request to export all time-series data reported by your devices.  
+
+Time-series data contains historical reports such as performance metrics, usage statistics, and monitoring logs. This is especially helpful for analyzing device behavior over time.  
+
+![DeviceMonitoring screenshot](../images/faq/devicemonitoring.png)
+
+---
+
+### Notes
+- Large exports (especially time-series data) may take longer to generate depending on how many devices your company manages.  
+- Make sure you have the appropriate permissions to access the Swagger API endpoints.  
+- Always store your exported data securely, especially if it contains sensitive company information.  
+

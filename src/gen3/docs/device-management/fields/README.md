@@ -22,7 +22,7 @@ Here for example fields are shown as columns in the table on Company Dashboard, 
 
 ### Field Categories
 
-On Fields page you can filter Fields by category. In addition, you can search within fields by clicking on the search icon at the top left of the table.
+On Fields page you can filter Fields by how are they *reporting* (Never, Always and On Change). In addition, by their name, reset period and description.
 
 ![Fields](../../images/Fields/ChangeCategory.png)
 
@@ -49,8 +49,11 @@ These fields provide real-time or periodically updated information about the dev
 - Connection Status
 - Data Downloaded (momentary)
 - Data Uploaded (momentary)
+- DMP Client Version
+- Firmware Version
 - Mobile Operator
 - CPU Usage - **Note:** same units as in "top" linux app are used here: e.g. when showing 391 %, then 100 % is full use of one CPU core.
+- WAN Interface Name
 
 #### Cumulative Fields
 
@@ -91,6 +94,8 @@ There is a set of default Fields listed below, that you will find in the _Fields
 | Description               | Description of a device.                                                                         |
 | Device ID                 | ID of the device.                                                                                |
 | Device Type               | Type of device.                                                                                  |
+| DMP Client Version        | A version of DMP client currently installed on device.                                           |
+| Firmware Version          | A version of firmware currently installed on device.                                             |
 | IMEI                      | IMEI of a device.                                                                                |
 | MAC Address               | MAC address of the device's primary LAN interface.                                               |
 | Mobile Operator           | The name of a mobile operator.                                                                   |
@@ -105,6 +110,7 @@ There is a set of default Fields listed below, that you will find in the _Fields
 | VPN IP Address            | VPN IP address of the device. (if the VPN has been initialized)                                  |
 | VPN Proxy Link            | Link for accessing router`s UI from browser through VPN. (if the VPN has been initialized)       |
 | VPN Subnet                | VPN subnet of the device. (if the VPN has been initialized)                                      |
+| WAN Interface Name        | WAN interface name.                                                                              |
 
 &nbsp;  
 &nbsp;

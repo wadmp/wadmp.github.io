@@ -36,7 +36,7 @@ For example you can observe the actual cellular data usage on the Monitoring tab
 
 ![CSV export](../../images/monitoring/data-device.png)
 
-Similarly you can observe data for devices from the company on the main dashboard like this - here Company Stat for Max aggregation Data Up+Down Field and adding of Line Chart, where you can add more fields of same type with different aggreation to the same chart (e.g. show Max and Average in same chart).
+Similarly you can observe data for devices from the company on the main dashboard like this - here for Max aggregation Data Up+Down Field and adding of Line Chart, where you can add more fields of same type with different aggreation to the same chart (e.g. show Max and Average in same chart).
 
 ![CSV export](../../images/monitoring/data-dash.png)
 

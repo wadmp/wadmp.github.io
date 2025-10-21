@@ -7,5 +7,6 @@ If you have a commercial arrangement with an Advantech channel partner, you can 
 * WebAccess/DMP Product page at [wadmp.advantech.cz](https://wadmp.advantech.cz)
 * Get to know our cellular routers: [icr.advantech.cz/support/router-models](https://icr.advantech.cz/support/router-models)
 * Read End User License Agreement [WebAccess/DMP EULA](/eula.html)
+* Read Data Transparency Notice [WebAccess/DMP Data Act](/data-transparency-notice.html)
 * Read [Privacy Policy](/privacy-policy.html)
 * Our YouTube Channel: [WebAccess DMP](https://www.youtube.com/channel/UCjvN8QMC2pmALE6t3H09fjg)

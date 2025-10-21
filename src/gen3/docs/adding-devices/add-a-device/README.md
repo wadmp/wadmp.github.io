@@ -2,7 +2,9 @@
 
 ⚠️ You must have the appropriate permissions to add a device to your company.
 
-**Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automaticaly when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](../install-client-app/). <!-- new link-->
+⚠️ Support for the WebAccess/DMP platform is limited for **S1 Router** version.
+
+**Note:** The Device can be connected to the WebAccess/DMP instance only if WebAccess/DMP Client Router App is installed in the device. This Router App is installed automatically when manufacturing the device, so you do not have to do it manually. In most cases adding the device to WebAccess/DMP instance is enough to connect your device. Otherwise follow [Install/Upgrade a WebAccess/DMP client app](../install-client-app/). <!-- new link-->
 
 - **User Criteria for adding a Device:**
   You need to have the right permissions, Check the [permissions](../../user-management/permissions/). <!--  need to check the link after I finish splitting all the sections to edit the internal links. -->
@@ -31,7 +33,7 @@
 
 ![Router informations](../../images/devices/routerinformations2.jpg)
 
-- You can also use the printed device labe:
+- You can also use the printed device label:
 
 ![label](../../images/devices/device_label.png)
 
@@ -68,7 +70,7 @@
 
 - You can also download an example CSV file that you can edit for your needs: [CSV Example File](/assets/routers-example.csv)
 
-**5. Click the _Submit_ button to complete the add.**
+**5. Click the _Submit_ button to finish adding the devices..**
 
 - After successfully adding a device, it will appear in the Device List for your company, as shown here:
 

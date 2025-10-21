@@ -2,13 +2,13 @@
 
 ## Latest version:
 
-### v3.2.2 (2025-06-03)
-
-- Added a new CA to default truststore.
-- Improved router application installation process.
-- Fixed iptables rule duplication.
-- Resolved rare issue causing unintended deletion of config profiles upon client restart.
-- Fixed VPN traffic denial caused by default firewall settings (applies to firmware version 6.5.2 and newer).
+### v3.3.0 (2025-09-25)
+- Added reporting of active network interfaces.
+- Added reporting of WAN interface name, firmware version, and WADMP client version.
+- Added error reporting for synchronization failures due to insufficient space.
+- Improved synchronization speed for configuration profiles.
+- Fixed issue where the client exhausted all file descriptors, causing it to be unable to read certain metrics after a long reporting period.
+- Fixed temperature reporting showing absolute zero instead of null when reading failed.
 
 ## Download:
 
@@ -19,6 +19,14 @@ We recommend always using the most up-to-date version of the client.
 The client router app can also be upgraded via WebAccess/DMP.
 
 ## Previous versions:
+
+### v3.2.2 (2025-06-03)
+
+- Added a new CA to default truststore.
+- Improved router application installation process.
+- Fixed iptables rule duplication.
+- Resolved rare issue causing unintended deletion of config profiles upon client restart.
+- Fixed VPN traffic denial caused by default firewall settings (applies to firmware version 6.5.2 and newer).
 
 ### v3.2.1 (2025-03-27)
 
