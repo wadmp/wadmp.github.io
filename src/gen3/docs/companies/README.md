@@ -18,8 +18,8 @@ next: ./company-structure/
 
 | Company type |                                                            | Features                                                                                 |
 | ------------ | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Free         | ![Free company type](../images/companies/free-1.png)       | Can claim and manage up to 5 devices, but cannot access the _Alerts_ section, create sub-companies, or use VPN functionalities.                                                   |
-| Premium      | ![Premium company type](../images/companies/premium-1.png) | Can claim and manage an unlimited number of devices, access the _Alerts_ section, create sub-companies, and use VPN functionalities. |
+| Free         | ![Free company type](../images/companies/free-1.png)       | Can claim and manage up to 5 devices.                                                    |
+| Premium      | ![Premium company type](../images/companies/premium-1.png) | Can claim and manage an unlimited number of devices, has access to the _Alerts_ section. |
 
 - Company type configuration: Company type can only be changed for the parent company. Child companies inherit their type from their parent.
 
