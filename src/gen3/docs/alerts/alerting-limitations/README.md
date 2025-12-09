@@ -1,5 +1,6 @@
 ---
-next: ../../api/
+prev: ../creating-new-alerts/
+next: ../../troubleshooting/
 ---
 
 ## Alerting Limitations

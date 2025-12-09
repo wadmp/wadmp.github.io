@@ -1,5 +1,6 @@
 ---
 prev: ../../alerts/
+next: ../alerting-limitations/
 ---
 
 ## Creating New Alerts
