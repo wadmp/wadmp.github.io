@@ -2,13 +2,12 @@
 
 ## Latest version:
 
-### v3.3.0 (2025-09-25)
-- Added reporting of active network interfaces.
-- Added reporting of WAN interface name, firmware version, and WADMP client version.
-- Added error reporting for synchronization failures due to insufficient space.
-- Improved synchronization speed for configuration profiles.
-- Fixed issue where the client exhausted all file descriptors, causing it to be unable to read certain metrics after a long reporting period.
-- Fixed temperature reporting showing absolute zero instead of null when reading failed.
+### v3.3.2 (2025-01-14)
+- Improved the reading speed of reporting measurements.
+- Updated SIM stats reading to use the new SDK.
+- Updated GPS data reading to use the new SDK.
+- Fixed WAN reading issue when no backup route was set.
+- Added a misconfiguration warning when both the router application and the integrated application in the firmware are enabled (only in firmware version 6.6.0+).
 
 ## Download:
 
@@ -19,6 +18,22 @@ We recommend always using the most up-to-date version of the client.
 The client router app can also be upgraded via WebAccess/DMP.
 
 ## Previous versions:
+
+### v3.3.1 (2025-10-13)
+- Fixed critical error when the client tries to read an unknown interface state.
+- Fixed issue where the client entered an infinite loop when !unique_password was marked as "deleted". 
+- The router application is now recognized as part of the system and can no longer be deleted.
+- Fixed issue where the client did not display the welcome page after a reset to default.
+- Fixed error that occurred when a reported numeric value was originally empty.
+- Fixed issue where the client spammed warning messages when the reported interface did not contain any IP address.
+
+### v3.3.0 (2025-09-25)
+- Added reporting of active network interfaces.
+- Added reporting of WAN interface name, firmware version, and WADMP client version.
+- Added error reporting for synchronization failures due to insufficient space.
+- Improved synchronization speed for configuration profiles.
+- Fixed issue where the client exhausted all file descriptors, causing it to be unable to read certain metrics after a long reporting period.
+- Fixed temperature reporting showing absolute zero instead of null when reading failed.
 
 ### v3.2.2 (2025-06-03)
 
