@@ -114,4 +114,4 @@ overload the Software with automated use.
 
 **10.9** For the resolution of all disputes arising from this EULA and legal relationships involved shall be under sole jurisdiction of the courts of the Czech Republic. 
 
-Effective from 1st of March 2020 
+Effective from 1st of March 2024 
