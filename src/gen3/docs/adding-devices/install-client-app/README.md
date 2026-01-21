@@ -1,5 +1,6 @@
 ---
-next: ../../device-management/
+prev: ../add-a-device/
+next: ../move-device-between-companies/
 ---
 
 ## Install/Upgrade a WebAccess/DMP Client App

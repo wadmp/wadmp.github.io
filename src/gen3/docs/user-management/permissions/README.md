@@ -1,87 +1,49 @@
 ---
 prev: ../2fa/
-next: ../../companies/
+next: ../service-accounts/
 ---
 
-## Permissions
+## Permissions & Roles
 
-### Permissions Management
+Permissions in the system govern what users can view, create, edit, or delete within a company. They are **scoped per company**, meaning a user may belong to multiple companies and have different permissions or roles in each. Permissions can be assigned **individually** or through **roles**.
 
-- User Restrictions:
+---
 
-  - Users cannot edit their own permissions.
-  - Users cannot add themselves to any company.
+### General Rules
 
-- Leaving a Company:
+- Users can always edit their own profile information (name, email, etc.), regardless of their assigned permissions.
+- Users cannot modify their own permissions.
+- Users may modify the permissions of other users only for companies where they have the **Edit Users** permission, and they can assign only those permissions that they themselves currently hold.
 
-  - A user can remove themselves from a company if:
+---
 
-    - The company has at least one other Company Admin.
-    - The user has the "Edit Users" permission for that company.
+### Roles
 
-- Profile Information Editing:
-  - Users may always edit their own profile information (e.g., email, name) regardless of their permissions.
+Roles are predefined or custom permission sets that simplify user management. Each user may have **zero or one role per company**.
 
-Managing Other Users:
+#### Default Roles
 
-- A user can remove another user from a company if they have "Edit Users" permission on that company.
-- A user can edit another user's profile information only if they have "Edit Users" permission for at least one of the companies the user is in.
+The system provides several **default roles**. Using these roles ensures that any **new permissions added in future releases** are automatically included appropriately.
 
-### Explanations of Individual Permissions
+| Role | Description | Key Capabilities |
+|---------------|-----------------------------------------------------------------------------|-----------------------|
+| Company Admin | Full access to all company features. System enforces at least one Company Admin per company. | All permissions, including company management, billing, devices, VPN, alerts, and auditing. |
+| Operator | Full operational capabilities except company management or billing. | Manage devices, alerts, VPN, fields, views, proxy links, and service accounts. |
+| Viewer | Read-only access to company data.| All View permissions only; cannot create, edit, or delete resources.|
 
-![user_permissions](../../images/user-permissions.png "Permissions")
 
-#### Company Admin - sets a fixed set of permissions:
+#### Custom Roles
 
-- User Permissions:
+- Users may create, edit, or delete custom roles.
+- Users can only assign permissions that they themselves possess.
+- Custom roles allow precise control over which actions a user may perform within a company.
 
-  - View: Allows viewing the list of users the current user has access to.
-  - Create: Allows creating new users within the user's company.
-  - Edit: Allows editing existing users.
-  - Delete: Allows deleting other users within the same company.
+---
 
-- Company Permissions:
+3. Best Practices
 
-  - Create: Allows creating new standalone companies.
-  - Edit: Allows editing existing companies.
+- Always assign users to **roles** rather than individual permissions when possible. This ensures easier management as new permissions are added.
+- Use **custom roles** for specialized access where default roles are insufficient.
+- Avoid granting permissions beyond what users require for their responsibilities.
 
-- Devices Permissions:
-
-  - View: Allows viewing device details.
-  - Claim & Release: Allows claiming or releasing a device in the system.
-  - Edit: Allows editing device settings.
-  - Delete: Allows deleting a device from the company. System-wide device deletion requires sysadmin permissions.
-
-- Alerts, History, Rules & Endpoints Permissions:
-
-  - View: Allows viewing the list of alerts, history entries, rules, and endpoints.
-  - Create: Allows creating new alerts, history entries, rules, and endpoints.
-  - Edit: Allows editing existing alerts, history entries, rules, and endpoints.
-  - Delete: Allows deleting alerts, history entries, rules, and endpoints.
-
-- VPN Networks
-
-  - View: Allows viewing the list of VPN networks.
-  - Create: Allows creating new VPN networks.
-  - Edit: Allows editing existing VPN networks.
-  - Delete: Allows deleting VPN networks.
-
-- VPN Roadwarriors (remote VPN users)
-
-  - View: Allows viewing the list of VPN roadwarriors.
-  - Create: Allows creating new VPN roadwarriors.
-  - Edit: Allows editing existing VPN roadwarriors.
-  - Delete: Allows deleting VPN roadwarriors.
-
-- VPN Settings
-
-  - View: Allows viewing the VPN settings.
-  - Edit: Allows editing the VPN settings.
-
-- Additional Permissions:
-
-  - Auditing: Allows viewing auditing details.
-  - Fields: Allows managing fields.
-  - Views: Allows managing views.
-  - AppStore: Allows managing the AppStore.
-  - Billing: Allows managing billing.
+<!-- DELETE part after -->

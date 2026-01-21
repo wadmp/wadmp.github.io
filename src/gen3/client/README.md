@@ -2,7 +2,7 @@
 
 ## Latest version:
 
-### v3.3.2 (2025-01-14)
+### v3.3.2 (2026-01-14)
 - Improved the reading speed of reporting measurements.
 - Updated SIM stats reading to use the new SDK.
 - Updated GPS data reading to use the new SDK.

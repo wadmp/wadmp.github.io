@@ -1,5 +1,5 @@
 ---
-prev: ../adding-devices/install-client-app/
+prev: ../adding-devices/move-device-between-companies/
 next: ./dmp-client-app/
 ---
 

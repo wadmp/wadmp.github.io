@@ -1,6 +1,6 @@
 ---
 prev: ../
-next: ../audit-logs/
+next: ../company-contacts/
 ---
 
 ## Company Structure

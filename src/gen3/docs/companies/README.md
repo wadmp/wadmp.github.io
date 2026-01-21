@@ -1,5 +1,5 @@
 ---
-prev: ../user-management/permissions/
+prev: ../user-management/service-accounts/
 next: ./company-structure/
 ---
 

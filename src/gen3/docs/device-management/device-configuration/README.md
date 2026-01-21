@@ -1,5 +1,6 @@
 ---
-next: ../../device-monitoring/
+prev: ../fields/
+next: ../csv-import-guide/
 ---
 
 ## Device Configuration

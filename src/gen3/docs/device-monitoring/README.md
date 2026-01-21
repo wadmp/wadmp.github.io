@@ -1,5 +1,5 @@
 ---
-prev: ../device-management/device-configuration/
+prev: ../device-management/commands/
 next: ./collecting-data/
 ---
 

@@ -56,6 +56,7 @@ module.exports = {
             "/gen3/docs/user-management/remove-users/",
             "/gen3/docs/user-management/2fa/",
             "/gen3/docs/user-management/permissions/",
+            "/gen3/docs/user-management/service-accounts/",
           ],
         },
 
@@ -66,6 +67,7 @@ module.exports = {
           sidebarDepth: 0,
           children: [
             "/gen3/docs/companies/company-structure/",
+            "/gen3/docs/companies/company-contacts/",
             "/gen3/docs/companies/audit-logs/",
             "/gen3/docs/companies/premium-features/",
             "/gen3/docs/companies/billing/",
@@ -81,6 +83,7 @@ module.exports = {
             "/gen3/docs/adding-devices/register-a-device/",
             "/gen3/docs/adding-devices/add-a-device/",
             "/gen3/docs/adding-devices/install-client-app/",
+            "/gen3/docs/adding-devices/move-device-between-companies/",
           ],
         },
         {
@@ -93,6 +96,7 @@ module.exports = {
             "/gen3/docs/device-management/fields/",
             "/gen3/docs/device-management/device-configuration/",
             "/gen3/docs/device-management/csv-import-guide/",
+            "/gen3/docs/device-management/commands/",
           ],
         },
         {

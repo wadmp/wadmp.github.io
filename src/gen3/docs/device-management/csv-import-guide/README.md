@@ -1,3 +1,8 @@
+---
+prev: ../device-configuration/
+next: ../commands/
+---
+
 ## CSV Import Guide
 
 This guide explains how to use CSV import features in WADMP3 to claim or update devices in bulk. It covers supported formats, required columns, Excel compatibility, and includes ready-to-use CSV templates.
