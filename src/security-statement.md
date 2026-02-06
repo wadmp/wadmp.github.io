@@ -24,9 +24,9 @@ Security is deeply embedded in the development of WebAccess DMP, ensuring that e
 
 4. Comprehensive Testing & Feedback – We carry out focused internal security audits and, when appropriate, engage independent specialists for targeted penetration testing. Insights from these reviews inform updates to our security guidelines and help us address identified issues promptly.
 
-## Continuous Compliance and Improvement
+## Continuous Compliance and Quality Assurance
 
-Advantech Czech s.r.o. is committed to maintaining the highest standards of cybersecurity, aligned with the European Union’s NIS2 Directive. We are actively working towards ISO27001 certification by 2025, reflecting our dedication to enhancing the security and resilience of our critical infrastructure.
+Advantech Czech s.r.o. maintains the highest standards of cybersecurity and is fully compliant with the European Union's NIS2 Directive. Our commitment to information security is further validated by our ISO/IEC 27001 certification, reflecting our dedication to the security and resilience of our critical infrastructure and the protection of customer data.
 
 ## Secure Remote Management
 
